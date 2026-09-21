@@ -41,11 +41,17 @@ jobs:
       - name: Integrity check
         working-directory: qirtas
         run: |
-          node --no-warnings tools/integrity-check.js || {
-            echo '--- integrity report ---'
-            cat cache/integrity-report.json 2>/dev/null | head -c 4000
-            exit 1
-          }
+          set +e
+          node --no-warnings tools/integrity-check.js > "$RUNNER_TEMP/verify.log" 2>&1
+          code=$?
+          if [ "$code" -ne 0 ]; then
+            # surface the tail of the output as workflow annotations so the cause
+            # is visible without downloading the raw job log
+            tail -n 25 "$RUNNER_TEMP/verify.log" | while IFS= read -r line; do
+              printf '::error::%s\n' "$line"
+            done
+          fi
+          exit "$code"
       - name: Smoke test
         working-directory: qirtas
         run: node tools/smoke-test.js --sample=4
