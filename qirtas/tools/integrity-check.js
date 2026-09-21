@@ -26,18 +26,19 @@ try {
   db = null;
   console.log('note: sqlite snapshot not readable in this environment (' + dbNote + ') — continuing with site checks only');
 }
-const q = (s) => (db ? db.prepare(s).get() : null);
-const qa = (s) => (db ? db.prepare(s).all() : []);
+const q = (s) => { try { return db ? db.prepare(s).get() : null; } catch (e) { return null; } };
+const qa = (s) => { try { return db ? db.prepare(s).all() : []; } catch (e) { return []; } };
+const qv = (s) => { const r = q(s); return r ? r.c : null; };
 out.db = db ? {
-  total: q('select count(*) c from books').c,
-  visible: q('select count(*) c from books where (hidden is null or hidden=0) and (removed is null or removed=0)').c,
+  total: qv('select count(*) c from books'),
+  visible: qv('select count(*) c from books where (hidden is null or hidden=0) and (removed is null or removed=0)'),
   byLang: qa('select language l, count(*) c from books group by language'),
-  noSourceUrl: q("select count(*) c from books where source_url is null or source_url=''").c,
-  noLicense: q("select count(*) c from books where license_label is null or license_label=''").c,
-  noEra: q("select count(*) c from books where era is null or era=''").c,
-  noCover: q("select count(*) c from books where cover is null or cover=''").c,
+  noSourceUrl: qv("select count(*) c from books where source_url is null or source_url=''"),
+  noLicense: qv("select count(*) c from books where license_label is null or license_label=''"),
+  noEra: qv("select count(*) c from books where era is null or era=''"),
+  noCover: qv("select count(*) c from books where cover is null or cover=''"),
   hiddenOrRemoved: qa('select hidden, removed, count(*) c from books group by hidden, removed'),
-  auditLog: q('select count(*) c from audit_log').c,
+  auditLog: qv('select count(*) c from audit_log'),
   takedown: qa('select id, book_id, status from takedown_requests'),
   tables: qa("select name from sqlite_master where type='table' order by name").map((r) => r.name),
 } : { mode: 'unavailable', note: dbNote, total: null, visible: null, byLang: [], noSourceUrl: null, noLicense: null, noEra: null, noCover: null, hiddenOrRemoved: [], auditLog: null, takedown: [], tables: [] };
