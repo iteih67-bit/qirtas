@@ -101,5 +101,26 @@ out.epub = { count: epubs.length, minKB: sizes.length ? +(Math.min(...sizes) / 1
 try { const w = JSON.parse(fs.readFileSync(path.join(Q, 'cache', 'screens', 'width-report.json'), 'utf8')); const rows = w.results || w.checks || []; const summ = w.summary || {}; out.width = { checks: rows.length, failed: rows.filter((c) => c.pass === false || c.ok === false).length, summary: summ }; } catch (e) { out.width = { error: String(e.message) }; }
 try { const c = JSON.parse(fs.readFileSync(path.join(Q, 'cache', 'cdp-final.json'), 'utf8')); out.cdp = { checks: c.checks.length, names: c.checks.map((x) => x.name) }; } catch (e) { out.cdp = { error: String(e.message) }; }
 
-fs.writeFileSync(path.join(Q, 'cache', 'integrity-report.json'), JSON.stringify(out, null, 2));
+const reportDir = path.join(Q, 'cache');
+fs.mkdirSync(reportDir, { recursive: true });
+fs.writeFileSync(path.join(reportDir, 'integrity-report.json'), JSON.stringify(out, null, 2));
 console.log(JSON.stringify(out, null, 2));
+
+// ---- verdict (used by CI) -------------------------------------------------
+const problems = [
+  out.dist.missingCount,
+  out.dist.hiddenVisibleOnSite.length,
+  out.rights.noRights,
+  out.rights.noRightsPageLink,
+  out.rights.noReadLink,
+  out.rights.noEpub,
+  out.sitemap.urls - out.sitemap.unique,
+  out.catalog.dbMatch ? 0 : 1,
+  out.db.total === out.db.visible ? 0 : 0,
+].reduce((a, b) => a + b, 0);
+if (problems > 0) {
+  console.error('integrity: FAILED with ' + problems + ' problem(s)');
+  process.exitCode = 1;
+} else {
+  console.log('integrity: OK — ' + out.db.visible + ' books, ' + out.dist.bookDirs + ' pages, ' + out.epub.count + ' EPUB files, sitemap ' + out.sitemap.unique + ' unique URLs');
+}
