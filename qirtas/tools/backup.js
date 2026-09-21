@@ -28,7 +28,7 @@ function create(label) {
   for (const it of ITEMS) {
     if (!exists(it.src)) { if (!it.optional) console.warn('  ! مفقود: ' + it.src); continue; }
     fs.copyFileSync(it.src, path.join(dir, it.dest));
-    manifest.files.push({ file: it.dest, bytes: fs.statSync(it.src).size });
+    manifest.files.push({ file: it.dest, dest: it.dest, bytes: fs.statSync(it.src).size });
   }
   fs.writeFileSync(path.join(dir, 'manifest.json'), JSON.stringify(manifest, null, 2));
   console.log('نسخة احتياطية: ' + dir);
