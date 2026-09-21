@@ -1,0 +1,46 @@
+{
+  "name": "qirtas-platform",
+  "version": "3.0.0",
+  "description": "منصة قِرطاس — مكتبة رقمية عربية + قاعدة بيانات + لوحة تحكم + نظام حقوق النشر",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "serve": "node --no-warnings server.js",
+    "site:build": "node site/tools/build.js",
+    "site:serve": "node --no-warnings server.js",
+    "db:import": "node --no-warnings pipeline/db-cli.js import",
+    "db:export": "node --no-warnings pipeline/db-cli.js export",
+    "db:verify": "node --no-warnings pipeline/db-cli.js verify",
+    "db:search": "node --no-warnings pipeline/db-cli.js search",
+    "db:dups": "node --no-warnings pipeline/db-cli.js dupcheck",
+    "db:runs": "node --no-warnings pipeline/db-cli.js runs",
+    "db:audit": "node --no-warnings pipeline/db-cli.js audit",
+    "books:harvest": "node pipeline/harvest-gutenberg.js",
+    "books:fetch": "node pipeline/fetch-gutenberg.js",
+    "books:ws": "node pipeline/harvest-wikisource.js --lang=ar",
+    "books:ws-en": "node pipeline/harvest-wikisource.js --lang=en",
+    "books:openlibrary": "node pipeline/harvest-openlibrary.js",
+    "books:licenses": "node pipeline/verify-licenses.js",
+    "books:license-labels": "node pipeline/apply-license-labels.js",
+    "books:clean": "node pipeline/dedupe.js",
+    "books:clean-texts": "node pipeline/clean-texts.js",
+    "books:migrate": "node pipeline/migrate-schema.js",
+    "books:index": "node pipeline/build-index.js",
+    "books:wikisource-legacy": "node pipeline/wikisource.js",
+    "audit:sources": "node tools/audit-sources.js docs/SOURCES-AUDIT.md",
+    "test:smoke": "node tools/smoke-test.js --sample=8",
+    "test:ui": "node tools/cdp-check.js",
+    "test:widths": "node tools/width-check.js",
+    "backup:create": "node tools/backup.js create",
+    "backup:list": "node tools/backup.js list",
+    "backup:restore": "node tools/backup.js restore"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

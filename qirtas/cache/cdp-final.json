@@ -1,0 +1,130 @@
+{
+  "base": "http://localhost:8081",
+  "browser": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "checks": [
+    {
+      "name": "library.initial",
+      "value": {
+        "cards": 24,
+        "count": "419",
+        "status": "يُعرض 24 من 419 كتاباً متاحاً للقراءة هنا",
+        "pager": "1 / 18",
+        "langOptions": 3,
+        "srcOptions": 3
+      }
+    },
+    {
+      "name": "library.search_love",
+      "value": {
+        "cards": 16,
+        "status": "يُعرض 16 من 16 كتاباً متاحاً للقراءة هنا — نتائج البحث عن «love»",
+        "url": "?q=love"
+      }
+    },
+    {
+      "name": "library.search_love_lang_en",
+      "value": {
+        "cards": 16,
+        "url": "?q=love&lang=en",
+        "allEnglish": true
+      }
+    },
+    {
+      "name": "library.empty_state",
+      "value": {
+        "cards": 0,
+        "emptyShown": true,
+        "emptyTitle": "لا توجد نتائج مطابقة في الكتب المتاحة للقراءة هنا",
+        "hasResetBtn": true
+      }
+    },
+    {
+      "name": "library.after_reset",
+      "value": {
+        "cards": 24,
+        "pagerVisible": true,
+        "pager": "1 / 18"
+      }
+    },
+    {
+      "name": "library.page_2",
+      "value": {
+        "pager": "2 / 18",
+        "url": "?page=2",
+        "cards": 24
+      }
+    },
+    {
+      "name": "library.external_catalogue",
+      "value": {
+        "declared": "12,958",
+        "rows": 60,
+        "outboundLinks": 60,
+        "hasNote": true
+      }
+    },
+    {
+      "name": "library.external_search",
+      "value": {
+        "rows": 4,
+        "status": "يُعرض 4 من 4 نتيجة في الكتالوج الخارجي عن «shakespeare»Dickens from Shakespeare, Fuseli an"
+      }
+    },
+    {
+      "name": "server.404_page",
+      "value": {
+        "title": "404 — الصفحة غير موجودة | قِرطاس",
+        "hasSearchForm": true,
+        "hasLibraryLink": true
+      }
+    },
+    {
+      "name": "reader.picked_id",
+      "value": "one-thousand-and-one-nights-ar"
+    },
+    {
+      "name": "reader.render",
+      "value": {
+        "paragraphs": 245,
+        "chapterTitle": "الجزء الأول",
+        "bookTitle": "ألف ليلة وليلة",
+        "pages": "1 / 146",
+        "fatal": false
+      }
+    },
+    {
+      "name": "reader.after_next_page",
+      "value": {
+        "pages": "2 / 146"
+      }
+    },
+    {
+      "name": "reader.network_failure",
+      "value": {
+        "fatal": true,
+        "heading": "تعذّر تحميل الكتاب",
+        "hasRetry": true,
+        "backLinks": 2
+      }
+    },
+    {
+      "name": "reader.missing_book",
+      "value": {
+        "fatal": false,
+        "hasRetry": false,
+        "hasBackLinks": 0
+      }
+    },
+    {
+      "name": "book.source_block",
+      "value": {
+        "hasSourceBox": true,
+        "rows": 4,
+        "jsonld": true,
+        "canonical": "https://qirtas.pages.dev/book/one-thousand-and-one-nights-ar/",
+        "tocItems": 5
+      }
+    }
+  ],
+  "browserVersion": "Edg/153.0.4234.32"
+}

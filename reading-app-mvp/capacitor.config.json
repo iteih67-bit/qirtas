@@ -1,0 +1,16 @@
+{
+  "appId": "app.qirtas.reader",
+  "appName": "قِرطاس",
+  "webDir": "mobile-dist",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0c2e29"
+  },
+  "ios": {
+    "backgroundColor": "#0c2e29",
+    "contentInset": "always"
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

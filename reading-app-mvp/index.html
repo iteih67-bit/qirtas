@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>قِرطاس — Qirtas | مكتبة قراءة مجانية</title>
+  <meta name="description" content="قِرطاس: مكتبة قراءة مجانية لكتب الملكية العامة — اقرأ أينما كنت، على أي جهاز." />
+  <meta name="theme-color" content="#0e9488" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preload" href="fonts/Cairo-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="fonts/NotoNaskhArabic-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="app-header">
+    <div class="brand" id="brandBtn">
+      <svg class="brand-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="10" fill="var(--accent)"/>
+        <rect x="12" y="12" width="24" height="24" rx="4" fill="var(--paper-strong)"/>
+        <rect x="16" y="18" width="16" height="2.6" rx="1.3" fill="var(--accent-deep)"/>
+        <rect x="16" y="23" width="16" height="2.6" rx="1.3" fill="var(--accent-deep)"/>
+        <rect x="16" y="28" width="9" height="2.6" rx="1.3" fill="var(--accent-deep)"/>
+        <path d="M28 12 h6 v10 l-3 -2.6 -3 2.6 z" fill="var(--amber)"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-name" data-i="brand">قِرطاس</span>
+        <span class="brand-sub" data-i="tagline">اقرأ أينما كنت</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="installBtn" class="btn btn-ghost hidden" data-i-title="install">
+        <span data-i="install">ثبّت التطبيق</span>
+      </button>
+      <button id="langBtn" class="icon-btn" title="Language"><span id="langBtnLabel">EN</span></button>
+      <button id="themeBtn" class="icon-btn" data-i-title="theme" aria-label="theme">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Library View ===== -->
+  <main id="viewLibrary" class="view">
+    <section id="continueCard" class="continue-card hidden">
+      <div class="continue-info">
+        <span class="continue-label" data-i="continue">متابعة القراءة</span>
+        <strong id="continueTitle" class="continue-title"></strong>
+        <span id="continueMeta" class="continue-meta"></span>
+      </div>
+      <button id="continueBtn" class="btn btn-accent" data-i="resume">متابعة</button>
+    </section>
+
+    <section class="library-head">
+      <h1 id="libraryTitle" data-i="libraryTitle">المكتبة</h1>
+      <p class="library-sub" data-i="librarySub">كتب من الملكية العامة — مجانية بالكامل</p>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.3l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
+        <input id="searchInput" type="search" data-i-ph="searchPh" placeholder="ابحث عن كتاب أو مؤلف…" />
+      </div>
+      <div id="chips" class="chips"></div>
+    </section>
+
+    <section id="bookGrid" class="book-grid"></section>
+    <p id="emptyMsg" class="empty-msg hidden" data-i="noResults">لا توجد نتائج مطابقة</p>
+  </main>
+
+  <!-- ===== Reader View ===== -->
+  <main id="viewReader" class="view reader-view hidden">
+    <div class="reader-topbar">
+      <button id="backBtn" class="icon-btn" data-i-title="back" aria-label="back">
+        <svg viewBox="0 0 24 24" class="flip-rtl" aria-hidden="true"><path fill="currentColor" d="M15.5 4.5 8 12l7.5 7.5 1.4-1.4L10.8 12l6.1-6.1z"/></svg>
+      </button>
+      <div class="reader-titles">
+        <strong id="readerBookTitle"></strong>
+        <span id="readerChapterTitle"></span>
+      </div>
+      <div class="reader-tools">
+        <button id="fontMinus" class="icon-btn small" data-i-title="fontMinus">A−</button>
+        <button id="fontPlus" class="icon-btn small" data-i-title="fontPlus">A+</button>
+        <button id="tocBtn" class="icon-btn" data-i-title="toc" aria-label="toc">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="reader-stage">
+      <button id="prevPage" class="edge-btn edge-start" aria-label="previous page">
+        <svg viewBox="0 0 24 24" class="flip-rtl"><path fill="currentColor" d="M15.5 4.5 8 12l7.5 7.5 1.4-1.4L10.8 12l6.1-6.1z"/></svg>
+      </button>
+      <div id="readerContent" class="reader-content" dir="auto"></div>
+      <button id="nextPage" class="edge-btn edge-end" aria-label="next page">
+        <svg viewBox="0 0 24 24" class="flip-rtl"><path fill="currentColor" d="M8.5 4.5 16 12l-7.5 7.5-1.4-1.4L13.2 12 7.1 5.9z"/></svg>
+      </button>
+    </div>
+
+    <div class="reader-bottombar">
+      <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+      <div class="reader-footer">
+        <button id="prevChapter" class="btn btn-ghost small" data-i="prevChapter">الفصل السابق</button>
+        <span id="pageIndicator">1 / 1</span>
+        <button id="nextChapter" class="btn btn-ghost small" data-i="nextChapter">الفصل التالي</button>
+      </div>
+      <!-- Mock ad banner — placeholder for AdMob banner in production -->
+      <div id="adBanner" class="ad-banner">
+        <span class="ad-tag">Ad · إعلان</span>
+        <span id="adBannerText" class="ad-text">مساحة إعلانية تجريبية — AdMob Banner 320×50</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Table of Contents ===== -->
+  <div id="tocOverlay" class="overlay hidden">
+    <div class="sheet" role="dialog" aria-modal="true">
+      <div class="sheet-head">
+        <strong data-i="toc">الفهرس</strong>
+        <button id="tocClose" class="icon-btn" aria-label="close">✕</button>
+      </div>
+      <ul id="tocList" class="toc-list"></ul>
+    </div>
+  </div>
+
+  <!-- ===== Mock interstitial ad ===== -->
+  <div id="interstitial" class="overlay interstitial hidden">
+    <div class="interstitial-box" role="dialog" aria-modal="true">
+      <div class="interstitial-head"><span class="ad-tag">Ad · إعلان</span></div>
+      <div class="interstitial-body">
+        <div class="interstitial-art">📚</div>
+        <strong class="interstitial-title">مساحة إعلانية تجريبية</strong>
+        <p class="interstitial-sub">هنا سيظهر إعلان AdMob بيني (Interstitial) بين الفصول في الإصدار النهائي</p>
+        <button id="interstitialClose" class="btn btn-accent" disabled>إغلاق (5)</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- ===== Mobile install banner ===== -->
+  <div id="installBanner" class="install-banner hidden">
+    <div class="ib-icon">📱</div>
+    <div class="ib-text">
+      <strong id="ibTitle">ثبّت قِرطاس على جهازك</strong>
+      <span id="ibSub">تثبيت سريع — يعمل بلا إنترنت وبملء الشاشة</span>
+    </div>
+    <button id="ibInstall" class="btn btn-accent small">تثبيت</button>
+    <button id="ibClose" class="icon-btn small" aria-label="close">✕</button>
+  </div>
+
+  <script src="js/books.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "qirtas",
+  "version": "1.0.0",
+  "description": "قِرطاس — تطبيق قراءة متعدد المنصات (PWA + Capacitor للأندرويد/iOS)",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "icons": "node tools/gen-icons.js && node tools/gen-mobile-assets.js",
+    "build:mobile": "node tools/build-mobile-dist.js && cap sync",
+    "cap:add:android": "node tools/build-mobile-dist.js && cap add android && cap sync",
+    "cap:open:android": "cap open android",
+    "cap:assets": "npx @capacitor/assets generate --android"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true
+  }
+}

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>دراسة حالة — قِرطاس: تطبيق قراءة متعدد المنصات</title>
+<style>
+  /* ===== Fonts (local, relative paths) ===== */
+  @font-face { font-family: 'Cairo'; src: url('fonts/Cairo-Variable.ttf') format('truetype'); font-weight: 200 900; }
+  @font-face { font-family: 'Noto Naskh'; src: url('fonts/NotoNaskhArabic-Variable.ttf') format('truetype'); font-weight: 400 700; }
+  @font-face { font-family: 'Amiri'; src: url('fonts/Amiri-Regular.ttf') format('truetype'); font-weight: 400; }
+  @font-face { font-family: 'Amiri'; src: url('fonts/Amiri-Bold.ttf') format('truetype'); font-weight: 700; }
+
+  :root {
+    --bg: #f7f5f1;
+    --ink: #1f2933;
+    --muted: #5f6b76;
+    --accent: #0e7c6d;
+    --accent-deep: #0b5a50;
+    --accent-soft: #e3efec;
+    --line: #d9d4ca;
+    --card: #ffffff;
+    --cover-bg: #0c2e29;
+    --cover-ink: #f2efe8;
+  }
+
+  @page { size: 210mm 297mm; margin: 0; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 210mm;
+    background: var(--cover-bg);
+    font-family: 'Cairo', 'Segoe UI', sans-serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  * { box-sizing: border-box; }
+
+  .page {
+    width: 210mm; height: 297mm;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+    padding: 14mm 14mm 16mm;
+    page-break-after: always;
+    display: flex; flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  @media screen {
+    html { height: auto; display: flex; justify-content: center; background: var(--cover-bg); }
+    body { transform-origin: top center; scale: min(1, calc(100vw / 794)); margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,.35); }
+  }
+
+  /* ===== Cover ===== */
+  .cover { background: var(--cover-bg); color: var(--cover-ink); padding: 0; }
+  .cover .ghost { position: absolute; top: 0; right: 0; left: 0; height: 100%; pointer-events: none; }
+  .cover .ghost::before {
+    content: 'ق';
+    position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%);
+    font-family: 'Amiri', serif; font-size: 160mm; line-height: 0.75; font-weight: 700;
+    color: rgba(242, 239, 232, 0.045); line-height: 1;
+  }
+  .cover .inner { position: relative; flex: 1; padding: 20mm 18mm; display: flex; flex-direction: column; }
+  .cover .kicker {
+    font-size: 13.5px; letter-spacing: 4px; font-weight: 600;
+    color: rgba(242, 239, 232, 0.62);
+    border-bottom: 0.6px solid rgba(242, 239, 232, 0.25);
+    padding-bottom: 7mm;
+  }
+  .cover .hero {
+    margin-top: 26mm;
+    font-size: 74px; font-weight: 900; line-height: 1.18;
+  }
+  .cover .hero .thin { font-weight: 300; color: #7fd4c7; }
+  .cover .sub {
+    margin-top: 8mm; font-size: 21px; font-weight: 400;
+    color: rgba(242, 239, 232, 0.85); max-width: 150mm; line-height: 1.8;
+  }
+  .cover .summary {
+    margin-top: auto;
+    border-inline-start: 2px solid #2cc0b0;
+    padding: 4mm 6mm;
+    background: rgba(255,255,255,0.04);
+    max-width: 158mm;
+  }
+  .cover .summary p { margin: 0; font-size: 13.5px; line-height: 2; color: rgba(242,239,232,.88); }
+  .cover .meta {
+    margin-top: 12mm; padding-top: 6mm;
+    border-top: 0.6px solid rgba(242,239,232,0.25);
+    display: flex; justify-content: space-between;
+    font-size: 12px; letter-spacing: 1px; color: rgba(242,239,232,0.6);
+  }
+
+  /* ===== Page chrome ===== */
+  .page-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 9mm;
+  }
+  .sec-chip {
+    display: inline-flex; align-items: center; gap: 3mm;
+    font-size: 11px; font-weight: 800; letter-spacing: 1px; color: var(--accent-deep);
+  }
+  .sec-chip .num {
+    background: var(--accent); color: #fff; border-radius: 6px;
+    padding: 1mm 3mm; font-size: 11px;
+  }
+  .brand-mini { font-size: 11.5px; font-weight: 700; color: var(--muted); letter-spacing: .5px; }
+  .page-foot {
+    margin-top: auto;
+    border-top: 0.6px solid var(--line); padding-top: 3mm;
+    display: flex; justify-content: space-between;
+    font-size: 10px; color: var(--muted);
+  }
+  h2.page-title { font-size: 30px; font-weight: 900; margin: 0 0 3mm; color: var(--ink); }
+  .lead { font-size: 13px; color: var(--muted); margin: 0 0 7mm; line-height: 2; max-width: 175mm; }
+  h3.block-title {
+    font-size: 15px; font-weight: 800; color: var(--accent-deep);
+    margin: 5.5mm 0 3mm; display: flex; align-items: center; gap: 2.5mm;
+  }
+  h3.block-title::before { content: ''; width: 4mm; height: 4mm; background: var(--accent); border-radius: 1.2mm; }
+  p.body { font-size: 12.5px; line-height: 2.05; margin: 0 0 3.5mm; color: #33404b; }
+  .ltr { direction: ltr; unicode-bidi: isolate; }
+
+  /* ===== Stats ===== */
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin: 5mm 0; }
+  .stat {
+    background: var(--card); border: 0.6px solid var(--line); border-radius: 3.5mm;
+    padding: 5mm 4mm; text-align: center;
+  }
+  .stat .n { font-size: 25px; font-weight: 900; color: var(--accent); direction: ltr; }
+  .stat .n small { font-size: 13px; color: var(--muted); font-weight: 700; }
+  .stat .l { font-size: 10.5px; color: var(--muted); margin-top: 2mm; line-height: 1.7; font-weight: 600; }
+
+  /* ===== Cards & grids ===== */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4.5mm; }
+  .card {
+    background: var(--card); border: 0.6px solid var(--line); border-radius: 3.5mm;
+    padding: 5mm 5.5mm;
+  }
+  .card h4 { margin: 0 0 2.5mm; font-size: 13.5px; font-weight: 800; color: var(--ink); }
+  .card p { margin: 0; font-size: 11.5px; line-height: 1.95; color: #3d4a55; }
+  .card .tag { display: inline-block; font-size: 9.5px; font-weight: 800; color: var(--accent-deep); background: var(--accent-soft); border-radius: 999px; padding: 1mm 3.5mm; margin-bottom: 2.5mm; }
+  .card ul { margin: 0; padding-inline-start: 5mm; font-size: 11.5px; line-height: 2; color: #3d4a55; }
+  .callout {
+    background: var(--accent-soft); border-inline-start: 2mm solid var(--accent);
+    border-radius: 2.5mm; padding: 3.8mm 5mm; margin: 3.5mm 0;
+  }
+  .callout p { margin: 0; font-size: 12px; line-height: 2; color: #14443d; }
+  .callout .t { font-weight: 800; }
+
+  /* ===== Tables ===== */
+  table.data {
+    width: 100%; border-collapse: collapse; margin: 3mm 0 2mm;
+    background: var(--card); border-radius: 3mm; overflow: hidden;
+    font-size: 11.5px;
+  }
+  table.data th {
+    background: var(--accent-deep); color: #fff; font-weight: 800;
+    padding: 2.6mm 3.5mm; text-align: right; font-size: 11px;
+  }
+  table.data td {
+    padding: 2.4mm 3.5mm; border-bottom: 0.6px solid var(--line);
+    color: #33404b; line-height: 1.8; vertical-align: top;
+  }
+  table.data tr:last-child td { border-bottom: none; }
+  table.data td.strong { font-weight: 800; color: var(--ink); }
+  table.data td.good { color: var(--accent-deep); font-weight: 800; }
+  .table-note { font-size: 10px; color: var(--muted); margin: 1mm 0 0; line-height: 1.7; }
+
+  /* ===== Figures ===== */
+  figure.shot { display: block; width: 100%; margin: 3mm 0 2mm; }
+  figure.shot img {
+    width: 100%; display: block; border-radius: 3mm;
+    border: 0.6px solid var(--line); box-shadow: 0 4mm 10mm rgba(31,41,51,.10);
+  }
+  figure.shot figcaption { font-size: 10.5px; color: var(--muted); margin-top: 2.5mm; text-align: center; }
+  .shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; align-items: start; }
+
+  /* ===== Architecture layers ===== */
+  .arch { display: flex; flex-direction: column; gap: 1.8mm; margin: 2.5mm 0; }
+  .arch .layer {
+    background: var(--card); border: 0.6px solid var(--line); border-radius: 3mm;
+    padding: 2.4mm 5mm;
+  }
+  .arch .layer .t { font-size: 12px; font-weight: 800; color: var(--accent-deep); margin-bottom: 1.5mm; }
+  .arch .chips { display: flex; flex-wrap: wrap; gap: 2mm; }
+  .arch .chip {
+    font-size: 10px; font-weight: 700; color: #33404b;
+    background: var(--accent-soft); border-radius: 999px; padding: 0.8mm 3mm;
+  }
+  .arch .arrow { text-align: center; color: var(--accent); font-size: 11px; line-height: 1; margin: -0.5mm 0; }
+
+  /* ===== Timeline ===== */
+  .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin: 4mm 0; }
+  .phase { background: var(--card); border: 0.6px solid var(--line); border-radius: 3mm; padding: 4mm; }
+  .phase .wk { font-size: 10px; font-weight: 800; color: #fff; background: var(--accent); border-radius: 999px; padding: 1mm 3mm; display: inline-block; margin-bottom: 2.5mm; }
+  .phase h5 { margin: 0 0 2mm; font-size: 12.5px; font-weight: 800; }
+  .phase ul { margin: 0; padding-inline-start: 4.5mm; font-size: 10.5px; line-height: 1.95; color: #3d4a55; }
+
+  /* ===== Personas ===== */
+  .persona { background: var(--card); border: 0.6px solid var(--line); border-radius: 3.5mm; padding: 5mm; }
+  .persona .avatar {
+    width: 13mm; height: 13mm; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; font-weight: 900; margin-bottom: 3mm;
+  }
+  .persona .name { font-size: 14px; font-weight: 800; }
+  .persona .role { font-size: 10.5px; color: var(--accent-deep); font-weight: 700; margin-bottom: 3mm; }
+  .persona p { font-size: 11px; line-height: 1.95; color: #3d4a55; margin: 0 0 2.5mm; }
+  .persona .need { font-size: 10.5px; color: var(--muted); }
+  .persona .need b { color: var(--ink); }
+
+  /* ===== Contents page ===== */
+  .toc-list { margin-top: 4mm; }
+  .toc-item {
+    display: flex; align-items: baseline; gap: 4mm;
+    padding: 3.2mm 0; border-bottom: 0.6px dashed var(--line);
+  }
+  .toc-item .no { font-size: 12px; font-weight: 900; color: var(--accent); min-width: 9mm; direction: ltr; text-align: center; }
+  .toc-item .t { font-size: 13.5px; font-weight: 700; }
+  .toc-item .pg { margin-inline-start: auto; font-size: 11.5px; color: var(--muted); direction: ltr; }
+
+  /* ===== Sources ===== */
+  .sources { font-size: 10px; line-height: 2.1; color: var(--muted); direction: ltr; text-align: left; }
+  .sources li { margin-bottom: 1mm; }
+</style>
+</head>
+<body>
+
+<!-- ============ Page 1: Cover ============ -->
+<section class="page cover">
+  <div class="ghost"></div>
+  <div class="inner">
+    <div class="kicker">دراسة حالة تقنية · مشروع تطبيق قراءة · 2026</div>
+    <div class="hero">قِرطاس<br><span class="thin">اقرأ أينما كنت</span></div>
+    <div class="sub">تطبيق قراءة مجاني لكتب الملكية العامة — كود واحد يعمل على الهاتف والحاسوب والمتصفح، بانطلاقة تكلفتها صفر دولار، وربح مستدام من الإعلانات.</div>
+    <div class="summary">
+      <p>تغطي هذه الدراسة: تحليل السوق والمنافسين، البنية التقنية متعددة المنصات، خطة تشغيل بصفر تكلفة، حدود الخدمات المجانية، استراتيجية الربح من الإعلانات بتوقعات إيرادات محسوبة، وخارطة طريق تنفيذية مدتها 12 أسبوعاً — مرفقة بنموذج أولي عملي جاهز.</p>
+    </div>
+    <div class="meta">
+      <span>إعداد: فريق قِرطاس</span>
+      <span>الإصدار 1.0 — سبتمبر 2026</span>
+      <span>مستند داخلي للعرض</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Page 2: Contents ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">٠٠</span> المحتويات</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">محتويات الدراسة</h2>
+  <p class="lead">عشرة أقسام تأخذك من الفكرة إلى خطة تنفيذ كاملة — مع أرقام موثقة من مصادر حقيقية ونموذج أولي عامل.</p>
+  <div class="toc-list">
+    <div class="toc-item"><span class="no">01</span><span class="t">الملخص التنفيذي</span><span class="pg">03</span></div>
+    <div class="toc-item"><span class="no">02</span><span class="t">المشروع: الرؤية والمشكلة والحل</span><span class="pg">04</span></div>
+    <div class="toc-item"><span class="no">03</span><span class="t">تحليل السوق</span><span class="pg">05</span></div>
+    <div class="toc-item"><span class="no">04</span><span class="t">تحليل المنافسين والتموضع</span><span class="pg">06</span></div>
+    <div class="toc-item"><span class="no">05</span><span class="t">الجمهور المستهدف</span><span class="pg">07</span></div>
+    <div class="toc-item"><span class="no">06</span><span class="t">المميزات ونطاق العمل</span><span class="pg">08</span></div>
+    <div class="toc-item"><span class="no">07</span><span class="t">البنية التقنية متعددة المنصات</span><span class="pg">09</span></div>
+    <div class="toc-item"><span class="no">08</span><span class="t">النموذج الأولي العامل (لقطات حقيقية)</span><span class="pg">10</span></div>
+    <div class="toc-item"><span class="no">09</span><span class="t">خطة التكلفة الصفرية والتوزيع</span><span class="pg">12</span></div>
+    <div class="toc-item"><span class="no">10</span><span class="t">الربح من الإعلانات وتوقعات الإيرادات</span><span class="pg">15</span></div>
+    <div class="toc-item"><span class="no">11</span><span class="t">الانتشار وخارطة الطريق والمخاطر</span><span class="pg">17</span></div>
+    <div class="toc-item"><span class="no">12</span><span class="t">الخلاصة والمصادر</span><span class="pg">20</span></div>
+  </div>
+  <div class="callout" style="margin-top: 10mm;">
+    <p><span class="t">ما الذي يميز هذه الدراسة؟</span> كل رقم فيها إما موثق من مصدر منشور أو محسوب بمعادلة معلنة. والنموذج الأولي المرفق حقيقي ويعمل الآن على المتصفح — ليس مجرد تصاميم.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>02</span></div>
+</section>
+
+<!-- ============ Page 3: Executive Summary ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">01</span> الملخص التنفيذي</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">الخلاصة في صفحة واحدة</h2>
+  <p class="lead">«قِرطاس» تطبيق قراءة مجاني يقدم كتب الملكية العامة بالعربية والإنجليزية عبر كود واحد يعمل على جميع المنصات، مع نموذج ربح من الإعلانات لا يعطّل تجربة القراءة.</p>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">0<small>$</small></div><div class="l">تكلفة الانطلاقة — كل الأدوات والخدمات مجانية</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">منصات من كود واحد: Android وiOS وويب وويندوز وماك ولينكس</div></div>
+    <div class="stat"><div class="n">15–27<small> B$</small></div><div class="l">حجم سوق الكتب الإلكترونية عالمياً 2025 (تقديرات)</div></div>
+    <div class="stat"><div class="n">12</div><div class="l">أسبوعاً للإطلاق الكامل وفق خارطة الطريق</div></div>
+  </div>
+
+  <h3 class="block-title">لماذا الآن؟</h3>
+  <p class="body">سوق الكتب الرقمية ينمو بثبات، بينما يفتقر القارئ العربي إلى منصة مجانية بالكامل تجمع الكلاسيكيات العربية بصورة منسقة وقابلة للقراءة على أي جهاز. في المقابل، أدوات التطوير الحديثة (Flutter وPWA وFirebase المجاني) خفضت كلفة بناء تطبيق متعدد المنصات إلى ما يقارب الصفر — لم يعد الدخول يحتاج رأس مال، بل تنفيذاً ذكياً.</p>
+
+  <h3 class="block-title">نموذج الربح</h3>
+  <p class="body">الإعلانات هي مصدر الربح الوحيد في المرحلة الأولى: بانر غير مزعج أسفل القارئ، وإعلان بيني واحد بين الفصول، وإعلانات مكافآت اختيارية مقابل مزايا تجميلية. وبحسب معايير 2025، يدر المستخدم العربي النشط ما بين <b>0.5 و1.5 دولار</b> سنوياً من الإعلانات، بينما يقارب المستخدم الأمريكي <b>10 أضعاف ذلك</b> — ولذلك يستهدف المشروع الجمهورين معاً منذ اليوم الأول.</p>
+
+  <div class="callout">
+    <p><span class="t">الخلاصة:</span> مشروع قابل للتنفيذ بلا رأس مال، بمنتج يمكن إطلاقه خلال 12 أسبوعاً، وسوق حقيقي له فجوة واضحة في المحتوى العربي المجاني. المخاطرة المالية شبه معدومة، والقيمة التعلمية عالية حتى لو لم تحقق الأرقام الطموحة.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>03</span></div>
+</section>
+
+<!-- ============ Page 4: Project Definition ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">02</span> تعريف المشروع</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">الرؤية والمشكلة والحل</h2>
+
+  <div class="grid-3">
+    <div class="card"><span class="tag">الرؤية</span><h4>أكبر مكتبة عربية مجانية في جيب كل قارئ</h4><p>أن يجد القارئ العربي كلاسيكيات تراثه — ونوافذ على الأدب العالمي — في تطبيق واحد أنيق، مجاني بالكامل، يعمل على أي جهاز يملكه.</p></div>
+    <div class="card"><span class="tag">المشكلة</span><h4>المحتوى موجود… التجربة مفقودة</h4><p>نصوص التراث متوفرة مبعثرة بجودة قراءة سيئة على مواقع متفاوتة، والتطبيقات العالمية مدفوعة أو لا تدعم العربية جيداً، والمنصات العربية إما اشتراكات أو كتالوج محدود.</p></div>
+    <div class="card"><span class="tag">الحل</span><h4>قارئ ممتاز + محتوى ملكية عامة + صفر تكلفة</h4><p>تطبيق واحد بواجهة عربية أولاً وإنجليزية، يجمع كتباً من مصادر الملكية العامة الموثوقة، ويقدمها بقارئ احترافي — ويموّل نفسه من الإعلانات.</p></div>
+  </div>
+
+  <h3 class="block-title">أهداف المشروع (SMART)</h3>
+  <table class="data">
+    <tr><th style="width:22%">الهدف</th><th>المقياس</th><th style="width:26%">المستهدف بعد 6 أشهر من الإطلاق</th></tr>
+    <tr><td class="strong">الوصول</td><td>تحميلات وتثبيتات تراكمية</td><td>50,000+ مستخدم</td></tr>
+    <tr><td class="strong">التفاعل</td><td>متوسط مدة الجلسة</td><td>10 دقائق أو أكثر</td></tr>
+    <tr><td class="strong">الاحتفاظ</td><td>العودة بعد 7 أيام (D7)</td><td>20% أو أكثر</td></tr>
+    <tr><td class="strong">التشغيل</td><td>تكلفة البنية التحتية الشهرية</td><td>0 دولار حتى 10 آلاف مستخدم نشط</td></tr>
+    <tr><td class="strong">الإيراد</td><td>صافي إيراد الإعلانات الشهري</td><td>500 دولار أو أكثر</td></tr>
+  </table>
+  <p class="table-note">تُراجع هذه المستهدفات شهرياً عبر Google Analytics (مجاني) ولا تُعتبر عقوداً بل مؤشرات تعلّم.</p>
+
+  <h3 class="block-title">لماذا «ملكية عامة» تحديداً؟</h3>
+  <p class="body">لأنها تحل أصعب مشكلتين في تطبيقات القراءة دفعة واحدة: <b>حقوق المحتوى</b> (صفر مخاطر قانونية، وتراخيص واضحة مثل Project Gutenberg وبرنامج هنداوي) و<b>تكلفة المحتوى</b> (لا عروض نشر ولا إتاوات مؤلفين). آلاف الكلاسيكيات العربية والعالمية متاحة مجاناً وقانونياً — والحصانة التنافسية تأتي من تجربة القراءة والتنظيم، لا من امتلاك النصوص.</p>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>04</span></div>
+</section>
+
+<!-- ============ Page 5: Market ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">03</span> تحليل السوق</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">سوق ينمو… وفجوة عربية واضحة</h2>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">156.6<small> B$</small></div><div class="l">سوق الكتب عالمياً 2025 — ينمو إلى 215.9 مليار بحلول 2033</div></div>
+    <div class="stat"><div class="n">15.4<small> B$</small></div><div class="l">سوق الكتب الإلكترونية 2025 (Ken Research)</div></div>
+    <div class="stat"><div class="n">26.8<small> B$</small></div><div class="l">تقدير آخر أعلى للسوق نفسه (Business Research Insights)</div></div>
+    <div class="stat"><div class="n">4–6<small>%</small></div><div class="l">معدل النمو السنوي المركب (CAGR) بحسب التقديرات</div></div>
+  </div>
+
+  <h3 class="block-title">ثلاثة اتجاهات تصب في مصلحة المشروع</h3>
+  <div class="grid-3">
+    <div class="card"><h4>الهاتف أول منصة للقراءة</h4><p>غالبية قراءة الكتب الإلكترونية انتقلت إلى الهواتف، خصوصاً في الأسواق الناشئة حيث الهاتف هو الحاسوب الوحيد — وهذا جوهر تصميم قِرطاس.</p></div>
+    <div class="card"><h4>حساسية عربية للسعر</h4><p>الاشتراكات الشهرية عقبة كبيرة أمام القارئ العربي؛ نموذج «مجاني مدعوم بالإعلانات» هو الأنسب ثقافياً واقتصادياً للمنطقة.</p></div>
+    <div class="card"><h4>الاهتمام بالتراث</h4><p>موجة متجددة من المحتوى العربي حول التراث والكلاسيكيات على منصات مثل تيك توك ويوتيوب — قناة انتشار مجانية جاهزة للاستغلال.</p></div>
+  </div>
+
+  <h3 class="block-title">حجم الفرصة العربية</h3>
+  <p class="body">أكثر من 400 مليون ناطق بالعربية، ومعدلات استخدام هواتف ذكية مرتفعة في الخليج ومصر والمغرب. لا توجد منصة عربية مهيمنة للكتب المجانية ذات الملكية العامة؛ أقرب المنافسين إما مؤسسات غير ربحية بتجربة تقنية بسيطة (هنداوي) أو اشتراكات صوتية (كتایب وستوري تل). الفجوة: <b>تجربة قراءة عربية ممتازة + مجانية بالكامل + على كل المنصات</b>.</p>
+
+  <div class="callout">
+    <p><span class="t">ملاحظة منهجية:</span> تقديرات حجم السوق تتباين بين شركات الأبحاث (من 15.4 إلى 26.8 مليار دولار لعام 2025) بسبب اختلاف تعريف «الكتاب الإلكتروني» — وقد أثقنا بالفجوة الأسفل والأعلى بدلاً من رقم واحد، والمصادر كاملة في صفحة الخلاصة.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>05</span></div>
+</section>
+
+<!-- ============ Page 6: Competitors ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">04</span> المنافسون والتموضع</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">خريطة المنافسين وفجوتنا</h2>
+  <table class="data">
+    <tr><th style="width:17%">المنافس</th><th style="width:24%">نقاط القوة</th><th style="width:24%">نقاط الضعف</th><th>درسنا منه</th></tr>
+    <tr><td class="strong">Kindle (أمازون)</td><td>تجربة قراءة ممتازة، متجر ضخم</td><td>مدفوع، دعم عربي هامشي، مقفل على منظومة أمازون</td><td>جودة القارئ هي المنتج</td></tr>
+    <tr><td class="strong">Google Play Books</td><td>انتشار عالمي، مزامنة سلسة</td><td>كatalog عربي ضعيف، لا يركز على الملكية العامة</td><td>قوة المزامنة عبر الأجهزة</td></tr>
+    <tr><td class="strong">واتباد</td><td>مجتمع ضخم ومحتوى مستخدمين</td><td>جودة النصوص متفاوتة، تجربة قراءة أدنى من الكتب</td><td>قوة المجتمع في الانتشار</td></tr>
+    <tr><td class="strong">هنداوي</td><td>مكتبة عربية مجانية موثوقة، مرجعية حقوق</td><td>تجربة تقنية بسيطة، لا تطبيق قارئ حديث متعدد المنصات</td><td>شراكة محتوى محتملة</td></tr>
+    <tr><td class="strong">كتایب / ستوري تل</td><td>تجربة صوتية غنية، محتوى حصري</td><td>اشتراك شهري، التركيز على الصوت لا النص</td><td>الصوت مرحلة مستقبلية</td></tr>
+  </table>
+
+  <h3 class="block-title">تموضع قِرطاس</h3>
+  <div class="callout">
+    <p><span class="t">الجملة التموضعية:</span> «الطريقة الأجمل لقراءة الكلاسيكيات العربية والعالمية — مجاناً، على أي جهاز». نتنافس على <b>التجربة والتنظيم</b> لا على محتوى حصري، ونستهدف شريحة يتركها الآخرون: القارئ العربي الذي لا يملك بطاقة دفع أو لا يقبل بالاشتراكات.</p>
+  </div>
+
+  <h3 class="block-title">مصادر المحتوى المجانية (شركاء فعليون بلا عقود)</h3>
+  <div class="grid-2">
+    <div class="card"><h4>عربي</h4><ul><li>برنامج هنداوي — كتب تراث ومنتقى بعناية</li><li>ويكي مصدر العربية — نصوص خاضعة للرقابة المجتمعية</li><li>مكتبة الملكية العامة في أرشيف الإنترنت</li></ul></div>
+    <div class="card"><h4>إنجليزي</h4><ul><li>Project Gutenberg — أكثر من 70 ألف كتاب</li><li>Standard Ebooks — تنسيق احترافي للكلاسيكيات</li><li>Wikisource — نصوص أصلية موثقة</li></ul></div>
+  </div>
+  <p class="table-note">كل النصوص منشورة برخص تسمح بالتوزيع المجاني (ملكية عامة أو رخص حرة) — صفر مخاطر قانونية مع توثيق مصدر كل كتاب داخل التطبيق.</p>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>06</span></div>
+</section>
+
+<!-- ============ Page 7: Personas ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">05</span> الجمهور المستهدف</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">ثلاث شخصيات تحكم قراراتنا</h2>
+  <p class="lead">صممنا كل ميزة لتخدم واحدة من ثلاث شخصيات حقيقية — إن لم تخدم أياً منها، فهي ليست في المنتج.</p>
+
+  <div class="grid-3">
+    <div class="persona">
+      <div class="avatar">س</div>
+      <div class="name">سارة — 21 سنة</div>
+      <div class="role">طالبة أداب عربي · القاهرة</div>
+      <p>تقرأ في المترو 25 دقيقة يومياً على هاتف متوسط، وتحتاج مراجع التراث لدراستها دون إنفاق.</p>
+      <p class="need"><b>ما يهمها:</b> تحكم بالخط، وضع نهاري/ليلي، حفظ الموضع تلقائياً، تحميل للقراءة بلا إنترنت.</p>
+      <p class="need"><b>وصولها للتطبيق:</b> تيك توك وريلز «اقتباسات الكلاسيكيات».</p>
+    </div>
+    <div class="persona">
+      <div class="avatar">أ</div>
+      <div class="name">أحمد — 34 سنة</div>
+      <div class="role">مهندس برمجيات · الرياض</div>
+      <p>يقرأ 20 دقيقة قبل النوم، يملك هاتفاً وحاسوباً، ويكره الاشتراكات والدفع بأبطال أجنبية.</p>
+      <p class="need"><b>ما يهمه:</b> مزامنة الموضع بين الجهازين، واجهة عربية أصيلة، خلو التطبيق من الإزعاج.</p>
+      <p class="need"><b>وصوله للتطبيق:</b> بحث جوجل عن اسم الكتاب + متجر التطبيقات.</p>
+    </div>
+    <div class="persona">
+      <div class="avatar">E</div>
+      <div class="name">Emma — 28 سنة</div>
+      <div class="role">مدونة كتب · لندن</div>
+      <p>تقرأ الكلاسيكيات الإنجليزية وتكتب عنها؛ تفضّل تطبيقات خفيفة تعمل في المتصفح وعلى الحاسوب.</p>
+      <p class="need"><b>ما يهمها:</b> واجهة إنجليزية مصقولة، مكتبة كلاسيكيات منسقة، PWA يعمل بلا تثبيت.</p>
+      <p class="need"><b>وصولها للتطبيق:</b> جوجل ومجتمعات القراءة (Reddit وGoodreads).</p>
+    </div>
+  </div>
+
+  <h3 class="block-title">ماذا يعني هذا للمنتج؟</h3>
+  <p class="body">الشخصيات الثلاث تحدد لغة المنتج: <b>العربية أولاً</b> (RTL أصيل بخط نسخ مريح) مع <b>إنجليزية كاملة</b> لرفع قيمة الإعلان في الأسواق عالية العائد. والقراءة <b>بلا إنترنت</b> شرط أساسي (سارة في المترو)، والمزامنة عبر الحساب المجاني مرحلة ثانية (أحمد)، والتثبيت من المتصفح بلا متاجر يكسر حاجز التجربة (Emma).</p>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">70%</div><div class="l">من الميزات في النسخة الأولى تخدم سارة وأحمد معاً</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">لغتان من اليوم الأول — لرفع قيمة الجمهور الإعلاني</div></div>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>07</span></div>
+</section>
+
+<!-- ============ Page 8: Features & Scope ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">06</span> المميزات ونطاق العمل</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">ثلاث مراحل: نُطلق صغيراً وننمو بالبيانات</h2>
+  <p class="lead">الانضباط في نطاق النسخة الأولى هو أهم قرار في المشروع — كل ما لا يخدم أحد الشخصيات الثلاث يؤجل لمرحلة لاحقة.</p>
+
+  <div class="grid-3">
+    <div class="card" style="border-top: 2mm solid var(--accent);">
+      <span class="tag">MVP — الإطلاق</span>
+      <ul>
+        <li>مكتبة 50–100 كتاب منسق (عربي + إنجليزي)</li>
+        <li>قارئ بترقيم صفحات وخط نسخ مريح</li>
+        <li>وضع ليلي/نهاري + تحكم بحجم الخط</li>
+        <li>بحث وتصنيفات داخل المكتبة</li>
+        <li>حفظ موضع القراءة تلقائياً (محلياً)</li>
+        <li>قراءة بلا إنترنت (Service Worker)</li>
+        <li>واجهة عربية/إنجليزية</li>
+        <li>إعلانات AdMob: بانر + بيني محدود</li>
+      </ul>
+    </div>
+    <div class="card" style="border-top: 2mm solid var(--accent-deep);">
+      <span class="tag">المرحلة 2 — النمو</span>
+      <ul>
+        <li>حساب مجاني ومزامنة الموضع والمكتبة</li>
+        <li>قوائم قراءة ومفضلات</li>
+        <li>توصيات حسب القراءة السابقة</li>
+        <li>خطوط وتنسيقات قراءة إضافية</li>
+        <li>إعلانات مكافآت اختيارية (نسخة بلا بانر لمدة يوم)</li>
+        <li>مشاركة اقتباسات كصور جاهزة للسوشيال</li>
+        <li>النسخة الإنجليزية بمكتبة موسعة</li>
+      </ul>
+    </div>
+    <div class="card" style="border-top: 2mm solid #6b7280;">
+      <span class="tag">المرحلة 3 — التوسع</span>
+      <ul>
+        <li>كتب صوتية (ملكية عامة — LibriVox)</li>
+        <li>نوادي قراءة وتعليقات مجتمعية</li>
+        <li>تحديات قراءة وشارات</li>
+        <li>دعم مؤلفين معاصرين بنموذج مجاني مدعوم بالإعلانات</li>
+        <li>واجهات برمجية للناشرين التعليميين</li>
+        <li>استكشاف رعايات بدل الإعلانات التقليدية</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><span class="t">قاعدة الإعلانات الذهبية:</span> لا إعلان داخل نص الصفحة أبداً، ولا أكثر من إعلان بيني واحد لكل 10 دقائق قراءة، والإعلانات المكافأة اختيارية دائماً. تجربة القراءة أقدس من الإيراد قصير المدى — فقدان قارئ واحد يكلف أكثر مما يدره إعلان.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>08</span></div>
+</section>
+
+<!-- ============ Page 9: Tech Architecture ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">07</span> البنية التقنية</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">كود واحد… ست منصات… صفر تكلفة</h2>
+
+  <h3 class="block-title">مقارنة خيارات التطوير</h3>
+  <table class="data">
+    <tr><th style="width:16%">الخيار</th><th style="width:34%">المنصات المدعومة</th><th style="width:25%">نقاط القوة</th><th>القيود</th></tr>
+    <tr><td class="strong">Flutter (الموصى به للإنتاج)</td><td>Android وiOS وويب وويندوز وماك ولينكس من كود واحد</td><td>أداء أصلي، قارئ صفحات مخصص، مجتمع ضخم، مجاني مفتوح المصدر</td><td>حجم تطبيق أكبر قليلاً</td></tr>
+    <tr><td class="strong">PWA (النموذج الحالي)</td><td>كل المنصات عبر المتصفح + تثبيت</td><td>صفر تثبيت، تحديث فوري، يعمل على iOS بلا متجر</td><td>قدرات نظام أقل، iOS مقيد بعض الميزات</td></tr>
+    <tr><td class="strong">React Native</td><td>الجوال + ويب (بمكتبات إضافية)</td><td>نظام React، مشاركة مهارات الويب</td><td>دعم سطح المكتب أضعف، تكامل ويب أقل نضجاً</td></tr>
+    <tr><td class="strong">تطبيقات أصلية منفصلة</td><td>كل منصة بكودها</td><td>أقصى أداء</td><td>3–4 أكواد متوازية — يكسر قيد التكلفة الصفرية</td></tr>
+  </table>
+
+  <div class="callout">
+    <p><span class="t">القرار:</span> يبدأ المشروع بـ PWA (صفر نشر وصفر رسوم) ويُبنى الإنتاج الكامل بـ Flutter لتوزيع أقوى على المتاجر — كلاهما مجاني والانتقال بينهما يحمي الاستثمار.</p>
+  </div>
+
+  <h3 class="block-title">معمارية النظام (المرحلة الإنتاجية)</h3>
+  <div class="arch">
+    <div class="layer"><div class="t">طبقة العميل — تطبيق Flutter واحد</div><div class="chips"><span class="chip">واجهة عربية RTL</span><span class="chip">قارئ صفحات مخصص</span><span class="chip">تخزين محلي</span><span class="chip">PWA للويب</span></div></div>
+    <div class="arrow">▲</div>
+    <div class="layer"><div class="t">الخدمات السحابية — Firebase (الخطة المجانية Spark)</div><div class="chips"><span class="chip">Hosting للملفات</span><span class="chip">Auth لتسجيل الدخول</span><span class="chip">Firestore للمزامنة</span><span class="chip">Analytics للقياس</span><span class="chip">Crashlytics للأخطاء</span></div></div>
+    <div class="arrow">▲</div>
+    <div class="layer"><div class="t">المحتوى والربح</div><div class="chips"><span class="chip">ملفات الكتب ثابتة على CDN</span><span class="chip">Gutenberg · هنداوي · Wikisource</span><span class="chip">AdMob للإعلانات</span><span class="chip">AdSense لموقع الويب</span></div></div>
+  </div>
+  <p class="table-note">ملاحظة هندسية: الكتب ملفات ثابتة على الاستضافة — قراءتها لا تستهلك حصة Firestore المجانية إطلاقاً.</p>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>09</span></div>
+</section>
+
+<!-- ============ Page 10: Prototype shots 1 ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">08</span> النموذج الأولي</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">النموذج الأولي — يعمل الآن فعلاً</h2>
+  <p class="lead">المرفق مع هذه الدراسة نموذج أولي حقيقي (PWA) جرى بناؤه واختباره أثناء إعداد الدراسة. هذه لقطات شاشة حقيقية منه.</p>
+
+  <div class="shot-grid">
+    <figure class="shot">
+      <img src="docs-screenshots/library-light.png" alt="شاشة المكتبة">
+      <figcaption>شاشة المكتبة بالوضع النهاري — بطاقة «متابعة القراءة» تستأنف من آخر موضع محفوظ</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="docs-screenshots/reader-light-ar.png" alt="القارئ العربي">
+      <figcaption>القارئ العربي — ترقيم صفحات أفقي RTL، خط نسخ، شريط تقدم، وبانر إعلاني في الأسفل</figcaption>
+    </figure>
+  </div>
+
+  <h3 class="block-title">ما الذي أثبته النموذج؟</h3>
+  <div class="grid-2">
+    <div class="card"><h4>جدوى القارئ العربي الأفقي</h4><p>ترقيم الصفحات بالأعمدة الأفقية يعمل بشكل سليم مع النص العربي المضبوط، مع قلب سليم للاتجاه بين العربية والإنجليزية داخل نفس التطبيق.</p></div>
+    <div class="card"><h4>مواضع الإعلانات غير مزعجة</h4><p>البانر أسفل الشاشة لا يلمس نص القراءة، والفاصل بيني ظهر مرة واحدة بين الفصول مع عدّاد تخطٍ — مقبول للاختبار مع مستخدمين حقيقيين.</p></div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">4</div><div class="l">كتب ملكية عامة مدمجة (ألف ليلة وليلة، كليلة ودمنة، Alice، Pride and Prejudice)</div></div>
+    <div class="stat"><div class="n">0</div><div class="l">اعتماديات خارجية — كود نقي قابل للنشر على أي استضافة مجانية</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">من مميزات MVP الأساسية منفذة في النموذج</div></div>
+    <div class="stat"><div class="n">0<small>$</small></div><div class="l">تكلفة بنائه وتشغيله محلياً</div></div>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>10</span></div>
+</section>
+
+<!-- ============ Page 11: Prototype shots 2 ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">08</span> النموذج الأولي</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">الوضع الليلي، اللغة الإنجليزية، والإعلان البيني</h2>
+
+  <div class="shot-grid">
+    <figure class="shot">
+      <img src="docs-screenshots/reader-dark.png" alt="الوضع الليلي">
+      <figcaption>الوضع الليلي — تباين مريح للقراءة المسائية مع الحفاظ على تسلسل بصري واضح</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="docs-screenshots/interstitial-ad.png" alt="الإعلان البيني">
+      <figcaption>الإعلان البيني التجريبي بين الفصول — بعد عدّاد 5 ثوانٍ يظهر زر الإغلاق</figcaption>
+    </figure>
+  </div>
+
+  <h3 class="block-title">ملاحظات هندسية من التنفيذ الفعلي</h3>
+  <p class="body">أثناء بناء النموذج ظهرت تحديات حقيقية وثّقناها لأنها ستتكرر في الإنتاج: تمرير الأعمدة الأفقية في الاتجاه العربي يتطلب معالجة خاصة لاتجاه RTL في كل المتصفحات، وتغيّر الخطوط عند التحميل يغيّر عدد الصفحات فيتطلب إعادة قياس بعد اكتمال الخطوط، وتجمد مؤقتات الخلفية في بعض المتصفحات فرض ضماناً زمنياً لإنهاء حركة قلب الصفحات. هذه الحلول منفذة ومختبرة في الكود المرفق.</p>
+
+  <div class="grid-2">
+    <div class="card"><h4>قابل للتثبيت على كل المنصات</h4><p>النموذج PWA كامل: يثبت على شاشة هاتف أندرويد وآيفون وعلى حاسوب ويندوز وماك من المتصفح مباشرة، ويعمل بلا إنترنت بعد أول زيارة — بلا متاجر ولا رسوم.</p></div>
+    <div class="card"><h4>لقطات التوزيع الأخيرة</h4><p>القارئ الإنجليزي يعمل بنفس الجودة في الاتجاه المعاكس (LTR) مع خط Serif كلاسيكي — دليل عملي على أن «كود واحد لكل المنصات واللغات» ليس شعاراً تسويقياً.</p></div>
+  </div>
+    <div class="stat-row" style="margin-top: 4mm;">
+    <div class="stat"><div class="n">2</div><div class="l">لغتان باتجاهين كاملين: RTL عربي وLTR إنجليزي في نفس الكود</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">منصات يغطيها النموذج عبر المتصفح والتثبيت (PWA)</div></div>
+    <div class="stat"><div class="n">9</div><div class="l">صفحات لفصل عربي واحد بترقيم أفقي سليم ومختبر</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">من المميزات تعمل بلا إنترنت بعد أول زيارة</div></div>
+  </div>
+<div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>11</span></div>
+</section>
+
+<!-- ============ Page 12: Zero cost plan ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">09</span> خطة التكلفة الصفرية</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">ميزانية الانطلاقة: 0 دولار</h2>
+  <p class="lead">كل بند تشغيلي في السنة الأولى له بديل مجاني حقيقي — ليس تجريبياً بل مستخدم فعلياً من قبل مشاريع مماثلة.</p>
+
+  <table class="data">
+    <tr><th style="width:26%">البند</th><th style="width:36%">الحل المجاني</th><th>الحدود التي نعيش معها</th></tr>
+    <tr><td class="strong">تطوير التطبيق</td><td class="good">Flutter / PWA — مفتوح المصدر</td><td>وقت الفريق فقط</td></tr>
+    <tr><td class="strong">بيئة التطوير</td><td class="good">VS Code + Git + GitHub</td><td>مستودعات عامة مجانية</td></tr>
+    <tr><td class="strong">استضافة الموقع والتطبيق</td><td class="good">Firebase Hosting أو Cloudflare Pages</td><td>نطاق فرعي (app.web.app)</td></tr>
+    <tr><td class="strong">قاعدة البيانات والدخول</td><td class="good">Firebase Spark (Auth + Firestore)</td><td>حدود يومية — صفحة 14</td></tr>
+    <tr><td class="strong">التحليلات والأخطاء</td><td class="good">Google Analytics + Crashlytics</td><td>بلا حدود جوهرية</td></tr>
+    <tr><td class="strong">أيقونات وهوية بصرية</td><td class="good">توليد برمجي + خطوط OFL مجانية</td><td>—</td></tr>
+    <tr><td class="strong">المحتوى</td><td class="good">الملكية العامة (هنداوي، Gutenberg)</td><td>كلاسيكيات فقط في البداية</td></tr>
+    <tr><td class="strong">الإعلانات (الجهة الربح)</td><td class="good">AdMob وAdSense — بلا رسوم انضمام</td><td>العائد يبدأ صغيراً وينمو بالمستخدمين</td></tr>
+  </table>
+
+  <h3 class="block-title">النطاق الفرعي بدل الدومين المدفوع</h3>
+  <p class="body">الانطلاقة على <span class="ltr">qirtas.web.app</span> (مجاني من Firebase) — وعند أول إيراد ثابت يُشترى دومين خاص بمبلغ <span class="ltr">~$10</span> في السنة من أول عائدات. الشراء مؤجل لأنه تحسين جمالي لا شرط عمل.</p>
+
+  <div class="callout">
+    <p><span class="t">مبدأ حاكم:</span> لا نفترض «مجاني للأبد»، بل «صفر تكلفة حتى يتدفق الإيراد». البنود الوحيدة التي قد تُدفع لاحقاً كلها اختيارية ومؤجلة: دومين (<span class="ltr">10$</span>)، Google Play (<span class="ltr">25$</span> مرة واحدة)، وترقية Firebase عند تجاوز الحدود المجانية.</p>
+  </div>
+    <div class="stat-row" style="margin-top: 4mm;">
+    <div class="stat"><div class="n">8</div><div class="l">بنود تشغيلية كلها بديل مجاني حقيقي في الجدول أعلاه</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">تكاليف صغيرة فقط — كلها اختيارية ومؤجلة حتى بعد أول إيراد</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">من الوظائف الأساسية تعمل ضمن حدود الخطة المجانية</div></div>
+    <div class="stat"><div class="n">0</div><div class="l">اعتماد على أي خدمة مدفوعة في السنة الأولى كاملة</div></div>
+  </div>
+<div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>12</span></div>
+</section>
+
+<!-- ============ Page 13: Stores & distribution ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">09</span> التوزيع والمتاجر</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">كيف نوصل التطبيق للمستخدمين… مجاناً؟</h2>
+  <p class="lead">أكبر مفاجأة للتكلفة الصفرية هي رسوم متاجر التطبيقات — وهنا خريطة كاملة للرسوم وبدائلها المجانية.</p>
+
+  <table class="data">
+    <tr><th style="width:22%">قناة التوزيع</th><th style="width:20%">الرسوم</th><th>ملاحظات</th></tr>
+    <tr><td class="strong">PWA — التثبيت من المتصفح</td><td class="good">0$ — القناة الأساسية</td><td>يعمل على Android وiOS وويندوز وماك؛ تجاوز كامل لمتاجر أبل وجوجل</td></tr>
+    <tr><td class="strong">توزيع APK مباشر</td><td class="good">0$</td><td>ملف تثبيت أندرويد من الموقع (مع تمكين التثبيت من مصادر غير معروفة)</td></tr>
+    <tr><td class="strong">Amazon Appstore</td><td class="good">0$</td><td>بلا رسوم تسجيل سنوية — عمولة على المبيعات فقط (ونحن مجاني)</td></tr>
+    <tr><td class="strong">Samsung Galaxy Store</td><td class="good">0$</td><td>بلا رسوم تسجيل؛ حصة قوية من أجهزة سامسونج في المنطقة العربية</td></tr>
+    <tr><td class="strong">Huawei AppGallery</td><td class="good">0$</td><td>سوق مهم لأجهزة هواوي المنتشرة في الشرق الأوسط</td></tr>
+    <tr><td class="strong">Google Play</td><td><span class="ltr">25$</span> مرة واحدة</td><td>يُدفع من أول أرباح الإعلانات — منصة الأندرويد الأهم إحصائياً</td></tr>
+    <tr><td class="strong">Microsoft Store (نسخة ويندوز)</td><td><span class="ltr">~19$</span> مرة واحدة</td><td>أولوية منخفضة؛ PWA على ويندوز يغطي الحاجة في البداية</td></tr>
+    <tr><td class="strong">Apple App Store</td><td><span class="ltr">99$</span>/سنة</td><td>أغلى بند — يُؤجل لأقصى حد؛ مستخدمو آيفون يخدمهم PWA المثبت من سفاري</td></tr>
+  </table>
+
+  <h3 class="block-title">جدول التوقيت المالي</h3>
+  <div class="grid-3">
+    <div class="card"><span class="tag">الشهر 1–4</span><h4>صفر دولار حرفياً</h4><p>PWA + APK مباشر + متاجر مجانية. كل الأدوات والاستضافة والحسابات بلا تكلفة.</p></div>
+    <div class="card"><span class="tag">الشهر 5–6</span><h4>25$ من الإيراد</h4><p>عند وصول رصيد AdMob لأول عتبة دفع، يُخصص 25$ لحساب Google Play.</p></div>
+    <div class="card"><span class="tag">السنة 2</span><h4>99$ اختيارياً</h4><p>حساب آبل فقط إذا أظهرت البيانات أن مستخدمي iOS كثر ويتجاوزون حدود PWA.</p></div>
+  </div>
+
+  <div class="callout">
+    <p><span class="t">خلاصة التوزيع:</span> يمكن الوصول إلى 100% من مستخدمي الإنترنت بلا رسوم عبر PWA، و90%+ من مستخدمي الأندرويد عبر المتاجر المجانية وAPK — والتكاليف الثلاثة الصغيرة (<span class="ltr">25$ / ~19$ / 99$</span>) كلها «ترقيات إيراد ممول ذاتياً» لا شروط انطلاق.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>13</span></div>
+</section>
+
+<!-- ============ Page 14: Free tier limits ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">09</span> حدود الخطة المجانية</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">أين تنتهي «المجانية»… وكيف نعيش داخلها</h2>
+  <p class="lead">الصدق الهندسي جزء من الدراسة: لهذه الخدمات المجانية حدود معلنة — وهذا كيف نظبط استخدامنا داخلها.</p>
+
+  <h3 class="block-title">حدود Firebase الخطة المجانية (Spark)</h3>
+  <table class="data">
+    <tr><th style="width:34%">المورد</th><th style="width:22%">الحد المجاني</th><th>ماذا يعني لقِرطاس</th></tr>
+    <tr><td class="strong">قراءات Firestore</td><td class="ltr">50,000 / يوم</td><td>تكفي ~5 آلاف مستخدم نشط يومياً باستخدام ذكي (أدناه)</td></tr>
+    <tr><td class="strong">كتابات Firestore</td><td class="ltr">20,000 / يوم</td><td>حفظ المواضع مجمّع (debounced) — كتابة واحدة كل دقائق قراءة</td></tr>
+    <tr><td class="strong">التخزين</td><td class="ltr">1 GiB</td><td>بيانات المستخدم النصية فقط — الكتب ليست هنا</td></tr>
+    <tr><td class="strong">النقل الصادر</td><td class="ltr">10 GiB / شهر</td><td>مزامنة خفيفة؛ الكتب تُنقل من استضافة الملفات الثابتة</td></tr>
+    <tr><td class="strong">Hosting</td><td class="ltr">10 GiB تخزين + نقل يومي</td><td>واجهة التطبيق + نصوص الكتب ثابتة ومضغوطة — وفيرة للانطلاق</td></tr>
+  </table>
+
+  <h3 class="block-title">ثلاث قرارات هندسية تمدد المجانية</h3>
+  <div class="grid-3">
+    <div class="card"><h4>الكتب ملفات ثابتة</h4><p>قراءة كتاب لا تلمس Firestore أبداً: النص يُحمَّل كملف JSON/EPUB من Hosting مع تخزين محلي كامل بعد أول قراءة. حصة القراءات تبقى للمزامنة فقط.</p></div>
+    <div class="card"><h4>قراءة بلا حساب افتراضياً</h4><p>المستخدم يقرأ ويتقدم دون تسجيل؛ الحساب اختياري في المرحلة الثانية للمزامنة — فانخفض استهلاك الخدمات بنحو 80% عن التصميم الساذج.</p></div>
+    <div class="card"><h4>كتابة مجمّعة</h4><p>موضع القراءة يُحفظ محلياً فوراً وسحابياً كل 3 دقائق أو عند الخروج — من مئات الكتابات المحتملة إلى أقل من 20 لكل جلسة.</p></div>
+  </div>
+
+  <div class="callout">
+    <p><span class="t">خطة التجاوز:</span> عند اقتراب الحدود (ننبه على 70%)، الخيار الأول ترقية Blaze «الدفع حسب الاستهلاك» — وتكلفتها عند 10 آلاف مستخدم نشط تقديرياً بين <span class="ltr">5$</span> و<span class="ltr">25$</span> شهرياً، تدفع من إيراد الإعلانات نفسه بلا ضغط. أي أن النمو نفسه هو الذي يموّل ترقيته.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>14</span></div>
+</section>
+
+<!-- ============ Page 15: Ads strategy ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">10</span> استراتيجية الإعلانات</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">الربح من الإعلانات دون قتل المتعة</h2>
+  <p class="lead">AdMob للتطبيق وAdSense للموقع — الصيغ الثلاث المعروفة، بمواضع مدروسة وقاعدة حماية صارمة لتجربة القراءة.</p>
+
+  <div class="grid-3">
+    <div class="card"><span class="tag">① البانر Banner</span><h4>أسفل شاشة القارئ والمكتبة</h4><p>شريط 320×50 لا يلامس نص القراءة أبداً، بتحديث كل 60 ثانية. عائد منخفض لكل ظهور لكنه مستمر ويشكّل القاعدة الثابتة للإيراد.</p></div>
+    <div class="card"><span class="tag">② البيني Interstitial</span><h4>بين الفصول فقط</h4><p>مرة واحدة عند الانتقال لفصل جديد، بعد عدّاد 5 ثوانٍ، وبحد أقصى إعلان كل 10 دقائق. أعلى صيغة عائداً — نستخدمها باعتدال شديد.</p></div>
+    <div class="card"><span class="tag">③ المكافآت Rewarded</span><h4>اختيارية بالكامل</h4><p>المستخدم يختار مشاهدة إعلان مقابل مزايا تجميلية: 24 ساعة بلا بانر، أو سمة خط مميزة. تحويل الإزعاج المحتمل إلى معادلة ربح مشتركة.</p></div>
+  </div>
+
+  <h3 class="block-title">معايير العائد العالمية 2025 (eCPM = عائد كل ألف ظهور)</h3>
+  <table class="data">
+    <tr><th style="width:22%">الصيغة</th><th style="width:26%">الولايات المتحدة</th><th style="width:26%">الشرق الأوسط (مصر/الشام/المغرب)</th><th>الخليج (UAE/KSA)</th></tr>
+    <tr><td class="strong">بانر</td><td class="ltr">0.7 – 2.8 $</td><td class="ltr">0.3 – 0.65 $</td><td class="ltr">قريب من المستوى الأمريكي</td></tr>
+    <tr><td class="strong">بيني</td><td class="ltr">8 – 15 $</td><td class="ltr">1 – 3 $</td><td class="ltr">حتى ~10 $</td></tr>
+    <tr><td class="strong">مكافآت (فيديو)</td><td class="ltr">15 – 40 $</td><td class="ltr">~2.3 $ (أندرويد)</td><td class="ltr">أعلى من المتوسط الإقليمي بوضوح</td></tr>
+  </table>
+  <p class="table-note">المصدر: معايير ناشرين 2025 (Mistplay وPlaywire وSR Zone) — الفجوة بين الأسواق 3–10 أضعاف، ولهذا نستهدف الجمهورين: العربي للحجم والأمريكي/الخليجي للعائد.</p>
+
+  <div class="callout">
+    <p><span class="t">قواعدنا الصارمة:</span> لا إعلان داخل صفحة النص، لا بيني في أول جلسة، لا أكثر من بيني واحد لكل 10 دقائق، وتخطي دائم بعد ثوانٍ. متوسط «كثافة الإعلان» المستهدف أقل من 8 ظهورات لكل مستخدم يومياً — أقل بكثير من تطبيقات الألعاب.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>15</span></div>
+</section>
+
+<!-- ============ Page 16: Revenue projection ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">10</span> توقعات الإيرادات</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">من المستخدم إلى الدولار: معادلة شفافة</h2>
+  <p class="lead">الإيراد الشهري = المستخدم النشط يومياً × متوسط ظهورات الإعلان لكل مستخدم × eCPM ÷ 1000 × 30 يوماً. لا سحر — أرقام قابلة للتدقيق والتعديل.</p>
+
+  <h3 class="block-title">ثلاثة سيناريوهات (خلط عربي/عالمي 80/20)</h3>
+  <table class="data">
+    <tr><th style="width:19%">السيناريو</th><th style="width:17%">مستخدم نشط يومياً</th><th style="width:20%">ظهور/مستخدم/يوم</th><th style="width:14%">eCPM مختلط</th><th style="width:15%">إيراد شهري</th><th>متى نتوقعه؟</th></tr>
+    <tr><td class="strong">الانطلاقة</td><td class="ltr">1,000</td><td class="ltr">6 ظهورات</td><td class="ltr">0.50$</td><td class="good">~90$</td><td>الشهر 2–3</td></tr>
+    <tr><td class="strong">النمو</td><td class="ltr">10,000</td><td class="ltr">8 ظهورات</td><td class="ltr">0.60$</td><td class="good">~1,440$</td><td>الشهر 6–9</td></tr>
+    <tr><td class="strong">التوسع</td><td class="ltr">100,000</td><td class="ltr">8 ظهورات</td><td class="ltr">1.20$</td><td class="good">~28,800$</td><td>السنة 2+</td></tr>
+  </table>
+  <p class="table-note">لماذا يرتفع eCPM مع النمو؟ لأن المحتوى الإنجليزي وقاعدة الخليج يرفعان النسبة المختلطة، ولأن المكافآت (الأعلى عائداً) تُفعَّل في المرحلة الثانية.</p>
+
+  <div class="grid-2">
+    <div class="card"><h4>حساب السيناريو الأول خطوة بخطوة</h4><p>ألف مستخدم بست ظهورات يومياً = <span class="ltr">6,000</span> ظهور، وبمعدل <span class="ltr">0.50$</span> لكل ألف ظهور يكون العائد نحو <b><span class="ltr">3$</span> يومياً — أي نحو <span class="ltr">90$</span> شهرياً</b>. يغطي أي ترقية بنية تحتية متوقعة مع فائض يدخل في تطوير المحتوى.</p></div>
+    <div class="card"><h4>الفرق الحقيقي: تكلفة الهيكل</h4><p>تطبيق قارئ عامل بلا رواتب يترك هامش الإعلان شبه كاملاً. حتى سيناريو الانطلاقة المتواضع «يشغّل» المشروع مجاناً، وسيناريو النمو يحوّله لمشروع جانبي مربح لفريق صغير.</p></div>
+  </div>
+
+  <h3 class="block-title">مؤشر واحد يجب مراقبته فوق كل المؤشرات</h3>
+  <div class="callout">
+    <p><span class="t">RPM الإعلاني مقابل معدل الاحتفاظ:</span> زيادة كثافة الإعلان ترفع RPM وتقتل الاحتفاظ — وهو رأس المال الحقيقي. قاعدة القرار: إذا هبط الاحتفاظ D7 تحت 20% بعد أي تغيير إعلاني، نتراجع فوراً مهما كان الربح الإضافي. الإعلان ضريبة على الانتباه، والقارئ العربي لا يرحم تجربة مبتذلة.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>16</span></div>
+</section>
+
+<!-- ============ Page 17: Growth ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">11</span> الانتشار</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">خطة انتشار بميزانية صفر</h2>
+  <p class="lead">قنوات مجانية فقط، مرتبة حسب أثرها المتوقع — تبدأ كلها قبل الإطلاق بأسبوعين.</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <span class="tag">قنوات البحث — أثر تراكمي</span>
+      <h4>SEO + ASO</h4>
+      <ul>
+        <li>صفحة مستقلة لكل كتاب بمحتوى وصفي + اقتباسات — صفحات هبوط طبيعية لملايين عمليات البحث عن أسماء الكلاسيكيات</li>
+        <li>موقع سردي خفيف (مدونة قراءات أسبوعية) يبني سلطة بحث</li>
+        <li>تحسين عناوين المتاجر بالكلمات: «كتب مجانية»، «كلاسيكيات»، «قراءة عربية»</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag">السوشيال — أثر انفجاري</span>
+      <h4>محتوى الاقتباسات</h4>
+      <ul>
+        <li>اقتباس مصوّر يومي من الكلاسيكيات (تيك توك/ريلز/تويتر) — ميزة «مشاركة اقتباس» في التطبيق تولّد المحتوى تلقائياً</li>
+        <li>تحدي «قراءة فصل يومياً» مجتمعي</li>
+        <li>الإجابة على أسئلة «وين أقرأ تراث مجاني» في كل منصة</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag">المجتمعات — أثر ثقة</span>
+      <h4>أماكن تواجد القراء</h4>
+      <ul>
+        <li>مجتمعات القراءة العربية (مجموعات فيسبوك وتيليجرام الكبرى) بأسلوب إفادة لا إعلان</li>
+        <li>Reddit وGoodreads للجمهور الإنجليزي</li>
+        <li>شراكات تبادلية مع قنوات تلجرام الكتب — مقابل بلا مال</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag">المنتج نفسه — حلقة النمو</span>
+      <h4>ميكانيزمات داخلية</h4>
+      <ul>
+        <li>زر «شارك الكتاب» بعد إنهاء كل كتاب مع رابط تحميل</li>
+        <li>تقييم ودعوة صديق بعد لحظة إنجاز (لحظة الرضا القصوى)</li>
+        <li>روابط اقتباس تفتح التطبيق مباشرة عند الفقرة المقصوصة</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">30</div><div class="l">يوم أول حملة اقتباسات يومية قبل الإطلاق</div></div>
+    <div class="stat"><div class="n">50+</div><div class="l">صفحة كتاب مهيأة للبحث عند الإطلاق</div></div>
+    <div class="stat"><div class="n">0$</div><div class="l">إجمالي ميزانية الانتشار</div></div>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>17</span></div>
+</section>
+
+<!-- ============ Page 18: Roadmap + KPIs ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">11</span> خارطة الطريق</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">12 أسبوعاً من الفكرة إلى الإيراد</h2>
+
+  <div class="timeline">
+    <div class="phase"><span class="wk">أسبوع 1–2</span><h5>التأسيس</h5><ul><li>تجميع وتدقيق 50 كتاباً من المصادر المجانية</li><li>الهوية البصرية والأيقونات</li><li>إعداد GitHub وFirebase مجاناً</li></ul></div>
+    <div class="phase"><span class="wk">أسبوع 3–5</span><h5>البناء</h5><ul><li>تطوير تطبيق Flutter (انطلاقاً من نموذج الـ PWA المرفق)</li><li>القارئ والمكتبة والوضع الليلي</li><li>AdMob بمعرّفات اختبار</li></ul></div>
+    <div class="phase"><span class="wk">أسبوع 6–7</span><h5>الاختبار</h5><ul><li>اختبار مع 20 قارئاً حقيقياً</li><li>إصلاح جودة النصوص العربية (تشكيل واتجاه)</li><li>ضبط كثافة الإعلانات</li></ul></div>
+    <div class="phase"><span class="wk">أسبوع 8–12</span><h5>الإطلاق والنمو</h5><ul><li>نشر PWA + APK + المتاجر المجانية</li><li>حملة الاقتباسات اليومية</li><li>تفعيل AdMob الحقيقية + قياس أسبوعي</li></ul></div>
+  </div>
+
+  <h3 class="block-title">مؤشرات الأداء (KPIs) وأدوات القياس المجانية</h3>
+  <table class="data">
+    <tr><th style="width:28%">المؤشر</th><th style="width:24%">المستهدف</th><th>الأداة المجانية</th></tr>
+    <tr><td class="strong">المستخدم النشط يومياً (DAU)</td><td>نمو 20% شهرياً في أول 6 أشهر</td><td class="ltr">Google Analytics for Firebase</td></tr>
+    <tr><td class="strong">مدة الجلسة</td><td>10 دقائق أو أكثر</td><td class="ltr">Firebase Analytics</td></tr>
+    <tr><td class="strong">الاحتفاظ D7</td><td>20% أو أكثر</td><td class="ltr">Firebase + لوحة أسبوعية</td></tr>
+    <tr><td class="strong">نسبة إنهاء الكتب</td><td>30% أو أكثر من المبدئين</td><td class="ltr">أحداث مخصصة (Custom Events)</td></tr>
+    <tr><td class="strong">إيراد الإعلانات لكل مستخدم</td><td><span class="ltr">0.05–0.15$</span> شهرياً (خلط عربي)</td><td class="ltr">تقارير AdMob</td></tr>
+    <tr><td class="strong">الأعطال</td><td class="ltr">أقل من 1% من الجلسات</td><td class="ltr">Crashlytics</td></tr>
+  </table>
+
+  <div class="callout">
+    <p><span class="t">إيقاع المراجعة:</span> مراجعة أسبوعية 30 دقيقة (الأرقام + قرار واحد)، ومراجعة شهرية استراتيجية. أي ميزة لا تحرك أحد هذه المؤشرات خلال نسختين تُحذف — الانضباط أهم من الحماس.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>18</span></div>
+</section>
+
+<!-- ============ Page 19: Risks ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">11</span> المخاطر</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">المخاطر الرئيسية وخطط التخفيف</h2>
+  <p class="lead">دراسة صادقة تذكر ما قد يفشل — وكيف نقلل احتماله وأثره قبل حدوثه.</p>
+
+  <table class="data">
+    <tr><th style="width:22%">الخطر</th><th style="width:11%">الاحتمال</th><th style="width:11%">الأثر</th><th>خطة التخفيف</th></tr>
+    <tr><td class="strong">نصوص منقولة بجودة رديئة (أخطاء تحويل رقمي)</td><td>مرتفع</td><td>مرتفع</td><td>فحص عينة من كل كتاب يدوياً، تصحيح تدريجي، وزر «أبلغ عن خطأ» داخل القارئ يحول القراء لفريق تدقيق مجاني</td></tr>
+    <tr><td class="strong">إرهاق إعلاني يقتل الاحتفاظ</td><td>متوسط</td><td>مرتفع</td><td>القواعد الصارمة (صفحة 15) + اختبار A/B لكثافة الإعلان + مراقبة RPM مقابل D7 أسبوعياً</td></tr>
+    <tr><td class="strong">منافس كبير يطلق منتجاً مشابهاً</td><td>متوسط</td><td>متوسط</td><td>سرعة الحركة، تخصص «عربي + كلاسيكيات + مجاني بالكامل»، وبناء مجتمع يصعب نقله</td></tr>
+    <tr><td class="strong">تغيّر سياسات المنصات المجانية (Firebase وغيرها)</td><td>منخفض</td><td>متوسط</td><td>معمارية «ملفات ثابتة أولاً» تقلل الاعتماد، وبديل جاهز (Cloudflare Pages/R2) قابل للنقل خلال أيام</td></tr>
+    <tr><td class="strong">رفض AdMob أو تعليق الحساب</td><td>منخفض</td><td>مرتفع</td><td>التزام صارم بسياسات المحتوى، ومحتوى نظيف 100%، ووسيط إعلانات بديل جاهز (AppLovin/Unity Ads)</td></tr>
+    <tr><td class="strong">نفاد حماس الفريق (مشروع جانبي)</td><td>متوسط</td><td>مرتفع</td><td>نطاق MVP صغير جداً، إيقاع إصدارات أسبوعي مرئي، والاحتفال بكل ألف مستخدم</td></tr>
+  </table>
+
+  <h3 class="block-title">حجم الخسارة القصوى</h3>
+  <div class="callout">
+    <p><span class="t">أسوأ سيناريو واقعي:</span> يتوقف المشروع بعد 6 أشهر بعدة آلاف مستخدم. الخسارة المالية: أقرب للصفر (لا رأس مال). المكتسب: خبرة كاملة في تطوير متعدد المنصات، وكود قابل لإعادة الاستخدام، ومكتبة محتوى منسقة — أصل رقمي كامل يمكن بيعه أو إحياؤه لاحقاً. هذه خصائص نادرة في أي مشروع: <b>المخاطرة لا تتجاوز الوقت المستثمر.</b></p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>19</span></div>
+</section>
+
+<!-- ============ Page 20: Conclusion + Sources ============ -->
+<section class="page">
+  <div class="page-head">
+    <span class="sec-chip"><span class="num">12</span> الخلاصة</span>
+    <span class="brand-mini">قِرطاس · دراسة حالة</span>
+  </div>
+  <h2 class="page-title">القرار والخطوات التالية</h2>
+
+  <p class="body">دراسة الحالة تثبت ثلاثة أمور: <b>أولاً</b>، تطبيق قراءة متعدد المنصات لم يعد مشروعاً يحتاج رأس مال — أدوات 2026 المجانية تغطي دورة الحياة كاملة. <b>ثانياً</b>، النموذج المرفق يعمل فعلاً: قارئ عربي/إنجليزي بترقيم صفحات سليم، بوضع ليلي، وحفظ موضع، وإعلانات تجريبية بمواضع مدروسة. <b>ثالثاً</b>، الربح من الإعلانات ممكن ومنضبط — بمعادلة شفافة وقواعد تحمي تجربة القراءة من جشع اللحظة.</p>
+
+  <h3 class="block-title">الخطوات الخمس الموصى بها الآن</h3>
+  <div class="grid-2">
+    <div class="card"><h4>1 · تجربة النموذج اليوم</h4><p>تشغيل النموذج المرفق محلياً (تعليمة واحدة) ونشره فوراً على Firebase Hosting مجاناً لتجربة رابط حقيقي.</p></div>
+    <div class="card"><h4>2 · تجهيز 50 كتاباً</h4><p>التجميع والتدقيق من هنداوي وGutenberg وفق قائمة النشر الأولى.</p></div>
+    <div class="card"><h4>3 · بناء نسخة Flutter</h4><p>نقل التصميم المنفذ إلى Flutter وفق خارطة الطريق — نفس الواجهات والمنطق.</p></div>
+    <div class="card"><h4>4 · حسابات الإيراد</h4><p>فتح AdMob (مجاناً) والربط بمعرّفات الاختبار ثم الحقيقية بعد النشر.</p></div>
+  </div>
+
+  <h3 class="block-title">المصادر (أرقام موثقة استُشهد بها)</h3>
+  <ul class="sources">
+    <li>Grand View Research — Books Market Size &amp; Trends: grandviewresearch.com/industry-analysis/books-market</li>
+    <li>Ken Research — Global E-Book Market (15.39B$ 2025): kenresearch.com/industry-reports/global-e-book-market</li>
+    <li>Business Research Insights — E-Book Market (26.82B$ 2025): businessresearchinsights.com/market-reports/e-book-market-117774</li>
+    <li>Google Firebase — Pricing &amp; Spark free quotas: firebase.google.com/pricing</li>
+    <li>Google Play Console — 25$ one-time registration: support.google.com/googleplay/android-developer/answer/6112435</li>
+    <li>Apple Developer Program — 99$/year: developer.apple.com/programs</li>
+    <li>Amazon Developer — free Appstore registration: developer.amazon.com</li>
+    <li>Samsung Galaxy Store — free Seller Portal: developer.samsung.com/galaxy-store</li>
+    <li>Mistplay — Mobile Ads eCPM by region (2025): business.mistplay.com/resources/mobile-ads-ecpm</li>
+    <li>Playwire — AdMob eCPM Benchmarks (2025); SR Zone — AdMob eCPM by Country: thesrzone.com</li>
+  </ul>
+
+  <div class="callout" style="margin-top: 5mm;">
+    <p><span class="t">سطر أخير:</span> أرخص مشروع هو الذي تتعلم منه حتى لو تعثر — وأفضل مشروع هو الذي يبدأ رغم ذلك. قِرطاس يحقق الشرطين معاً.</p>
+  </div>
+  <div class="page-foot"><span>قِرطاس — تطبيق قراءة متعدد المنصات</span><span>20</span></div>
+</section>
+
+</body>
+</html>

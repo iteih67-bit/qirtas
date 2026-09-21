@@ -1,0 +1,439 @@
+{
+  "ok": 6,
+  "unknown": 76,
+  "nonfree": [],
+  "report": [
+    {
+      "id": "one-thousand-and-one-nights-ar",
+      "status": "UNKNOWN",
+      "title": "ألف ليلة وليلة"
+    },
+    {
+      "id": "kalila-wa-dimna",
+      "status": "UNKNOWN",
+      "title": "كليلة ودمنة"
+    },
+    {
+      "id": "maqamat-al-hamadhani",
+      "status": "UNKNOWN",
+      "title": "مقامات بديع الزمان الهمذاني"
+    },
+    {
+      "id": "maqamat-al-hariri",
+      "status": "UNKNOWN",
+      "title": "مقامات الحريري"
+    },
+    {
+      "id": "al-bukhala",
+      "status": "UNKNOWN",
+      "title": "البخلاء"
+    },
+    {
+      "id": "muqaddimat-ibn-khaldun",
+      "status": "UNKNOWN",
+      "title": "مقدمة ابن خلدون"
+    },
+    {
+      "id": "abw-bkr-alsdyq-awl-alkhlfa-alrashdyn",
+      "status": "UNKNOWN",
+      "title": "أبو بكر الصديق أول الخلفاء الراشدين"
+    },
+    {
+      "id": "athr-alarb-fy-alhdara-alawrbya-1946",
+      "status": "FREE",
+      "tokens": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "athar-alblad-wakhbar-alabad",
+      "status": "UNKNOWN",
+      "title": "آثار البلاد وأخبار العباد"
+    },
+    {
+      "id": "mjla-alrsala",
+      "status": "UNKNOWN",
+      "title": "مجلة الرسالة"
+    },
+    {
+      "id": "albdaya-walnhaya-mtbaa-alsaada-1351h",
+      "status": "UNKNOWN",
+      "title": "البداية والنهاية (ط. السعادة)"
+    },
+    {
+      "id": "albdaya-walnhaya",
+      "status": "UNKNOWN",
+      "title": "البداية والنهاية"
+    },
+    {
+      "id": "ktab-alam",
+      "status": "UNKNOWN",
+      "title": "كتاب الأم"
+    },
+    {
+      "id": "syr-aalam-alnbla",
+      "status": "UNKNOWN",
+      "title": "سير أعلام النبلاء"
+    },
+    {
+      "id": "mjmwa-ftawa-abn-tymya",
+      "status": "UNKNOWN",
+      "title": "مجموع الفتاوى"
+    },
+    {
+      "id": "mjla-almqtbs",
+      "status": "UNKNOWN",
+      "title": "مجلة المقتبس"
+    },
+    {
+      "id": "ktab-alahkam-alshraya-alkbra",
+      "status": "UNKNOWN",
+      "title": "كتاب الأحكام الشرعية الكبرى"
+    },
+    {
+      "id": "msnd-ahmd-bn-hnbl",
+      "status": "UNKNOWN",
+      "title": "مسند أحمد بن حنبل"
+    },
+    {
+      "id": "altarykh-alkbyr",
+      "status": "UNKNOWN",
+      "title": "التاريخ الكبير"
+    },
+    {
+      "id": "mjla-albyan-llbrqwqy",
+      "status": "UNKNOWN",
+      "title": "مجلة البيان للبرقوقي"
+    },
+    {
+      "id": "aljama-lahkam-alqran",
+      "status": "UNKNOWN",
+      "title": "الجامع لأحكام القرآن"
+    },
+    {
+      "id": "ryad-alsalhyn",
+      "status": "UNKNOWN",
+      "title": "رياض الصالحين"
+    },
+    {
+      "id": "syd-alkhatr",
+      "status": "UNKNOWN",
+      "title": "صيد الخاطر"
+    },
+    {
+      "id": "sydna-mhmd-sla-allh-alyh-wslm",
+      "status": "UNKNOWN",
+      "title": "سيدنا محمد صلى الله عليه وسلم"
+    },
+    {
+      "id": "snn-altrmdhy",
+      "status": "UNKNOWN",
+      "title": "سنن الترمذي"
+    },
+    {
+      "id": "tqryb-althdhyb",
+      "status": "UNKNOWN",
+      "title": "تقريب التهذيب"
+    },
+    {
+      "id": "snn-abn-maja",
+      "status": "UNKNOWN",
+      "title": "سنن ابن ماجة"
+    },
+    {
+      "id": "ansan-alaywn-fy-syra-alamyn-almamwn",
+      "status": "UNKNOWN",
+      "title": "السيرة الحلبية"
+    },
+    {
+      "id": "mwlf",
+      "status": "UNKNOWN",
+      "title": "الروح"
+    },
+    {
+      "id": "alftawa-alkbra",
+      "status": "UNKNOWN",
+      "title": "الفتاوى الكبرى"
+    },
+    {
+      "id": "alahkam-fy-aswl-alahkam",
+      "status": "UNKNOWN",
+      "title": "ابن حزم - الإحكام في أصول الأحكام"
+    },
+    {
+      "id": "tfsyr-almraghy",
+      "status": "FREE",
+      "tokens": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "shrh-tshryh-alqanwn-labn-syna",
+      "status": "UNKNOWN",
+      "title": "شرح تشريح القانون لابن سينا"
+    },
+    {
+      "id": "thfa-alnzar-fy-ghrayb-alamsar-wajayb-alasfar",
+      "status": "UNKNOWN",
+      "title": "تحفة النظار في غرائب الأمصار وعجائب الأسفار"
+    },
+    {
+      "id": "alrwda-alndya-shrh-aldrr-albhya",
+      "status": "UNKNOWN",
+      "title": "الروضة الندية شرح الدرر البهية"
+    },
+    {
+      "id": "alaqd-alfryd-mwlf-abn-abd-rbh-mlahzat",
+      "status": "UNKNOWN",
+      "title": "العقد الفريد"
+    },
+    {
+      "id": "shrh-alaqyda-althawya",
+      "status": "UNKNOWN",
+      "title": "شرح العقيدة الطحاوية"
+    },
+    {
+      "id": "aldr-almnthwr-fy-altfsyr-balmathwr",
+      "status": "UNKNOWN",
+      "title": "الدر المنثور"
+    },
+    {
+      "id": "alqran-alkrym-balrsm-alamlayy",
+      "status": "UNKNOWN",
+      "title": "القرآن الكريم (بالرسم الإملائي)"
+    },
+    {
+      "id": "mjla-almnar",
+      "status": "UNKNOWN",
+      "title": "مقالات مجلة المنار"
+    },
+    {
+      "id": "tfsyr-alqran-alazym",
+      "status": "UNKNOWN",
+      "title": "تفسير ابن كثير"
+    },
+    {
+      "id": "asrar-trtyb-alqran",
+      "status": "UNKNOWN",
+      "title": "أسرار ترتيب القرآن"
+    },
+    {
+      "id": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
+      "status": "ERR",
+      "reason": "The page you specified doesn't exist."
+    },
+    {
+      "id": "abn-hzm-almhla",
+      "status": "UNKNOWN",
+      "title": "محلى ابن حزم - المجلد الثالث"
+    },
+    {
+      "id": "ahya-alwm-aldyn",
+      "status": "UNKNOWN",
+      "title": "إحياء علوم الدين"
+    },
+    {
+      "id": "abn-hzm-almhla-ar",
+      "status": "UNKNOWN",
+      "title": "محلى ابن حزم - المجلد السادس"
+    },
+    {
+      "id": "ktab-alzhra",
+      "status": "UNKNOWN",
+      "title": "كتاب الزهرة"
+    },
+    {
+      "id": "lsan-alarb",
+      "status": "FREE",
+      "tokens": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "hdy-alsary-mqdma-fth-albary",
+      "status": "UNKNOWN",
+      "title": "مقدمة فتح الباري"
+    },
+    {
+      "id": "mftah-alhsab",
+      "status": "UNKNOWN",
+      "title": "مفتاح الحساب"
+    },
+    {
+      "id": "wthyqa-mwtmr-alhwar-alwtny-alshaml",
+      "status": "UNKNOWN",
+      "title": "وثيقة مؤتمر الحوار الوطني الشامل"
+    },
+    {
+      "id": "aarab-alqran",
+      "status": "UNKNOWN",
+      "title": "إعراب القرآن للسيوطي"
+    },
+    {
+      "id": "alanys-almtrb-brwd-alqrtas-fy-akhbar-mlwk-almghrb-wtarykh-md",
+      "status": "UNKNOWN",
+      "title": "الأنيس المطرب بروض القرطاس في أخبار ملوك المغرب وتاريخ مدينة فاس"
+    },
+    {
+      "id": "alnzrat",
+      "status": "UNKNOWN",
+      "title": "النظرات"
+    },
+    {
+      "id": "tlbys-ablys",
+      "status": "UNKNOWN",
+      "title": "تلبيس إبليس"
+    },
+    {
+      "id": "altaj-fy-akhlaq-almlwk",
+      "status": "UNKNOWN",
+      "title": "التاج في أخلاق الملوك"
+    },
+    {
+      "id": "dywan-shaar-alwtn-alkbyr-alftra-althaltha",
+      "status": "UNKNOWN",
+      "title": "ديوان شاعر الوطن الكبير- الفترة الثالثة"
+    },
+    {
+      "id": "ktab-almwaqf",
+      "status": "UNKNOWN",
+      "title": "كتاب المواقف"
+    },
+    {
+      "id": "shyh-albkhary-mwlf-albkhary-sabq-ktb-alhdyth-alnbwy-lahq-kta",
+      "status": "UNKNOWN",
+      "title": "صحيح البخاري"
+    },
+    {
+      "id": "mratb-alajmaa",
+      "status": "UNKNOWN",
+      "title": "مراتب الإجماع"
+    },
+    {
+      "id": "jama-byan-alalm-wfdlh",
+      "status": "UNKNOWN",
+      "title": "جامع بيان العلم وفضله"
+    },
+    {
+      "id": "hdaya-alhyara",
+      "status": "UNKNOWN",
+      "title": "هداية الحيارى"
+    },
+    {
+      "id": "nzam-alathynyyn",
+      "status": "FREE",
+      "tokens": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "maalm-alsnn",
+      "status": "UNKNOWN",
+      "title": "معالم السنن"
+    },
+    {
+      "id": "nzha-almshtaq-fy-akhtraq-alafaq",
+      "status": "UNKNOWN",
+      "title": "نزهة المشتاق في اختراق الآفاق"
+    },
+    {
+      "id": "mfyd-alalwm-wmbyd-alhmwm",
+      "status": "UNKNOWN",
+      "title": "مفيد العلوم ومبيد الهموم"
+    },
+    {
+      "id": "mkhtsr-shyh-mslm",
+      "status": "UNKNOWN",
+      "title": "مختصر صحيح مسلم"
+    },
+    {
+      "id": "marfa-anwaa-alwm-alhdyth",
+      "status": "UNKNOWN",
+      "title": "مقدمة ابن الصلاح"
+    },
+    {
+      "id": "dmaa-wabtsama",
+      "status": "FREE",
+      "tokens": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "alkafy",
+      "status": "ERR",
+      "reason": "The page you specified doesn't exist."
+    },
+    {
+      "id": "alkhsays",
+      "status": "UNKNOWN",
+      "title": "الخصائص"
+    },
+    {
+      "id": "rjwa-alshykh-ala-sbah",
+      "status": "UNKNOWN",
+      "title": "رجوع الشيخ إلى صباه"
+    },
+    {
+      "id": "alswaaq-almrsla-fy-alrd-ala-aljhmya-walmatla",
+      "status": "UNKNOWN",
+      "title": "الصواعق المرسلة"
+    },
+    {
+      "id": "shyh-mslm",
+      "status": "UNKNOWN",
+      "title": "صحيح مسلم"
+    },
+    {
+      "id": "alrsala",
+      "status": "UNKNOWN",
+      "title": "كتاب الرسالة"
+    },
+    {
+      "id": "mnhaj-alsna-alnbwya-fy-nqd-klam-alshyaa-alqdrya",
+      "status": "UNKNOWN",
+      "title": "منهاج السنة النبوية"
+    },
+    {
+      "id": "dr-taard-alaql-walnql",
+      "status": "UNKNOWN",
+      "title": "درء تعارض العقل والنقل"
+    },
+    {
+      "id": "altyjan-fy-mlwk-hmyr",
+      "status": "UNKNOWN",
+      "title": "التيجان في ملوك حمير"
+    },
+    {
+      "id": "aywn-alanba-fy-tbqat-alatba",
+      "status": "UNKNOWN",
+      "title": "عيون الأنباء في طبقات الأطباء"
+    },
+    {
+      "id": "almzhr",
+      "status": "UNKNOWN",
+      "title": "المزهر"
+    },
+    {
+      "id": "jama-alalwm-walhkm",
+      "status": "UNKNOWN",
+      "title": "جامع العلوم والحكم"
+    },
+    {
+      "id": "ysalwnk",
+      "status": "FREE",
+      "tokens": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "swr-alkwakb-althmanya-walarbayn",
+      "status": "UNKNOWN",
+      "title": "صور الكواكب الثمانية والأربعين"
+    },
+    {
+      "id": "tkhlys-alabryz-fy-tlkhys-baryz-mwssa-hndawy",
+      "status": "UNKNOWN",
+      "title": "تخليص الإبريز في تلخيص باريز"
+    }
+  ]
+}

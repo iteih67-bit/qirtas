@@ -1,0 +1,86 @@
+/* =====================================================
+   Qirtas — reading-first layer (preset: Information Architects)
+   Content over decoration: system UI type, one measure (~66ch in LTR /
+   ~40 words RTL), classic link colour, no ornament on reading surfaces.
+   Arabic adaptation: a shipped Naskh face replaces the OS Arabic font
+   because system Arabic fallbacks differ wildly across Android/iOS/Windows
+   and break line rhythm on long texts.
+   ===================================================== */
+:root {
+  --measure: 62ch;
+  --link: #0b5fff;
+  --reading-bg: #fffdf8;
+  --reading-ink: #16181b;
+}
+[data-theme='dark'] {
+  --reading-bg: #16181b;
+  --reading-ink: #e9e6df;
+  --link: #7aa2ff;
+}
+
+/* --- reader surface --- */
+#readerContent {
+  font-family: 'Noto Naskh', 'Amiri', system-ui, serif;
+  font-size: calc(1.12rem * var(--fscale, 1));
+  line-height: 2.05;
+  color: var(--reading-ink);
+  text-align: start;
+  hyphens: none;
+  max-width: none;
+}
+#readerContent p { margin: 0 0 1.05em; text-wrap: pretty; }
+#readerContent .chap-title { font-family: var(--ui); font-weight: 800; letter-spacing: -0.01em; }
+#readerContent .chap-num { font-family: var(--ui); color: var(--ink-soft); letter-spacing: 0.08em; }
+
+/* --- reading-first typography switch (system vs naskh) --- */
+html[data-reading-font='system'] #readerContent {
+  font-family: system-ui, 'Segoe UI', Tahoma, 'Noto Naskh Arabic', serif;
+  line-height: 1.9;
+}
+
+/* --- links inside reading surfaces --- */
+.book-page a, .source-box a, .rights-box a, .prose a { color: var(--link); }
+
+/* --- tap zones (phones/tablets) --- */
+.edge-btn { opacity: 0.35; }
+@media (pointer: coarse) {
+  .edge-btn { opacity: 0.5; }
+  .reader-stage { touch-action: pan-y; }
+}
+
+/* --- simplified reading chrome at small widths --- */
+@media (max-width: 520px) {
+  .reader-top { padding-inline: 10px; }
+  .reader-top .titles span { display: none; }
+  .reader-footer { flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .ad-banner { display: none; }           /* keep the reading surface clean on phones */
+  #readerContent { padding-inline: 22px; }
+}
+
+/* --- reader tools (download / print / font) --- */
+.reader-tools { display: flex; align-items: center; gap: 6px; }
+.reader-tools .tool-label { font-size: .72rem; color: var(--ink-soft); margin-inline-end: 4px; }
+
+/* --- book page: device-agnostic metadata grid --- */
+@media (max-width: 720px) {
+  .book-stats { grid-template-columns: repeat(2, 1fr); }
+  .book-hero { gap: 18px; }
+  .toc-list { columns: 1; }
+}
+
+/* --- print / save-as-PDF (single column, black on white) --- */
+@media print {
+  .site-header, .site-footer, .reader-top, .reader-bottom, .edge-btn,
+  .ad-banner, .overlay, .toast, .comments, .toc-sheet-list { display: none !important; }
+  html, body { background: #fff !important; color: #000 !important; }
+  .reader-stage { display: block !important; }
+  #readerContent {
+    column-width: auto !important; column-gap: 0 !important;
+    height: auto !important; overflow: visible !important;
+    font-size: 12pt; line-height: 1.9; padding: 0 !important;
+  }
+  #readerContent p { orphans: 3; widows: 3; }
+  a { color: #000; text-decoration: none; }
+  .print-meta { display: block !important; font-size: 9pt; color: #444; margin-bottom: 12pt; }
+}
+.print-meta { display: none; }

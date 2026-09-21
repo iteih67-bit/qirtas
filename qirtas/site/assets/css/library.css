@@ -1,0 +1,154 @@
+/* =====================================================
+   Qirtas v2 additions — library search app, stats, source box
+   (extends the base design system in site.css)
+   ===================================================== */
+
+/* ===== Header nav ===== */
+.site-nav { display: flex; gap: 4px; margin-inline-start: 8px; }
+.site-nav a { padding: 8px 13px; border-radius: 10px; font-size: .9rem; font-weight: 600; color: var(--ink-soft); }
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent-deep); }
+@media (max-width: 760px) { .site-nav { display: none; } }
+
+/* ===== Hero search ===== */
+.hero-search {
+  display: flex; align-items: center; gap: 10px; max-width: 640px; margin: 26px auto 6px;
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px;
+  padding: 8px 8px 8px 16px; box-shadow: var(--shadow); direction: rtl;
+}
+.hero-search svg { width: 20px; height: 20px; color: var(--ink-soft); flex: 0 0 auto; }
+.hero-search input { flex: 1; border: 0; outline: 0; background: transparent; font: inherit; font-size: 1rem; color: var(--ink); min-width: 0; }
+.hero-search input::placeholder { color: var(--ink-soft); }
+.hero-search .btn { flex: 0 0 auto; }
+
+.hero-links { margin: 14px 0 0; font-size: .92rem; color: var(--ink-soft); }
+.hero-links a { color: var(--accent-deep); font-weight: 600; }
+.hero-links a:hover { text-decoration: underline; }
+
+/* ===== Titles & helpers ===== */
+.page-title { font-size: 1.9rem; font-weight: 900; margin: 34px 0 6px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.page-sub { color: var(--ink-soft); margin: 0 0 24px; line-height: 1.9; }
+.count-pill {
+  display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+  border-radius: 999px; padding: 2px 12px; font-size: .78rem; font-weight: 800; vertical-align: middle;
+}
+.section-title { display: flex; align-items: center; gap: 10px; font-size: 1.25rem; font-weight: 800; margin: 38px 0 16px; }
+.section-more { text-align: center; margin: 20px 0 8px; }
+.prose { line-height: 2.2; color: #3d4a55; }
+
+/* ===== Library toolbar ===== */
+.lib-toolbar { display: flex; flex-direction: column; gap: 12px; margin: 0 0 18px; }
+.lib-search {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 14px;
+  padding: 10px 14px; box-shadow: var(--shadow);
+}
+.lib-search svg { width: 19px; height: 19px; color: var(--ink-soft); flex: 0 0 auto; }
+.lib-search input { flex: 1; border: 0; outline: 0; background: transparent; font: inherit; font-size: 1rem; color: var(--ink); min-width: 0; }
+.lib-search input::placeholder { color: var(--ink-soft); }
+.lib-search .icon-btn { flex: 0 0 auto; }
+
+.lib-filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+.lib-filters label { display: flex; flex-direction: column; gap: 4px; font-size: .74rem; font-weight: 700; color: var(--ink-soft); }
+.lib-filters select {
+  font: inherit; font-size: .88rem; font-weight: 600; color: var(--ink);
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 10px;
+  padding: 8px 10px; min-width: 110px; cursor: pointer;
+}
+.lib-filters select:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.lib-filters .btn { height: 38px; }
+
+.lib-status { color: var(--ink-soft); font-size: .88rem; margin: 6px 0 16px; min-height: 1.4em; }
+
+/* ===== Library states ===== */
+.lib-empty { text-align: center; padding: 60px 16px; color: var(--ink-soft); }
+.lib-empty .emoji { font-size: 3rem; margin-bottom: 6px; }
+.lib-empty h3 { color: var(--ink); margin: 0 0 8px; font-size: 1.15rem; }
+.lib-empty p { margin: 0 0 18px; }
+
+.lib-pager { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 28px 0 10px; }
+.lib-pager button:disabled { opacity: .4; cursor: not-allowed; }
+#pageInfo { font-weight: 700; font-size: .9rem; color: var(--ink-soft); min-width: 64px; text-align: center; }
+
+/* ===== Breadcrumbs ===== */
+.crumbs { font-size: .82rem; color: var(--ink-soft); margin: 26px 0 10px; }
+.crumbs a { color: var(--accent-deep); font-weight: 600; }
+.crumbs a:hover { text-decoration: underline; }
+
+/* ===== Book page: source & license ===== */
+.source-box {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  padding: 22px 24px; margin: 26px 0 8px;
+}
+.source-box h2 { margin: 0 0 12px; font-size: 1.05rem; font-weight: 800; }
+.source-box ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.source-box li { display: flex; gap: 14px; font-size: .9rem; line-height: 1.9; flex-wrap: wrap; }
+.source-box li > span { color: var(--ink-soft); min-width: 110px; }
+.source-box li > b, .source-box li > a { word-break: break-all; }
+.source-box a { color: var(--accent-deep); font-weight: 600; }
+.source-box a:hover { text-decoration: underline; }
+.toc-more { color: var(--ink-soft); font-size: .85rem; margin: 10px 0 0; }
+
+/* ===== Stats page ===== */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin: 26px 0; }
+.stats-grid section { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+.stats-grid h2 { margin: 0 0 12px; font-size: 1rem; font-weight: 800; }
+.stats-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.stats-table th, .stats-table td { text-align: start; padding: 7px 8px; border-bottom: 1px solid var(--line); }
+.stats-table th { color: var(--ink-soft); font-weight: 700; font-size: .78rem; }
+.stats-table td.num { text-align: end; font-variant-numeric: tabular-nums; font-weight: 700; }
+.stats-table tr:last-child td { border-bottom: 0; }
+.stats-table a { color: var(--accent-deep); font-weight: 600; }
+
+/* ===== Continue card default ===== */
+.continue-card { display: flex; }
+
+/* ===== External catalogue section ===== */
+.lib-external { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 26px; }
+.lib-ext-head { display: flex; gap: 18px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; margin-bottom: 16px; }
+.lib-ext-head h2 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 800; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.lib-ext-head p { margin: 0; color: var(--ink-soft); font-size: .88rem; line-height: 1.9; max-width: 62ch; }
+.ext-list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+.ext-list li { display: flex; gap: 14px; align-items: center; justify-content: space-between; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+.ext-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ext-main strong { font-weight: 700; font-size: .94rem; }
+.ext-main span { color: var(--ink-soft); font-size: .82rem; }
+.ext-main em { color: var(--accent-deep); font-style: normal; font-size: .76rem; opacity: .85; }
+.ext-note { color: var(--ink-soft); font-size: .8rem; margin-top: 14px; line-height: 1.9; }
+.pulse { animation: qpulse 1.5s ease-in-out infinite; }
+@keyframes qpulse { 0%, 100% { box-shadow: 0 0 0 0 var(--accent-soft); } 50% { box-shadow: 0 0 0 9px transparent; } }
+.ext-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; flex: 0 0 auto; }
+.ext-rights { font-size: .7rem; color: var(--ink-soft); text-decoration: underline; white-space: nowrap; }
+.ext-rights:hover { color: var(--accent-deep); }
+.ext-badge { display: inline-block; margin-top: 3px; font-size: .68rem; color: var(--amber); font-weight: 700; }
+
+/* ===== Rights page ===== */
+.rights-box { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 26px; margin: 22px 0; }
+.rights-box h2 { margin: 0 0 12px; font-size: 1.05rem; font-weight: 800; }
+.rights-box ul, .rights-box ol { padding-inline-start: 22px; margin: 0; }
+.rights-box li { margin: 8px 0; line-height: 1.95; }
+.rights-form { display: grid; gap: 12px; margin: 18px 0 6px; }
+.rights-form label { display: flex; flex-direction: column; gap: 5px; font-size: .8rem; font-weight: 700; color: var(--ink-soft); }
+.rights-form input, .rights-form select, .rights-form textarea {
+  font: inherit; font-size: .9rem; color: var(--ink); background: var(--surface-2);
+  border: 1.5px solid var(--line); border-radius: 10px; padding: 9px 12px;
+}
+.rights-form input:focus, .rights-form select:focus, .rights-form textarea:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.rights-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.rights-note { color: var(--ink-soft); font-size: .8rem; margin: 8px 0 0; }
+
+/* --- narrow-screen safety: nothing may overflow the 360px viewport --- */
+input, select, textarea { max-width: 100%; }
+.rights-form, .rights-form label { min-width: 0; }
+.rights-box a, .prose a { overflow-wrap: anywhere; }
+@media (max-width: 430px) {
+  .rights-box { padding: 18px 15px; }
+  .rights-actions { flex-direction: column; align-items: stretch; }
+  .rights-actions .btn { text-align: center; }
+  .rights-form input, .rights-form select, .rights-form textarea { font-size: .88rem; padding: 8px 10px; }
+  .ext-list li { flex-direction: column; align-items: stretch; gap: 8px; }
+  .ext-actions { align-items: stretch; }
+  .lib-filters { display: grid; grid-template-columns: 1fr 1fr; }
+  .lib-filters select { min-width: 0; width: 100%; }
+  .lib-search { padding: 8px 10px; }
+  .crumbs { font-size: .76rem; }
+}
