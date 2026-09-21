@@ -99,9 +99,12 @@ const get = (url) => new Promise((resolve) => {
   // sitemap coverage
   const sitemap = fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
   const locs = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+  const basePath = (locs[0] || '').replace(/^https?:\/\/[^/]+/, '').replace(/\/$/, '');
   let missing = 0;
   for (const loc of locs) {
-    const p = loc.replace(/^https?:\/\/[^/]+/, '');
+    let p = loc.replace(/^https?:\/\/[^/]+/, '');
+    if (basePath && p.startsWith(basePath)) p = p.slice(basePath.length);
+    if (!p.startsWith('/')) p = '/' + p;
     const fp = path.join(DIST, p.endsWith('/') ? p + 'index.html' : p);
     if (!fs.existsSync(fp)) { missing++; if (missing <= 5) console.log('  missing in dist: ' + p); }
   }

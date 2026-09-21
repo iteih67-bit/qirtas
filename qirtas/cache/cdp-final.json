@@ -6,11 +6,11 @@
       "name": "library.initial",
       "value": {
         "cards": 24,
-        "count": "419",
-        "status": "يُعرض 24 من 419 كتاباً متاحاً للقراءة هنا",
-        "pager": "1 / 18",
+        "count": "484",
+        "status": "يُعرض 24 من 484 كتاباً متاحاً للقراءة هنا",
+        "pager": "1 / 21",
         "langOptions": 3,
-        "srcOptions": 3
+        "srcOptions": 5
       }
     },
     {
@@ -43,13 +43,13 @@
       "value": {
         "cards": 24,
         "pagerVisible": true,
-        "pager": "1 / 18"
+        "pager": "1 / 21"
       }
     },
     {
       "name": "library.page_2",
       "value": {
-        "pager": "2 / 18",
+        "pager": "2 / 21",
         "url": "?page=2",
         "cards": 24
       }
@@ -92,7 +92,7 @@
     {
       "name": "browse.authors_index",
       "value": {
-        "chips": 289
+        "chips": 324
       }
     },
     {
@@ -114,22 +114,22 @@
     },
     {
       "name": "reader.picked_id",
-      "value": "mwlf"
+      "value": "annales"
     },
     {
       "name": "reader.render",
       "value": {
-        "paragraphs": 36,
-        "chapterTitle": "المسألة الأولى",
-        "bookTitle": "الروح",
-        "pages": "1 / 18",
+        "paragraphs": 185,
+        "chapterTitle": "الجزء 1",
+        "bookTitle": "Annales",
+        "pages": "1 / 33",
         "fatal": false
       }
     },
     {
       "name": "reader.after_next_page",
       "value": {
-        "pages": "2 / 18"
+        "pages": "2 / 33"
       }
     },
     {
@@ -155,8 +155,8 @@
         "hasSourceBox": true,
         "rows": 5,
         "jsonld": true,
-        "canonical": "https://qirtas.pages.dev/book/mwlf/",
-        "tocItems": 18
+        "canonical": "https://iteih67-bit.github.io/qirtas/book/annales/",
+        "tocItems": 4
       }
     }
   ],

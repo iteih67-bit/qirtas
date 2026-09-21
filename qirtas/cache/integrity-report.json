@@ -1,11 +1,11 @@
 {
   "db": {
-    "total": 479,
-    "visible": 479,
+    "total": 484,
+    "visible": 484,
     "byLang": [
       {
         "l": "ar",
-        "c": 143
+        "c": 148
       },
       {
         "l": "en",
@@ -13,17 +13,17 @@
       }
     ],
     "noSourceUrl": 0,
-    "noLicense": 60,
+    "noLicense": 0,
     "noEra": 0,
     "noCover": 0,
     "hiddenOrRemoved": [
       {
         "hidden": 0,
         "removed": 0,
-        "c": 479
+        "c": 484
       }
     ],
-    "auditLog": 14,
+    "auditLog": 21,
     "takedown": [
       {
         "id": 1,
@@ -40,27 +40,27 @@
     ]
   },
   "catalog": {
-    "catalog": 479,
-    "index": 479,
+    "catalog": 484,
+    "index": 484,
     "dbMatch": true
   },
   "dist": {
-    "dbIds": 479,
-    "bookDirs": 479,
-    "readDirs": 479,
+    "dbIds": 484,
+    "bookDirs": 484,
+    "readDirs": 484,
     "missingDirs": [],
     "missingCount": 0,
     "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 1292,
+    "htmlScanned": 1307,
     "hits": {
       "wikisource": {
-        "count": 187,
+        "count": 191,
         "samples": [
-          "about\\index.html",
           "author\\abas-alaqad\\index.html",
-          "author\\abd-alrzaq-alsnaany\\index.html"
+          "author\\abd-alrzaq-alsnaany\\index.html",
+          "author\\abdallh-bn-almbark\\index.html"
         ]
       },
       "gutenberg": {
@@ -70,6 +70,14 @@
           "book\\a-farewell-to-arms\\index.html",
           "book\\a-heart-song-of-to-day-disturbed-by-fire-from-the-unruly-mem\\index.html"
         ]
+      },
+      "archive.org": {
+        "count": 5,
+        "samples": [
+          "book\\alklmat-alhsan\\index.html",
+          "book\\annales\\index.html",
+          "book\\mjla-hwlyat-altrath-jamaa-mstghanm-aladd-18\\index.html"
+        ]
       }
     },
     "adminInDist": false,
@@ -77,7 +85,7 @@
     "apiLinkedFromPublic": []
   },
   "rights": {
-    "pages": 479,
+    "pages": 484,
     "noRights": 0,
     "noRightsSample": [],
     "noRightsPageLink": 0,
@@ -91,12 +99,12 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 37.5
+      "kb": 37.7
     },
     {
       "page": "library/index.html",
       "exists": true,
-      "kb": 7.9
+      "kb": 8
     },
     {
       "page": "rights/index.html",
@@ -106,7 +114,7 @@
     {
       "page": "contact/index.html",
       "exists": true,
-      "kb": 5
+      "kb": 5.1
     },
     {
       "page": "privacy/index.html",
@@ -116,17 +124,17 @@
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 32.7
+      "kb": 33.5
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 138.7
+      "kb": 155.6
     },
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 30.7
+      "kb": 31.9
     },
     {
       "page": "404.html",
@@ -136,26 +144,26 @@
     {
       "page": "stats/index.html",
       "exists": true,
-      "kb": 8.7
+      "kb": 8.8
     },
     {
       "page": "about/index.html",
       "exists": true,
-      "kb": 6.4
+      "kb": 7.1
     }
   ],
   "sitemap": {
-    "urls": 1291,
-    "unique": 1291,
+    "urls": 1306,
+    "unique": 1306,
     "dupes": 0,
     "allHttps": true,
     "sample": [
-      "https://qirtas.pages.dev/",
-      "https://qirtas.pages.dev/library/"
+      "https://iteih67-bit.github.io/qirtas/",
+      "https://iteih67-bit.github.io/qirtas/library/"
     ]
   },
   "epub": {
-    "count": 479,
+    "count": 484,
     "minKB": 10.7,
     "maxKB": 5370.7
   },

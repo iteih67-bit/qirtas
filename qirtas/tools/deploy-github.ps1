@@ -1,4 +1,4 @@
-﻿# deploy-github.ps1 — رفع «قِرطاس» إلى GitHub والتحقق من الجاهزية.
+# deploy-github.ps1 — رفع «قِرطاس» إلى GitHub والتحقق من الجاهزية.
 # لا يطلب كلمة مرور: يعتمد على مفتاح SSH المسجَّل في حسابك.
 # الاستخدام:  powershell -ExecutionPolicy Bypass -File tools\deploy-github.ps1
 #             powershell -ExecutionPolicy Bypass -File tools\deploy-github.ps1 -Push
@@ -9,6 +9,7 @@ param(
 )
 
 $ErrorActionPreference = 'Continue'
+$repo = Split-Path (Get-Location) -Leaf
 Write-Host '== قِرطاس → GitHub ==' -ForegroundColor Cyan
 
 Write-Host "`n[1/5] التحقق من مفتاح SSH" -ForegroundColor Yellow

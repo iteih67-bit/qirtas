@@ -44,7 +44,7 @@
     "chapters": 5,
     "words": 11288,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.157Z"
+    "updatedAt": "2026-09-21T20:34:15.181Z"
   },
   {
     "id": "a-case-in-camera",
@@ -91,7 +91,7 @@
     "chapters": 10,
     "words": 80625,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.159Z"
+    "updatedAt": "2026-09-21T20:34:15.183Z"
   },
   {
     "id": "a-heart-song-of-to-day-disturbed-by-fire-from-the-unruly-mem",
@@ -138,7 +138,7 @@
     "chapters": 47,
     "words": 108931,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.161Z"
+    "updatedAt": "2026-09-21T20:34:15.184Z"
   },
   {
     "id": "a-journey-to-the-centre-of-the-earth",
@@ -185,7 +185,7 @@
     "chapters": 45,
     "words": 85441,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.163Z"
+    "updatedAt": "2026-09-21T20:34:15.186Z"
   },
   {
     "id": "a-little-english-gallery",
@@ -232,7 +232,7 @@
     "chapters": 6,
     "words": 51225,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.164Z"
+    "updatedAt": "2026-09-21T20:34:15.188Z"
   },
   {
     "id": "a-martian-odyssey",
@@ -279,7 +279,7 @@
     "chapters": 1,
     "words": 10183,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.166Z"
+    "updatedAt": "2026-09-21T20:34:15.189Z"
   },
   {
     "id": "a-midsummer-nights-dream",
@@ -326,7 +326,7 @@
     "chapters": 7,
     "words": 17220,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.167Z"
+    "updatedAt": "2026-09-21T20:34:15.191Z"
   },
   {
     "id": "a-pickle-for-the-knowing-ones",
@@ -373,7 +373,7 @@
     "chapters": 1,
     "words": 13732,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.168Z"
+    "updatedAt": "2026-09-21T20:34:15.192Z"
   },
   {
     "id": "a-romance-of-billy-goat-hill",
@@ -420,7 +420,7 @@
     "chapters": 32,
     "words": 81963,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.170Z"
+    "updatedAt": "2026-09-21T20:34:15.194Z"
   },
   {
     "id": "a-princess-of-mars",
@@ -467,7 +467,7 @@
     "chapters": 29,
     "words": 67213,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.172Z"
+    "updatedAt": "2026-09-21T20:34:15.196Z"
   },
   {
     "id": "adventures-of-huckleberry-finn",
@@ -514,7 +514,7 @@
     "chapters": 47,
     "words": 110771,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.173Z"
+    "updatedAt": "2026-09-21T20:34:15.197Z"
   },
   {
     "id": "adventures-of-sherlock-holmes-illustrated",
@@ -561,7 +561,7 @@
     "chapters": 27,
     "words": 106292,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.176Z"
+    "updatedAt": "2026-09-21T20:34:15.199Z"
   },
   {
     "id": "anabasis",
@@ -608,7 +608,7 @@
     "chapters": 7,
     "words": 94861,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.177Z"
+    "updatedAt": "2026-09-21T20:34:15.200Z"
   },
   {
     "id": "anarchism-and-other-essays",
@@ -655,7 +655,7 @@
     "chapters": 8,
     "words": 67544,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.179Z"
+    "updatedAt": "2026-09-21T20:34:15.202Z"
   },
   {
     "id": "andersens-fairy-tales",
@@ -702,7 +702,7 @@
     "chapters": 10,
     "words": 55414,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.180Z"
+    "updatedAt": "2026-09-21T20:34:15.204Z"
   },
   {
     "id": "ann-veronica-a-modern-love-story",
@@ -749,7 +749,53 @@
     "chapters": 18,
     "words": 96090,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.181Z"
+    "updatedAt": "2026-09-21T20:34:15.205Z"
+  },
+  {
+    "id": "annales",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/annalesquosscri01unkngoog",
+    "license": "public-domain",
+    "licenseLabel": {
+      "ar": "ملكية عامة",
+      "en": "ملكية عامة"
+    },
+    "licenseUrl": "",
+    "licenseAudit": "public-domain via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "Annales",
+      "en": "Annales"
+    },
+    "author": {
+      "ar": "Ṭabarī, 838?-923,Goeje, M. J. de (Michael Jan), 1836-1909,Barth, J. (Jakob), 1851-1914,Nöldeke, Theodor, 1836-1930,Jo",
+      "en": "Ṭabarī, 838?-923,Goeje, M. J. de (Michael Jan), 1836-1909,Barth, J. (Jakob), 1851-1914,Nöldeke, Theodor, 1836-1930,Jo"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "1879",
+    "era": "القرن التاسع عشر",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "Annales — Ṭabarī, 838?-923,Goeje, M. J. de (Michael Jan), 1836-1909,Barth, J. (Jakob), 1851-1914,Nöldeke, Theodor, 1836-1930,Jo. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "Annales by Ṭabarī, 838?-923,Goeje, M. J. de (Michael Jan), 1836-1909,Barth, J. (Jakob), 1851-1914,Nöldeke, Theodor, 1836-1930,Jo. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g4",
+    "emoji": "🌹",
+    "chapters": 4,
+    "words": 180157,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T20:34:15.889Z"
   },
   {
     "id": "apology",
@@ -796,7 +842,7 @@
     "chapters": 1,
     "words": 16094,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.183Z"
+    "updatedAt": "2026-09-21T20:34:15.207Z"
   },
   {
     "id": "astounding-stories-of-super-science-january-1930",
@@ -843,7 +889,7 @@
     "chapters": 19,
     "words": 74285,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.184Z"
+    "updatedAt": "2026-09-21T20:34:15.208Z"
   },
   {
     "id": "at-the-mountains-of-madness",
@@ -890,7 +936,7 @@
     "chapters": 8,
     "words": 39840,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.186Z"
+    "updatedAt": "2026-09-21T20:34:15.210Z"
   },
   {
     "id": "autobiography-of-a-yogi",
@@ -937,7 +983,7 @@
     "chapters": 37,
     "words": 153850,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.187Z"
+    "updatedAt": "2026-09-21T20:34:15.212Z"
   },
   {
     "id": "baron-trumps-marvellous-underground-journey",
@@ -984,7 +1030,7 @@
     "chapters": 65,
     "words": 68980,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.189Z"
+    "updatedAt": "2026-09-21T20:34:15.214Z"
   },
   {
     "id": "barry-locke-half-back",
@@ -1031,7 +1077,7 @@
     "chapters": 27,
     "words": 63791,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.190Z"
+    "updatedAt": "2026-09-21T20:34:15.215Z"
   },
   {
     "id": "beowulf-an-anglo-saxon-epic-poem",
@@ -1078,7 +1124,7 @@
     "chapters": 15,
     "words": 39170,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.192Z"
+    "updatedAt": "2026-09-21T20:34:15.216Z"
   },
   {
     "id": "biographia-literaria",
@@ -1125,7 +1171,7 @@
     "chapters": 28,
     "words": 138338,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.193Z"
+    "updatedAt": "2026-09-21T20:34:15.218Z"
   },
   {
     "id": "black-beauty",
@@ -1172,7 +1218,7 @@
     "chapters": 10,
     "words": 59961,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.195Z"
+    "updatedAt": "2026-09-21T20:34:15.220Z"
   },
   {
     "id": "blue-grass-and-broadway",
@@ -1219,7 +1265,7 @@
     "chapters": 9,
     "words": 62071,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.196Z"
+    "updatedAt": "2026-09-21T20:34:15.221Z"
   },
   {
     "id": "by-advice-of-counsel",
@@ -1266,7 +1312,7 @@
     "chapters": 19,
     "words": 68543,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.197Z"
+    "updatedAt": "2026-09-21T20:34:15.223Z"
   },
   {
     "id": "chamberss-edinburgh-journal-no-452-volume-18-new-series-augu",
@@ -1313,7 +1359,7 @@
     "chapters": 1,
     "words": 20804,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.199Z"
+    "updatedAt": "2026-09-21T20:34:15.224Z"
   },
   {
     "id": "changeling-and-other-stories",
@@ -1360,7 +1406,7 @@
     "chapters": 24,
     "words": 92682,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.200Z"
+    "updatedAt": "2026-09-21T20:34:15.226Z"
   },
   {
     "id": "chaucers-works-volume-2-boethius-and-troilus",
@@ -1407,7 +1453,7 @@
     "chapters": 45,
     "words": 219417,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.202Z"
+    "updatedAt": "2026-09-21T20:34:15.227Z"
   },
   {
     "id": "children-of-the-whirlwind",
@@ -1454,7 +1500,7 @@
     "chapters": 37,
     "words": 96262,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.204Z"
+    "updatedAt": "2026-09-21T20:34:15.229Z"
   },
   {
     "id": "cranford",
@@ -1501,7 +1547,7 @@
     "chapters": 17,
     "words": 70909,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.205Z"
+    "updatedAt": "2026-09-21T20:34:15.230Z"
   },
   {
     "id": "daintys-cruel-rivals-or-the-fatal-birthday",
@@ -1548,7 +1594,7 @@
     "chapters": 41,
     "words": 54136,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.207Z"
+    "updatedAt": "2026-09-21T20:34:15.231Z"
   },
   {
     "id": "daughters-of-nijo-a-romance-of-japan",
@@ -1595,7 +1641,7 @@
     "chapters": 29,
     "words": 46401,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.208Z"
+    "updatedAt": "2026-09-21T20:34:15.233Z"
   },
   {
     "id": "david-copperfield",
@@ -1642,7 +1688,7 @@
     "chapters": 65,
     "words": 354441,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.209Z"
+    "updatedAt": "2026-09-21T20:34:15.234Z"
   },
   {
     "id": "desperate-remedies",
@@ -1689,7 +1735,7 @@
     "chapters": 37,
     "words": 140472,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.212Z"
+    "updatedAt": "2026-09-21T20:34:15.235Z"
   },
   {
     "id": "doctor-cupid-a-novel",
@@ -1736,7 +1782,7 @@
     "chapters": 40,
     "words": 123298,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.213Z"
+    "updatedAt": "2026-09-21T20:34:15.237Z"
   },
   {
     "id": "ecce-homo-complete-works-volume-seventeen",
@@ -1783,7 +1829,7 @@
     "chapters": 7,
     "words": 46819,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.215Z"
+    "updatedAt": "2026-09-21T20:34:15.242Z"
   },
   {
     "id": "eighty-years-and-more-reminiscences-1815-1897",
@@ -1830,7 +1876,7 @@
     "chapters": 29,
     "words": 134307,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.216Z"
+    "updatedAt": "2026-09-21T20:34:15.245Z"
   },
   {
     "id": "emily-bronte",
@@ -1877,7 +1923,7 @@
     "chapters": 20,
     "words": 69278,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.217Z"
+    "updatedAt": "2026-09-21T20:34:15.246Z"
   },
   {
     "id": "famous-affinities-of-history-the-romance-of-devotion-vol-1-4",
@@ -1924,7 +1970,7 @@
     "chapters": 20,
     "words": 135520,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.219Z"
+    "updatedAt": "2026-09-21T20:34:15.248Z"
   },
   {
     "id": "forest-days-a-romance-of-old-times",
@@ -1971,7 +2017,7 @@
     "chapters": 45,
     "words": 168838,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.220Z"
+    "updatedAt": "2026-09-21T20:34:15.249Z"
   },
   {
     "id": "frankenstein-or-the-modern-prometheus",
@@ -2018,7 +2064,7 @@
     "chapters": 25,
     "words": 74994,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.222Z"
+    "updatedAt": "2026-09-21T20:34:15.250Z"
   },
   {
     "id": "friday-the-thirteenth-a-novel",
@@ -2065,7 +2111,7 @@
     "chapters": 11,
     "words": 47339,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.224Z"
+    "updatedAt": "2026-09-21T20:34:15.252Z"
   },
   {
     "id": "ghost-stories-of-an-antiquary",
@@ -2112,7 +2158,7 @@
     "chapters": 7,
     "words": 45402,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.226Z"
+    "updatedAt": "2026-09-21T20:34:15.254Z"
   },
   {
     "id": "grimms-fairy-tales",
@@ -2159,7 +2205,7 @@
     "chapters": 10,
     "words": 101111,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.227Z"
+    "updatedAt": "2026-09-21T20:34:15.256Z"
   },
   {
     "id": "gullivers-travels-into-several-remote-nations-of-the-world",
@@ -2206,7 +2252,7 @@
     "chapters": 40,
     "words": 104968,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.229Z"
+    "updatedAt": "2026-09-21T20:34:15.257Z"
   },
   {
     "id": "gullivers-travels-into-several-remote-regions-of-the-world",
@@ -2253,7 +2299,7 @@
     "chapters": 30,
     "words": 51632,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.230Z"
+    "updatedAt": "2026-09-21T20:34:15.259Z"
   },
   {
     "id": "harriet-martineau",
@@ -2300,7 +2346,7 @@
     "chapters": 14,
     "words": 71283,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.232Z"
+    "updatedAt": "2026-09-21T20:34:15.260Z"
   },
   {
     "id": "helen-vardons-confession",
@@ -2347,7 +2393,7 @@
     "chapters": 29,
     "words": 130600,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.233Z"
+    "updatedAt": "2026-09-21T20:34:15.261Z"
   },
   {
     "id": "henrietta-temple-a-love-story",
@@ -2394,7 +2440,7 @@
     "chapters": 75,
     "words": 142514,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.234Z"
+    "updatedAt": "2026-09-21T20:34:15.263Z"
   },
   {
     "id": "his-last-bow",
@@ -2441,7 +2487,7 @@
     "chapters": 3,
     "words": 59019,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.236Z"
+    "updatedAt": "2026-09-21T20:34:15.264Z"
   },
   {
     "id": "history-of-tom-jones-a-foundling",
@@ -2488,7 +2534,7 @@
     "chapters": 3,
     "words": 350564,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.237Z"
+    "updatedAt": "2026-09-21T20:34:15.265Z"
   },
   {
     "id": "hypnerotomachia-the-strife-of-loue-in-a-dreame",
@@ -2535,7 +2581,7 @@
     "chapters": 10,
     "words": 69158,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.238Z"
+    "updatedAt": "2026-09-21T20:34:15.267Z"
   },
   {
     "id": "i-beowulf-an-anglo-saxon-poem-ii-the-fight-at-finnsburh-a-fr",
@@ -2582,7 +2628,7 @@
     "chapters": 45,
     "words": 137548,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.240Z"
+    "updatedAt": "2026-09-21T20:34:15.268Z"
   },
   {
     "id": "in-jeopardy",
@@ -2629,7 +2675,7 @@
     "chapters": 24,
     "words": 58854,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.242Z"
+    "updatedAt": "2026-09-21T20:34:15.270Z"
   },
   {
     "id": "incidents-in-the-life-of-a-slave-girl-written-by-herself",
@@ -2676,7 +2722,7 @@
     "chapters": 9,
     "words": 83372,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.243Z"
+    "updatedAt": "2026-09-21T20:34:15.272Z"
   },
   {
     "id": "just-around-the-corner-romance-en-casserole",
@@ -2723,7 +2769,7 @@
     "chapters": 38,
     "words": 85256,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.245Z"
+    "updatedAt": "2026-09-21T20:34:15.273Z"
   },
   {
     "id": "kidnapped",
@@ -2770,7 +2816,7 @@
     "chapters": 31,
     "words": 81843,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.246Z"
+    "updatedAt": "2026-09-21T20:34:15.274Z"
   },
   {
     "id": "lady-audleys-secret",
@@ -2817,7 +2863,7 @@
     "chapters": 41,
     "words": 148893,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.247Z"
+    "updatedAt": "2026-09-21T20:34:15.276Z"
   },
   {
     "id": "le-morte-darthur-volume-1",
@@ -2864,7 +2910,7 @@
     "chapters": 39,
     "words": 168173,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.249Z"
+    "updatedAt": "2026-09-21T20:34:15.277Z"
   },
   {
     "id": "library-of-the-worlds-best-mystery-and-detective-stories",
@@ -2911,7 +2957,7 @@
     "chapters": 21,
     "words": 101620,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.250Z"
+    "updatedAt": "2026-09-21T20:34:15.278Z"
   },
   {
     "id": "life-blood",
@@ -2958,7 +3004,7 @@
     "chapters": 30,
     "words": 102612,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.252Z"
+    "updatedAt": "2026-09-21T20:34:15.279Z"
   },
   {
     "id": "life-and-letters-of-charles-darwin-volume-1",
@@ -3005,7 +3051,7 @@
     "chapters": 16,
     "words": 193336,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.253Z"
+    "updatedAt": "2026-09-21T20:34:15.281Z"
   },
   {
     "id": "lives-of-fair-and-gallant-ladies-vol-1",
@@ -3052,7 +3098,7 @@
     "chapters": 16,
     "words": 126232,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.255Z"
+    "updatedAt": "2026-09-21T20:34:15.282Z"
   },
   {
     "id": "lone-star-planet",
@@ -3099,7 +3145,7 @@
     "chapters": 12,
     "words": 30525,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.257Z"
+    "updatedAt": "2026-09-21T20:34:15.283Z"
   },
   {
     "id": "lorna-doone-a-romance-of-exmoor",
@@ -3146,7 +3192,7 @@
     "chapters": 76,
     "words": 274147,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.259Z"
+    "updatedAt": "2026-09-21T20:34:15.284Z"
   },
   {
     "id": "loves-labours-lost",
@@ -3193,7 +3239,7 @@
     "chapters": 6,
     "words": 22545,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.260Z"
+    "updatedAt": "2026-09-21T20:34:15.286Z"
   },
   {
     "id": "love-at-arms",
@@ -3240,7 +3286,7 @@
     "chapters": 26,
     "words": 84359,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.262Z"
+    "updatedAt": "2026-09-21T20:34:15.287Z"
   },
   {
     "id": "mademoiselle-de-maupin-volume-1-of-2",
@@ -3287,7 +3333,7 @@
     "chapters": 8,
     "words": 67368,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.263Z"
+    "updatedAt": "2026-09-21T20:34:15.289Z"
   },
   {
     "id": "minute-mysteries-detectograms",
@@ -3334,7 +3380,7 @@
     "chapters": 13,
     "words": 25336,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.265Z"
+    "updatedAt": "2026-09-21T20:34:15.290Z"
   },
   {
     "id": "monte-cristos-daughter",
@@ -3381,7 +3427,7 @@
     "chapters": 31,
     "words": 84980,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.266Z"
+    "updatedAt": "2026-09-21T20:34:15.291Z"
   },
   {
     "id": "more-letters-of-charles-darwin-volume-1-a-record-of-his-work",
@@ -3428,7 +3474,7 @@
     "chapters": 371,
     "words": 192765,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.267Z"
+    "updatedAt": "2026-09-21T20:34:15.292Z"
   },
   {
     "id": "mr-standfast",
@@ -3475,7 +3521,7 @@
     "chapters": 23,
     "words": 128079,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.269Z"
+    "updatedAt": "2026-09-21T20:34:15.294Z"
   },
   {
     "id": "my-life-and-loves-vol-1-of-4",
@@ -3522,7 +3568,7 @@
     "chapters": 16,
     "words": 110369,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.270Z"
+    "updatedAt": "2026-09-21T20:34:15.295Z"
   },
   {
     "id": "napoleons-letters-to-josephine-1796-1812-for-the-first-time-",
@@ -3569,7 +3615,7 @@
     "chapters": 19,
     "words": 94746,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.271Z"
+    "updatedAt": "2026-09-21T20:34:15.296Z"
   },
   {
     "id": "narrative-of-the-captivity-and-restoration-of-mrs-mary-rowla",
@@ -3616,7 +3662,7 @@
     "chapters": 1,
     "words": 20220,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.273Z"
+    "updatedAt": "2026-09-21T20:34:15.298Z"
   },
   {
     "id": "occasion-for-disaster",
@@ -3663,7 +3709,7 @@
     "chapters": 2,
     "words": 67843,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.274Z"
+    "updatedAt": "2026-09-21T20:34:15.299Z"
   },
   {
     "id": "oedipus-king-of-thebes-translated-into-english-rhyming-verse",
@@ -3710,7 +3756,7 @@
     "chapters": 12,
     "words": 18275,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.276Z"
+    "updatedAt": "2026-09-21T20:34:15.300Z"
   },
   {
     "id": "off-on-a-comet-a-journey-through-planetary-space",
@@ -3757,7 +3803,7 @@
     "chapters": 44,
     "words": 100861,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.277Z"
+    "updatedAt": "2026-09-21T20:34:15.302Z"
   },
   {
     "id": "on-the-cross-a-romance-of-the-passion-play-at-oberammergau",
@@ -3804,7 +3850,7 @@
     "chapters": 42,
     "words": 167470,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.279Z"
+    "updatedAt": "2026-09-21T20:34:15.304Z"
   },
   {
     "id": "one-woman-being-the-second-part-of-a-romance-of-sussex",
@@ -3851,7 +3897,7 @@
     "chapters": 43,
     "words": 86710,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.280Z"
+    "updatedAt": "2026-09-21T20:34:15.305Z"
   },
   {
     "id": "one-wonderful-night-a-romance-of-new-york",
@@ -3898,7 +3944,7 @@
     "chapters": 18,
     "words": 77517,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.281Z"
+    "updatedAt": "2026-09-21T20:34:15.307Z"
   },
   {
     "id": "only-a-girls-love",
@@ -3945,7 +3991,7 @@
     "chapters": 43,
     "words": 148126,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.283Z"
+    "updatedAt": "2026-09-21T20:34:15.308Z"
   },
   {
     "id": "out-of-times-abyss",
@@ -3992,7 +4038,7 @@
     "chapters": 5,
     "words": 35706,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.284Z"
+    "updatedAt": "2026-09-21T20:34:15.309Z"
   },
   {
     "id": "paradise-lost",
@@ -4039,7 +4085,7 @@
     "chapters": 5,
     "words": 80029,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.286Z"
+    "updatedAt": "2026-09-21T20:34:15.311Z"
   },
   {
     "id": "paul-clifford-complete",
@@ -4086,7 +4132,7 @@
     "chapters": 36,
     "words": 179700,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.288Z"
+    "updatedAt": "2026-09-21T20:34:15.312Z"
   },
   {
     "id": "pen-portraits-of-literary-women",
@@ -4133,7 +4179,7 @@
     "chapters": 16,
     "words": 75498,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.291Z"
+    "updatedAt": "2026-09-21T20:34:15.313Z"
   },
   {
     "id": "personal-memoirs-of-u-s-grant-complete",
@@ -4180,7 +4226,7 @@
     "chapters": 76,
     "words": 280911,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.292Z"
+    "updatedAt": "2026-09-21T20:34:15.314Z"
   },
   {
     "id": "peter-pan",
@@ -4227,7 +4273,7 @@
     "chapters": 18,
     "words": 47175,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.294Z"
+    "updatedAt": "2026-09-21T20:34:15.316Z"
   },
   {
     "id": "peter-the-brazen-a-mystery-story-of-modern-china",
@@ -4274,7 +4320,7 @@
     "chapters": 53,
     "words": 90233,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.295Z"
+    "updatedAt": "2026-09-21T20:34:15.317Z"
   },
   {
     "id": "phaedrus",
@@ -4321,7 +4367,7 @@
     "chapters": 5,
     "words": 38137,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.297Z"
+    "updatedAt": "2026-09-21T20:34:15.319Z"
   },
   {
     "id": "quintus-claudius-a-romance-of-imperial-rome-volume-1",
@@ -4368,7 +4414,7 @@
     "chapters": 23,
     "words": 93006,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.298Z"
+    "updatedAt": "2026-09-21T20:34:15.320Z"
   },
   {
     "id": "reminiscences-of-a-stock-operator",
@@ -4415,7 +4461,7 @@
     "chapters": 15,
     "words": 109121,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.300Z"
+    "updatedAt": "2026-09-21T20:34:15.322Z"
   },
   {
     "id": "rizals-own-story-of-his-life",
@@ -4462,7 +4508,7 @@
     "chapters": 6,
     "words": 12781,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.301Z"
+    "updatedAt": "2026-09-21T20:34:15.323Z"
   },
   {
     "id": "robert-orange-being-a-continuation-of-the-history-of-robert-",
@@ -4509,7 +4555,7 @@
     "chapters": 31,
     "words": 99053,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.303Z"
+    "updatedAt": "2026-09-21T20:34:15.325Z"
   },
   {
     "id": "selected-works-of-voltairine-de-cleyre",
@@ -4556,7 +4602,7 @@
     "chapters": 4,
     "words": 137408,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.304Z"
+    "updatedAt": "2026-09-21T20:34:15.326Z"
   },
   {
     "id": "set-in-silver",
@@ -4603,7 +4649,7 @@
     "chapters": 19,
     "words": 121556,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.306Z"
+    "updatedAt": "2026-09-21T20:34:15.327Z"
   },
   {
     "id": "shakespeares-family",
@@ -4650,7 +4696,7 @@
     "chapters": 23,
     "words": 81695,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.308Z"
+    "updatedAt": "2026-09-21T20:34:15.328Z"
   },
   {
     "id": "she-who-sleeps",
@@ -4697,7 +4743,7 @@
     "chapters": 34,
     "words": 66755,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.309Z"
+    "updatedAt": "2026-09-21T20:34:15.329Z"
   },
   {
     "id": "sir-gawayne-and-the-green-knight-an-alliterative-romance-poe",
@@ -4744,7 +4790,7 @@
     "chapters": 5,
     "words": 40354,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.311Z"
+    "updatedAt": "2026-09-21T20:34:15.331Z"
   },
   {
     "id": "some-jewish-witnesses-for-christ",
@@ -4791,7 +4837,7 @@
     "chapters": 7,
     "words": 138530,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.312Z"
+    "updatedAt": "2026-09-21T20:34:15.332Z"
   },
   {
     "id": "space-station-1",
@@ -4838,7 +4884,7 @@
     "chapters": 12,
     "words": 50105,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.313Z"
+    "updatedAt": "2026-09-21T20:34:15.334Z"
   },
   {
     "id": "supermind",
@@ -4885,7 +4931,7 @@
     "chapters": 29,
     "words": 70967,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.315Z"
+    "updatedAt": "2026-09-21T20:34:15.335Z"
   },
   {
     "id": "susan-b-anthony-rebel-crusader-humanitarian",
@@ -4932,7 +4978,7 @@
     "chapters": 24,
     "words": 121129,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.317Z"
+    "updatedAt": "2026-09-21T20:34:15.337Z"
   },
   {
     "id": "symposium",
@@ -4979,7 +5025,7 @@
     "chapters": 1,
     "words": 32592,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.318Z"
+    "updatedAt": "2026-09-21T20:34:15.339Z"
   },
   {
     "id": "tales-of-terror-and-mystery",
@@ -5026,7 +5072,7 @@
     "chapters": 12,
     "words": 75132,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.319Z"
+    "updatedAt": "2026-09-21T20:34:15.340Z"
   },
   {
     "id": "tarrano-the-conqueror",
@@ -5073,7 +5119,7 @@
     "chapters": 38,
     "words": 64708,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.320Z"
+    "updatedAt": "2026-09-21T20:34:15.341Z"
   },
   {
     "id": "terminal-compromise",
@@ -5120,7 +5166,7 @@
     "chapters": 30,
     "words": 216392,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.322Z"
+    "updatedAt": "2026-09-21T20:34:15.343Z"
   },
   {
     "id": "that-girl-montana",
@@ -5167,7 +5213,7 @@
     "chapters": 29,
     "words": 103087,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.324Z"
+    "updatedAt": "2026-09-21T20:34:15.344Z"
   },
   {
     "id": "the-adventures-of-ferdinand-count-fathom-complete",
@@ -5214,7 +5260,7 @@
     "chapters": 68,
     "words": 161496,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.325Z"
+    "updatedAt": "2026-09-21T20:34:15.345Z"
   },
   {
     "id": "the-adventures-of-roderick-random",
@@ -5261,7 +5307,7 @@
     "chapters": 70,
     "words": 190451,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.326Z"
+    "updatedAt": "2026-09-21T20:34:15.347Z"
   },
   {
     "id": "the-adventures-of-tom-sawyer-complete",
@@ -5308,7 +5354,7 @@
     "chapters": 40,
     "words": 70468,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.328Z"
+    "updatedAt": "2026-09-21T20:34:15.348Z"
   },
   {
     "id": "the-aeneid",
@@ -5355,7 +5401,7 @@
     "chapters": 6,
     "words": 107551,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.329Z"
+    "updatedAt": "2026-09-21T20:34:15.349Z"
   },
   {
     "id": "the-air-pirate",
@@ -5402,7 +5448,7 @@
     "chapters": 20,
     "words": 65196,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.331Z"
+    "updatedAt": "2026-09-21T20:34:15.351Z"
   },
   {
     "id": "the-amazing-marriage-complete",
@@ -5449,7 +5495,7 @@
     "chapters": 36,
     "words": 155966,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.332Z"
+    "updatedAt": "2026-09-21T20:34:15.352Z"
   },
   {
     "id": "the-ambulance-made-two-trips",
@@ -5496,7 +5542,7 @@
     "chapters": 1,
     "words": 7750,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.333Z"
+    "updatedAt": "2026-09-21T20:34:15.354Z"
   },
   {
     "id": "the-anabasis-of-alexander",
@@ -5543,7 +5589,7 @@
     "chapters": 206,
     "words": 148118,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.335Z"
+    "updatedAt": "2026-09-21T20:34:15.355Z"
   },
   {
     "id": "the-bakhtyar-nama-a-persian-romance",
@@ -5590,7 +5636,7 @@
     "chapters": 12,
     "words": 70692,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.336Z"
+    "updatedAt": "2026-09-21T20:34:15.356Z"
   },
   {
     "id": "the-battle-of-the-strong-a-romance-of-two-kingdoms-volume-6",
@@ -5637,7 +5683,7 @@
     "chapters": 8,
     "words": 20992,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.340Z"
+    "updatedAt": "2026-09-21T20:34:15.358Z"
   },
   {
     "id": "the-belle-of-bowling-green",
@@ -5684,7 +5730,7 @@
     "chapters": 13,
     "words": 86148,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.342Z"
+    "updatedAt": "2026-09-21T20:34:15.359Z"
   },
   {
     "id": "the-big-fix",
@@ -5731,7 +5777,7 @@
     "chapters": 1,
     "words": 9247,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.343Z"
+    "updatedAt": "2026-09-21T20:34:15.360Z"
   },
   {
     "id": "the-big-four",
@@ -5778,7 +5824,7 @@
     "chapters": 21,
     "words": 55561,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.345Z"
+    "updatedAt": "2026-09-21T20:34:15.362Z"
   },
   {
     "id": "the-boy-with-wings",
@@ -5825,7 +5871,7 @@
     "chapters": 40,
     "words": 90073,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.347Z"
+    "updatedAt": "2026-09-21T20:34:15.363Z"
   },
   {
     "id": "the-brothers-karamazov",
@@ -5872,7 +5918,7 @@
     "chapters": 97,
     "words": 350072,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.349Z"
+    "updatedAt": "2026-09-21T20:34:15.364Z"
   },
   {
     "id": "the-camp-fire-girls-solve-a-mystery-or-the-christmas-adventu",
@@ -5919,7 +5965,7 @@
     "chapters": 23,
     "words": 53109,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.350Z"
+    "updatedAt": "2026-09-21T20:34:15.366Z"
   },
   {
     "id": "the-canterbury-tales-and-other-poems",
@@ -5966,7 +6012,7 @@
     "chapters": 33,
     "words": 279731,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.352Z"
+    "updatedAt": "2026-09-21T20:34:15.367Z"
   },
   {
     "id": "the-car-of-destiny",
@@ -6013,7 +6059,7 @@
     "chapters": 25,
     "words": 121894,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.353Z"
+    "updatedAt": "2026-09-21T20:34:15.368Z"
   },
   {
     "id": "the-chessmen-of-mars",
@@ -6060,7 +6106,7 @@
     "chapters": 23,
     "words": 88209,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.354Z"
+    "updatedAt": "2026-09-21T20:34:15.370Z"
   },
   {
     "id": "the-crack-of-doom",
@@ -6107,7 +6153,7 @@
     "chapters": 21,
     "words": 42767,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.356Z"
+    "updatedAt": "2026-09-21T20:34:15.372Z"
   },
   {
     "id": "the-czars-spy-the-mystery-of-a-silent-love",
@@ -6154,7 +6200,7 @@
     "chapters": 19,
     "words": 90839,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.357Z"
+    "updatedAt": "2026-09-21T20:34:15.373Z"
   },
   {
     "id": "the-damned-thing-1898-from-in-the-midst-of-life",
@@ -6201,7 +6247,7 @@
     "chapters": 1,
     "words": 3262,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.359Z"
+    "updatedAt": "2026-09-21T20:34:15.374Z"
   },
   {
     "id": "the-daughter-of-anderson-crow",
@@ -6248,7 +6294,7 @@
     "chapters": 37,
     "words": 78522,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.360Z"
+    "updatedAt": "2026-09-21T20:34:15.376Z"
   },
   {
     "id": "the-dunwich-horror",
@@ -6295,7 +6341,7 @@
     "chapters": 1,
     "words": 17361,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.362Z"
+    "updatedAt": "2026-09-21T20:34:15.377Z"
   },
   {
     "id": "the-egyptian-book-of-the-dead",
@@ -6342,7 +6388,7 @@
     "chapters": 189,
     "words": 133405,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.368Z"
+    "updatedAt": "2026-09-21T20:34:15.378Z"
   },
   {
     "id": "the-empty-house-and-other-ghost-stories",
@@ -6389,7 +6435,7 @@
     "chapters": 12,
     "words": 66881,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.371Z"
+    "updatedAt": "2026-09-21T20:34:15.379Z"
   },
   {
     "id": "the-enchanted-april",
@@ -6436,7 +6482,7 @@
     "chapters": 23,
     "words": 78213,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.373Z"
+    "updatedAt": "2026-09-21T20:34:15.381Z"
   },
   {
     "id": "the-enchiridion",
@@ -6483,7 +6529,7 @@
     "chapters": 1,
     "words": 11060,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.375Z"
+    "updatedAt": "2026-09-21T20:34:15.382Z"
   },
   {
     "id": "the-entailed-hat-or-patty-cannons-times",
@@ -6530,7 +6576,7 @@
     "chapters": 49,
     "words": 179939,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.376Z"
+    "updatedAt": "2026-09-21T20:34:15.383Z"
   },
   {
     "id": "the-expedition-of-humphry-clinker",
@@ -6577,7 +6623,7 @@
     "chapters": 9,
     "words": 148355,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.378Z"
+    "updatedAt": "2026-09-21T20:34:15.384Z"
   },
   {
     "id": "the-gay-adventure-a-romance",
@@ -6624,7 +6670,7 @@
     "chapters": 27,
     "words": 77545,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.380Z"
+    "updatedAt": "2026-09-21T20:34:15.386Z"
   },
   {
     "id": "the-gay-cockade",
@@ -6671,7 +6717,7 @@
     "chapters": 29,
     "words": 84869,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.381Z"
+    "updatedAt": "2026-09-21T20:34:15.387Z"
   },
   {
     "id": "the-germany-and-the-agricola-of-tacitus",
@@ -6718,7 +6764,7 @@
     "chapters": 6,
     "words": 48812,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.383Z"
+    "updatedAt": "2026-09-21T20:34:15.389Z"
   },
   {
     "id": "the-girl-philippa",
@@ -6765,7 +6811,7 @@
     "chapters": 52,
     "words": 128177,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.384Z"
+    "updatedAt": "2026-09-21T20:34:15.390Z"
   },
   {
     "id": "the-grand-babylon-hotel",
@@ -6812,7 +6858,7 @@
     "chapters": 30,
     "words": 67382,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.385Z"
+    "updatedAt": "2026-09-21T20:34:15.391Z"
   },
   {
     "id": "the-great-gatsby",
@@ -6859,7 +6905,7 @@
     "chapters": 17,
     "words": 48181,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.387Z"
+    "updatedAt": "2026-09-21T20:34:15.392Z"
   },
   {
     "id": "the-great-god-pan",
@@ -6906,7 +6952,7 @@
     "chapters": 1,
     "words": 21715,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.388Z"
+    "updatedAt": "2026-09-21T20:34:15.394Z"
   },
   {
     "id": "the-green-mouse",
@@ -6953,7 +6999,7 @@
     "chapters": 22,
     "words": 47552,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.389Z"
+    "updatedAt": "2026-09-21T20:34:15.395Z"
   },
   {
     "id": "the-hand-in-the-dark",
@@ -7000,7 +7046,7 @@
     "chapters": 29,
     "words": 106555,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.391Z"
+    "updatedAt": "2026-09-21T20:34:15.396Z"
   },
   {
     "id": "the-heather-moon",
@@ -7047,7 +7093,7 @@
     "chapters": 5,
     "words": 123925,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.392Z"
+    "updatedAt": "2026-09-21T20:34:15.397Z"
   },
   {
     "id": "the-hero-of-the-people-a-historical-romance-of-love-liberty-",
@@ -7094,7 +7140,7 @@
     "chapters": 30,
     "words": 79000,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.394Z"
+    "updatedAt": "2026-09-21T20:34:15.399Z"
   },
   {
     "id": "the-history-of-sir-richard-calmady-a-romance",
@@ -7141,7 +7187,7 @@
     "chapters": 61,
     "words": 260698,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.395Z"
+    "updatedAt": "2026-09-21T20:34:15.400Z"
   },
   {
     "id": "the-house-on-the-borderland",
@@ -7188,7 +7234,7 @@
     "chapters": 8,
     "words": 50925,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.397Z"
+    "updatedAt": "2026-09-21T20:34:15.402Z"
   },
   {
     "id": "the-hunters-lodge-case",
@@ -7235,7 +7281,7 @@
     "chapters": 1,
     "words": 4346,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.398Z"
+    "updatedAt": "2026-09-21T20:34:15.404Z"
   },
   {
     "id": "the-iliad",
@@ -7282,7 +7328,7 @@
     "chapters": 21,
     "words": 188772,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.400Z"
+    "updatedAt": "2026-09-21T20:34:15.406Z"
   },
   {
     "id": "the-insidious-dr-fu-manchu",
@@ -7329,7 +7375,7 @@
     "chapters": 30,
     "words": 72711,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.401Z"
+    "updatedAt": "2026-09-21T20:34:15.407Z"
   },
   {
     "id": "the-interesting-narrative-of-the-life-of-olaudah-equiano-or-",
@@ -7376,7 +7422,7 @@
     "chapters": 2,
     "words": 82536,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.402Z"
+    "updatedAt": "2026-09-21T20:34:15.409Z"
   },
   {
     "id": "the-jungle-book",
@@ -7423,7 +7469,7 @@
     "chapters": 10,
     "words": 50835,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.403Z"
+    "updatedAt": "2026-09-21T20:34:15.410Z"
   },
   {
     "id": "the-knights-of-the-cross-or-krzyzacy-historical-romance",
@@ -7470,7 +7516,7 @@
     "chapters": 60,
     "words": 217468,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.404Z"
+    "updatedAt": "2026-09-21T20:34:15.412Z"
   },
   {
     "id": "the-land-that-time-forgot",
@@ -7517,7 +7563,7 @@
     "chapters": 11,
     "words": 37195,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.406Z"
+    "updatedAt": "2026-09-21T20:34:15.413Z"
   },
   {
     "id": "the-last-of-the-mohicans-a-narrative-of-1757",
@@ -7564,7 +7610,7 @@
     "chapters": 34,
     "words": 148264,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.407Z"
+    "updatedAt": "2026-09-21T20:34:15.415Z"
   },
   {
     "id": "the-legend-of-sleepy-hollow",
@@ -7611,7 +7657,7 @@
     "chapters": 1,
     "words": 12214,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.409Z"
+    "updatedAt": "2026-09-21T20:34:15.416Z"
   },
   {
     "id": "the-life-and-adventures-of-robinson-crusoe",
@@ -7658,7 +7704,7 @@
     "chapters": 21,
     "words": 120807,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.410Z"
+    "updatedAt": "2026-09-21T20:34:15.417Z"
   },
   {
     "id": "the-life-of-florence-nightingale-vol-2-of-2",
@@ -7705,7 +7751,7 @@
     "chapters": 42,
     "words": 209483,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.412Z"
+    "updatedAt": "2026-09-21T20:34:15.419Z"
   },
   {
     "id": "the-lives-and-opinions-of-eminent-philosophers",
@@ -7752,7 +7798,7 @@
     "chapters": 29,
     "words": 193003,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.414Z"
+    "updatedAt": "2026-09-21T20:34:15.420Z"
   },
   {
     "id": "the-lives-of-the-twelve-caesars-complete",
@@ -7799,7 +7845,7 @@
     "chapters": 23,
     "words": 233472,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.415Z"
+    "updatedAt": "2026-09-21T20:34:15.422Z"
   },
   {
     "id": "the-lock-and-key-library-classic-mystery-and-detective-stori",
@@ -7846,7 +7892,7 @@
     "chapters": 28,
     "words": 125149,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.417Z"
+    "updatedAt": "2026-09-21T20:34:15.423Z"
   },
   {
     "id": "the-lost-world",
@@ -7893,7 +7939,7 @@
     "chapters": 17,
     "words": 75727,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.418Z"
+    "updatedAt": "2026-09-21T20:34:15.424Z"
   },
   {
     "id": "the-love-letters-of-henry-viii-to-anne-boleyn-with-notes",
@@ -7940,7 +7986,7 @@
     "chapters": 1,
     "words": 5815,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.419Z"
+    "updatedAt": "2026-09-21T20:34:15.425Z"
   },
   {
     "id": "the-man-upstairs-and-other-stories",
@@ -7987,7 +8033,7 @@
     "chapters": 35,
     "words": 100260,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.421Z"
+    "updatedAt": "2026-09-21T20:34:15.427Z"
   },
   {
     "id": "the-man-who-did-the-right-thing-a-romance",
@@ -8034,7 +8080,7 @@
     "chapters": 16,
     "words": 137801,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.422Z"
+    "updatedAt": "2026-09-21T20:34:15.428Z"
   },
   {
     "id": "the-man-in-the-brown-suit",
@@ -8081,7 +8127,7 @@
     "chapters": 37,
     "words": 75163,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.423Z"
+    "updatedAt": "2026-09-21T20:34:15.430Z"
   },
   {
     "id": "the-memoirs-of-the-conquistador-bernal-diaz-del-castillo-vol",
@@ -8128,7 +8174,7 @@
     "chapters": 137,
     "words": 183934,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.425Z"
+    "updatedAt": "2026-09-21T20:34:15.431Z"
   },
   {
     "id": "the-merry-adventures-of-robin-hood",
@@ -8175,7 +8221,7 @@
     "chapters": 18,
     "words": 111115,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.426Z"
+    "updatedAt": "2026-09-21T20:34:15.432Z"
   },
   {
     "id": "the-metamorphoses-of-ovid-books-i-vii",
@@ -8222,7 +8268,7 @@
     "chapters": 15,
     "words": 125333,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.428Z"
+    "updatedAt": "2026-09-21T20:34:15.433Z"
   },
   {
     "id": "the-missing-will",
@@ -8269,7 +8315,7 @@
     "chapters": 1,
     "words": 3258,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.429Z"
+    "updatedAt": "2026-09-21T20:34:15.436Z"
   },
   {
     "id": "the-moonstone",
@@ -8316,7 +8362,7 @@
     "chapters": 46,
     "words": 194815,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.431Z"
+    "updatedAt": "2026-09-21T20:34:15.438Z"
   },
   {
     "id": "the-murder-on-the-links",
@@ -8363,7 +8409,7 @@
     "chapters": 27,
     "words": 64611,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.432Z"
+    "updatedAt": "2026-09-21T20:34:15.442Z"
   },
   {
     "id": "the-mysterious-island",
@@ -8410,7 +8456,7 @@
     "chapters": 62,
     "words": 193189,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.434Z"
+    "updatedAt": "2026-09-21T20:34:15.445Z"
   },
   {
     "id": "the-mystery-of-a-turkish-bath",
@@ -8457,7 +8503,7 @@
     "chapters": 16,
     "words": 29906,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.435Z"
+    "updatedAt": "2026-09-21T20:34:15.446Z"
   },
   {
     "id": "the-mystery-of-the-yellow-room",
@@ -8504,7 +8550,7 @@
     "chapters": 30,
     "words": 73754,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.436Z"
+    "updatedAt": "2026-09-21T20:34:15.447Z"
   },
   {
     "id": "the-notebooks-of-leonardo-da-vinci-complete",
@@ -8551,7 +8597,7 @@
     "chapters": 69,
     "words": 249615,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.438Z"
+    "updatedAt": "2026-09-21T20:34:15.449Z"
   },
   {
     "id": "the-passionate-friends",
@@ -8598,7 +8644,7 @@
     "chapters": 13,
     "words": 104249,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.439Z"
+    "updatedAt": "2026-09-21T20:34:15.450Z"
   },
   {
     "id": "the-phantom-rickshaw-and-other-ghost-stories",
@@ -8645,7 +8691,7 @@
     "chapters": 8,
     "words": 45667,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.440Z"
+    "updatedAt": "2026-09-21T20:34:15.451Z"
   },
   {
     "id": "the-plymouth-express-affair",
@@ -8692,7 +8738,7 @@
     "chapters": 1,
     "words": 4846,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.442Z"
+    "updatedAt": "2026-09-21T20:34:15.453Z"
   },
   {
     "id": "the-prairie-wife",
@@ -8739,7 +8785,7 @@
     "chapters": 7,
     "words": 54236,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.443Z"
+    "updatedAt": "2026-09-21T20:34:15.455Z"
   },
   {
     "id": "the-prince-and-the-pauper",
@@ -8786,7 +8832,7 @@
     "chapters": 34,
     "words": 69874,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.444Z"
+    "updatedAt": "2026-09-21T20:34:15.456Z"
   },
   {
     "id": "the-railway-children",
@@ -8833,7 +8879,7 @@
     "chapters": 15,
     "words": 59280,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.445Z"
+    "updatedAt": "2026-09-21T20:34:15.457Z"
   },
   {
     "id": "the-real-adventure",
@@ -8880,7 +8926,7 @@
     "chapters": 49,
     "words": 202295,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.447Z"
+    "updatedAt": "2026-09-21T20:34:15.459Z"
   },
   {
     "id": "the-red-house-mystery",
@@ -8927,7 +8973,7 @@
     "chapters": 23,
     "words": 60184,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.448Z"
+    "updatedAt": "2026-09-21T20:34:15.460Z"
   },
   {
     "id": "the-red-seal",
@@ -8974,7 +9020,7 @@
     "chapters": 21,
     "words": 55010,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.450Z"
+    "updatedAt": "2026-09-21T20:34:15.462Z"
   },
   {
     "id": "the-revolt-on-venus",
@@ -9021,7 +9067,7 @@
     "chapters": 21,
     "words": 53267,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.451Z"
+    "updatedAt": "2026-09-21T20:34:15.463Z"
   },
   {
     "id": "the-riddle-of-the-sands",
@@ -9068,7 +9114,7 @@
     "chapters": 29,
     "words": 108353,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.453Z"
+    "updatedAt": "2026-09-21T20:34:15.464Z"
   },
   {
     "id": "the-romance-of-tristan-and-iseult",
@@ -9115,7 +9161,7 @@
     "chapters": 5,
     "words": 25758,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.454Z"
+    "updatedAt": "2026-09-21T20:34:15.466Z"
   },
   {
     "id": "the-rover-boys-on-the-farm-or-last-days-at-putnam-hall",
@@ -9162,7 +9208,7 @@
     "chapters": 31,
     "words": 48927,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.456Z"
+    "updatedAt": "2026-09-21T20:34:15.467Z"
   },
   {
     "id": "the-samurai-strategy",
@@ -9209,7 +9255,7 @@
     "chapters": 31,
     "words": 136333,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.458Z"
+    "updatedAt": "2026-09-21T20:34:15.469Z"
   },
   {
     "id": "the-secret-adversary",
@@ -9256,7 +9302,7 @@
     "chapters": 30,
     "words": 75009,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.459Z"
+    "updatedAt": "2026-09-21T20:34:15.471Z"
   },
   {
     "id": "the-secret-agent-a-simple-tale",
@@ -9303,7 +9349,7 @@
     "chapters": 14,
     "words": 90268,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.460Z"
+    "updatedAt": "2026-09-21T20:34:15.472Z"
   },
   {
     "id": "the-secret-garden",
@@ -9350,7 +9396,7 @@
     "chapters": 28,
     "words": 80477,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.462Z"
+    "updatedAt": "2026-09-21T20:34:15.473Z"
   },
   {
     "id": "the-secret-of-the-night",
@@ -9397,7 +9443,7 @@
     "chapters": 24,
     "words": 96843,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.464Z"
+    "updatedAt": "2026-09-21T20:34:15.475Z"
   },
   {
     "id": "the-seven-dials-mystery",
@@ -9444,7 +9490,7 @@
     "chapters": 35,
     "words": 65264,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.465Z"
+    "updatedAt": "2026-09-21T20:34:15.476Z"
   },
   {
     "id": "the-shunned-house",
@@ -9491,7 +9537,7 @@
     "chapters": 1,
     "words": 10856,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.467Z"
+    "updatedAt": "2026-09-21T20:34:15.477Z"
   },
   {
     "id": "the-silent-barrier",
@@ -9538,7 +9584,7 @@
     "chapters": 19,
     "words": 83347,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.468Z"
+    "updatedAt": "2026-09-21T20:34:15.478Z"
   },
   {
     "id": "the-sorrows-of-young-werther",
@@ -9585,7 +9631,7 @@
     "chapters": 5,
     "words": 42503,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.469Z"
+    "updatedAt": "2026-09-21T20:34:15.480Z"
   },
   {
     "id": "the-strand-magazine-vol-27-february-1904-no-159",
@@ -9632,7 +9678,7 @@
     "chapters": 3,
     "words": 59941,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.471Z"
+    "updatedAt": "2026-09-21T20:34:15.481Z"
   },
   {
     "id": "the-thirty-nine-steps",
@@ -9679,7 +9725,7 @@
     "chapters": 11,
     "words": 40903,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.473Z"
+    "updatedAt": "2026-09-21T20:34:15.482Z"
   },
   {
     "id": "the-torrents-of-spring",
@@ -9726,7 +9772,7 @@
     "chapters": 18,
     "words": 85595,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.474Z"
+    "updatedAt": "2026-09-21T20:34:15.483Z"
   },
   {
     "id": "the-travels-of-marco-polo-volume-1",
@@ -9773,7 +9819,7 @@
     "chapters": 115,
     "words": 368946,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.476Z"
+    "updatedAt": "2026-09-21T20:34:15.484Z"
   },
   {
     "id": "the-treasure-of-pearls-a-romance-of-adventures-in-california",
@@ -9820,7 +9866,7 @@
     "chapters": 29,
     "words": 75182,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.477Z"
+    "updatedAt": "2026-09-21T20:34:15.486Z"
   },
   {
     "id": "the-ultimate-weapon",
@@ -9867,7 +9913,7 @@
     "chapters": 7,
     "words": 30668,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.479Z"
+    "updatedAt": "2026-09-21T20:34:15.488Z"
   },
   {
     "id": "the-valley-of-fear",
@@ -9914,7 +9960,7 @@
     "chapters": 15,
     "words": 57621,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.480Z"
+    "updatedAt": "2026-09-21T20:34:15.489Z"
   },
   {
     "id": "the-waterloo-roll-call-with-biographical-notes-and-anecdotes",
@@ -9961,7 +10007,7 @@
     "chapters": 6,
     "words": 107919,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.482Z"
+    "updatedAt": "2026-09-21T20:34:15.491Z"
   },
   {
     "id": "the-wonderful-wizard-of-oz",
@@ -10008,7 +10054,7 @@
     "chapters": 25,
     "words": 39485,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.483Z"
+    "updatedAt": "2026-09-21T20:34:15.493Z"
   },
   {
     "id": "the-works-of-robert-louis-stevenson-swanston-edition-vol-20",
@@ -10055,7 +10101,7 @@
     "chapters": 38,
     "words": 133657,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.485Z"
+    "updatedAt": "2026-09-21T20:34:15.494Z"
   },
   {
     "id": "the-yellow-crayon",
@@ -10102,7 +10148,7 @@
     "chapters": 43,
     "words": 75681,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.486Z"
+    "updatedAt": "2026-09-21T20:34:15.495Z"
   },
   {
     "id": "the-zeppelins-passenger",
@@ -10149,7 +10195,7 @@
     "chapters": 33,
     "words": 62194,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.487Z"
+    "updatedAt": "2026-09-21T20:34:15.497Z"
   },
   {
     "id": "the-call-of-the-wild",
@@ -10196,7 +10242,7 @@
     "chapters": 8,
     "words": 31775,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.489Z"
+    "updatedAt": "2026-09-21T20:34:15.498Z"
   },
   {
     "id": "the-case-book-of-sherlock-holmes",
@@ -10243,7 +10289,7 @@
     "chapters": 23,
     "words": 82825,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.490Z"
+    "updatedAt": "2026-09-21T20:34:15.499Z"
   },
   {
     "id": "the-gods-of-mars",
@@ -10290,7 +10336,7 @@
     "chapters": 23,
     "words": 82614,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.492Z"
+    "updatedAt": "2026-09-21T20:34:15.500Z"
   },
   {
     "id": "the-mystery-of-the-blue-train",
@@ -10337,7 +10383,7 @@
     "chapters": 34,
     "words": 70205,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.493Z"
+    "updatedAt": "2026-09-21T20:34:15.502Z"
   },
   {
     "id": "the-problem-of-cell-13",
@@ -10384,7 +10430,7 @@
     "chapters": 28,
     "words": 77824,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.494Z"
+    "updatedAt": "2026-09-21T20:34:15.503Z"
   },
   {
     "id": "the-secret-of-father-brown",
@@ -10431,7 +10477,7 @@
     "chapters": 13,
     "words": 63034,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.495Z"
+    "updatedAt": "2026-09-21T20:34:15.505Z"
   },
   {
     "id": "the-silent-baltic",
@@ -10478,7 +10524,7 @@
     "chapters": 1,
     "words": 9374,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.497Z"
+    "updatedAt": "2026-09-21T20:34:15.506Z"
   },
   {
     "id": "the-three-musketeers",
@@ -10525,7 +10571,7 @@
     "chapters": 66,
     "words": 229046,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.498Z"
+    "updatedAt": "2026-09-21T20:34:15.507Z"
   },
   {
     "id": "the-warlord-of-mars",
@@ -10572,7 +10618,7 @@
     "chapters": 14,
     "words": 57133,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.500Z"
+    "updatedAt": "2026-09-21T20:34:15.508Z"
   },
   {
     "id": "time-crime",
@@ -10619,7 +10665,7 @@
     "chapters": 9,
     "words": 36700,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.501Z"
+    "updatedAt": "2026-09-21T20:34:15.511Z"
   },
   {
     "id": "torchy-and-vee",
@@ -10666,7 +10712,7 @@
     "chapters": 19,
     "words": 70846,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.502Z"
+    "updatedAt": "2026-09-21T20:34:15.512Z"
   },
   {
     "id": "treasure-island",
@@ -10713,7 +10759,7 @@
     "chapters": 13,
     "words": 68588,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.504Z"
+    "updatedAt": "2026-09-21T20:34:15.513Z"
   },
   {
     "id": "twenty-thousand-leagues-under-the-seas-an-underwater-tour-of",
@@ -10760,7 +10806,7 @@
     "chapters": 48,
     "words": 143774,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.505Z"
+    "updatedAt": "2026-09-21T20:34:15.515Z"
   },
   {
     "id": "twenty-thousand-leagues-under-the-sea",
@@ -10807,7 +10853,7 @@
     "chapters": 47,
     "words": 104329,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.506Z"
+    "updatedAt": "2026-09-21T20:34:15.516Z"
   },
   {
     "id": "twenty-five-ghost-stories",
@@ -10854,7 +10900,7 @@
     "chapters": 11,
     "words": 55934,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.508Z"
+    "updatedAt": "2026-09-21T20:34:15.517Z"
   },
   {
     "id": "two-on-a-tower",
@@ -10901,7 +10947,7 @@
     "chapters": 22,
     "words": 94400,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.510Z"
+    "updatedAt": "2026-09-21T20:34:15.518Z"
   },
   {
     "id": "unnatural-death",
@@ -10948,7 +10994,7 @@
     "chapters": 25,
     "words": 82817,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.511Z"
+    "updatedAt": "2026-09-21T20:34:15.520Z"
   },
   {
     "id": "up-from-slavery-an-autobiography",
@@ -10995,7 +11041,7 @@
     "chapters": 18,
     "words": 76630,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.513Z"
+    "updatedAt": "2026-09-21T20:34:15.521Z"
   },
   {
     "id": "victorian-short-stories-stories-of-courtship",
@@ -11042,7 +11088,7 @@
     "chapters": 8,
     "words": 35965,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.514Z"
+    "updatedAt": "2026-09-21T20:34:15.523Z"
   },
   {
     "id": "washington-confidential",
@@ -11089,7 +11135,7 @@
     "chapters": 6,
     "words": 121405,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.516Z"
+    "updatedAt": "2026-09-21T20:34:15.524Z"
   },
   {
     "id": "weird-tales-volume-1-number-1-march-1923-the-unique-magazine",
@@ -11136,7 +11182,7 @@
     "chapters": 35,
     "words": 115926,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.518Z"
+    "updatedAt": "2026-09-21T20:34:15.525Z"
   },
   {
     "id": "weird-tales-volume-1-number-4-june-1923-the-unique-magazine",
@@ -11183,7 +11229,7 @@
     "chapters": 39,
     "words": 139402,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.520Z"
+    "updatedAt": "2026-09-21T20:34:15.526Z"
   },
   {
     "id": "white-fang",
@@ -11230,7 +11276,7 @@
     "chapters": 26,
     "words": 72038,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.522Z"
+    "updatedAt": "2026-09-21T20:34:15.527Z"
   },
   {
     "id": "whose-body-a-lord-peter-wimsey-novel",
@@ -11277,7 +11323,7 @@
     "chapters": 14,
     "words": 58870,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.524Z"
+    "updatedAt": "2026-09-21T20:34:15.529Z"
   },
   {
     "id": "wuthering-heights",
@@ -11324,7 +11370,7 @@
     "chapters": 34,
     "words": 115872,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.525Z"
+    "updatedAt": "2026-09-21T20:34:15.530Z"
   },
   {
     "id": "athar-alblad-wakhbar-alabad",
@@ -11370,7 +11416,7 @@
     "chapters": 11,
     "words": 145084,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.526Z"
+    "updatedAt": "2026-09-21T20:34:15.531Z"
   },
   {
     "id": "abw-bkr-alsdyq-awl-alkhlfa-alrashdyn",
@@ -11416,7 +11462,7 @@
     "chapters": 17,
     "words": 8451,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.528Z"
+    "updatedAt": "2026-09-21T20:34:15.533Z"
   },
   {
     "id": "athr-alarb-fy-alhdara-alawrbya-1946",
@@ -11462,7 +11508,7 @@
     "chapters": 17,
     "words": 25205,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.529Z"
+    "updatedAt": "2026-09-21T20:34:15.534Z"
   },
   {
     "id": "adb-altlb-wnhaya-alarb",
@@ -11476,7 +11522,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11508,7 +11554,7 @@
     "chapters": 18,
     "words": 19366,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.843Z"
+    "updatedAt": "2026-09-21T20:34:15.535Z"
   },
   {
     "id": "asrar-trtyb-alqran",
@@ -11554,7 +11600,7 @@
     "chapters": 11,
     "words": 4859,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.530Z"
+    "updatedAt": "2026-09-21T20:34:15.537Z"
   },
   {
     "id": "ahya-alwm-aldyn",
@@ -11600,7 +11646,7 @@
     "chapters": 18,
     "words": 74841,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.532Z"
+    "updatedAt": "2026-09-21T20:34:15.539Z"
   },
   {
     "id": "azhar-alhq",
@@ -11614,7 +11660,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11646,7 +11692,7 @@
     "chapters": 18,
     "words": 53776,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.842Z"
+    "updatedAt": "2026-09-21T20:34:15.540Z"
   },
   {
     "id": "aarab-alqran",
@@ -11692,7 +11738,7 @@
     "chapters": 18,
     "words": 17722,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.533Z"
+    "updatedAt": "2026-09-21T20:34:15.542Z"
   },
   {
     "id": "aghatha-allhfan-mn-msayd-alshytan",
@@ -11706,7 +11752,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11738,7 +11784,7 @@
     "chapters": 18,
     "words": 74761,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.822Z"
+    "updatedAt": "2026-09-21T20:34:15.543Z"
   },
   {
     "id": "aqama-aldlyl-ala-abtal-althlyl",
@@ -11752,7 +11798,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11784,7 +11830,7 @@
     "chapters": 18,
     "words": 314855,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.871Z"
+    "updatedAt": "2026-09-21T20:34:15.544Z"
   },
   {
     "id": "ansan-alaywn-fy-syra-alamyn-almamwn",
@@ -11830,7 +11876,7 @@
     "chapters": 18,
     "words": 306313,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.535Z"
+    "updatedAt": "2026-09-21T20:34:15.545Z"
   },
   {
     "id": "aqtda-alsrat-almstqym-mkhalfa-ashab-aljhym",
@@ -11844,7 +11890,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11876,7 +11922,7 @@
     "chapters": 18,
     "words": 103073,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.906Z"
+    "updatedAt": "2026-09-21T20:34:15.547Z"
   },
   {
     "id": "alara-walmatqdat-1926",
@@ -11890,7 +11936,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11922,7 +11968,7 @@
     "chapters": 17,
     "words": 11593,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.823Z"
+    "updatedAt": "2026-09-21T20:34:15.548Z"
   },
   {
     "id": "alamthal-alaamya-mshrwha-wmrtba-ala-alhrf-alawl-mn-almthl-al",
@@ -11936,7 +11982,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -11968,7 +12014,7 @@
     "chapters": 18,
     "words": 96988,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.851Z"
+    "updatedAt": "2026-09-21T20:34:15.566Z"
   },
   {
     "id": "alanys-almtrb-brwd-alqrtas-fy-akhbar-mlwk-almghrb-wtarykh-md",
@@ -12014,7 +12060,7 @@
     "chapters": 18,
     "words": 16856,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.539Z"
+    "updatedAt": "2026-09-21T20:34:15.568Z"
   },
   {
     "id": "alahkam-fy-aswl-alahkam",
@@ -12060,7 +12106,7 @@
     "chapters": 16,
     "words": 37823,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.540Z"
+    "updatedAt": "2026-09-21T20:34:15.569Z"
   },
   {
     "id": "alaalam-bma-fy-dyn-alnsara-mn-alfsad-walawham-wazhar-mhasn-d",
@@ -12074,7 +12120,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12106,7 +12152,7 @@
     "chapters": 17,
     "words": 38433,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.825Z"
+    "updatedAt": "2026-09-21T20:34:15.571Z"
   },
   {
     "id": "alakhtyarat-alfqhya-lshykh-alaslam-abn-tymya",
@@ -12120,7 +12166,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12152,7 +12198,7 @@
     "chapters": 18,
     "words": 41785,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.860Z"
+    "updatedAt": "2026-09-21T20:34:15.572Z"
   },
   {
     "id": "albdaya-walnhaya",
@@ -12198,7 +12244,7 @@
     "chapters": 17,
     "words": 31351,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.542Z"
+    "updatedAt": "2026-09-21T20:34:15.574Z"
   },
   {
     "id": "albdaya-walnhaya-mtbaa-alsaada-1351h",
@@ -12244,7 +12290,7 @@
     "chapters": 18,
     "words": 15842,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.543Z"
+    "updatedAt": "2026-09-21T20:34:15.575Z"
   },
   {
     "id": "altaj-fy-akhlaq-almlwk",
@@ -12290,7 +12336,7 @@
     "chapters": 17,
     "words": 3241,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.544Z"
+    "updatedAt": "2026-09-21T20:34:15.576Z"
   },
   {
     "id": "altarykh-alkbyr",
@@ -12336,7 +12382,7 @@
     "chapters": 17,
     "words": 71045,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.546Z"
+    "updatedAt": "2026-09-21T20:34:15.577Z"
   },
   {
     "id": "althdhyb-fy-aswl-altaryb",
@@ -12350,7 +12396,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12382,7 +12428,7 @@
     "chapters": 18,
     "words": 15777,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.839Z"
+    "updatedAt": "2026-09-21T20:34:15.579Z"
   },
   {
     "id": "altyjan-fy-mlwk-hmyr",
@@ -12428,7 +12474,7 @@
     "chapters": 18,
     "words": 21295,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.547Z"
+    "updatedAt": "2026-09-21T20:34:15.580Z"
   },
   {
     "id": "aljama-lahkam-alqran",
@@ -12474,7 +12520,7 @@
     "chapters": 17,
     "words": 18349,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.549Z"
+    "updatedAt": "2026-09-21T20:34:15.581Z"
   },
   {
     "id": "alkhsays",
@@ -12520,7 +12566,7 @@
     "chapters": 18,
     "words": 24159,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.550Z"
+    "updatedAt": "2026-09-21T20:34:15.583Z"
   },
   {
     "id": "aldr-almnthwr-fy-altfsyr-balmathwr",
@@ -12566,7 +12612,7 @@
     "chapters": 17,
     "words": 292443,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.551Z"
+    "updatedAt": "2026-09-21T20:34:15.584Z"
   },
   {
     "id": "alrd-ala-almntqyyn",
@@ -12580,7 +12626,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12612,7 +12658,7 @@
     "chapters": 18,
     "words": 118877,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.912Z"
+    "updatedAt": "2026-09-21T20:34:15.586Z"
   },
   {
     "id": "alrsala",
@@ -12658,7 +12704,7 @@
     "chapters": 18,
     "words": 24843,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.553Z"
+    "updatedAt": "2026-09-21T20:34:15.588Z"
   },
   {
     "id": "mwlf",
@@ -12704,7 +12750,7 @@
     "chapters": 18,
     "words": 14876,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.555Z"
+    "updatedAt": "2026-09-21T20:34:15.590Z"
   },
   {
     "id": "alrwd-alaatr-fy-nzha-alkhatr",
@@ -12718,7 +12764,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12750,7 +12796,7 @@
     "chapters": 18,
     "words": 13201,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.892Z"
+    "updatedAt": "2026-09-21T20:34:15.591Z"
   },
   {
     "id": "alrwda-alndya-shrh-aldrr-albhya",
@@ -12796,7 +12842,7 @@
     "chapters": 16,
     "words": 44326,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.557Z"
+    "updatedAt": "2026-09-21T20:34:15.592Z"
   },
   {
     "id": "alrwm-fy-syasthm-whdarthm-wdynhm-wthqafthm-wslathm-balarb-19",
@@ -12810,7 +12856,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12842,7 +12888,7 @@
     "chapters": 11,
     "words": 41162,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.879Z"
+    "updatedAt": "2026-09-21T20:34:15.594Z"
   },
   {
     "id": "alswaaq-almrsla-fy-alrd-ala-aljhmya-walmatla",
@@ -12888,7 +12934,53 @@
     "chapters": 18,
     "words": 33223,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.558Z"
+    "updatedAt": "2026-09-21T20:34:15.595Z"
+  },
+  {
+    "id": "alaqd-alfryd-mwlf-abn-abd-rbh-mlahzat",
+    "source": "wikisource",
+    "sourceKey": "wikisource",
+    "sourceLabel": {
+      "ar": "ويكي مصدر العربية",
+      "en": "ويكي مصدر العربية"
+    },
+    "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A7%D9%84%D8%B9%D9%82%D8%AF_%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF",
+    "license": "wikisource-policy",
+    "licenseLabel": {
+      "ar": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر",
+      "en": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر"
+    },
+    "licenseUrl": "https://wikisource.org/wiki/Wikisource:Copyright",
+    "licenseAudit": "platform-policy",
+    "title": {
+      "ar": "العقد الفريد",
+      "en": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }}"
+    },
+    "author": {
+      "ar": "",
+      "en": "ابن عبد ربه|ملاحظات= }}"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }} — ابن عبد ربه|ملاحظات= }}. نص كامل من الملكية العامة منشور على ويكي مصدر العربية، مقروء مجاناً على منصة قِرطاس.",
+      "en": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }} by ابن عبد ربه|ملاحظات= }}. Full public-domain text from Wikisource, free to read on Qirtas."
+    },
+    "grad": "cover-g1",
+    "emoji": "🕊️",
+    "chapters": 17,
+    "words": 80390,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T20:34:15.989Z"
   },
   {
     "id": "alaqd-alfryd",
@@ -12902,7 +12994,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -12934,53 +13026,7 @@
     "chapters": 18,
     "words": 17016,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.894Z"
-  },
-  {
-    "id": "alaqd-alfryd-mwlf-abn-abd-rbh-mlahzat",
-    "source": "wikisource",
-    "sourceKey": "wikisource",
-    "sourceLabel": {
-      "ar": "ويكي مصدر العربية",
-      "en": "ويكي مصدر العربية"
-    },
-    "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A7%D9%84%D8%B9%D9%82%D8%AF_%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF",
-    "license": "wikisource-policy",
-    "licenseLabel": {
-      "ar": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر",
-      "en": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر"
-    },
-    "licenseUrl": "https://wikisource.org/wiki/Wikisource:Copyright",
-    "licenseAudit": "platform-policy",
-    "title": {
-      "ar": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }}",
-      "en": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }}"
-    },
-    "author": {
-      "ar": "ابن عبد ربه|ملاحظات= }}",
-      "en": "ابن عبد ربه|ملاحظات= }}"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": null,
-    "era": "تراث عربي",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }} — ابن عبد ربه|ملاحظات= }}. نص كامل من الملكية العامة منشور على ويكي مصدر العربية، مقروء مجاناً على منصة قِرطاس.",
-      "en": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }} by ابن عبد ربه|ملاحظات= }}. Full public-domain text from Wikisource, free to read on Qirtas."
-    },
-    "grad": "cover-g1",
-    "emoji": "🕊️",
-    "chapters": 17,
-    "words": 80390,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.559Z"
+    "updatedAt": "2026-09-21T20:34:15.596Z"
   },
   {
     "id": "alaqwd-aldrya-mn-mnaqb-shykh-alaslam-ahmd-bn-tymya",
@@ -12994,7 +13040,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13026,7 +13072,7 @@
     "chapters": 18,
     "words": 28641,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.875Z"
+    "updatedAt": "2026-09-21T20:34:15.599Z"
   },
   {
     "id": "alftawa-alkbra",
@@ -13072,7 +13118,7 @@
     "chapters": 14,
     "words": 90004,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.561Z"
+    "updatedAt": "2026-09-21T20:34:15.600Z"
   },
   {
     "id": "alqamws-aljghrafy-llblad-almsrya-mn-ahd-qdma-almsryyn-ala-sn",
@@ -13086,7 +13132,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13118,7 +13164,7 @@
     "chapters": 17,
     "words": 65007,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.863Z"
+    "updatedAt": "2026-09-21T20:34:15.601Z"
   },
   {
     "id": "alqran-alkrym-balrsm-alamlayy",
@@ -13164,7 +13210,7 @@
     "chapters": 17,
     "words": 195222,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.562Z"
+    "updatedAt": "2026-09-21T20:34:15.603Z"
   },
   {
     "id": "alqrn-alashrwn-ma-kan-wma-sykwn",
@@ -13178,7 +13224,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13210,7 +13256,7 @@
     "chapters": 2,
     "words": 3971,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.901Z"
+    "updatedAt": "2026-09-21T20:34:15.605Z"
   },
   {
     "id": "alkafy",
@@ -13256,7 +13302,7 @@
     "chapters": 10,
     "words": 7125,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.564Z"
+    "updatedAt": "2026-09-21T20:34:15.606Z"
   },
   {
     "id": "alktab-alakhdr",
@@ -13270,7 +13316,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13302,7 +13348,7 @@
     "chapters": 16,
     "words": 8755,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.876Z"
+    "updatedAt": "2026-09-21T20:34:15.607Z"
   },
   {
     "id": "alktab-almkhtsr-fy-hsab-aljbr-walmqabla",
@@ -13316,7 +13362,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13348,7 +13394,53 @@
     "chapters": 16,
     "words": 19625,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.914Z"
+    "updatedAt": "2026-09-21T20:34:15.608Z"
+  },
+  {
+    "id": "alklmat-alhsan",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/2001-alkalimat_alhisan-wahbi",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "الكلمات الحسان",
+      "en": "الكلمات الحسان"
+    },
+    "author": {
+      "ar": "عبد الهادي حسن وهبي",
+      "en": "عبد الهادي حسن وهبي"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2001",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "الكلمات الحسان — عبد الهادي حسن وهبي. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "الكلمات الحسان by عبد الهادي حسن وهبي. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g1",
+    "emoji": "📚",
+    "chapters": 8,
+    "words": 77713,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T20:34:15.884Z"
   },
   {
     "id": "abn-hzm-almhla",
@@ -13394,7 +13486,7 @@
     "chapters": 18,
     "words": 51641,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:23:49.143Z"
+    "updatedAt": "2026-09-21T20:34:15.610Z"
   },
   {
     "id": "abn-hzm-almhla-ar",
@@ -13440,7 +13532,7 @@
     "chapters": 18,
     "words": 55675,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:23:49.143Z"
+    "updatedAt": "2026-09-21T20:34:15.611Z"
   },
   {
     "id": "almzhr",
@@ -13486,7 +13578,7 @@
     "chapters": 18,
     "words": 86123,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.566Z"
+    "updatedAt": "2026-09-21T20:34:15.612Z"
   },
   {
     "id": "almsbah-almnyr",
@@ -13500,7 +13592,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13532,7 +13624,7 @@
     "chapters": 18,
     "words": 125372,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.864Z"
+    "updatedAt": "2026-09-21T20:34:15.613Z"
   },
   {
     "id": "almsnf",
@@ -13546,7 +13638,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13578,7 +13670,7 @@
     "chapters": 18,
     "words": 160094,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.829Z"
+    "updatedAt": "2026-09-21T20:34:15.615Z"
   },
   {
     "id": "alnaskh-walmnswkh",
@@ -13592,7 +13684,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13624,7 +13716,7 @@
     "chapters": 4,
     "words": 6600,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.897Z"
+    "updatedAt": "2026-09-21T20:34:15.616Z"
   },
   {
     "id": "alnzrat",
@@ -13670,7 +13762,7 @@
     "chapters": 18,
     "words": 13806,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.567Z"
+    "updatedAt": "2026-09-21T20:34:15.617Z"
   },
   {
     "id": "brwtwkwlat-hkma-shywn",
@@ -13684,7 +13776,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13716,7 +13808,7 @@
     "chapters": 18,
     "words": 15242,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.884Z"
+    "updatedAt": "2026-09-21T20:34:15.618Z"
   },
   {
     "id": "byan-tlbys-aljhmya-fy-tasys-bdahm-alklamya",
@@ -13730,7 +13822,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13762,7 +13854,7 @@
     "chapters": 18,
     "words": 277748,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.916Z"
+    "updatedAt": "2026-09-21T20:34:15.620Z"
   },
   {
     "id": "taj-alarws",
@@ -13776,7 +13868,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13808,7 +13900,7 @@
     "chapters": 18,
     "words": 142107,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.874Z"
+    "updatedAt": "2026-09-21T20:34:15.622Z"
   },
   {
     "id": "tarykh-alflsfa-alywnanya",
@@ -13822,7 +13914,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13854,7 +13946,7 @@
     "chapters": 17,
     "words": 42205,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.917Z"
+    "updatedAt": "2026-09-21T20:34:15.623Z"
   },
   {
     "id": "tarykh-alkwyt-alsyasy-aljz-alawl",
@@ -13868,7 +13960,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13900,7 +13992,7 @@
     "chapters": 18,
     "words": 29755,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.903Z"
+    "updatedAt": "2026-09-21T20:34:15.624Z"
   },
   {
     "id": "thfa-alnzar-fy-ghrayb-alamsar-wajayb-alasfar",
@@ -13946,7 +14038,7 @@
     "chapters": 17,
     "words": 7120,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.569Z"
+    "updatedAt": "2026-09-21T20:34:15.626Z"
   },
   {
     "id": "tkhlys-alabryz-fy-tlkhys-baryz-mwssa-hndawy",
@@ -13960,7 +14052,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -13992,7 +14084,7 @@
     "chapters": 16,
     "words": 27619,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.820Z"
+    "updatedAt": "2026-09-21T20:34:15.627Z"
   },
   {
     "id": "tdhkra-alhfaz",
@@ -14006,7 +14098,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14038,7 +14130,7 @@
     "chapters": 18,
     "words": 270066,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.890Z"
+    "updatedAt": "2026-09-21T20:34:15.628Z"
   },
   {
     "id": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
@@ -14084,7 +14176,7 @@
     "chapters": 18,
     "words": 515390,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.571Z"
+    "updatedAt": "2026-09-21T20:34:15.629Z"
   },
   {
     "id": "tfsyr-alqran-alazym",
@@ -14130,7 +14222,7 @@
     "chapters": 18,
     "words": 385389,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.572Z"
+    "updatedAt": "2026-09-21T20:34:15.631Z"
   },
   {
     "id": "tfsyr-almraghy",
@@ -14176,7 +14268,7 @@
     "chapters": 18,
     "words": 382027,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.573Z"
+    "updatedAt": "2026-09-21T20:34:15.632Z"
   },
   {
     "id": "tqryb-althdhyb",
@@ -14222,7 +14314,7 @@
     "chapters": 17,
     "words": 10699,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.578Z"
+    "updatedAt": "2026-09-21T20:34:15.633Z"
   },
   {
     "id": "tlbys-ablys",
@@ -14268,7 +14360,7 @@
     "chapters": 17,
     "words": 37358,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.581Z"
+    "updatedAt": "2026-09-21T20:34:15.635Z"
   },
   {
     "id": "thdhyb-althdhyb",
@@ -14282,7 +14374,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14314,7 +14406,7 @@
     "chapters": 18,
     "words": 493907,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.855Z"
+    "updatedAt": "2026-09-21T20:34:15.636Z"
   },
   {
     "id": "jama-alalwm-walhkm",
@@ -14360,7 +14452,7 @@
     "chapters": 18,
     "words": 74229,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.583Z"
+    "updatedAt": "2026-09-21T20:34:15.638Z"
   },
   {
     "id": "jama-byan-alalm-wfdlh",
@@ -14406,7 +14498,7 @@
     "chapters": 18,
     "words": 42065,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.584Z"
+    "updatedAt": "2026-09-21T20:34:15.639Z"
   },
   {
     "id": "jmhra-ansab-alarb",
@@ -14420,7 +14512,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14452,7 +14544,7 @@
     "chapters": 16,
     "words": 4423,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.887Z"
+    "updatedAt": "2026-09-21T20:34:15.640Z"
   },
   {
     "id": "hwadth-dmshq-alywmya",
@@ -14466,7 +14558,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14498,7 +14590,7 @@
     "chapters": 18,
     "words": 10016,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.898Z"
+    "updatedAt": "2026-09-21T20:34:15.642Z"
   },
   {
     "id": "dr-taard-alaql-walnql",
@@ -14544,7 +14636,7 @@
     "chapters": 18,
     "words": 229716,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.585Z"
+    "updatedAt": "2026-09-21T20:34:15.643Z"
   },
   {
     "id": "dmaa-wabtsama",
@@ -14590,7 +14682,7 @@
     "chapters": 15,
     "words": 4734,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.586Z"
+    "updatedAt": "2026-09-21T20:34:15.644Z"
   },
   {
     "id": "dywan-alkhnsa",
@@ -14604,7 +14696,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14636,7 +14728,7 @@
     "chapters": 17,
     "words": 11891,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.908Z"
+    "updatedAt": "2026-09-21T20:34:15.645Z"
   },
   {
     "id": "dywan-shaar-alwtn-alkbyr-alftra-althaltha",
@@ -14682,7 +14774,7 @@
     "chapters": 17,
     "words": 3332,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.588Z"
+    "updatedAt": "2026-09-21T20:34:15.647Z"
   },
   {
     "id": "rjwa-alshykh-ala-sbah",
@@ -14728,7 +14820,7 @@
     "chapters": 17,
     "words": 8047,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.589Z"
+    "updatedAt": "2026-09-21T20:34:15.648Z"
   },
   {
     "id": "rhla-abn-jbyr",
@@ -14742,7 +14834,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14774,7 +14866,7 @@
     "chapters": 18,
     "words": 26936,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.848Z"
+    "updatedAt": "2026-09-21T20:34:15.653Z"
   },
   {
     "id": "rsala-abn-fdlan-t-samy-aldhan",
@@ -14788,7 +14880,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14820,7 +14912,7 @@
     "chapters": 14,
     "words": 23953,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.857Z"
+    "updatedAt": "2026-09-21T20:34:15.656Z"
   },
   {
     "id": "ryad-alsalhyn",
@@ -14866,7 +14958,7 @@
     "chapters": 18,
     "words": 3127,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.591Z"
+    "updatedAt": "2026-09-21T20:34:15.657Z"
   },
   {
     "id": "sr-tqdm-alanklyz-alskswnyyn",
@@ -14880,7 +14972,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14912,7 +15004,7 @@
     "chapters": 18,
     "words": 75564,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.909Z"
+    "updatedAt": "2026-09-21T20:34:15.659Z"
   },
   {
     "id": "snn-aby-dawd",
@@ -14926,7 +15018,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -14958,7 +15050,7 @@
     "chapters": 18,
     "words": 150076,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.834Z"
+    "updatedAt": "2026-09-21T20:34:15.660Z"
   },
   {
     "id": "snn-abn-maja",
@@ -15004,7 +15096,7 @@
     "chapters": 18,
     "words": 25541,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.592Z"
+    "updatedAt": "2026-09-21T20:34:15.661Z"
   },
   {
     "id": "snn-altrmdhy",
@@ -15050,7 +15142,7 @@
     "chapters": 17,
     "words": 39710,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.594Z"
+    "updatedAt": "2026-09-21T20:34:15.662Z"
   },
   {
     "id": "snn-aldarqtny",
@@ -15064,7 +15156,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15096,7 +15188,7 @@
     "chapters": 18,
     "words": 243710,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.881Z"
+    "updatedAt": "2026-09-21T20:34:15.664Z"
   },
   {
     "id": "snn-aldarmy",
@@ -15110,7 +15202,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15142,7 +15234,7 @@
     "chapters": 18,
     "words": 117004,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.889Z"
+    "updatedAt": "2026-09-21T20:34:15.666Z"
   },
   {
     "id": "sydna-mhmd-sla-allh-alyh-wslm",
@@ -15188,7 +15280,7 @@
     "chapters": 18,
     "words": 11625,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.595Z"
+    "updatedAt": "2026-09-21T20:34:15.667Z"
   },
   {
     "id": "syr-aalam-alnbla",
@@ -15234,7 +15326,7 @@
     "chapters": 18,
     "words": 9097,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.597Z"
+    "updatedAt": "2026-09-21T20:34:15.669Z"
   },
   {
     "id": "syra-abn-hsham-mwlf-abn-hsham",
@@ -15248,16 +15340,16 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
     "title": {
-      "ar": "سيرة ابن هشام|مؤلف=ابن هشام}}",
+      "ar": "سيرة ابن هشام",
       "en": "سيرة ابن هشام|مؤلف=ابن هشام}}"
     },
     "author": {
-      "ar": "ابن هشام}}",
+      "ar": "",
       "en": "ابن هشام}}"
     },
     "translator": null,
@@ -15280,7 +15372,7 @@
     "chapters": 16,
     "words": 4412,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.845Z"
+    "updatedAt": "2026-09-21T20:34:15.989Z"
   },
   {
     "id": "shrh-alaqyda-althawya",
@@ -15326,7 +15418,7 @@
     "chapters": 18,
     "words": 48012,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.598Z"
+    "updatedAt": "2026-09-21T20:34:15.672Z"
   },
   {
     "id": "shrh-tshryh-alqanwn-labn-syna",
@@ -15372,7 +15464,7 @@
     "chapters": 15,
     "words": 15020,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.599Z"
+    "updatedAt": "2026-09-21T20:34:15.673Z"
   },
   {
     "id": "shfa-alalyl-fy-msayl-alqda-walqdr-walhkma-waltalyl",
@@ -15386,7 +15478,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15418,7 +15510,7 @@
     "chapters": 18,
     "words": 107950,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.866Z"
+    "updatedAt": "2026-09-21T20:34:15.674Z"
   },
   {
     "id": "shyh-albkhary-mwlf-albkhary-sabq-ktb-alhdyth-alnbwy-lahq-kta",
@@ -15437,11 +15529,11 @@
     "licenseUrl": "https://wikisource.org/wiki/Wikisource:Copyright",
     "licenseAudit": "platform-policy",
     "title": {
-      "ar": "صحيح البخاري|مؤلف=البخاري|سابق= → كتب الحديث النبوي |لاحق= كتاب بدء الوحي ← |ملاحظات= توجد نسخة مطبوعة مشروحة للتنزيل }}",
+      "ar": "صحيح البخاري",
       "en": "صحيح البخاري|مؤلف=البخاري|سابق= → كتب الحديث النبوي |لاحق= كتاب بدء الوحي ← |ملاحظات= توجد نسخة مطبوعة مشروحة للتنزيل }}"
     },
     "author": {
-      "ar": "البخاري|سابق= → كتب الحديث النبوي |لاحق= كتاب بدء الوحي ← |ملاحظات= توجد نسخة مطبوعة مشروحة للتنزيل }}",
+      "ar": "",
       "en": "البخاري|سابق= → كتب الحديث النبوي |لاحق= كتاب بدء الوحي ← |ملاحظات= توجد نسخة مطبوعة مشروحة للتنزيل }}"
     },
     "translator": null,
@@ -15464,7 +15556,7 @@
     "chapters": 18,
     "words": 62620,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.601Z"
+    "updatedAt": "2026-09-21T20:34:15.989Z"
   },
   {
     "id": "shyh-mslm",
@@ -15510,7 +15602,53 @@
     "chapters": 18,
     "words": 136246,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.602Z"
+    "updatedAt": "2026-09-21T20:34:15.677Z"
+  },
+  {
+    "id": "shyfa-almsra-34",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/AlmasraNewspaper_034",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "صحيفة المسرى 34",
+      "en": "صحيفة المسرى 34"
+    },
+    "author": {
+      "ar": "صحيفة المسرى",
+      "en": "صحيفة المسرى"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2016",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "صحيفة المسرى 34 — صحيفة المسرى. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "صحيفة المسرى 34 by صحيفة المسرى. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g5",
+    "emoji": "⛵",
+    "chapters": 18,
+    "words": 16461,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T20:34:15.883Z"
   },
   {
     "id": "swr-alkwakb-althmanya-walarbayn",
@@ -15556,7 +15694,7 @@
     "chapters": 18,
     "words": 14828,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.605Z"
+    "updatedAt": "2026-09-21T20:34:15.678Z"
   },
   {
     "id": "syd-alkhatr",
@@ -15602,7 +15740,7 @@
     "chapters": 18,
     "words": 5186,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.607Z"
+    "updatedAt": "2026-09-21T20:34:15.679Z"
   },
   {
     "id": "twq-alhmama",
@@ -15616,7 +15754,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15648,7 +15786,7 @@
     "chapters": 18,
     "words": 12624,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.862Z"
+    "updatedAt": "2026-09-21T20:34:15.680Z"
   },
   {
     "id": "ajayb-almkhlwqat-wghrayb-almwjwdat",
@@ -15662,7 +15800,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15694,7 +15832,7 @@
     "chapters": 18,
     "words": 24336,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.882Z"
+    "updatedAt": "2026-09-21T20:34:15.682Z"
   },
   {
     "id": "alm-alnjwm-waswl-alhrkat-alsmawya",
@@ -15708,7 +15846,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15740,7 +15878,7 @@
     "chapters": 17,
     "words": 9831,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.849Z"
+    "updatedAt": "2026-09-21T20:34:15.683Z"
   },
   {
     "id": "aywn-alanba-fy-tbqat-alatba",
@@ -15786,7 +15924,7 @@
     "chapters": 15,
     "words": 7820,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.608Z"
+    "updatedAt": "2026-09-21T20:34:15.684Z"
   },
   {
     "id": "fqh-allgha-wsr-alarbya",
@@ -15800,7 +15938,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15832,7 +15970,7 @@
     "chapters": 18,
     "words": 22466,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.867Z"
+    "updatedAt": "2026-09-21T20:34:15.686Z"
   },
   {
     "id": "ktab-alahkam-alshraya-alkbra",
@@ -15878,7 +16016,7 @@
     "chapters": 18,
     "words": 72988,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.610Z"
+    "updatedAt": "2026-09-21T20:34:15.688Z"
   },
   {
     "id": "ktab-alam",
@@ -15924,7 +16062,7 @@
     "chapters": 18,
     "words": 8717,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.611Z"
+    "updatedAt": "2026-09-21T20:34:15.689Z"
   },
   {
     "id": "ktab-alzhd-labn-mbark",
@@ -15938,7 +16076,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -15970,7 +16108,7 @@
     "chapters": 18,
     "words": 48937,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.859Z"
+    "updatedAt": "2026-09-21T20:34:15.690Z"
   },
   {
     "id": "ktab-alzhra",
@@ -16016,7 +16154,7 @@
     "chapters": 18,
     "words": 6460,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.612Z"
+    "updatedAt": "2026-09-21T20:34:15.692Z"
   },
   {
     "id": "ktab-almwaqf",
@@ -16062,7 +16200,7 @@
     "chapters": 18,
     "words": 5048,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.614Z"
+    "updatedAt": "2026-09-21T20:34:15.693Z"
   },
   {
     "id": "klyla-wdmna",
@@ -16076,7 +16214,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16108,7 +16246,7 @@
     "chapters": 18,
     "words": 47553,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.911Z"
+    "updatedAt": "2026-09-21T20:34:15.694Z"
   },
   {
     "id": "lsan-alarb",
@@ -16154,7 +16292,7 @@
     "chapters": 18,
     "words": 426748,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.615Z"
+    "updatedAt": "2026-09-21T20:34:15.696Z"
   },
   {
     "id": "lab-alarb-altbaa-alawla",
@@ -16168,7 +16306,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16200,7 +16338,7 @@
     "chapters": 17,
     "words": 6198,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.852Z"
+    "updatedAt": "2026-09-21T20:34:15.697Z"
   },
   {
     "id": "mjla-albyan-llbrqwqy",
@@ -16223,7 +16361,7 @@
       "en": "مجلة البيان للبرقوقي"
     },
     "author": {
-      "ar": "| مترجم =",
+      "ar": "",
       "en": "| مترجم ="
     },
     "translator": null,
@@ -16246,7 +16384,7 @@
     "chapters": 16,
     "words": 33101,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.617Z"
+    "updatedAt": "2026-09-21T20:34:15.989Z"
   },
   {
     "id": "mjla-alrsala",
@@ -16269,7 +16407,7 @@
       "en": "مجلة الرسالة"
     },
     "author": {
-      "ar": "| مترجم =",
+      "ar": "",
       "en": "| مترجم ="
     },
     "translator": null,
@@ -16292,7 +16430,7 @@
     "chapters": 18,
     "words": 18388,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.618Z"
+    "updatedAt": "2026-09-21T20:34:15.989Z"
   },
   {
     "id": "mjla-almqtbs",
@@ -16338,7 +16476,7 @@
     "chapters": 17,
     "words": 11077,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.620Z"
+    "updatedAt": "2026-09-21T20:34:15.701Z"
   },
   {
     "id": "mjla-almnar",
@@ -16384,7 +16522,53 @@
     "chapters": 16,
     "words": 25575,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.621Z"
+    "updatedAt": "2026-09-21T20:34:15.703Z"
+  },
+  {
+    "id": "mjla-hwlyat-altrath-jamaa-mstghanm-aladd-18",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/ar401mosta18",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "مجلة حوليات التراث، جامعة مستغانم، العدد 18",
+      "en": "مجلة حوليات التراث، جامعة مستغانم، العدد 18"
+    },
+    "author": {
+      "ar": "د. محمد عباسة",
+      "en": "د. محمد عباسة"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2018",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "مجلة حوليات التراث، جامعة مستغانم، العدد 18 — د. محمد عباسة. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "مجلة حوليات التراث، جامعة مستغانم، العدد 18 by د. محمد عباسة. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g2",
+    "emoji": "🌙",
+    "chapters": 4,
+    "words": 122708,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T20:34:15.886Z"
   },
   {
     "id": "mjma-alzwayd",
@@ -16398,7 +16582,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16430,7 +16614,7 @@
     "chapters": 18,
     "words": 192207,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.827Z"
+    "updatedAt": "2026-09-21T20:34:15.705Z"
   },
   {
     "id": "mjmwa-ftawa-abn-tymya",
@@ -16476,7 +16660,7 @@
     "chapters": 14,
     "words": 21715,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.623Z"
+    "updatedAt": "2026-09-21T20:34:15.706Z"
   },
   {
     "id": "mjmwaa-alrsayl-walmsayl",
@@ -16490,7 +16674,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16522,7 +16706,7 @@
     "chapters": 18,
     "words": 112960,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.854Z"
+    "updatedAt": "2026-09-21T20:34:15.707Z"
   },
   {
     "id": "mhadrat-fy-tarykh-aldwla-alabasya",
@@ -16536,7 +16720,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16568,7 +16752,7 @@
     "chapters": 16,
     "words": 58940,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.904Z"
+    "updatedAt": "2026-09-21T20:34:15.709Z"
   },
   {
     "id": "mkhtar-alshah",
@@ -16582,7 +16766,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16614,7 +16798,7 @@
     "chapters": 18,
     "words": 98668,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.869Z"
+    "updatedAt": "2026-09-21T20:34:15.710Z"
   },
   {
     "id": "mkhtsr-shyh-mslm",
@@ -16660,7 +16844,7 @@
     "chapters": 18,
     "words": 51319,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.624Z"
+    "updatedAt": "2026-09-21T20:34:15.711Z"
   },
   {
     "id": "mdhkraty-an-althwra-alarbya-alkbra",
@@ -16674,7 +16858,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16706,7 +16890,7 @@
     "chapters": 18,
     "words": 63427,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.900Z"
+    "updatedAt": "2026-09-21T20:34:15.713Z"
   },
   {
     "id": "mratb-alajmaa",
@@ -16752,7 +16936,7 @@
     "chapters": 15,
     "words": 5136,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.626Z"
+    "updatedAt": "2026-09-21T20:34:15.714Z"
   },
   {
     "id": "msnd-ahmd-bn-hnbl",
@@ -16798,7 +16982,7 @@
     "chapters": 17,
     "words": 33287,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.627Z"
+    "updatedAt": "2026-09-21T20:34:15.715Z"
   },
   {
     "id": "maalm-alsnn",
@@ -16844,7 +17028,7 @@
     "chapters": 17,
     "words": 86705,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.628Z"
+    "updatedAt": "2026-09-21T20:34:15.716Z"
   },
   {
     "id": "marfa-anwaa-alwm-alhdyth",
@@ -16890,7 +17074,7 @@
     "chapters": 18,
     "words": 15098,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.630Z"
+    "updatedAt": "2026-09-21T20:34:15.718Z"
   },
   {
     "id": "marka-alaslam-walrasmalya",
@@ -16904,7 +17088,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16936,7 +17120,7 @@
     "chapters": 18,
     "words": 17363,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.886Z"
+    "updatedAt": "2026-09-21T20:34:15.719Z"
   },
   {
     "id": "mghamrat-hajy-baba-alasfhany",
@@ -16950,7 +17134,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -16982,7 +17166,7 @@
     "chapters": 18,
     "words": 19098,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.836Z"
+    "updatedAt": "2026-09-21T20:34:15.721Z"
   },
   {
     "id": "mftah-alhsab",
@@ -17028,7 +17212,7 @@
     "chapters": 18,
     "words": 12128,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.631Z"
+    "updatedAt": "2026-09-21T20:34:15.722Z"
   },
   {
     "id": "mfyd-alalwm-wmbyd-alhmwm",
@@ -17074,7 +17258,7 @@
     "chapters": 16,
     "words": 7733,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.632Z"
+    "updatedAt": "2026-09-21T20:34:15.724Z"
   },
   {
     "id": "mn-almlwm-rwaya-adbya-ghzlya-hqyqya-byn-shab-swry-wftaa-afrn",
@@ -17088,7 +17272,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -17120,7 +17304,7 @@
     "chapters": 17,
     "words": 15475,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.878Z"
+    "updatedAt": "2026-09-21T20:34:15.725Z"
   },
   {
     "id": "mnhaj-alsna-alnbwya-fy-nqd-klam-alshyaa-alqdrya",
@@ -17166,7 +17350,7 @@
     "chapters": 18,
     "words": 199367,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.634Z"
+    "updatedAt": "2026-09-21T20:34:15.726Z"
   },
   {
     "id": "mwta-alamam-malk",
@@ -17180,7 +17364,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -17212,7 +17396,7 @@
     "chapters": 18,
     "words": 81767,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.830Z"
+    "updatedAt": "2026-09-21T20:34:15.728Z"
   },
   {
     "id": "nzha-alftyan-fy-trajm-bad-alshjaan",
@@ -17226,7 +17410,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -17258,7 +17442,7 @@
     "chapters": 18,
     "words": 9515,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.840Z"
+    "updatedAt": "2026-09-21T20:34:15.729Z"
   },
   {
     "id": "nzha-almshtaq-fy-akhtraq-alafaq",
@@ -17304,7 +17488,7 @@
     "chapters": 18,
     "words": 63587,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.635Z"
+    "updatedAt": "2026-09-21T20:34:15.730Z"
   },
   {
     "id": "nsa-alkhlfa-dar-almaarf-1950",
@@ -17318,7 +17502,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -17350,7 +17534,7 @@
     "chapters": 17,
     "words": 30714,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.838Z"
+    "updatedAt": "2026-09-21T20:34:15.732Z"
   },
   {
     "id": "nsws-qanwn-mjls-aldwla-msr",
@@ -17364,7 +17548,7 @@
     "license": "public-domain",
     "licenseLabel": {
       "ar": "ملكية عامة",
-      "en": "Public domain"
+      "en": "ملكية عامة"
     },
     "licenseUrl": "",
     "licenseAudit": "",
@@ -17396,7 +17580,7 @@
     "chapters": 15,
     "words": 11327,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.832Z"
+    "updatedAt": "2026-09-21T20:34:15.733Z"
   },
   {
     "id": "nzam-alathynyyn",
@@ -17442,7 +17626,7 @@
     "chapters": 18,
     "words": 6189,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.636Z"
+    "updatedAt": "2026-09-21T20:34:15.734Z"
   },
   {
     "id": "hdaya-alhyara",
@@ -17488,7 +17672,7 @@
     "chapters": 18,
     "words": 19057,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.638Z"
+    "updatedAt": "2026-09-21T20:34:15.736Z"
   },
   {
     "id": "hdy-alsary-mqdma-fth-albary",
@@ -17534,7 +17718,7 @@
     "chapters": 18,
     "words": 29867,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.639Z"
+    "updatedAt": "2026-09-21T20:34:15.738Z"
   },
   {
     "id": "wthyqa-mwtmr-alhwar-alwtny-alshaml",
@@ -17580,7 +17764,53 @@
     "chapters": 16,
     "words": 17918,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.641Z"
+    "updatedAt": "2026-09-21T20:34:15.739Z"
+  },
+  {
+    "id": "ytyma-aldhr-fy-shara-ahl-alasr-aljz-althalth",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/YatimatAlDahrFeyShoaraaAhlAlAsr03",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "يتيمة الدهر في شعراء اهل العصر - الجزء الثالث",
+      "en": "يتيمة الدهر في شعراء اهل العصر - الجزء الثالث"
+    },
+    "author": {
+      "ar": "ابي منصور عبد الملك بن محمد بن اسمعيل النيسابوري الثعالبي",
+      "en": "ابي منصور عبد الملك بن محمد بن اسمعيل النيسابوري الثعالبي"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "يتيمة الدهر في شعراء اهل العصر - الجزء الثالث — ابي منصور عبد الملك بن محمد بن اسمعيل النيسابوري الثعالبي. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "يتيمة الدهر في شعراء اهل العصر - الجزء الثالث by ابي منصور عبد الملك بن محمد بن اسمعيل النيسابوري الثعالبي. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g3",
+    "emoji": "🦁",
+    "chapters": 10,
+    "words": 67507,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T20:34:15.888Z"
   },
   {
     "id": "ysalwnk",
@@ -17626,7 +17856,7 @@
     "chapters": 4,
     "words": 5384,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T20:21:57.642Z"
+    "updatedAt": "2026-09-21T20:34:15.740Z"
   },
   {
     "id": "a-room-with-a-view",
@@ -17673,7 +17903,7 @@
     "chapters": 20,
     "words": 66472,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.643Z"
+    "updatedAt": "2026-09-21T20:34:15.742Z"
   },
   {
     "id": "a-study-in-scarlet",
@@ -17720,7 +17950,7 @@
     "chapters": 15,
     "words": 43307,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.645Z"
+    "updatedAt": "2026-09-21T20:34:15.743Z"
   },
   {
     "id": "a-farewell-to-arms",
@@ -17767,7 +17997,7 @@
     "chapters": 42,
     "words": 88579,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.647Z"
+    "updatedAt": "2026-09-21T20:34:15.745Z"
   },
   {
     "id": "a-pair-of-blue-eyes",
@@ -17814,7 +18044,7 @@
     "chapters": 41,
     "words": 130252,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.648Z"
+    "updatedAt": "2026-09-21T20:34:15.746Z"
   },
   {
     "id": "alices-adventures-in-wonderland",
@@ -17861,7 +18091,7 @@
     "chapters": 13,
     "words": 26454,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.650Z"
+    "updatedAt": "2026-09-21T20:34:15.747Z"
   },
   {
     "id": "around-the-world-in-eighty-days",
@@ -17908,7 +18138,7 @@
     "chapters": 13,
     "words": 63196,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.651Z"
+    "updatedAt": "2026-09-21T20:34:15.748Z"
   },
   {
     "id": "as-you-like-it",
@@ -17955,7 +18185,7 @@
     "chapters": 6,
     "words": 23135,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.653Z"
+    "updatedAt": "2026-09-21T20:34:15.750Z"
   },
   {
     "id": "autobiography-of-benjamin-franklin",
@@ -18002,7 +18232,7 @@
     "chapters": 9,
     "words": 75745,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.654Z"
+    "updatedAt": "2026-09-21T20:34:15.751Z"
   },
   {
     "id": "blow-the-man-down-a-romance-of-the-coast",
@@ -18049,7 +18279,7 @@
     "chapters": 45,
     "words": 140285,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.655Z"
+    "updatedAt": "2026-09-21T20:34:15.753Z"
   },
   {
     "id": "cameron-of-lochiel",
@@ -18096,7 +18326,7 @@
     "chapters": 19,
     "words": 87721,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.657Z"
+    "updatedAt": "2026-09-21T20:34:15.755Z"
   },
   {
     "id": "camille-la-dame-aux-camilias",
@@ -18143,7 +18373,7 @@
     "chapters": 28,
     "words": 66517,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.658Z"
+    "updatedAt": "2026-09-21T20:34:15.756Z"
   },
   {
     "id": "carmen",
@@ -18190,7 +18420,7 @@
     "chapters": 4,
     "words": 23938,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.660Z"
+    "updatedAt": "2026-09-21T20:34:15.757Z"
   },
   {
     "id": "catriona",
@@ -18237,7 +18467,7 @@
     "chapters": 31,
     "words": 100872,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.661Z"
+    "updatedAt": "2026-09-21T20:34:15.759Z"
   },
   {
     "id": "complete-short-works-of-george-meredith",
@@ -18284,7 +18514,7 @@
     "chapters": 37,
     "words": 168865,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.663Z"
+    "updatedAt": "2026-09-21T20:34:15.760Z"
   },
   {
     "id": "crime-and-punishment",
@@ -18331,7 +18561,7 @@
     "chapters": 40,
     "words": 203414,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.665Z"
+    "updatedAt": "2026-09-21T20:34:15.761Z"
   },
   {
     "id": "cynthias-chauffeur",
@@ -18378,7 +18608,7 @@
     "chapters": 18,
     "words": 82774,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.666Z"
+    "updatedAt": "2026-09-21T20:34:15.763Z"
   },
   {
     "id": "de-profundis",
@@ -18425,7 +18655,7 @@
     "chapters": 1,
     "words": 17753,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.668Z"
+    "updatedAt": "2026-09-21T20:34:15.764Z"
   },
   {
     "id": "dracula",
@@ -18472,7 +18702,7 @@
     "chapters": 28,
     "words": 161265,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.669Z"
+    "updatedAt": "2026-09-21T20:34:15.765Z"
   },
   {
     "id": "eloisa",
@@ -18519,7 +18749,7 @@
     "chapters": 22,
     "words": 317674,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.671Z"
+    "updatedAt": "2026-09-21T20:34:15.766Z"
   },
   {
     "id": "erotica-romana",
@@ -18566,7 +18796,7 @@
     "chapters": 7,
     "words": 6741,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.672Z"
+    "updatedAt": "2026-09-21T20:34:15.767Z"
   },
   {
     "id": "four-arthurian-romances",
@@ -18613,7 +18843,7 @@
     "chapters": 5,
     "words": 191088,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.674Z"
+    "updatedAt": "2026-09-21T20:34:15.769Z"
   },
   {
     "id": "i-am-a-woman",
@@ -18660,7 +18890,7 @@
     "chapters": 18,
     "words": 74978,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.675Z"
+    "updatedAt": "2026-09-21T20:34:15.771Z"
   },
   {
     "id": "indias-love-lyrics",
@@ -18707,7 +18937,7 @@
     "chapters": 8,
     "words": 21989,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.677Z"
+    "updatedAt": "2026-09-21T20:34:15.772Z"
   },
   {
     "id": "jane-eyre-an-autobiography",
@@ -18754,7 +18984,7 @@
     "chapters": 39,
     "words": 185314,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.678Z"
+    "updatedAt": "2026-09-21T20:34:15.774Z"
   },
   {
     "id": "king-arthur-and-the-knights-of-the-round-table",
@@ -18801,7 +19031,7 @@
     "chapters": 18,
     "words": 98536,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.681Z"
+    "updatedAt": "2026-09-21T20:34:15.775Z"
   },
   {
     "id": "life-on-the-mississippi",
@@ -18848,7 +19078,7 @@
     "chapters": 63,
     "words": 144339,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.682Z"
+    "updatedAt": "2026-09-21T20:34:15.776Z"
   },
   {
     "id": "linnet-a-romance",
@@ -18895,7 +19125,7 @@
     "chapters": 53,
     "words": 141560,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.684Z"
+    "updatedAt": "2026-09-21T20:34:15.778Z"
   },
   {
     "id": "little-women-or-meg-jo-beth-and-amy",
@@ -18942,7 +19172,7 @@
     "chapters": 45,
     "words": 191228,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.685Z"
+    "updatedAt": "2026-09-21T20:34:15.779Z"
   },
   {
     "id": "love-and-freindship-sic",
@@ -18989,7 +19219,7 @@
     "chapters": 10,
     "words": 33462,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.687Z"
+    "updatedAt": "2026-09-21T20:34:15.780Z"
   },
   {
     "id": "manon-lescaut",
@@ -19036,7 +19266,7 @@
     "chapters": 6,
     "words": 62269,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.688Z"
+    "updatedAt": "2026-09-21T20:34:15.781Z"
   },
   {
     "id": "meditations",
@@ -19083,7 +19313,7 @@
     "chapters": 8,
     "words": 71957,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.690Z"
+    "updatedAt": "2026-09-21T20:34:15.783Z"
   },
   {
     "id": "middlemarch",
@@ -19130,7 +19360,7 @@
     "chapters": 87,
     "words": 316209,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.693Z"
+    "updatedAt": "2026-09-21T20:34:15.784Z"
   },
   {
     "id": "moby-dick-or-the-whale",
@@ -19177,7 +19407,7 @@
     "chapters": 135,
     "words": 211522,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.695Z"
+    "updatedAt": "2026-09-21T20:34:15.785Z"
   },
   {
     "id": "moods",
@@ -19224,7 +19454,7 @@
     "chapters": 22,
     "words": 86152,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.697Z"
+    "updatedAt": "2026-09-21T20:34:15.786Z"
   },
   {
     "id": "narrative-of-the-life-of-frederick-douglass-an-american-slav",
@@ -19271,7 +19501,7 @@
     "chapters": 13,
     "words": 40723,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.699Z"
+    "updatedAt": "2026-09-21T20:34:15.788Z"
   },
   {
     "id": "one-of-the-six-hundred-a-novel",
@@ -19318,7 +19548,7 @@
     "chapters": 37,
     "words": 163282,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.701Z"
+    "updatedAt": "2026-09-21T20:34:15.789Z"
   },
   {
     "id": "poirot-investigates",
@@ -19365,7 +19595,7 @@
     "chapters": 21,
     "words": 52622,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.703Z"
+    "updatedAt": "2026-09-21T20:34:15.791Z"
   },
   {
     "id": "pride-and-prejudice",
@@ -19412,7 +19642,7 @@
     "chapters": 62,
     "words": 127030,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.705Z"
+    "updatedAt": "2026-09-21T20:34:15.792Z"
   },
   {
     "id": "romeo-and-juliet",
@@ -19459,7 +19689,7 @@
     "chapters": 6,
     "words": 25947,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.707Z"
+    "updatedAt": "2026-09-21T20:34:15.793Z"
   },
   {
     "id": "sense-and-sensibility",
@@ -19506,7 +19736,7 @@
     "chapters": 51,
     "words": 121504,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.709Z"
+    "updatedAt": "2026-09-21T20:34:15.795Z"
   },
   {
     "id": "sonnets-from-the-portuguese",
@@ -19553,7 +19783,7 @@
     "chapters": 1,
     "words": 5552,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.712Z"
+    "updatedAt": "2026-09-21T20:34:15.796Z"
   },
   {
     "id": "that-which-hath-wings-a-novel-of-the-day",
@@ -19600,7 +19830,7 @@
     "chapters": 39,
     "words": 183400,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.714Z"
+    "updatedAt": "2026-09-21T20:34:15.798Z"
   },
   {
     "id": "the-adventures-of-sherlock-holmes",
@@ -19647,7 +19877,7 @@
     "chapters": 26,
     "words": 104506,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.716Z"
+    "updatedAt": "2026-09-21T20:34:15.799Z"
   },
   {
     "id": "the-blue-lagoon-a-romance",
@@ -19694,7 +19924,7 @@
     "chapters": 53,
     "words": 64310,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.718Z"
+    "updatedAt": "2026-09-21T20:34:15.800Z"
   },
   {
     "id": "the-cask-of-amontillado",
@@ -19741,7 +19971,7 @@
     "chapters": 1,
     "words": 2329,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.720Z"
+    "updatedAt": "2026-09-21T20:34:15.801Z"
   },
   {
     "id": "the-confessions-of-st-augustine",
@@ -19788,7 +20018,7 @@
     "chapters": 5,
     "words": 111821,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.721Z"
+    "updatedAt": "2026-09-21T20:34:15.803Z"
   },
   {
     "id": "the-countess-of-pembrokes-arcadia",
@@ -19835,7 +20065,7 @@
     "chapters": 3,
     "words": 345001,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.723Z"
+    "updatedAt": "2026-09-21T20:34:15.805Z"
   },
   {
     "id": "the-green-mummy",
@@ -19882,7 +20112,7 @@
     "chapters": 27,
     "words": 87613,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.724Z"
+    "updatedAt": "2026-09-21T20:34:15.806Z"
   },
   {
     "id": "the-home-book-of-verse-volume-2",
@@ -19929,7 +20159,7 @@
     "chapters": 2,
     "words": 180021,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.726Z"
+    "updatedAt": "2026-09-21T20:34:15.807Z"
   },
   {
     "id": "the-hound-of-the-baskervilles",
@@ -19976,7 +20206,7 @@
     "chapters": 16,
     "words": 59164,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.727Z"
+    "updatedAt": "2026-09-21T20:34:15.809Z"
   },
   {
     "id": "the-kama-sutra-of-vatsyayana-translated-from-the-sanscrit-in",
@@ -20023,7 +20253,7 @@
     "chapters": 45,
     "words": 58939,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.729Z"
+    "updatedAt": "2026-09-21T20:34:15.810Z"
   },
   {
     "id": "the-king-in-yellow",
@@ -20070,7 +20300,7 @@
     "chapters": 20,
     "words": 71635,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.731Z"
+    "updatedAt": "2026-09-21T20:34:15.811Z"
   },
   {
     "id": "the-lady-of-the-lake",
@@ -20117,7 +20347,7 @@
     "chapters": 7,
     "words": 78482,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.732Z"
+    "updatedAt": "2026-09-21T20:34:15.812Z"
   },
   {
     "id": "the-landloper-the-romance-of-a-man-on-foot",
@@ -20164,7 +20394,7 @@
     "chapters": 31,
     "words": 101743,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.734Z"
+    "updatedAt": "2026-09-21T20:34:15.813Z"
   },
   {
     "id": "the-memoirs-of-sherlock-holmes",
@@ -20211,7 +20441,7 @@
     "chapters": 22,
     "words": 95486,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.736Z"
+    "updatedAt": "2026-09-21T20:34:15.815Z"
   },
   {
     "id": "the-monk-a-romance",
@@ -20258,7 +20488,7 @@
     "chapters": 13,
     "words": 137116,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.738Z"
+    "updatedAt": "2026-09-21T20:34:15.816Z"
   },
   {
     "id": "the-mysteries-of-udolpho",
@@ -20305,7 +20535,7 @@
     "chapters": 58,
     "words": 290263,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.740Z"
+    "updatedAt": "2026-09-21T20:34:15.817Z"
   },
   {
     "id": "the-mysterious-affair-at-styles",
@@ -20352,7 +20582,7 @@
     "chapters": 14,
     "words": 56461,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.742Z"
+    "updatedAt": "2026-09-21T20:34:15.818Z"
   },
   {
     "id": "the-mystery-of-edwin-drood",
@@ -20399,7 +20629,7 @@
     "chapters": 24,
     "words": 95552,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.744Z"
+    "updatedAt": "2026-09-21T20:34:15.820Z"
   },
   {
     "id": "the-passionate-elopement",
@@ -20446,7 +20676,7 @@
     "chapters": 3,
     "words": 107841,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.745Z"
+    "updatedAt": "2026-09-21T20:34:15.821Z"
   },
   {
     "id": "the-phantom-of-the-opera",
@@ -20493,7 +20723,7 @@
     "chapters": 25,
     "words": 85389,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.747Z"
+    "updatedAt": "2026-09-21T20:34:15.822Z"
   },
   {
     "id": "the-pirate-andrew-lang-edition",
@@ -20540,7 +20770,7 @@
     "chapters": 43,
     "words": 197236,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.748Z"
+    "updatedAt": "2026-09-21T20:34:15.823Z"
   },
   {
     "id": "the-red-lily-complete",
@@ -20587,7 +20817,7 @@
     "chapters": 35,
     "words": 76463,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.750Z"
+    "updatedAt": "2026-09-21T20:34:15.825Z"
   },
   {
     "id": "the-return-of-sherlock-holmes",
@@ -20634,7 +20864,7 @@
     "chapters": 26,
     "words": 112115,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.752Z"
+    "updatedAt": "2026-09-21T20:34:15.826Z"
   },
   {
     "id": "the-secret-of-chimneys",
@@ -20681,7 +20911,7 @@
     "chapters": 36,
     "words": 74608,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.753Z"
+    "updatedAt": "2026-09-21T20:34:15.827Z"
   },
   {
     "id": "the-sex-life-of-the-gods",
@@ -20728,7 +20958,7 @@
     "chapters": 20,
     "words": 32318,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.755Z"
+    "updatedAt": "2026-09-21T20:34:15.828Z"
   },
   {
     "id": "the-sign-of-the-four",
@@ -20775,7 +21005,7 @@
     "chapters": 13,
     "words": 43012,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.757Z"
+    "updatedAt": "2026-09-21T20:34:15.830Z"
   },
   {
     "id": "the-turn-of-the-screw",
@@ -20822,7 +21052,7 @@
     "chapters": 9,
     "words": 42274,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.758Z"
+    "updatedAt": "2026-09-21T20:34:15.831Z"
   },
   {
     "id": "the-woman-in-white",
@@ -20869,7 +21099,7 @@
     "chapters": 42,
     "words": 244752,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.760Z"
+    "updatedAt": "2026-09-21T20:34:15.832Z"
   },
   {
     "id": "the-works-of-edgar-allan-poe-volume-1",
@@ -20916,7 +21146,7 @@
     "chapters": 9,
     "words": 90359,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.762Z"
+    "updatedAt": "2026-09-21T20:34:15.833Z"
   },
   {
     "id": "the-works-of-edgar-allan-poe-volume-2",
@@ -20963,7 +21193,7 @@
     "chapters": 11,
     "words": 95043,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.764Z"
+    "updatedAt": "2026-09-21T20:34:15.835Z"
   },
   {
     "id": "the-call-of-cthulhu",
@@ -21010,7 +21240,7 @@
     "chapters": 1,
     "words": 11949,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.766Z"
+    "updatedAt": "2026-09-21T20:34:15.836Z"
   },
   {
     "id": "the-innocence-of-father-brown",
@@ -21057,7 +21287,7 @@
     "chapters": 15,
     "words": 78917,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.768Z"
+    "updatedAt": "2026-09-21T20:34:15.838Z"
   },
   {
     "id": "the-murder-of-roger-ackroyd",
@@ -21104,7 +21334,7 @@
     "chapters": 29,
     "words": 70667,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.770Z"
+    "updatedAt": "2026-09-21T20:34:15.839Z"
   },
   {
     "id": "the-strange-case-of-dr-jekyll-and-mr-hyde",
@@ -21151,7 +21381,7 @@
     "chapters": 1,
     "words": 25631,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.772Z"
+    "updatedAt": "2026-09-21T20:34:15.840Z"
   },
   {
     "id": "the-wisdom-of-father-brown",
@@ -21198,7 +21428,7 @@
     "chapters": 12,
     "words": 71669,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.774Z"
+    "updatedAt": "2026-09-21T20:34:15.841Z"
   },
   {
     "id": "trial-by-water",
@@ -21245,7 +21475,7 @@
     "chapters": 1,
     "words": 1465,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.775Z"
+    "updatedAt": "2026-09-21T20:34:15.846Z"
   },
   {
     "id": "twenty-years-after",
@@ -21292,7 +21522,7 @@
     "chapters": 85,
     "words": 241539,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.776Z"
+    "updatedAt": "2026-09-21T20:34:15.849Z"
   },
   {
     "id": "under-the-red-dragon-a-novel",
@@ -21339,7 +21569,7 @@
     "chapters": 62,
     "words": 150771,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.778Z"
+    "updatedAt": "2026-09-21T20:34:15.850Z"
   },
   {
     "id": "undine",
@@ -21386,7 +21616,7 @@
     "chapters": 11,
     "words": 33137,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.780Z"
+    "updatedAt": "2026-09-21T20:34:15.852Z"
   },
   {
     "id": "what-will-people-say-a-novel",
@@ -21433,7 +21663,7 @@
     "chapters": 69,
     "words": 149490,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.781Z"
+    "updatedAt": "2026-09-21T20:34:15.854Z"
   },
   {
     "id": "one-thousand-and-one-nights-ar",
@@ -21479,7 +21709,7 @@
     "chapters": 5,
     "words": 161810,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.783Z"
+    "updatedAt": "2026-09-21T20:34:15.855Z"
   },
   {
     "id": "the-odyssey-rendered-into-english-prose-for-the-use-of-those",
@@ -21526,7 +21756,7 @@
     "chapters": 14,
     "words": 129570,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.785Z"
+    "updatedAt": "2026-09-21T20:34:15.856Z"
   },
   {
     "id": "oliver-twist-vol-2-of-3",
@@ -21573,7 +21803,7 @@
     "chapters": 18,
     "words": 50557,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.787Z"
+    "updatedAt": "2026-09-21T20:34:15.858Z"
   },
   {
     "id": "al-bukhala",
@@ -21619,7 +21849,7 @@
     "chapters": 1,
     "words": 48976,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.789Z"
+    "updatedAt": "2026-09-21T20:34:15.859Z"
   },
   {
     "id": "the-man-who-was-thursday-a-nightmare",
@@ -21666,7 +21896,7 @@
     "chapters": 16,
     "words": 58094,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.791Z"
+    "updatedAt": "2026-09-21T20:34:15.860Z"
   },
   {
     "id": "the-blue-castle-a-novel",
@@ -21713,7 +21943,7 @@
     "chapters": 46,
     "words": 68184,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.792Z"
+    "updatedAt": "2026-09-21T20:34:15.862Z"
   },
   {
     "id": "the-misplaced-battleship",
@@ -21760,7 +21990,7 @@
     "chapters": 1,
     "words": 11298,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.793Z"
+    "updatedAt": "2026-09-21T20:34:15.863Z"
   },
   {
     "id": "the-yeoman-adventurer",
@@ -21807,7 +22037,7 @@
     "chapters": 27,
     "words": 125155,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.795Z"
+    "updatedAt": "2026-09-21T20:34:15.864Z"
   },
   {
     "id": "thuvia-maid-of-mars",
@@ -21854,7 +22084,7 @@
     "chapters": 15,
     "words": 47069,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.797Z"
+    "updatedAt": "2026-09-21T20:34:15.866Z"
   },
   {
     "id": "the-string-of-pearls-or-the-barber-of-fleet-street-a-domesti",
@@ -21901,7 +22131,7 @@
     "chapters": 172,
     "words": 434484,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.798Z"
+    "updatedAt": "2026-09-21T20:34:15.867Z"
   },
   {
     "id": "my-life-volume-1",
@@ -21948,7 +22178,7 @@
     "chapters": 3,
     "words": 219566,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.800Z"
+    "updatedAt": "2026-09-21T20:34:15.869Z"
   },
   {
     "id": "bidwells-travels-from-wall-street-to-london-prison-fifteen-y",
@@ -21995,7 +22225,7 @@
     "chapters": 93,
     "words": 136456,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.802Z"
+    "updatedAt": "2026-09-21T20:34:15.871Z"
   },
   {
     "id": "the-love-letters-of-mary-wollstonecraft-to-gilbert-imlay",
@@ -22042,7 +22272,7 @@
     "chapters": 78,
     "words": 33160,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.803Z"
+    "updatedAt": "2026-09-21T20:34:15.872Z"
   },
   {
     "id": "a-honeymoon-in-space",
@@ -22089,7 +22319,7 @@
     "chapters": 22,
     "words": 63717,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.805Z"
+    "updatedAt": "2026-09-21T20:34:15.873Z"
   },
   {
     "id": "the-book-of-the-thousand-nights-and-a-night-volume-01-of-10",
@@ -22136,7 +22366,7 @@
     "chapters": 27,
     "words": 177790,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.806Z"
+    "updatedAt": "2026-09-21T20:34:15.876Z"
   },
   {
     "id": "kalila-wa-dimna",
@@ -22182,7 +22412,7 @@
     "chapters": 13,
     "words": 41499,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.810Z"
+    "updatedAt": "2026-09-21T20:34:15.877Z"
   },
   {
     "id": "the-extraordinary-adventures-of-arsene-lupin-gentleman-burgl",
@@ -22229,7 +22459,7 @@
     "chapters": 20,
     "words": 53924,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.814Z"
+    "updatedAt": "2026-09-21T20:34:15.878Z"
   },
   {
     "id": "maqamat-al-hariri",
@@ -22275,7 +22505,7 @@
     "chapters": 40,
     "words": 36748,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.816Z"
+    "updatedAt": "2026-09-21T20:34:15.879Z"
   },
   {
     "id": "maqamat-al-hamadhani",
@@ -22321,7 +22551,7 @@
     "chapters": 39,
     "words": 14755,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.817Z"
+    "updatedAt": "2026-09-21T20:34:15.881Z"
   },
   {
     "id": "muqaddimat-ibn-khaldun",
@@ -22367,6 +22597,6 @@
     "chapters": 31,
     "words": 62227,
     "addedAt": "2026-09-11",
-    "updatedAt": "2026-09-21T20:21:57.819Z"
+    "updatedAt": "2026-09-21T20:34:15.882Z"
   }
 ]

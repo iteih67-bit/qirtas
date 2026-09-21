@@ -11,7 +11,7 @@ for (const b of cat) {
   const looksBroken = (s) => /^\s*[|{}]/.test(s) || /\{\{|=\s*$|^\|/.test(s) || /^(مؤلف|باب|عنوان|محرر|ناشر)\s*=/.test(s) || s.length < 2;
   if (looksBroken(t)) reasons.push('title');
   if (t.length > 180) reasons.push('title-too-long');
-  if (a && looksBroken(a)) reasons.push('author'); // empty author = intentional (periodicals)
+  if (looksBroken(a)) reasons.push('author');
   if (reasons.length) bad.push({ id: b.id, lang: b.lang, reasons, title: t.slice(0, 60), title_en: te.slice(0, 40), author: a.slice(0, 40), url: b.sourceUrl });
 }
 console.log('total books: ' + cat.length);

@@ -10,7 +10,7 @@ const { arSlug } = require('../../pipeline/lib/arabic');
 
 const SITE = path.join(ROOT, 'site');
 const DIST = path.join(SITE, 'dist');
-const SITE_URL = (process.env.SITE_URL || 'https://qirtas.pages.dev').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://iteih67-bit.github.io/qirtas').replace(/\/$/, '');
 const BUILD_DATE = new Date().toISOString();
 
 const esc = (s) => String(s ?? '')
@@ -34,7 +34,7 @@ const authorOf = (b, lang) => (lang === 'ar'
   : (b.author.en || b.author.ar));
 const dirOf = (b) => (b.lang === 'ar' ? 'rtl' : 'ltr');
 const langName = (b) => (b.lang === 'ar' ? 'العربية' : b.lang === 'en' ? 'الإنجليزية' : b.lang);
-const srcName = (b) => ((b.sourceLabel && b.sourceLabel.ar) || b.source || '');
+const srcName = (b) => ((b.sourceLabel && b.sourceLabel.ar) || 'مصدر حر');
 
 function shell({ title, desc, lang = 'ar', dir = 'rtl', body, extraHead = '', path: pagePath = '/', ogType = 'website', noIndex = false }) {
   const isReader = pagePath.startsWith('/read/');
@@ -148,7 +148,7 @@ function homePage(catalog, externalCount = 0) {
       <div class="hstat"><strong>${externalCount.toLocaleString('en-US')}</strong><span>كتاباً في الكتالوج الخارجي</span></div>
     </div>
     <p class="hero-links"><a href="/library/">تصفّح المكتبة كاملة ←</a> · <a href="/library/?lang=ar">العربية فقط</a> · <a href="/library/?lang=en">الإنجليزية فقط</a> · <a href="/authors/">حسب المؤلف</a></p>
-    <p class="hero-note">+ ${externalCount.toLocaleString('en-US')} كتاباً إضافياً في الكتالوج الخارجي (Open Library وأرشيف الإنترنت) بروابط قراءة مباشرة من المصدر.</p>
+    <p class="hero-note">+ ${externalCount.toLocaleString('en-US')} كتاباً إضافياً في كتالوج مرجعي عالمي (بيانات وصفية فقط) بروابط قراءة مباشرة من الجهة الناشرة أو الأرشيف الرقمي.</p>
   </section>
 
   <div id="continueCard" class="continue-card hidden">
@@ -443,25 +443,29 @@ function categoryPage(cat, catalog) {
   });
 }
 
-function aboutPage(catalog) {
-  const bySrc = {};
-  for (const b of catalog) bySrc[srcName(b) || '—'] = (bySrc[srcName(b) || '—'] || 0) + 1;
+function aboutPage(catalog, externalCount = 0) {
+  const ar = catalog.filter((b) => b.lang === 'ar').length;
+  const en = catalog.length - ar;
+  const words = catalog.reduce((s, b) => s + (b.words || 0), 0);
   const body = `
 <main class="container" style="max-width:760px">
   <h1 class="page-title">عن قِرطاس</h1>
-  <p class="prose">قِرطاس منصة قراءة مجانية تجمع كتب الملكية العامة بالعربية والإنجليزية في مكان واحد بتقنية قراءة حديثة: ترقيم صفحات أفقي مريح للعربية، وضع ليلي، حفظ تلقائي لموضعك، وقراءة من أي جهاز بلا حساب ولا رسوم.</p>
-  <p class="prose">جميع الكتب في الملكية العامة (مؤلفون متوفون منذ أكثر من 70 عاماً) أو منشورة برخص حرة تسمح بإعادة النشر مع الإشارة للمصدر. لا نستضيف كتباً محمية بحقوق ناشرين ولا ننزّل ملفات من مواقع غير مرخّصة.</p>
-  <h2>المصادر الحالية</h2>
-  <table class="stats-table"><thead><tr><th>المصدر</th><th>عدد الكتب</th></tr></thead><tbody>
-    ${Object.entries(bySrc).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<tr><td>${esc(k)}</td><td class="num">${v}</td></tr>`).join('')}
+  <p class="prose">قِرطاس منصة قراءة مجانية تجمع كتب الملكية العامة بالعربية والإنجليزية في مكان واحد بتجربة قراءة حديثة: ترقيم صفحات أفقي مريح للعربية، وضع ليلي، حفظ تلقائي لموضعك، وتنزيل نسخة EPUB تُقرأ على أي جهاز — بلا حساب ولا رسوم.</p>
+  <p class="prose">جميع الكتب المتاحة للقراءة الكاملة هنا في الملكية العامة (مؤلفون متوفون منذ أكثر من 70 عاماً) أو منشورة برخص حرة تسمح بإعادة النشر مع الإشارة إلى المصدر. لا نستضيف كتباً محمية بحقوق ناشرين، ولا نتجاوز أي قيود تقنية على المواقع، ولا ننزّل ملفات من مصادر غير مرخّصة.</p>
+  <h2>محتوى المنصة</h2>
+  <table class="stats-table"><thead><tr><th>النوع</th><th>العدد</th></tr></thead><tbody>
+    <tr><td>نصوص كاملة متاحة للقراءة والتنزيل</td><td class="num">${catalog.length.toLocaleString('en-US')}</td></tr>
+    <tr><td>منها بالعربية / بالإنجليزية</td><td class="num">${ar} / ${en}</td></tr>
+    <tr><td>إجمالي الكلمات المتاحة للقراءة</td><td class="num">${(words / 1000000).toFixed(2)}M</td></tr>
+    <tr><td>عناوين في كتالوج مرجعي بروابط خارجية</td><td class="num">${externalCount.toLocaleString('en-US')}</td></tr>
   </tbody></table>
-  <p class="prose">عدد الكتب حالياً: <b>${catalog.length}</b> — ويجري توسيعها آلياً من مصادر إضافية.</p>
+  <p class="prose">المنصة تتوسّع باستمرار، وكل كتاب يعرض حالته الحقوقية ورابط مصدره، ويحق لأي صاحب حق طلب تحويل الرابط أو الإزالة بعد المراجعة.</p>
   <h2>الإبلاغ عن خطأ</h2>
   <p class="prose">إن وجدت خطأ في نص أو ترقيم، أو أردت اقتراح كتاب، راسلنا — نُصلح النصوص باستمرار بفضل إبلاغات القراء. وإن كنت <b>صاحب حقوق</b> أي كتاب معروض، فاستخدم <a href="/rights/">صفحة حقوق النشر</a> لتحويل الرابط إلى موقعك الرسمي أو لإزالة البيانات.</p>
-  <h2>الأدوات</h2>
-  <p class="prose">مبنية بالكامل بأدوات مجانية: مولّد موقع ثابت بلا اعتماديات، خط محتوى Node.js، استضافة ثابتة مجانية (Cloudflare Pages)، وقارئ ويب بتقنية PWA يعمل دون إنترنت.</p>
+  <h2>كيف تقرأ معنا</h2>
+  <p class="prose">افتح صفحة أي كتاب ثم اختر «اقرأ الآن»: التنقل بين الصفحات بالسحب أو بأسهم لوحة المفاتيح، وتغيير حجم الخط ووضع القراءة الليلي من شريط الأدوات. وإن أردت القراءة بلا إنترنت، نزّل ملف EPUB وافتحه في قارئك المفضل على الهاتف أو الحاسوب.</p>
 </main>`;
-  return shell({ title: 'عن قِرطاس — منصة قراءة مجانية للملكية العامة', desc: 'منصة قراءة مجانية لكتب الملكية العامة: المصادر، الترخيص، والإبلاغ عن الأخطاء.', body, path: '/about/' });
+  return shell({ title: 'عن قِرطاس — منصة قراءة مجانية للملكية العامة', desc: 'منصة قراءة مجانية لكتب الملكية العامة: المحتوى، الترخيص، والإبلاغ عن الأخطاء.', body, path: '/about/' });
 }
 
 function rightsPage() {
@@ -740,7 +744,7 @@ self.addEventListener('fetch', (e) => {
   write('index.html', homePage(catalog, external.length));
   write('library/index.html', libraryPage(catalog, external.length));
   write('stats/index.html', statsPage(catalog, external.length));
-  write('about/index.html', aboutPage(catalog));
+  write('about/index.html', aboutPage(catalog, external.length));
   write('rights/index.html', rightsPage());
   write('contact/index.html', contactPage());
   write('privacy/index.html', privacyPage());
