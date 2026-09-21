@@ -40,7 +40,12 @@ jobs:
         run: node --no-warnings site/tools/build-epub.js
       - name: Integrity check
         working-directory: qirtas
-        run: node --no-warnings tools/integrity-check.js
+        run: |
+          node --no-warnings tools/integrity-check.js || {
+            echo '--- integrity report ---'
+            cat cache/integrity-report.json 2>/dev/null | head -c 4000
+            exit 1
+          }
       - name: Smoke test
         working-directory: qirtas
         run: node tools/smoke-test.js --sample=4

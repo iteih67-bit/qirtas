@@ -107,16 +107,18 @@ fs.writeFileSync(path.join(reportDir, 'integrity-report.json'), JSON.stringify(o
 console.log(JSON.stringify(out, null, 2));
 
 // ---- verdict (used by CI) -------------------------------------------------
-const problems = [
-  out.dist.missingCount,
-  out.dist.hiddenVisibleOnSite.length,
-  out.rights.noRights,
-  out.rights.noRightsPageLink,
-  out.rights.noReadLink,
-  out.rights.noEpub,
-  out.sitemap.urls - out.sitemap.unique,
-  out.catalog.indexMatch ? 0 : 1,
-].reduce((a, b) => a + b, 0);
+const items = {
+  missingPages: out.dist.missingCount,
+  hiddenOnSite: out.dist.hiddenVisibleOnSite.length,
+  rightsMissing: out.rights.noRights,
+  rightsLinkMissing: out.rights.noRightsPageLink,
+  readLinkMissing: out.rights.noReadLink,
+  epubLinkMissing: out.rights.noEpub,
+  sitemapDupes: out.sitemap.urls - out.sitemap.unique,
+  indexMismatch: out.catalog.indexMatch ? 0 : 1,
+};
+const problems = Object.values(items).reduce((a, b) => a + b, 0);
+if (problems > 0) console.error('integrity problem breakdown: ' + JSON.stringify(items));
 // A checked-out SQLite file can legitimately lag the exported catalogue, so a
 // db/catalog difference is reported but is not treated as a site problem.
 if (out.catalog.dbMatch === false) console.log('note: sqlite snapshot differs from catalogue (' + (out.db.visible || 'n/a') + ' vs ' + out.catalog.catalog + ') — site checks remain authoritative');
