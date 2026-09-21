@@ -1,0 +1,122 @@
+{
+ "lang": "ar",
+ "added": 3,
+ "scanned": 21,
+ "total": 479,
+ "report": [
+  {
+   "id": "wordicon_201802",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "AcroRd32_20181107",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "CLang_201608",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "marybecatyla3_gmail",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "Mody_0_201610",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "almotakamelpro_Demo",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "almoraqebfull",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "kamaradiara_gmail_Jobs",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "annales2020brahim",
+   "bookId": "d-blqasm-brahym-aladwl-alsrfy-byn-altqayd-waltbryr-lgha-alqr",
+   "status": "OK",
+   "license": "open-license",
+   "chapters": 4,
+   "words": 5659
+  },
+  {
+   "id": "4_20240818_20240818_1507",
+   "status": "SKIP",
+   "reason": "not mostly Arabic"
+  },
+  {
+   "id": "AlmasraNewspaper_034",
+   "bookId": "shyfa-almsra-34",
+   "status": "OK",
+   "license": "open-license",
+   "chapters": 18,
+   "words": 16461
+  },
+  {
+   "id": "sami09190_gmail_SSDL",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "mohamed_2011020_yahoo",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "SelfieSnapChatCloneV3.0",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "unc0ver_release_8.0.2_202312",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "UntitledPlaylist_201812",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "webradio_202002",
+   "status": "SKIP",
+   "reason": "no public text file"
+  },
+  {
+   "id": "1935-0615",
+   "status": "SKIP",
+   "reason": "not mostly Arabic"
+  },
+  {
+   "id": "1_20251122_20251122_1151",
+   "status": "ERR",
+   "reason": "text too small or empty (247 bytes)"
+  },
+  {
+   "id": "1_20260304_20260304_0751",
+   "status": "SKIP",
+   "reason": "thin (4 ch, 1010 w)"
+  },
+  {
+   "id": "2001-alkalimat_alhisan-wahbi",
+   "bookId": "alklmat-alhsan",
+   "status": "OK",
+   "license": "open-license",
+   "chapters": 8,
+   "words": 77713
+  }
+ ]
+}

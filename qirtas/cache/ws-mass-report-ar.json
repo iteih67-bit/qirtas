@@ -5,33 +5,6 @@
     "reason": "thin (14 ch, 942 w)"
   },
   {
-    "root": "مقالات مجلة المنار",
-    "status": "OK",
-    "id": "mjla-almnar",
-    "chapters": 16,
-    "words": 25575,
-    "subs": 116,
-    "picked": 18
-  },
-  {
-    "root": "تفسير ابن كثير",
-    "status": "OK",
-    "id": "tfsyr-alqran-alazym",
-    "chapters": 18,
-    "words": 385425,
-    "subs": 115,
-    "picked": 18
-  },
-  {
-    "root": "أسرار ترتيب القرآن",
-    "status": "OK",
-    "id": "asrar-trtyb-alqran",
-    "chapters": 11,
-    "words": 4859,
-    "subs": 114,
-    "picked": 18
-  },
-  {
     "root": "القرآن الكريم (البزي)",
     "status": "SKIP",
     "reason": "thin (0 ch, 0 w)"
@@ -87,69 +60,6 @@
     "reason": "thin (0 ch, 0 w)"
   },
   {
-    "root": "تفسير البحر المحيط أبي حيان الغرناطي",
-    "status": "OK",
-    "id": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
-    "chapters": 18,
-    "words": 515390,
-    "subs": 113,
-    "picked": 18
-  },
-  {
-    "root": "محلى ابن حزم - المجلد الثالث",
-    "status": "OK",
-    "id": "abn-hzm-almhla",
-    "chapters": 18,
-    "words": 51641,
-    "subs": 107,
-    "picked": 18
-  },
-  {
-    "root": "إحياء علوم الدين",
-    "status": "OK",
-    "id": "ahya-alwm-aldyn",
-    "chapters": 18,
-    "words": 74841,
-    "subs": 104,
-    "picked": 18
-  },
-  {
-    "root": "محلى ابن حزم - المجلد السادس",
-    "status": "OK",
-    "id": "abn-hzm-almhla-ar",
-    "chapters": 18,
-    "words": 55675,
-    "subs": 99,
-    "picked": 18
-  },
-  {
-    "root": "كتاب الزهرة",
-    "status": "OK",
-    "id": "ktab-alzhra",
-    "chapters": 18,
-    "words": 6460,
-    "subs": 98,
-    "picked": 18
-  },
-  {
-    "root": "لسان العرب",
-    "status": "OK",
-    "id": "lsan-alarb",
-    "chapters": 18,
-    "words": 426748,
-    "subs": 98,
-    "picked": 18
-  },
-  {
-    "root": "مقدمة فتح الباري",
-    "status": "OK",
-    "id": "hdy-alsary-mqdma-fth-albary",
-    "chapters": 18,
-    "words": 29867,
-    "subs": 98,
-    "picked": 18
-  },
-  {
     "root": "المصدر المفيد في غناء لحج الجديد",
     "status": "SKIP",
     "reason": "thin (0 ch, 0 w)"
@@ -165,135 +75,9 @@
     "reason": "slug clash"
   },
   {
-    "root": "مفتاح الحساب",
-    "status": "OK",
-    "id": "mftah-alhsab",
-    "chapters": 18,
-    "words": 12128,
-    "subs": 92,
-    "picked": 18
-  },
-  {
-    "root": "وثيقة مؤتمر الحوار الوطني الشامل",
-    "status": "OK",
-    "id": "wthyqa-mwtmr-alhwar-alwtny-alshaml",
-    "chapters": 16,
-    "words": 17918,
-    "subs": 91,
-    "picked": 18
-  },
-  {
-    "root": "إعراب القرآن للسيوطي",
-    "status": "OK",
-    "id": "aarab-alqran",
-    "chapters": 18,
-    "words": 17722,
-    "subs": 89,
-    "picked": 18
-  },
-  {
     "root": "محلى ابن حزم - المجلد الثاني",
     "status": "SKIP",
     "reason": "slug clash"
-  },
-  {
-    "root": "الأنيس المطرب بروض القرطاس في أخبار ملوك المغرب وتاريخ مدينة فاس",
-    "status": "OK",
-    "id": "alanys-almtrb-brwd-alqrtas-fy-akhbar-mlwk-almghrb-wtarykh-md",
-    "chapters": 18,
-    "words": 16856,
-    "subs": 87,
-    "picked": 18
-  },
-  {
-    "root": "النظرات",
-    "status": "OK",
-    "id": "alnzrat",
-    "chapters": 18,
-    "words": 13806,
-    "subs": 87,
-    "picked": 18
-  },
-  {
-    "root": "تلبيس إبليس",
-    "status": "OK",
-    "id": "tlbys-ablys",
-    "chapters": 17,
-    "words": 37358,
-    "subs": 82,
-    "picked": 18
-  },
-  {
-    "root": "التاج في أخلاق الملوك",
-    "status": "OK",
-    "id": "altaj-fy-akhlaq-almlwk",
-    "chapters": 17,
-    "words": 3241,
-    "subs": 80,
-    "picked": 18
-  },
-  {
-    "root": "ديوان شاعر الوطن الكبير- الفترة الثالثة",
-    "status": "OK",
-    "id": "dywan-shaar-alwtn-alkbyr-alftra-althaltha",
-    "chapters": 17,
-    "words": 3332,
-    "subs": 80,
-    "picked": 18
-  },
-  {
-    "root": "كتاب المواقف",
-    "status": "OK",
-    "id": "ktab-almwaqf",
-    "chapters": 18,
-    "words": 5048,
-    "subs": 77,
-    "picked": 18
-  },
-  {
-    "root": "صحيح البخاري",
-    "status": "OK",
-    "id": "shyh-albkhary-mwlf-albkhary-sabq-ktb-alhdyth-alnbwy-lahq-kta",
-    "chapters": 18,
-    "words": 62620,
-    "subs": 76,
-    "picked": 18
-  },
-  {
-    "root": "مراتب الإجماع",
-    "status": "OK",
-    "id": "mratb-alajmaa",
-    "chapters": 15,
-    "words": 5136,
-    "subs": 76,
-    "picked": 18
-  },
-  {
-    "root": "جامع بيان العلم وفضله",
-    "status": "OK",
-    "id": "jama-byan-alalm-wfdlh",
-    "chapters": 18,
-    "words": 42065,
-    "subs": 73,
-    "picked": 18
-  },
-  {
-    "root": "هداية الحيارى",
-    "status": "OK",
-    "id": "hdaya-alhyara",
-    "chapters": 18,
-    "words": 19057,
-    "subs": 73,
-    "picked": 18
-  },
-  {
-    "root": "نظام الأثينيين",
-    "status": "OK",
-    "id": "nzam-alathynyyn",
-    "chapters": 18,
-    "words": 6189,
-    "subs": 72,
-    "picked": 18
   },
   {
     "root": "محلى ابن حزم - المجلد الخامس",
@@ -301,189 +85,9 @@
     "reason": "slug clash"
   },
   {
-    "root": "معالم السنن",
-    "status": "OK",
-    "id": "maalm-alsnn",
-    "chapters": 17,
-    "words": 86705,
-    "subs": 71,
-    "picked": 18
-  },
-  {
-    "root": "نزهة المشتاق في اختراق الآفاق",
-    "status": "OK",
-    "id": "nzha-almshtaq-fy-akhtraq-alafaq",
-    "chapters": 18,
-    "words": 63587,
-    "subs": 70,
-    "picked": 18
-  },
-  {
-    "root": "مفيد العلوم ومبيد الهموم",
-    "status": "OK",
-    "id": "mfyd-alalwm-wmbyd-alhmwm",
-    "chapters": 16,
-    "words": 7733,
-    "subs": 68,
-    "picked": 18
-  },
-  {
-    "root": "مختصر صحيح مسلم",
-    "status": "OK",
-    "id": "mkhtsr-shyh-mslm",
-    "chapters": 18,
-    "words": 51319,
-    "subs": 67,
-    "picked": 18
-  },
-  {
-    "root": "مقدمة ابن الصلاح",
-    "status": "OK",
-    "id": "marfa-anwaa-alwm-alhdyth",
-    "chapters": 18,
-    "words": 15098,
-    "subs": 66,
-    "picked": 18
-  },
-  {
     "root": "ديوان الهوى والشباب (1953)",
     "status": "SKIP",
     "reason": "thin (2 ch, 330 w)"
-  },
-  {
-    "root": "دمعة وابتسامة (1914)",
-    "status": "OK",
-    "id": "dmaa-wabtsama",
-    "chapters": 15,
-    "words": 4734,
-    "subs": 64,
-    "picked": 18
-  },
-  {
-    "root": "الكافي",
-    "status": "OK",
-    "id": "alkafy",
-    "chapters": 10,
-    "words": 7125,
-    "subs": 62,
-    "picked": 18
-  },
-  {
-    "root": "الخصائص",
-    "status": "OK",
-    "id": "alkhsays",
-    "chapters": 18,
-    "words": 24159,
-    "subs": 61,
-    "picked": 18
-  },
-  {
-    "root": "رجوع الشيخ إلى صباه",
-    "status": "OK",
-    "id": "rjwa-alshykh-ala-sbah",
-    "chapters": 17,
-    "words": 8047,
-    "subs": 61,
-    "picked": 18
-  },
-  {
-    "root": "الصواعق المرسلة",
-    "status": "OK",
-    "id": "alswaaq-almrsla-fy-alrd-ala-aljhmya-walmatla",
-    "chapters": 18,
-    "words": 33223,
-    "subs": 60,
-    "picked": 18
-  },
-  {
-    "root": "صحيح مسلم",
-    "status": "OK",
-    "id": "shyh-mslm",
-    "chapters": 18,
-    "words": 136246,
-    "subs": 57,
-    "picked": 18
-  },
-  {
-    "root": "كتاب الرسالة",
-    "status": "OK",
-    "id": "alrsala",
-    "chapters": 18,
-    "words": 24843,
-    "subs": 57,
-    "picked": 18
-  },
-  {
-    "root": "منهاج السنة النبوية",
-    "status": "OK",
-    "id": "mnhaj-alsna-alnbwya-fy-nqd-klam-alshyaa-alqdrya",
-    "chapters": 18,
-    "words": 199367,
-    "subs": 57,
-    "picked": 18
-  },
-  {
-    "root": "درء تعارض العقل والنقل",
-    "status": "OK",
-    "id": "dr-taard-alaql-walnql",
-    "chapters": 18,
-    "words": 229716,
-    "subs": 55,
-    "picked": 18
-  },
-  {
-    "root": "التيجان في ملوك حمير",
-    "status": "OK",
-    "id": "altyjan-fy-mlwk-hmyr",
-    "chapters": 18,
-    "words": 21295,
-    "subs": 53,
-    "picked": 18
-  },
-  {
-    "root": "عيون الأنباء في طبقات الأطباء",
-    "status": "OK",
-    "id": "aywn-alanba-fy-tbqat-alatba",
-    "chapters": 15,
-    "words": 7820,
-    "subs": 53,
-    "picked": 18
-  },
-  {
-    "root": "المزهر",
-    "status": "OK",
-    "id": "almzhr",
-    "chapters": 18,
-    "words": 86123,
-    "subs": 52,
-    "picked": 18
-  },
-  {
-    "root": "جامع العلوم والحكم",
-    "status": "OK",
-    "id": "jama-alalwm-walhkm",
-    "chapters": 18,
-    "words": 74229,
-    "subs": 51,
-    "picked": 18
-  },
-  {
-    "root": "يسألونك (1946)",
-    "status": "OK",
-    "id": "ysalwnk",
-    "chapters": 4,
-    "words": 5384,
-    "subs": 51,
-    "picked": 18
-  },
-  {
-    "root": "صور الكواكب الثمانية والأربعين",
-    "status": "OK",
-    "id": "swr-alkwakb-althmanya-walarbayn",
-    "chapters": 18,
-    "words": 14828,
-    "subs": 50,
-    "picked": 18
   },
   {
     "root": "تخليص الإبريز في تلخيص باريز",
@@ -492,6 +96,557 @@
     "chapters": 16,
     "words": 27619,
     "subs": 49,
+    "picked": 18
+  },
+  {
+    "root": "إغاثة اللهفان",
+    "status": "OK",
+    "id": "aghatha-allhfan-mn-msayd-alshytan",
+    "chapters": 18,
+    "words": 74761,
+    "subs": 48,
+    "picked": 18
+  },
+  {
+    "root": "الآراء والمعتقدات (1926)",
+    "status": "OK",
+    "id": "alara-walmatqdat-1926",
+    "chapters": 17,
+    "words": 11593,
+    "subs": 48,
+    "picked": 18
+  },
+  {
+    "root": "الإعلام بما في دين النصارى",
+    "status": "OK",
+    "id": "alaalam-bma-fy-dyn-alnsara-mn-alfsad-walawham-wazhar-mhasn-d",
+    "chapters": 17,
+    "words": 38433,
+    "subs": 48,
+    "picked": 18
+  },
+  {
+    "root": "مجمع الزوائد",
+    "status": "OK",
+    "id": "mjma-alzwayd",
+    "chapters": 18,
+    "words": 192207,
+    "subs": 46,
+    "picked": 18
+  },
+  {
+    "root": "مصنف الصنعاني",
+    "status": "OK",
+    "id": "almsnf",
+    "chapters": 18,
+    "words": 160094,
+    "subs": 45,
+    "picked": 18
+  },
+  {
+    "root": "موطأ الإمام مالك",
+    "status": "OK",
+    "id": "mwta-alamam-malk",
+    "chapters": 18,
+    "words": 81767,
+    "subs": 45,
+    "picked": 18
+  },
+  {
+    "root": "نصوص قانون مجلس الدولة (مصر)",
+    "status": "OK",
+    "id": "nsws-qanwn-mjls-aldwla-msr",
+    "chapters": 15,
+    "words": 11327,
+    "subs": 45,
+    "picked": 18
+  },
+  {
+    "root": "سنن أبي داود",
+    "status": "OK",
+    "id": "snn-aby-dawd",
+    "chapters": 18,
+    "words": 150076,
+    "subs": 44,
+    "picked": 18
+  },
+  {
+    "root": "مغامرات حاجي بابا الإصفهاني",
+    "status": "OK",
+    "id": "mghamrat-hajy-baba-alasfhany",
+    "chapters": 18,
+    "words": 19098,
+    "subs": 42,
+    "picked": 18
+  },
+  {
+    "root": "نساء الخلفاء (دار المعارف، 1950)",
+    "status": "OK",
+    "id": "nsa-alkhlfa-dar-almaarf-1950",
+    "chapters": 17,
+    "words": 30714,
+    "subs": 42,
+    "picked": 18
+  },
+  {
+    "root": "التهذيب في أصول التعريب",
+    "status": "OK",
+    "id": "althdhyb-fy-aswl-altaryb",
+    "chapters": 18,
+    "words": 15777,
+    "subs": 41,
+    "picked": 18
+  },
+  {
+    "root": "نزهة الفتيان في تراجم بعض الشجعان",
+    "status": "OK",
+    "id": "nzha-alftyan-fy-trajm-bad-alshjaan",
+    "chapters": 18,
+    "words": 9515,
+    "subs": 41,
+    "picked": 18
+  },
+  {
+    "root": "إظهار الحق",
+    "status": "OK",
+    "id": "azhar-alhq",
+    "chapters": 18,
+    "words": 53776,
+    "subs": 39,
+    "picked": 18
+  },
+  {
+    "root": "أدب الطلب",
+    "status": "OK",
+    "id": "adb-altlb-wnhaya-alarb",
+    "chapters": 18,
+    "words": 19366,
+    "subs": 37,
+    "picked": 18
+  },
+  {
+    "root": "سيرة ابن هشام",
+    "status": "OK",
+    "id": "syra-abn-hsham-mwlf-abn-hsham",
+    "chapters": 16,
+    "words": 4412,
+    "subs": 37,
+    "picked": 18
+  },
+  {
+    "root": "رحلة ابن جبير",
+    "status": "OK",
+    "id": "rhla-abn-jbyr",
+    "chapters": 18,
+    "words": 26936,
+    "subs": 36,
+    "picked": 18
+  },
+  {
+    "root": "علم النجوم وأصول الحركات السماوية",
+    "status": "OK",
+    "id": "alm-alnjwm-waswl-alhrkat-alsmawya",
+    "chapters": 17,
+    "words": 9831,
+    "subs": 36,
+    "picked": 18
+  },
+  {
+    "root": "الأمثال العامية- مشروحة ومرتبة على الحرف الأول من المثل (الطبعة الثانية)",
+    "status": "OK",
+    "id": "alamthal-alaamya-mshrwha-wmrtba-ala-alhrf-alawl-mn-almthl-al",
+    "chapters": 18,
+    "words": 96988,
+    "subs": 35,
+    "picked": 18
+  },
+  {
+    "root": "لعب العرب (الطبعة الأولى)",
+    "status": "OK",
+    "id": "lab-alarb-altbaa-alawla",
+    "chapters": 17,
+    "words": 6198,
+    "subs": 35,
+    "picked": 18
+  },
+  {
+    "root": "مجموعة الرسائل والمسائل",
+    "status": "OK",
+    "id": "mjmwaa-alrsayl-walmsayl",
+    "chapters": 18,
+    "words": 112960,
+    "subs": 35,
+    "picked": 18
+  },
+  {
+    "root": "المصور في تاريخ لبنان (1950)",
+    "status": "SKIP",
+    "reason": "thin (15 ch, 2615 w)"
+  },
+  {
+    "root": "تهذيب التهذيب",
+    "status": "OK",
+    "id": "thdhyb-althdhyb",
+    "chapters": 18,
+    "words": 493907,
+    "subs": 34,
+    "picked": 18
+  },
+  {
+    "root": "رسالة ابن فضلان (ت. سامي الدهان)",
+    "status": "OK",
+    "id": "rsala-abn-fdlan-t-samy-aldhan",
+    "chapters": 14,
+    "words": 23953,
+    "subs": 34,
+    "picked": 18
+  },
+  {
+    "root": "كتاب الزهد لابن المبارك",
+    "status": "OK",
+    "id": "ktab-alzhd-labn-mbark",
+    "chapters": 18,
+    "words": 48937,
+    "subs": 34,
+    "picked": 18
+  },
+  {
+    "root": "أمر ملكي أ",
+    "status": "SKIP",
+    "reason": "thin (18 ch, 2606 w)"
+  },
+  {
+    "root": "الاختيارات الفقهية لشيخ الإسلام ابن تيمية",
+    "status": "OK",
+    "id": "alakhtyarat-alfqhya-lshykh-alaslam-abn-tymya",
+    "chapters": 18,
+    "words": 41785,
+    "subs": 33,
+    "picked": 18
+  },
+  {
+    "root": "طوق الحمامة",
+    "status": "OK",
+    "id": "twq-alhmama",
+    "chapters": 18,
+    "words": 12624,
+    "subs": 32,
+    "picked": 18
+  },
+  {
+    "root": "القاموس الجغرافي للبلاد المصرية من عهد قدماء المصريين إلى سنة 1945",
+    "status": "OK",
+    "id": "alqamws-aljghrafy-llblad-almsrya-mn-ahd-qdma-almsryyn-ala-sn",
+    "chapters": 17,
+    "words": 65007,
+    "subs": 31,
+    "picked": 18
+  },
+  {
+    "root": "المصباح المنير",
+    "status": "OK",
+    "id": "almsbah-almnyr",
+    "chapters": 18,
+    "words": 125372,
+    "subs": 31,
+    "picked": 18
+  },
+  {
+    "root": "شفاء العليل",
+    "status": "OK",
+    "id": "shfa-alalyl-fy-msayl-alqda-walqdr-walhkma-waltalyl",
+    "chapters": 18,
+    "words": 107950,
+    "subs": 31,
+    "picked": 18
+  },
+  {
+    "root": "فقه اللغة وسر العربية",
+    "status": "OK",
+    "id": "fqh-allgha-wsr-alarbya",
+    "chapters": 18,
+    "words": 22466,
+    "subs": 31,
+    "picked": 18
+  },
+  {
+    "root": "مرآة الحسناء (1872)",
+    "status": "SKIP",
+    "reason": "thin (0 ch, 0 w)"
+  },
+  {
+    "root": "مختار الصحاح",
+    "status": "OK",
+    "id": "mkhtar-alshah",
+    "chapters": 18,
+    "words": 98668,
+    "subs": 30,
+    "picked": 18
+  },
+  {
+    "root": "إقامة الدليل على إبطال التحليل",
+    "status": "OK",
+    "id": "aqama-aldlyl-ala-abtal-althlyl",
+    "chapters": 18,
+    "words": 314855,
+    "subs": 29,
+    "picked": 18
+  },
+  {
+    "root": "تاج العروس",
+    "status": "OK",
+    "id": "taj-alarws",
+    "chapters": 18,
+    "words": 142107,
+    "subs": 29,
+    "picked": 18
+  },
+  {
+    "root": "العقود الدرية من مناقب شيخ الإسلام أحمد بن تيمية",
+    "status": "OK",
+    "id": "alaqwd-aldrya-mn-mnaqb-shykh-alaslam-ahmd-bn-tymya",
+    "chapters": 18,
+    "words": 28641,
+    "subs": 28,
+    "picked": 18
+  },
+  {
+    "root": "الكتاب الأخضر",
+    "status": "OK",
+    "id": "alktab-alakhdr",
+    "chapters": 16,
+    "words": 8755,
+    "subs": 28,
+    "picked": 18
+  },
+  {
+    "root": "روضة الناظر وجنة المناظر",
+    "status": "SKIP",
+    "reason": "thin (4 ch, 2785 w)"
+  },
+  {
+    "root": "من الملوم",
+    "status": "OK",
+    "id": "mn-almlwm-rwaya-adbya-ghzlya-hqyqya-byn-shab-swry-wftaa-afrn",
+    "chapters": 17,
+    "words": 15475,
+    "subs": 28,
+    "picked": 18
+  },
+  {
+    "root": "الروم في سياستهم وحضارتهم ودينهم وثقافتهم وصلاتهم بالعرب (1951)",
+    "status": "OK",
+    "id": "alrwm-fy-syasthm-whdarthm-wdynhm-wthqafthm-wslathm-balarb-19",
+    "chapters": 11,
+    "words": 41162,
+    "subs": 26,
+    "picked": 18
+  },
+  {
+    "root": "سنن الدارقطني",
+    "status": "OK",
+    "id": "snn-aldarqtny",
+    "chapters": 18,
+    "words": 243710,
+    "subs": 26,
+    "picked": 18
+  },
+  {
+    "root": "عجائب المخلوقات وغرائب الموجودات",
+    "status": "OK",
+    "id": "ajayb-almkhlwqat-wghrayb-almwjwdat",
+    "chapters": 18,
+    "words": 24336,
+    "subs": 26,
+    "picked": 18
+  },
+  {
+    "root": "بروتوكولات حكماء صهيون",
+    "status": "OK",
+    "id": "brwtwkwlat-hkma-shywn",
+    "chapters": 18,
+    "words": 15242,
+    "subs": 25,
+    "picked": 18
+  },
+  {
+    "root": "معركة الإسلام والرأسمالية (1952)",
+    "status": "OK",
+    "id": "marka-alaslam-walrasmalya",
+    "chapters": 18,
+    "words": 17363,
+    "subs": 25,
+    "picked": 18
+  },
+  {
+    "root": "جمهرة أنساب العرب",
+    "status": "OK",
+    "id": "jmhra-ansab-alarb",
+    "chapters": 16,
+    "words": 4423,
+    "subs": 24,
+    "picked": 18
+  },
+  {
+    "root": "سنن الدارمي",
+    "status": "OK",
+    "id": "snn-aldarmy",
+    "chapters": 18,
+    "words": 117004,
+    "subs": 24,
+    "picked": 18
+  },
+  {
+    "root": "تذكرة الحفاظ",
+    "status": "OK",
+    "id": "tdhkra-alhfaz",
+    "chapters": 18,
+    "words": 270066,
+    "subs": 23,
+    "picked": 18
+  },
+  {
+    "root": "الروض العاطر في نزهة الخاطر",
+    "status": "OK",
+    "id": "alrwd-alaatr-fy-nzha-alkhatr",
+    "chapters": 18,
+    "words": 13201,
+    "subs": 22,
+    "picked": 18
+  },
+  {
+    "root": "العقد الفريد (1953)",
+    "status": "OK",
+    "id": "alaqd-alfryd",
+    "chapters": 18,
+    "words": 17016,
+    "subs": 22,
+    "picked": 18
+  },
+  {
+    "root": "الناسخ والمنسوخ",
+    "status": "OK",
+    "id": "alnaskh-walmnswkh",
+    "chapters": 4,
+    "words": 6600,
+    "subs": 22,
+    "picked": 18
+  },
+  {
+    "root": "حوادث دمشق اليومية",
+    "status": "OK",
+    "id": "hwadth-dmshq-alywmya",
+    "chapters": 18,
+    "words": 10016,
+    "subs": 22,
+    "picked": 18
+  },
+  {
+    "root": "مذكراتي عن الثورة العربية الكبرى",
+    "status": "OK",
+    "id": "mdhkraty-an-althwra-alarbya-alkbra",
+    "chapters": 18,
+    "words": 63427,
+    "subs": 22,
+    "picked": 18
+  },
+  {
+    "root": "القرن العشرون ما كان وما سيكون",
+    "status": "OK",
+    "id": "alqrn-alashrwn-ma-kan-wma-sykwn",
+    "chapters": 2,
+    "words": 3971,
+    "subs": 21,
+    "picked": 18
+  },
+  {
+    "root": "تاريخ الكويت السياسي - الجزء الأول",
+    "status": "OK",
+    "id": "tarykh-alkwyt-alsyasy-aljz-alawl",
+    "chapters": 18,
+    "words": 29755,
+    "subs": 21,
+    "picked": 18
+  },
+  {
+    "root": "محاضرات في تاريخ الدولة العباسية",
+    "status": "OK",
+    "id": "mhadrat-fy-tarykh-aldwla-alabasya",
+    "chapters": 16,
+    "words": 58940,
+    "subs": 21,
+    "picked": 18
+  },
+  {
+    "root": "اقتضاء الصراط المستقيم",
+    "status": "OK",
+    "id": "aqtda-alsrat-almstqym-mkhalfa-ashab-aljhym",
+    "chapters": 18,
+    "words": 103073,
+    "subs": 20,
+    "picked": 18
+  },
+  {
+    "root": "ديوان الخنساء (مطبعة التقدم، 1930)",
+    "status": "OK",
+    "id": "dywan-alkhnsa",
+    "chapters": 17,
+    "words": 11891,
+    "subs": 20,
+    "picked": 18
+  },
+  {
+    "root": "سر تقدم الإنكليز السكسونيين",
+    "status": "OK",
+    "id": "sr-tqdm-alanklyz-alskswnyyn",
+    "chapters": 18,
+    "words": 75564,
+    "subs": 20,
+    "picked": 18
+  },
+  {
+    "root": "كليلة ودمنة (الأميرية، 1937)",
+    "status": "OK",
+    "id": "klyla-wdmna",
+    "chapters": 18,
+    "words": 47553,
+    "subs": 20,
+    "picked": 18
+  },
+  {
+    "root": "الرد على المنطقيين",
+    "status": "OK",
+    "id": "alrd-ala-almntqyyn",
+    "chapters": 18,
+    "words": 118877,
+    "subs": 19,
+    "picked": 18
+  },
+  {
+    "root": "الكتاب المختصر في حساب الجبر والمقابلة",
+    "status": "OK",
+    "id": "alktab-almkhtsr-fy-hsab-aljbr-walmqabla",
+    "chapters": 16,
+    "words": 19625,
+    "subs": 19,
+    "picked": 18
+  },
+  {
+    "root": "بيان تلبيس الجهمية في تأسيس بدعهم الكلامية",
+    "status": "OK",
+    "id": "byan-tlbys-aljhmya-fy-tasys-bdahm-alklamya",
+    "chapters": 18,
+    "words": 277748,
+    "subs": 19,
+    "picked": 18
+  },
+  {
+    "root": "تاريخ الفلسفة اليونانية (1936)",
+    "status": "OK",
+    "id": "tarykh-alflsfa-alywnanya",
+    "chapters": 17,
+    "words": 42205,
+    "subs": 19,
     "picked": 18
   }
 ]

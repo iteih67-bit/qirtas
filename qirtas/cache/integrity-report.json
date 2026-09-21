@@ -1,11 +1,11 @@
 {
   "db": {
-    "total": 419,
-    "visible": 419,
+    "total": 479,
+    "visible": 479,
     "byLang": [
       {
         "l": "ar",
-        "c": 83
+        "c": 143
       },
       {
         "l": "en",
@@ -13,17 +13,17 @@
       }
     ],
     "noSourceUrl": 0,
-    "noLicense": 0,
+    "noLicense": 60,
     "noEra": 0,
     "noCover": 0,
     "hiddenOrRemoved": [
       {
         "hidden": 0,
         "removed": 0,
-        "c": 419
+        "c": 479
       }
     ],
-    "auditLog": 11,
+    "auditLog": 14,
     "takedown": [
       {
         "id": 1,
@@ -40,35 +40,35 @@
     ]
   },
   "catalog": {
-    "catalog": 419,
-    "index": 419,
+    "catalog": 479,
+    "index": 479,
     "dbMatch": true
   },
   "dist": {
-    "dbIds": 419,
-    "bookDirs": 419,
-    "readDirs": 419,
+    "dbIds": 479,
+    "bookDirs": 479,
+    "readDirs": 479,
     "missingDirs": [],
     "missingCount": 0,
     "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 1142,
+    "htmlScanned": 1292,
     "hits": {
+      "wikisource": {
+        "count": 187,
+        "samples": [
+          "about\\index.html",
+          "author\\abas-alaqad\\index.html",
+          "author\\abd-alrzaq-alsnaany\\index.html"
+        ]
+      },
       "gutenberg": {
         "count": 336,
         "samples": [
           "book\\a-case-in-camera\\index.html",
           "book\\a-farewell-to-arms\\index.html",
           "book\\a-heart-song-of-to-day-disturbed-by-fire-from-the-unruly-mem\\index.html"
-        ]
-      },
-      "wikisource": {
-        "count": 83,
-        "samples": [
-          "book\\aarab-alqran\\index.html",
-          "book\\abn-hzm-almhla\\index.html",
-          "book\\abn-hzm-almhla-ar\\index.html"
         ]
       }
     },
@@ -77,7 +77,7 @@
     "apiLinkedFromPublic": []
   },
   "rights": {
-    "pages": 419,
+    "pages": 479,
     "noRights": 0,
     "noRightsSample": [],
     "noRightsPageLink": 0,
@@ -91,7 +91,7 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 36.4
+      "kb": 37.5
     },
     {
       "page": "library/index.html",
@@ -116,12 +116,12 @@
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 29.9
+      "kb": 32.7
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 122.6
+      "kb": 138.7
     },
     {
       "page": "feed.xml",
@@ -136,7 +136,7 @@
     {
       "page": "stats/index.html",
       "exists": true,
-      "kb": 8.6
+      "kb": 8.7
     },
     {
       "page": "about/index.html",
@@ -145,8 +145,8 @@
     }
   ],
   "sitemap": {
-    "urls": 1141,
-    "unique": 1141,
+    "urls": 1291,
+    "unique": 1291,
     "dupes": 0,
     "allHttps": true,
     "sample": [
@@ -155,19 +155,19 @@
     ]
   },
   "epub": {
-    "count": 419,
+    "count": 479,
     "minKB": 10.7,
     "maxKB": 5370.7
   },
   "width": {
-    "checks": 20,
+    "checks": 40,
     "failed": 0,
     "summary": {
       "base": "http://localhost:8081",
       "browser": "Edg/153.0.4234.32",
       "arabicSampleBook": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
       "screenshotsDir": "C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\cache\\screens",
-      "checks": 20,
+      "checks": 40,
       "failures": []
     }
   },

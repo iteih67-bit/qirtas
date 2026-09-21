@@ -92,6 +92,10 @@ class CDP {
     { name: 'book', url: `/book/${encodeURIComponent(arabicId)}/` },
     { name: 'reader', url: `/read/${encodeURIComponent(arabicId)}/` },
     { name: 'rights', url: '/rights/' },
+    { name: 'authors', url: '/authors/' },
+    { name: 'author', url: '/author/agatha-christie/' },
+    { name: 'era', url: '/era/trath-arby/' },
+    { name: 'home', url: '/' },
   ];
 
   const results = [];
