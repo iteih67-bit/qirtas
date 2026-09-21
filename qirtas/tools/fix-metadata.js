@@ -1,6 +1,6 @@
 // Repair the three malformed metadata records, with audit entries.
 'use strict';
-const P = 'C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\';
+const P = path.join(Q, '');
 const { DatabaseSync } = require('node:sqlite');
 const { normKey } = require(P + 'pipeline\\lib\\arabic.js');
 const db = new DatabaseSync(P + 'data\\qirtas.db');

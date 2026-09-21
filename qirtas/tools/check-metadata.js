@@ -1,7 +1,7 @@
 // Detect malformed metadata records in the exported catalog.
 'use strict';
 const fs = require('fs');
-const cat = JSON.parse(fs.readFileSync('C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\site\\dist\\catalog.json', 'utf8'));
+const cat = JSON.parse(fs.readFileSync(path.join(Q, 'site/dist/catalog.json'), 'utf8'));
 const bad = [];
 for (const b of cat) {
   const t = typeof b.title === 'object' ? (b.title.ar || '') : String(b.title || '');
@@ -19,5 +19,5 @@ console.log('suspicious: ' + bad.length);
 const byReason = {};
 for (const b of bad) for (const r of b.reasons) byReason[r] = (byReason[r] || 0) + 1;
 console.log('by reason: ' + JSON.stringify(byReason));
-fs.writeFileSync('C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\cache\\bad-metadata.json', JSON.stringify(bad, null, 2));
+fs.writeFileSync(path.join(Q, 'cache/bad-metadata.json'), JSON.stringify(bad, null, 2));
 for (const b of bad.slice(0, 40)) console.log(`  ${b.lang} ${b.id} [${b.reasons.join(',')}] ar="${b.title}" en="${b.title_en}" by="${b.author}"`);

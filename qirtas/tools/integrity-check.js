@@ -2,8 +2,8 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const ROOT = 'C:\\Users\\AsaadM\\Documents\\Books';
-const Q = path.join(ROOT, 'qirtas');
+const Q = path.resolve(__dirname, '..');
+const ROOT = path.resolve(Q, '..');
 const DIST = path.join(Q, 'site', 'dist');
 const out = {};
 

@@ -1,7 +1,7 @@
 // sanitize-metadata.js — keep template-fragment junk out of the catalog.
 // Idempotent: safe to run after every import. Records any change in audit_log.
 'use strict';
-const P = 'C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\';
+const P = path.join(Q, '');
 const { DatabaseSync } = require('node:sqlite');
 const { normKey } = require(P + 'pipeline\\lib\\arabic.js');
 const db = new DatabaseSync(P + 'data\\qirtas.db');
