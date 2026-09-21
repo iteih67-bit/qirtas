@@ -1,11 +1,11 @@
 {
   "db": {
-    "total": 484,
-    "visible": 484,
+    "total": 629,
+    "visible": 629,
     "byLang": [
       {
         "l": "ar",
-        "c": 148
+        "c": 293
       },
       {
         "l": "en",
@@ -20,10 +20,10 @@
       {
         "hidden": 0,
         "removed": 0,
-        "c": 484
+        "c": 629
       }
     ],
-    "auditLog": 21,
+    "auditLog": 22,
     "takedown": [
       {
         "id": 1,
@@ -40,28 +40,36 @@
     ]
   },
   "catalog": {
-    "catalog": 524,
-    "index": 484,
-    "dbMatch": false,
-    "indexMatch": false
+    "catalog": 629,
+    "index": 629,
+    "dbMatch": true,
+    "indexMatch": true
   },
   "dist": {
-    "dbIds": 484,
-    "bookDirs": 484,
-    "readDirs": 484,
+    "dbIds": 629,
+    "bookDirs": 629,
+    "readDirs": 629,
     "missingDirs": [],
     "missingCount": 0,
     "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 1307,
+    "htmlScanned": 1685,
     "hits": {
       "wikisource": {
-        "count": 191,
+        "count": 185,
         "samples": [
           "author\\abas-alaqad\\index.html",
           "author\\abd-alrzaq-alsnaany\\index.html",
           "author\\abdallh-bn-almbark\\index.html"
+        ]
+      },
+      "archive.org": {
+        "count": 150,
+        "samples": [
+          "book\\12-mjla-alfysl-alalmya\\index.html",
+          "book\\16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy\\index.html",
+          "book\\2-jama-altrmdh\\index.html"
         ]
       },
       "gutenberg": {
@@ -71,14 +79,6 @@
           "book\\a-farewell-to-arms\\index.html",
           "book\\a-heart-song-of-to-day-disturbed-by-fire-from-the-unruly-mem\\index.html"
         ]
-      },
-      "archive.org": {
-        "count": 5,
-        "samples": [
-          "book\\alklmat-alhsan\\index.html",
-          "book\\annales\\index.html",
-          "book\\mjla-hwlyat-altrath-jamaa-mstghanm-aladd-18\\index.html"
-        ]
       }
     },
     "adminInDist": false,
@@ -86,7 +86,7 @@
     "apiLinkedFromPublic": []
   },
   "rights": {
-    "pages": 484,
+    "pages": 629,
     "noRights": 0,
     "noRightsSample": [],
     "noRightsPageLink": 0,
@@ -100,12 +100,12 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 37.7
+      "kb": 36.9
     },
     {
       "page": "library/index.html",
       "exists": true,
-      "kb": 8
+      "kb": 8.1
     },
     {
       "page": "rights/index.html",
@@ -125,17 +125,17 @@
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 33.5
+      "kb": 43.5
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 155.6
+      "kb": 202
     },
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 31.9
+      "kb": 31.8
     },
     {
       "page": "404.html",
@@ -145,7 +145,7 @@
     {
       "page": "stats/index.html",
       "exists": true,
-      "kb": 8.8
+      "kb": 9
     },
     {
       "page": "about/index.html",
@@ -154,8 +154,8 @@
     }
   ],
   "sitemap": {
-    "urls": 1306,
-    "unique": 1306,
+    "urls": 1684,
+    "unique": 1684,
     "dupes": 0,
     "allHttps": true,
     "sample": [
@@ -164,9 +164,9 @@
     ]
   },
   "epub": {
-    "count": 484,
+    "count": 629,
     "minKB": 10.7,
-    "maxKB": 5370.7
+    "maxKB": 8493.8
   },
   "width": {
     "checks": 40,
