@@ -1,3 +1,3 @@
-﻿صفحات كتاب في dist: 484   ملفات نص في dist: 484
-سطور sitemap: 1306   مفقودة: 0
-فحوص ناجحة: 52/52
+﻿  - نص: lady-audleys-secret
+  - كتاب: lorna-doone-a-romance-of-exmoor
+  - نص: lorna-doone-a-romance-of-exmoor
