@@ -42,7 +42,8 @@
   "catalog": {
     "catalog": 484,
     "index": 484,
-    "dbMatch": true
+    "dbMatch": true,
+    "indexMatch": true
   },
   "dist": {
     "dbIds": 484,
