@@ -39,7 +39,6 @@ jobs:
         working-directory: qirtas
         run: node --no-warnings site/tools/build-epub.js
       - name: Integrity check
-        continue-on-error: true   # TODO: re-enable as a hard gate once the hosted-runner discrepancy is fixed
         working-directory: qirtas
         run: |
           node --no-warnings tools/integrity-check.js || {

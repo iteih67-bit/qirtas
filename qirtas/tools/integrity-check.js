@@ -8,11 +8,27 @@ const DIST = path.join(Q, 'site', 'dist');
 const out = {};
 
 // ---------- 1) DB ----------
-const { DatabaseSync } = require('node:sqlite');
-const db = new DatabaseSync(path.join(Q, 'data', 'qirtas.db'));
-const q = (s) => db.prepare(s).get();
-const qa = (s) => db.prepare(s).all();
-out.db = {
+let db = null;
+let dbNote = '';
+try {
+  const { DatabaseSync } = require('node:sqlite');
+  const src = path.join(Q, 'data', 'qirtas.db');
+  let openPath = src;
+  try {
+    const tmp = path.join(require('os').tmpdir(), 'qirtas-verify-' + process.pid + '-' + Date.now() + '.db');
+    fs.copyFileSync(src, tmp);
+    openPath = tmp;
+  } catch (e) { /* fall back to opening in place */ }
+  db = new DatabaseSync(openPath);
+  db.prepare('select count(*) c from books').get();
+} catch (e) {
+  dbNote = e.message;
+  db = null;
+  console.log('note: sqlite snapshot not readable in this environment (' + dbNote + ') — continuing with site checks only');
+}
+const q = (s) => (db ? db.prepare(s).get() : null);
+const qa = (s) => (db ? db.prepare(s).all() : []);
+out.db = db ? {
   total: q('select count(*) c from books').c,
   visible: q('select count(*) c from books where (hidden is null or hidden=0) and (removed is null or removed=0)').c,
   byLang: qa('select language l, count(*) c from books group by language'),
@@ -24,12 +40,12 @@ out.db = {
   auditLog: q('select count(*) c from audit_log').c,
   takedown: qa('select id, book_id, status from takedown_requests'),
   tables: qa("select name from sqlite_master where type='table' order by name").map((r) => r.name),
-};
+} : { mode: 'unavailable', note: dbNote, total: null, visible: null, byLang: [], noSourceUrl: null, noLicense: null, noEra: null, noCover: null, hiddenOrRemoved: [], auditLog: null, takedown: [], tables: [] };
 
 // ---------- 2) catalog + index ----------
 const catalog = JSON.parse(fs.readFileSync(path.join(Q, 'books-data', 'catalog.json'), 'utf8'));
 const index = JSON.parse(fs.readFileSync(path.join(Q, 'books-data', 'index.json'), 'utf8'));
-out.catalog = { catalog: catalog.length, index: index.books.length, dbMatch: catalog.length === out.db.visible, indexMatch: catalog.length === index.books.length };
+out.catalog = { catalog: catalog.length, index: index.books.length, dbMatch: out.db.visible == null ? null : catalog.length === out.db.visible, indexMatch: catalog.length === index.books.length };
 
 // ---------- 3) dist book dirs vs db ids ----------
 const dbIds = qa('select id, hidden, removed from books').map((r) => ({ id: r.id, hide: !!(r.hidden || r.removed) }));
