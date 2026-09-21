@@ -9,6 +9,7 @@
     lang: document.getElementById('fLang'),
     cat: document.getElementById('fCat'),
     src: document.getElementById('fSrc'),
+    era: document.getElementById('fEra'),
     sort: document.getElementById('fSort'),
     reset: document.getElementById('fReset'),
     status: document.getElementById('libStatus'),
@@ -26,7 +27,7 @@
   if (!el.results) return;
 
   var INDEX = null, EXTERNAL = null, extLoaded = false;
-  var view = { q: '', lang: '', cat: '', src: '', sort: 'rel', page: 1 };
+  var view = { q: '', lang: '', cat: '', src: '', era: '', sort: 'rel', page: 1 };
   var filtered = [];
 
   /* --- Arabic-aware normalization (mirrors pipeline/lib/arabic.js) --- */
@@ -66,10 +67,12 @@
     view.lang = p.get('lang') || '';
     view.cat = p.get('cat') || '';
     view.src = p.get('src') || '';
+    view.era = p.get('era') || '';
     view.sort = p.get('sort') || 'rel';
     view.page = Math.max(1, parseInt(p.get('page') || '1', 10) || 1);
     el.input.value = view.q;
     el.lang.value = view.lang; el.cat.value = view.cat; el.src.value = view.src; el.sort.value = view.sort;
+    if (el.era) el.era.value = view.era;
     el.clear.classList.toggle('hidden', !view.q);
   }
   function writeURL() {
@@ -78,6 +81,7 @@
     if (view.lang) p.set('lang', view.lang);
     if (view.cat) p.set('cat', view.cat);
     if (view.src) p.set('src', view.src);
+    if (view.era) p.set('era', view.era);
     if (view.sort && view.sort !== 'rel') p.set('sort', view.sort);
     if (view.page > 1) p.set('page', String(view.page));
     var qs = p.toString();
@@ -99,6 +103,7 @@
       if (view.lang && b.lang !== view.lang) return false;
       if (view.cat && b.cat !== view.cat) return false;
       if (view.src && b.src !== view.src) return false;
+      if (view.era && b.era !== view.era) return false;
       if (!terms.length) return true;
       var hay = b.k || norm(b.t + ' ' + b.te + ' ' + b.a + ' ' + b.ae);
       for (var i = 0; i < terms.length; i++) if (hay.indexOf(terms[i]) === -1) return false;
@@ -150,8 +155,9 @@
   function refresh() { apply(); render(); writeURL(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
   function reset() {
-    view = { q: '', lang: '', cat: '', src: '', sort: 'rel', page: 1 };
+    view = { q: '', lang: '', cat: '', src: '', era: '', sort: 'rel', page: 1 };
     el.input.value = ''; el.lang.value = ''; el.cat.value = ''; el.src.value = ''; el.sort.value = 'rel';
+    if (el.era) el.era.value = '';
     el.clear.classList.add('hidden');
     refresh();
   }
@@ -221,6 +227,7 @@
   el.lang.addEventListener('change', function () { view.lang = el.lang.value; view.page = 1; refresh(); if (extLoaded) renderExternal(false); });
   el.cat.addEventListener('change', function () { view.cat = el.cat.value; view.page = 1; refresh(); });
   el.src.addEventListener('change', function () { view.src = el.src.value; view.page = 1; refresh(); });
+  if (el.era) el.era.addEventListener('change', function () { view.era = el.era.value; view.page = 1; refresh(); });
   el.sort.addEventListener('change', function () { view.sort = el.sort.value; view.page = 1; refresh(); });
   el.reset.addEventListener('click', reset);
   el.prev.addEventListener('click', function () { if (view.page > 1) { view.page--; refresh(); } });

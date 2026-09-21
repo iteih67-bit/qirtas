@@ -22,19 +22,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/configure-pages@v5
+        id: pages
       - name: Install pipeline deps
         working-directory: qirtas
-        run: npm ci
+        run: npm ci --no-audit --no-fund
+      - name: Build search index
+        working-directory: qirtas
+        run: node --no-warnings pipeline/build-index.js
       - name: Build static site
         working-directory: qirtas
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
-        run: node site/tools/build.js
+        run: node --no-warnings site/tools/build.js
+      - name: Build EPUB downloads
+        working-directory: qirtas
+        run: node --no-warnings site/tools/build-epub.js
+      - name: Integrity check
+        working-directory: qirtas
+        run: node --no-warnings tools/integrity-check.js
       - name: Smoke test
         working-directory: qirtas
         run: node tools/smoke-test.js --sample=4
-      - uses: actions/configure-pages@v5
-        id: pages
       - uses: actions/upload-pages-artifact@v3
         with:
           path: qirtas/site/dist

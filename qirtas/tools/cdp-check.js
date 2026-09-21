@@ -196,6 +196,24 @@ class CDP {
     actionOptions: document.querySelectorAll('#rAction option').length
   }))()`));
 
+  // 6f) browse by author and by era (acceptance: category / author / period)
+  await cdp.goto(`${BASE}/authors/`, 2600);
+  push('browse.authors_index', await cdp.evalExpr(`(() => ({ chips: document.querySelectorAll('.author-chip').length }))()`));
+  const authorHref = await cdp.evalExpr(`(() => { const a = document.querySelector('.author-chip'); return a ? a.getAttribute('href') : null; })()`);
+  if (authorHref) {
+    await cdp.goto(BASE + authorHref, 2600);
+    push('browse.author_page', await cdp.evalExpr(`(() => ({ href: ${JSON.stringify(authorHref)}, cards: document.querySelectorAll('.book-card').length, h1: (document.querySelector('h1')||{}).textContent }))()`));
+  }
+  await cdp.goto(`${BASE}/library/`, 3000);
+  push('browse.era_filter', await cdp.evalExpr(`(async () => {
+    const sel = document.getElementById('fEra');
+    if (!sel) return { error: 'no era select' };
+    const val = sel.options[1] ? sel.options[1].value : '';
+    sel.value = val; sel.dispatchEvent(new Event('change', { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 500));
+    return { selected: val, cards: document.querySelectorAll('.book-card').length, url: location.search, status: ((document.getElementById('libStatus')||{}).textContent || '').trim().slice(0, 70) };
+  })()`));
+
   // 7) reader page renders real text
   const firstId = await cdp.evalExpr(`(async () => {
     const r = await fetch('/books-index.json'); const j = await r.json();
@@ -257,6 +275,7 @@ class CDP {
   try { fs.rmSync(PROFILE, { recursive: true, force: true, maxRetries: 3 }); } catch (e) { /* browser still holds the profile — harmless */ }
 
   console.log(JSON.stringify(out, null, 2));
+  try { fs.writeFileSync(path.join(__dirname, '..', 'cache', 'cdp-final.json'), JSON.stringify(out, null, 2)); } catch (e) {}
   const checks = out.checks.filter((c) => c.name !== 'reader.picked_id');
   const failed = checks.filter((c) => !c.value || c.value.error);
   process.exit(failed.length ? 1 : 0);

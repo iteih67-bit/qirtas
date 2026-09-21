@@ -1,0 +1,36 @@
+[
+  {
+    "id": "mwlf",
+    "lang": "ar",
+    "reasons": [
+      "title",
+      "author"
+    ],
+    "title": "|مؤلف =",
+    "title_en": "|مؤلف =",
+    "author": "|باب =",
+    "url": "https://ar.wikisource.org/wiki/%D8%A7%D9%84%D8%B1%D9%88%D8%AD"
+  },
+  {
+    "id": "mjla-albyan-llbrqwqy",
+    "lang": "ar",
+    "reasons": [
+      "author"
+    ],
+    "title": "مجلة البيان للبرقوقي",
+    "title_en": "مجلة البيان للبرقوقي",
+    "author": "| مترجم =",
+    "url": "https://ar.wikisource.org/wiki/%D9%85%D8%AC%D9%84%D8%A9_%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86_%D9%84%D9%84%D8%A8%D8%B1%D9%82%D9%88%D9%82%D9%8A"
+  },
+  {
+    "id": "mjla-alrsala",
+    "lang": "ar",
+    "reasons": [
+      "author"
+    ],
+    "title": "مجلة الرسالة",
+    "title_en": "مجلة الرسالة",
+    "author": "| مترجم =",
+    "url": "https://ar.wikisource.org/wiki/%D9%85%D8%AC%D9%84%D8%A9_%D8%A7%D9%84%D8%B1%D8%B3%D8%A7%D9%84%D8%A9"
+  }
+]

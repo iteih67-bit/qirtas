@@ -21,6 +21,7 @@ function main() {
       ae: authorEn,
       lang: b.lang || 'en',
       cat: b.cat || 'english',
+      era: b.era || '',
       src: b.sourceKey || b.source || 'other',
       w: b.words || 0,
       ch: b.chapters || 0,

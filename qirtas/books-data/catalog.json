@@ -11327,52 +11327,6 @@
     "updatedAt": "2026-09-21T18:36:56.402Z"
   },
   {
-    "id": "mwlf",
-    "source": "wikisource",
-    "sourceKey": "wikisource",
-    "sourceLabel": {
-      "ar": "ويكي مصدر العربية",
-      "en": "ويكي مصدر العربية"
-    },
-    "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A7%D9%84%D8%B1%D9%88%D8%AD",
-    "license": "wikisource-policy",
-    "licenseLabel": {
-      "ar": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر",
-      "en": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر"
-    },
-    "licenseUrl": "https://wikisource.org/wiki/Wikisource:Copyright",
-    "licenseAudit": "platform-policy",
-    "title": {
-      "ar": "|مؤلف =",
-      "en": "|مؤلف ="
-    },
-    "author": {
-      "ar": "|باب =",
-      "en": "|باب ="
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": null,
-    "era": "تراث عربي",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "|مؤلف = — |باب =. نص كامل من الملكية العامة منشور على ويكي مصدر العربية، مقروء مجاناً على منصة قِرطاس.",
-      "en": "|مؤلف = by |باب =. Full public-domain text from Wikisource, free to read on Qirtas."
-    },
-    "grad": "cover-g4",
-    "emoji": "🌹",
-    "chapters": 18,
-    "words": 14876,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T18:42:11.476Z"
-  },
-  {
     "id": "athar-alblad-wakhbar-alabad",
     "source": "wikisource",
     "sourceKey": "wikisource",
@@ -12291,6 +12245,52 @@
     "words": 24843,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T18:36:56.108Z"
+  },
+  {
+    "id": "mwlf",
+    "source": "wikisource",
+    "sourceKey": "wikisource",
+    "sourceLabel": {
+      "ar": "ويكي مصدر العربية",
+      "en": "ويكي مصدر العربية"
+    },
+    "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A7%D9%84%D8%B1%D9%88%D8%AD",
+    "license": "wikisource-policy",
+    "licenseLabel": {
+      "ar": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر",
+      "en": "ملكية عامة / رخصة حرة — حسب سياسة ويكي مصدر"
+    },
+    "licenseUrl": "https://wikisource.org/wiki/Wikisource:Copyright",
+    "licenseAudit": "platform-policy",
+    "title": {
+      "ar": "الروح",
+      "en": "|مؤلف ="
+    },
+    "author": {
+      "ar": "ابن قيم الجوزية",
+      "en": "|باب ="
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "|مؤلف = — |باب =. نص كامل من الملكية العامة منشور على ويكي مصدر العربية، مقروء مجاناً على منصة قِرطاس.",
+      "en": "|مؤلف = by |باب =. Full public-domain text from Wikisource, free to read on Qirtas."
+    },
+    "grad": "cover-g4",
+    "emoji": "🌹",
+    "chapters": 18,
+    "words": 14876,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21T19:54:07.798Z"
   },
   {
     "id": "alrwda-alndya-shrh-aldrr-albhya",
@@ -14015,7 +14015,7 @@
       "en": "مجلة البيان للبرقوقي"
     },
     "author": {
-      "ar": "| مترجم =",
+      "ar": "",
       "en": "| مترجم ="
     },
     "translator": null,
@@ -14038,7 +14038,7 @@
     "chapters": 16,
     "words": 33101,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T18:36:56.020Z"
+    "updatedAt": "2026-09-21T19:54:07.798Z"
   },
   {
     "id": "mjla-alrsala",
@@ -14061,7 +14061,7 @@
       "en": "مجلة الرسالة"
     },
     "author": {
-      "ar": "| مترجم =",
+      "ar": "",
       "en": "| مترجم ="
     },
     "translator": null,
@@ -14084,7 +14084,7 @@
     "chapters": 18,
     "words": 18388,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T18:36:56.003Z"
+    "updatedAt": "2026-09-21T19:54:07.798Z"
   },
   {
     "id": "mjla-almqtbs",

@@ -1,0 +1,198 @@
+{
+  "db": {
+    "total": 419,
+    "visible": 419,
+    "byLang": [
+      {
+        "l": "ar",
+        "c": 83
+      },
+      {
+        "l": "en",
+        "c": 336
+      }
+    ],
+    "noSourceUrl": 0,
+    "noLicense": 0,
+    "noEra": 0,
+    "noCover": 0,
+    "hiddenOrRemoved": [
+      {
+        "hidden": 0,
+        "removed": 0,
+        "c": 419
+      }
+    ],
+    "auditLog": 11,
+    "takedown": [
+      {
+        "id": 1,
+        "book_id": null,
+        "status": "pending"
+      }
+    ],
+    "tables": [
+      "audit_log",
+      "books",
+      "import_runs",
+      "sqlite_sequence",
+      "takedown_requests"
+    ]
+  },
+  "catalog": {
+    "catalog": 419,
+    "index": 419,
+    "dbMatch": true
+  },
+  "dist": {
+    "dbIds": 419,
+    "bookDirs": 419,
+    "readDirs": 419,
+    "missingDirs": [],
+    "missingCount": 0,
+    "hiddenVisibleOnSite": []
+  },
+  "leak": {
+    "htmlScanned": 1142,
+    "hits": {
+      "gutenberg": {
+        "count": 336,
+        "samples": [
+          "book\\a-case-in-camera\\index.html",
+          "book\\a-farewell-to-arms\\index.html",
+          "book\\a-heart-song-of-to-day-disturbed-by-fire-from-the-unruly-mem\\index.html"
+        ]
+      },
+      "wikisource": {
+        "count": 83,
+        "samples": [
+          "book\\aarab-alqran\\index.html",
+          "book\\abn-hzm-almhla\\index.html",
+          "book\\abn-hzm-almhla-ar\\index.html"
+        ]
+      }
+    },
+    "adminInDist": false,
+    "adminLinkedFromPublic": [],
+    "apiLinkedFromPublic": []
+  },
+  "rights": {
+    "pages": 419,
+    "noRights": 0,
+    "noRightsSample": [],
+    "noRightsPageLink": 0,
+    "noSourceSample": [],
+    "noReadLink": 0,
+    "noReadSample": [],
+    "noEpub": 0,
+    "noEpubSample": []
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "exists": true,
+      "kb": 36.4
+    },
+    {
+      "page": "library/index.html",
+      "exists": true,
+      "kb": 7.9
+    },
+    {
+      "page": "rights/index.html",
+      "exists": true,
+      "kb": 10.2
+    },
+    {
+      "page": "contact/index.html",
+      "exists": true,
+      "kb": 5
+    },
+    {
+      "page": "privacy/index.html",
+      "exists": true,
+      "kb": 5.4
+    },
+    {
+      "page": "authors/index.html",
+      "exists": true,
+      "kb": 29.9
+    },
+    {
+      "page": "sitemap.xml",
+      "exists": true,
+      "kb": 122.6
+    },
+    {
+      "page": "feed.xml",
+      "exists": true,
+      "kb": 30.7
+    },
+    {
+      "page": "404.html",
+      "exists": true,
+      "kb": 5
+    },
+    {
+      "page": "stats/index.html",
+      "exists": true,
+      "kb": 8.6
+    },
+    {
+      "page": "about/index.html",
+      "exists": true,
+      "kb": 6.4
+    }
+  ],
+  "sitemap": {
+    "urls": 1141,
+    "unique": 1141,
+    "dupes": 0,
+    "allHttps": true,
+    "sample": [
+      "https://qirtas.pages.dev/",
+      "https://qirtas.pages.dev/library/"
+    ]
+  },
+  "epub": {
+    "count": 419,
+    "minKB": 10.7,
+    "maxKB": 5370.7
+  },
+  "width": {
+    "checks": 20,
+    "failed": 0,
+    "summary": {
+      "base": "http://localhost:8081",
+      "browser": "Edg/153.0.4234.32",
+      "arabicSampleBook": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
+      "screenshotsDir": "C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\cache\\screens",
+      "checks": 20,
+      "failures": []
+    }
+  },
+  "cdp": {
+    "checks": 19,
+    "names": [
+      "library.initial",
+      "library.search_love",
+      "library.search_love_lang_en",
+      "library.empty_state",
+      "library.after_reset",
+      "library.page_2",
+      "library.external_catalogue",
+      "library.external_search",
+      "server.404_page",
+      "rights.page",
+      "browse.authors_index",
+      "browse.author_page",
+      "browse.era_filter",
+      "reader.picked_id",
+      "reader.render",
+      "reader.after_next_page",
+      "reader.network_failure",
+      "reader.missing_book",
+      "book.source_block"
+    ]
+  }
+}

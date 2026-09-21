@@ -57,17 +57,18 @@
     {
       "name": "library.external_catalogue",
       "value": {
-        "declared": "12,958",
+        "declared": "39,161",
         "rows": 60,
         "outboundLinks": 60,
+        "rightsLinks": 60,
         "hasNote": true
       }
     },
     {
       "name": "library.external_search",
       "value": {
-        "rows": 4,
-        "status": "يُعرض 4 من 4 نتيجة في الكتالوج الخارجي عن «shakespeare»Dickens from Shakespeare, Fuseli an"
+        "rows": 22,
+        "status": "يُعرض 22 من 22 نتيجة في الكتالوج الخارجي عن «shakespeare»Dickens from Shakespeare, Fuseli "
       }
     },
     {
@@ -79,23 +80,56 @@
       }
     },
     {
+      "name": "rights.page",
+      "value": {
+        "hasForm": true,
+        "prefilledTitle": "كتاب تجريبي",
+        "prefilledUrl": "https://example.org/book",
+        "mailtoReady": true,
+        "actionOptions": 3
+      }
+    },
+    {
+      "name": "browse.authors_index",
+      "value": {
+        "chips": 289
+      }
+    },
+    {
+      "name": "browse.author_page",
+      "value": {
+        "href": "/author/agatha-christie/",
+        "cards": 13,
+        "h1": "Agatha Christie 13"
+      }
+    },
+    {
+      "name": "browse.era_filter",
+      "value": {
+        "selected": "كلاسيكيات عالمية",
+        "cards": 24,
+        "url": "?era=%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%8A%D8%A7%D8%AA+%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9",
+        "status": "يُعرض 24 من 129 كتاباً متاحاً للقراءة هنا"
+      }
+    },
+    {
       "name": "reader.picked_id",
-      "value": "one-thousand-and-one-nights-ar"
+      "value": "mwlf"
     },
     {
       "name": "reader.render",
       "value": {
-        "paragraphs": 245,
-        "chapterTitle": "الجزء الأول",
-        "bookTitle": "ألف ليلة وليلة",
-        "pages": "1 / 146",
+        "paragraphs": 36,
+        "chapterTitle": "المسألة الأولى",
+        "bookTitle": "الروح",
+        "pages": "1 / 18",
         "fatal": false
       }
     },
     {
       "name": "reader.after_next_page",
       "value": {
-        "pages": "2 / 146"
+        "pages": "2 / 18"
       }
     },
     {
@@ -119,10 +153,10 @@
       "name": "book.source_block",
       "value": {
         "hasSourceBox": true,
-        "rows": 4,
+        "rows": 5,
         "jsonld": true,
-        "canonical": "https://qirtas.pages.dev/book/one-thousand-and-one-nights-ar/",
-        "tocItems": 5
+        "canonical": "https://qirtas.pages.dev/book/mwlf/",
+        "tocItems": 18
       }
     }
   ],
