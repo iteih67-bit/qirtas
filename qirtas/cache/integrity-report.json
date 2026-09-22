@@ -1,7 +1,7 @@
 {
   "db": {
     "total": 868,
-    "visible": 861,
+    "visible": 866,
     "byLang": [
       {
         "l": "ar",
@@ -20,15 +20,15 @@
       {
         "hidden": 0,
         "removed": 0,
-        "c": 861
+        "c": 866
       },
       {
         "hidden": 1,
         "removed": 0,
-        "c": 7
+        "c": 2
       }
     ],
-    "auditLog": 358,
+    "auditLog": 381,
     "takedown": [
       {
         "id": 1,
@@ -45,21 +45,21 @@
     ]
   },
   "catalog": {
-    "catalog": 861,
-    "index": 861,
+    "catalog": 866,
+    "index": 866,
     "dbMatch": true,
     "indexMatch": true
   },
   "dist": {
-    "dbIds": 861,
-    "bookDirs": 861,
-    "readDirs": 861,
+    "dbIds": 866,
+    "bookDirs": 866,
+    "readDirs": 866,
     "missingDirs": [],
     "missingCount": 0,
     "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 2251,
+    "htmlScanned": 2264,
     "hits": {
       "wikisource": {
         "count": 349,
@@ -70,7 +70,7 @@
         ]
       },
       "archive.org": {
-        "count": 263,
+        "count": 267,
         "samples": [
           "book\\12-mjla-alfysl-alalmya\\index.html",
           "book\\16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy\\index.html",
@@ -91,7 +91,7 @@
     "apiLinkedFromPublic": []
   },
   "rights": {
-    "pages": 861,
+    "pages": 866,
     "noRights": 0,
     "noRightsSample": [],
     "noRightsPageLink": 0,
@@ -110,57 +110,57 @@
     {
       "page": "library/index.html",
       "exists": true,
-      "kb": 6.4
+      "kb": 6.8
     },
     {
       "page": "rights/index.html",
       "exists": true,
-      "kb": 10.4
+      "kb": 10.8
     },
     {
       "page": "contact/index.html",
       "exists": true,
-      "kb": 5.3
+      "kb": 5.7
     },
     {
       "page": "privacy/index.html",
       "exists": true,
-      "kb": 5.6
+      "kb": 6
     },
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 59
+      "kb": 59.6
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 270.9
+      "kb": 272.5
     },
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 33.4
+      "kb": 33.3
     },
     {
       "page": "404.html",
       "exists": true,
-      "kb": 5.2
+      "kb": 5.6
     },
     {
       "page": "stats/index.html",
       "exists": true,
-      "kb": 8.6
+      "kb": 9
     },
     {
       "page": "about/index.html",
       "exists": true,
-      "kb": 7.3
+      "kb": 7.7
     }
   ],
   "sitemap": {
-    "urls": 2250,
-    "unique": 2250,
+    "urls": 2263,
+    "unique": 2263,
     "dupes": 0,
     "duplicates": [],
     "allHttps": true,
@@ -170,9 +170,9 @@
     ]
   },
   "epub": {
-    "count": 861,
-    "minKB": 10.7,
-    "maxKB": 8493.8
+    "count": 0,
+    "minKB": 0,
+    "maxKB": 0
   },
   "width": {
     "checks": 64,
@@ -184,12 +184,12 @@
       "screenshotsDir": "C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\cache\\screens",
       "checks": 64,
       "failures": [
-        "reader@phone-320: overflowX=24"
+        "reader@phone-320: overflowX=28"
       ]
     }
   },
   "cdp": {
-    "checks": 19,
+    "checks": 20,
     "names": [
       "library.initial",
       "library.search_love",
@@ -203,12 +203,13 @@
       "rights.page",
       "browse.authors_index",
       "browse.author_page",
-      "browse.era_filter",
+      "browse.no_filters",
       "reader.picked_id",
       "reader.render",
+      "reader.render_ok",
       "reader.after_next_page",
       "reader.network_failure",
-      "reader.missing_book",
+      "reader.missing_route",
       "book.source_block"
     ]
   }

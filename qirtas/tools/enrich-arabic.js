@@ -6,6 +6,8 @@
 const fs = require('fs');
 const path = require('path');
 const Q = path.resolve(__dirname, '..');
+const metadata = require(path.join(Q, 'pipeline', 'lib', 'metadata.js'));
+const cleanField = metadata.cleanValue;
 const { DatabaseSync } = require('node:sqlite');
 const { normKey } = require(path.join(Q, 'pipeline', 'lib', 'arabic.js'));
 const { fetchPolite } = require(path.join(Q, 'pipeline', 'lib', 'common.js'));
@@ -44,13 +46,6 @@ function fixTitles() {
 
 // ---------- 2) authors from the source page ----------
 const PLACEHOLDER = /^(مؤلف تراثي|مؤلف غير محدد|Unknown author|مجهول)$/;
-function cleanField(v) {
-  const t = String(v == null ? '' : v).replace(/<[^>]*>/g, ' ').replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2').replace(/\s+/g, ' ').trim();
-  if (!t) return '';
-  if (/^\|/.test(t) || /[{}]{2}/.test(t) || /^[^=]{0,24}=\s*$/.test(t)) return '';
-  if (/^(مؤلف|باب|عنوان|محرر|ناشر|مترجم)\s*=/.test(t)) return '';
-  return t.slice(0, 120);
-}
 async function fixAuthors() {
   const rows = db.prepare("select id, title, author, source_url, source_key from books where language = 'ar'").all()
     .filter((r) => PLACEHOLDER.test(String(r.author || '').trim()));

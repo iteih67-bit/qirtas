@@ -6,11 +6,11 @@
       "name": "library.initial",
       "value": {
         "cards": 24,
-        "count": "623",
-        "status": "يُعرض 24 من 623 كتاباً متاحاً للقراءة هنا",
-        "pager": "1 / 26",
-        "langOptions": 0,
-        "srcOptions": 0
+        "count": "866",
+        "status": "يُعرض 24 من 866 كتاباً متاحاً للقراءة هنا",
+        "pager": "1 / 37",
+        "selects": 0,
+        "categoryLinks": 0
       }
     },
     {
@@ -43,13 +43,13 @@
       "value": {
         "cards": 24,
         "pagerVisible": true,
-        "pager": "1 / 26"
+        "pager": "1 / 37"
       }
     },
     {
       "name": "library.page_2",
       "value": {
-        "pager": "2 / 26",
+        "pager": "2 / 37",
         "url": "?page=2",
         "cards": 24
       }
@@ -92,41 +92,62 @@
     {
       "name": "browse.authors_index",
       "value": {
-        "chips": 407
-      }
+        "chips": 523,
+        "placeholderAuthor": false
+      },
+      "pass": true,
+      "expectation": "author index populated without the unknown-author placeholder"
     },
     {
       "name": "browse.author_page",
       "value": {
-        "href": "/qirtas/author/mwlf-ghyr-marwf/",
-        "cards": 0,
-        "h1": "404 — الصفحة غير موجودة"
-      }
+        "href": "/qirtas/author/fthy-altlmsany/",
+        "cards": 14,
+        "is404": false
+      },
+      "pass": true,
+      "expectation": "author page lists that author books"
     },
     {
-      "name": "browse.era_filter",
+      "name": "browse.no_filters",
       "value": {
-        "error": "no era select"
-      }
+        "selects": 0,
+        "categoryLinks": 0,
+        "filterBars": 0
+      },
+      "pass": true,
+      "expectation": "no filter or category control anywhere"
     },
     {
       "name": "reader.picked_id",
-      "value": "al-qawid-al-jalyah-f-ilm-al-arabyah"
+      "value": "arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ"
     },
     {
       "name": "reader.render",
       "value": {
-        "paragraphs": 223,
+        "paragraphs": 303,
         "chapterTitle": "الجزء 1",
-        "bookTitle": "Al-Qaw'id al-jalyah f 'ilm al-Arabyah",
-        "pages": "1 / 31",
+        "bookTitle": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF WRITTEN ARABIC. 397 PAGES. ÁRABE SIMPLIFICADO. GRAMÁTICA PRÁTICA DA LÍNGUA ÁRABE. PROF. DR. DARCY CARVALHO. FEA USP. SÃO PAULO. BRAZIL. ANO 2",
+        "pages": "4 / 44",
         "fatal": false
       }
     },
     {
+      "name": "reader.render_ok",
+      "value": {
+        "paragraphs": 303,
+        "chapterTitle": "الجزء 1",
+        "bookTitle": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF WRITTEN ARABIC. 397 PAGES. ÁRABE SIMPLIFICADO. GRAMÁTICA PRÁTICA DA LÍNGUA ÁRABE. PROF. DR. DARCY CARVALHO. FEA USP. SÃO PAULO. BRAZIL. ANO 2",
+        "pages": "4 / 44",
+        "fatal": false
+      },
+      "pass": true,
+      "expectation": "text rendered without the failure screen"
+    },
+    {
       "name": "reader.after_next_page",
       "value": {
-        "pages": "2 / 31"
+        "pages": "5 / 44"
       }
     },
     {
@@ -136,15 +157,19 @@
         "heading": "تعذّر تحميل الكتاب",
         "hasRetry": true,
         "backLinks": 2
-      }
+      },
+      "pass": true,
+      "expectation": "failure screen: message + retry + 2 links"
     },
     {
-      "name": "reader.missing_book",
+      "name": "reader.missing_route",
       "value": {
-        "fatal": false,
-        "hasRetry": false,
-        "hasBackLinks": 0
-      }
+        "hasErrorCopy": true,
+        "links": 4,
+        "fatal": false
+      },
+      "pass": true,
+      "expectation": "404 page with a clear message and a way back"
     },
     {
       "name": "book.source_block",
@@ -152,10 +177,11 @@
         "hasSourceBox": true,
         "rows": 5,
         "jsonld": true,
-        "canonical": "https://iteih67-bit.github.io/qirtas/book/al-qawid-al-jalyah-f-ilm-al-arabyah/",
-        "tocItems": 5
+        "canonical": "https://iteih67-bit.github.io/qirtas/book/arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ/",
+        "tocItems": 18
       }
     }
   ],
-  "browserVersion": "Edg/153.0.4234.32"
+  "browserVersion": "Edg/153.0.4234.32",
+  "failures": []
 }

@@ -1,0 +1,73 @@
+{
+  "when": "2026-09-22T19:23:19.674Z",
+  "base": "http://localhost:8081/qirtas",
+  "appBase": null,
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "suites": [
+    {
+      "id": "unit",
+      "label": "اختبارات الوحدة للدوال النقية",
+      "exit": 0,
+      "ok": true,
+      "ms": 148,
+      "retried": false,
+      "tail": "unit tests: 49 passed, 0 failed"
+    },
+    {
+      "id": "integrity",
+      "label": "تدقيق الطبقات (بيانات ↔ كتالوج ↔ صفحات ↔ EPUB)",
+      "exit": 0,
+      "ok": true,
+      "ms": 2618,
+      "retried": false,
+      "tail": "  } | } | integrity: OK — 866 books, 866 pages, 0 EPUB files, sitemap 2263 unique URLs"
+    },
+    {
+      "id": "smoke",
+      "label": "فحص البنية والروابط",
+      "exit": 0,
+      "ok": true,
+      "ms": 415,
+      "retried": false,
+      "tail": "صفحات كتاب في dist: 866   ملفات نص في dist: 866 | سطور sitemap: 2263   مفقودة: 0 | فحوص ناجحة: 52/52"
+    },
+    {
+      "id": "ui",
+      "label": "واجهة بمتصفح حقيقي (تنقّل، بحث، حالات فشل)",
+      "exit": 0,
+      "ok": true,
+      "ms": 42425,
+      "retried": false,
+      "tail": "  \"failures\": [] | } | checks: 19 | passed: 19 | failed: 0"
+    },
+    {
+      "id": "widths",
+      "label": "المقاسات 320→1440",
+      "exit": 0,
+      "ok": true,
+      "ms": 186216,
+      "retried": false,
+      "tail": "    } |   ] | }"
+    },
+    {
+      "id": "live",
+      "label": "تدقيق تفاعلي شامل + موارد مفقودة",
+      "exit": 0,
+      "ok": true,
+      "ms": 57639,
+      "retried": false,
+      "tail": "  ] |  } | }"
+    },
+    {
+      "id": "clicks",
+      "label": "كل رابط داخلي (زحف)",
+      "exit": 0,
+      "ok": true,
+      "ms": 27728,
+      "retried": false,
+      "tail": "   - /rights/ → 56 KB, DOM 47 ms |    - /contact/ → 51 KB, DOM 24 ms |    - /privacy/ → 51 KB, DOM 22 ms"
+    }
+  ]
+}

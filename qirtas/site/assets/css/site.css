@@ -346,3 +346,39 @@ h1, h2, h3, .page-title { line-height: 1.5; font-weight: 700; }
   --line: rgba(233, 228, 218, 0.10);
 }
 
+
+/* =====================================================
+   Overflow safety (mobile) — found by tools/width-check.js and
+   tools/overflow-finder.js: long unbreakable words in card titles made the
+   document wider than the viewport (82px at 360px, 79px at 320px).
+   Grid/flex children must be allowed to shrink, and long words must break.
+   ===================================================== */
+.book-grid { grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr)); }
+.book-card, .cover, .cov-title, .cov-author, .book-meta, .book-meta strong, .book-meta span,
+.continue-card, .section-title, .page-title, .hstat, .ext-list li, .ext-main strong,
+.stats-table td, .stats-table th, .toc-list a, .author-chip {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.cov-title, .cov-author, .book-meta strong, .book-meta span {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* tables and long code lines must scroll inside their own box, not widen the page */
+.stats-table, .toc-sheet-list { table-layout: fixed; width: 100%; }
+pre, code { overflow-wrap: anywhere; }
+
+/* Header fit on very narrow phones (320–420px): the single-row flex header had a
+   min-content width of ~348px and widened the document. Wrapping the nav onto its
+   own row removes the hard minimum without changing the desktop layout. */
+@media (max-width: 420px) {
+  .site-header .inner { height: auto; flex-wrap: wrap; row-gap: 8px; padding-top: 10px; padding-bottom: 10px; }
+  .site-nav { order: 3; width: 100%; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .brand-name { font-size: 1rem; }
+  .brand-icon { width: 30px; height: 30px; }
+  .nav-actions { gap: 6px; }
+  .reader-top { flex-wrap: wrap; }
+}

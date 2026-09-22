@@ -1,56 +1,56 @@
 {
-  "base": "https://iteih67-bit.github.io/qirtas",
-  "when": "2026-09-22T15:51:26.994Z",
+  "base": "http://localhost:8081/qirtas",
+  "when": "2026-09-22T19:23:19.570Z",
   "pagesScanned": 9,
-  "linksFound": 540,
-  "linksChecked": 540,
+  "linksFound": 618,
+  "linksChecked": 618,
   "broken": [],
   "tapIssues": [],
   "weights": [
     {
       "page": "/",
-      "kb": 300,
-      "domMs": 803
+      "kb": 69,
+      "domMs": 171
     },
     {
       "page": "/library/",
-      "kb": 69,
-      "domMs": 484
+      "kb": 486,
+      "domMs": 62
     },
     {
       "page": "/library/?page=3",
-      "kb": 3,
-      "domMs": 73
+      "kb": 486,
+      "domMs": 44
     },
     {
       "page": "/authors/",
-      "kb": 13,
-      "domMs": 240
+      "kb": 105,
+      "domMs": 126
     },
     {
       "page": "/stats/",
-      "kb": 3,
-      "domMs": 272
+      "kb": 54,
+      "domMs": 30
     },
     {
       "page": "/about/",
-      "kb": 3,
-      "domMs": 234
+      "kb": 53,
+      "domMs": 45
     },
     {
       "page": "/rights/",
-      "kb": 4,
-      "domMs": 247
+      "kb": 56,
+      "domMs": 47
     },
     {
       "page": "/contact/",
-      "kb": 2,
-      "domMs": 250
+      "kb": 51,
+      "domMs": 24
     },
     {
       "page": "/privacy/",
-      "kb": 2,
-      "domMs": 282
+      "kb": 51,
+      "domMs": 22
     }
   ]
 }

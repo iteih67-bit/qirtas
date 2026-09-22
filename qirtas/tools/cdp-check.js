@@ -89,7 +89,28 @@ class CDP {
   await cdp.send('Page.enable');
   await cdp.send('Runtime.enable');
 
+  const BASE_PATH = new URL(BASE).pathname.replace(/\/$/, '');
+  const rel = (href) => (BASE_PATH && href.startsWith(BASE_PATH) ? href.slice(BASE_PATH.length) || '/' : href);
   const push = (name, value) => out.checks.push({ name, value });
+  out.failures = out.failures || [];
+  // poll a page expression until it becomes truthy (or time out) — fixed sleeps
+  // produced false greens on the error paths before this existed
+  const waitFor = async (expr, timeoutMs = 9000, stepMs = 300) => {
+    const started = Date.now();
+    for (;;) {
+      const v = await cdp.evalExpr(expr);
+      if (v && !v.__timeout && (typeof v !== 'object' || Object.keys(v).length)) return v;
+      if (Date.now() - started > timeoutMs) return null;
+      await sleep(stepMs);
+    }
+  };
+  // record a check with an explicit pass/fail so a regression fails the suite
+  const assert = (name, value, predicate, expectation) => {
+    const pass = !!predicate(value);
+    out.checks.push({ name, value, pass, expectation });
+    if (!pass) out.failures.push({ name, value, expectation });
+    return pass;
+  };
 
   // 1) library page: initial render
   await cdp.goto(`${BASE}/library/`);
@@ -98,8 +119,8 @@ class CDP {
     count: (document.getElementById('libCount')||{}).textContent,
     status: (document.getElementById('libStatus')||{}).textContent.trim(),
     pager: (document.getElementById('pageInfo')||{}).textContent,
-    langOptions: document.querySelectorAll('#fLang option').length,
-    srcOptions: document.querySelectorAll('#fSrc option').length
+    selects: document.querySelectorAll('select').length,
+    categoryLinks: document.querySelectorAll('a[href*="/category/"], a[href*="/era/"]').length
   }))()`));
 
   // 2) typing in the search box filters results (real interaction)
@@ -196,23 +217,16 @@ class CDP {
     actionOptions: document.querySelectorAll('#rAction option').length
   }))()`));
 
-  // 6f) browse by author and by era (acceptance: category / author / period)
+  // 6f) browse by author only — categories, eras and filters were removed by design
   await cdp.goto(`${BASE}/authors/`, 2600);
-  push('browse.authors_index', await cdp.evalExpr(`(() => ({ chips: document.querySelectorAll('.author-chip').length }))()`));
+  assert('browse.authors_index', await cdp.evalExpr(`(() => ({ chips: document.querySelectorAll('.author-chip').length, placeholderAuthor: /مؤلف غير معروف/.test(document.body.textContent) }))()`), (v) => v.chips > 50 && v.placeholderAuthor === false, 'author index populated without the unknown-author placeholder');
   const authorHref = await cdp.evalExpr(`(() => { const a = document.querySelector('.author-chip'); return a ? a.getAttribute('href') : null; })()`);
   if (authorHref) {
-    await cdp.goto(BASE + authorHref, 2600);
-    push('browse.author_page', await cdp.evalExpr(`(() => ({ href: ${JSON.stringify(authorHref)}, cards: document.querySelectorAll('.book-card').length, h1: (document.querySelector('h1')||{}).textContent }))()`));
+    await cdp.goto(BASE + rel(authorHref), 2600);
+    assert('browse.author_page', await cdp.evalExpr(`(() => ({ href: ${JSON.stringify(authorHref)}, cards: document.querySelectorAll('.book-card').length, is404: /404/.test(document.title) }))()`), (v) => v.cards > 0 && v.is404 === false, 'author page lists that author books');
   }
-  await cdp.goto(`${BASE}/library/`, 3000);
-  push('browse.era_filter', await cdp.evalExpr(`(async () => {
-    const sel = document.getElementById('fEra');
-    if (!sel) return { error: 'no era select' };
-    const val = sel.options[1] ? sel.options[1].value : '';
-    sel.value = val; sel.dispatchEvent(new Event('change', { bubbles: true }));
-    await new Promise((r) => setTimeout(r, 500));
-    return { selected: val, cards: document.querySelectorAll('.book-card').length, url: location.search, status: ((document.getElementById('libStatus')||{}).textContent || '').trim().slice(0, 70) };
-  })()`));
+  await cdp.goto(`${BASE}/library/`, 2600);
+  assert('browse.no_filters', await cdp.evalExpr(`(() => ({ selects: document.querySelectorAll('select').length, categoryLinks: document.querySelectorAll('a[href*="/category/"], a[href*="/era/"]').length, filterBars: document.querySelectorAll('.lib-filters').length }))()`), (v) => v.selects === 0 && v.categoryLinks === 0 && v.filterBars === 0, 'no filter or category control anywhere');
 
   // 7) reader page renders real text
   const firstId = await cdp.evalExpr(`(async () => {
@@ -222,6 +236,7 @@ class CDP {
   })()`);
   push('reader.picked_id', firstId);
   await cdp.goto(`${BASE}/read/${encodeURIComponent(firstId)}/`, 4000);
+  const renderWait = await waitFor("document.querySelectorAll('#readerContent p').length > 3 && true", 12000);
   push('reader.render', await cdp.evalExpr(`(() => ({
     paragraphs: document.querySelectorAll('#readerContent p').length,
     chapterTitle: (document.getElementById('rChapTitle')||{}).textContent,
@@ -229,6 +244,7 @@ class CDP {
     pages: (document.getElementById('pageIndicator')||{}).textContent,
     fatal: !!document.querySelector('.reader-fatal')
   }))()`));
+  assert('reader.render_ok', out.checks[out.checks.length - 1].value, (v) => v.paragraphs > 3 && v.fatal === false, 'text rendered without the failure screen');
 
   // 8) reader next-page interaction
   await cdp.evalExpr(`(() => { const b=document.getElementById('nextPage'); if(b) b.click(); return true; })()`);
@@ -241,23 +257,16 @@ class CDP {
   await cdp.evalExpr(`(async () => { try { const ks = await caches.keys(); await Promise.all(ks.map(k => caches.delete(k))); } catch (e) {} return true; })()`);
   await cdp.send('Network.enable');
   await cdp.send('Network.setBlockedURLs', { urls: ['*/books/*.json'] });
-  await cdp.goto(`${BASE}/read/${encodeURIComponent(firstId)}/`, 6000);
-  push('reader.network_failure', await cdp.evalExpr(`(() => ({
-    fatal: !!document.querySelector('.reader-fatal'),
-    heading: (document.querySelector('.reader-fatal h3')||{}).textContent,
-    hasRetry: !!document.getElementById('readerRetry'),
-    backLinks: document.querySelectorAll('.fatal-actions a').length
-  }))()`));
+  await cdp.goto(`${BASE}/read/${encodeURIComponent(firstId)}/`, 1200);
+  const netFail = await waitFor("document.querySelector('.reader-fatal') && ({ fatal: true, heading: (document.querySelector('.reader-fatal h3')||{}).textContent, hasRetry: !!document.getElementById('readerRetry'), backLinks: document.querySelectorAll('.fatal-actions a').length })", 12000);
+  assert('reader.network_failure', netFail || { fatal: false }, (v) => v.fatal === true && v.hasRetry === true && v.backLinks >= 2, 'failure screen: message + retry + 2 links');
   await cdp.send('Network.setBlockedURLs', { urls: [] });
 
   // 9) reader failure path (missing text)
-  await cdp.goto(`${BASE}/read/this-book-does-not-exist/`, 3500);
-  push('reader.missing_book', await cdp.evalExpr(`(() => ({
-    fatal: !!document.querySelector('.reader-fatal'),
-    heading: (document.querySelector('.reader-fatal h3')||{}).textContent,
-    hasRetry: !!document.getElementById('readerRetry'),
-    hasBackLinks: document.querySelectorAll('.fatal-actions a').length
-  }))()`));
+  await cdp.goto(`${BASE}/read/this-book-does-not-exist/`, 1200);
+  // a route that does not exist must land on the designed 404 page with a way back
+  const missingRoute = await waitFor("document.querySelector('.error-page, .not-found, main') && ({ hasErrorCopy: /404|غير موجودة/.test(document.body.textContent), links: document.querySelectorAll('a[href=\"/\"], a[href$=\"/library/\"]').length, fatal: !!document.querySelector('.reader-fatal') })", 10000);
+  assert('reader.missing_route', missingRoute || { hasErrorCopy: false }, (v) => v.hasErrorCopy === true && v.links >= 1, '404 page with a clear message and a way back');
 
   // 10) book page shows source + license block
   await cdp.goto(`${BASE}/book/${encodeURIComponent(firstId)}/`, 2600);
@@ -277,6 +286,8 @@ class CDP {
   console.log(JSON.stringify(out, null, 2));
   try { fs.writeFileSync(path.join(__dirname, '..', 'cache', 'cdp-final.json'), JSON.stringify(out, null, 2)); } catch (e) {}
   const checks = out.checks.filter((c) => c.name !== 'reader.picked_id');
-  const failed = checks.filter((c) => !c.value || c.value.error);
+  const failed = checks.filter((c) => !c.value || c.value.error || c.pass === false);
+  out.summary = { checks: checks.length, passed: checks.length - failed.length, failed: failed.length, failures: (out.failures || []) };
+  console.log('checks: ' + checks.length + ' | passed: ' + out.summary.passed + ' | failed: ' + failed.length);
   process.exit(failed.length ? 1 : 0);
 })().catch((e) => { console.log(JSON.stringify({ error: String(e && e.stack || e) }, null, 2)); process.exit(2); });

@@ -31,6 +31,9 @@ const RESTRICTED_COLLECTIONS = ['inlibrary', 'printdisabled', 'lendinglibrary', 
 
 async function fetchText(url, retries = 2) { const res = await fetchPolite(url, retries); return res.text(); }
 
+// source records sometimes carry percent-encoded metadata
+const decodeEntities = require('./lib/metadata.js').decodeEncodedText;
+
 const num = (s) => String(s || '').replace(/[^\u0600-\u06FF]/g, '').length;
 const arabicRatio = (s) => {
   const arabic = num(s);
@@ -134,10 +137,10 @@ function toChapters(raw, title) {
       if (LANG === 'ar' && arabicRatio(raw) < 0.55) { report.push({ id: c.id, status: 'SKIP', reason: 'not mostly Arabic' }); await sleep(300); continue; }
       if (/^[0-9_\-.]+$/.test(String(c.id))) { report.push({ id: c.id, status: 'SKIP', reason: 'junk identifier' }); await sleep(150); continue; }
 
-      const rawTitle = String(c.title || (meta.metadata && meta.metadata.title) || '').replace(/\s+/g, ' ').trim();
+      const rawTitle = decodeEntities(String(c.title || (meta.metadata && meta.metadata.title) || '')).replace(/\s+/g, ' ').trim();
       if (rawTitle.length < 4 || /^[0-9_\-.]+$/.test(rawTitle)) { report.push({ id: c.id, status: 'SKIP', reason: 'no usable title' }); await sleep(150); continue; }
       const title = rawTitle.slice(0, 200);
-      const author = String(c.creator || (meta.metadata && meta.metadata.creator) || '').replace(/\s+/g, ' ').trim().slice(0, 120)
+      const author = decodeEntities(String(c.creator || (meta.metadata && meta.metadata.creator) || '')).replace(/\s+/g, ' ').trim().slice(0, 120)
         || (LANG === 'ar' ? 'مؤلف غير محدد' : 'Unknown author');
       const key = normKey(`${title} ${author}`);
       if (hostedKeys.has(key)) { report.push({ id: c.id, status: 'SKIP', reason: 'already hosted (title)' }); await sleep(200); continue; }

@@ -1,6 +1,6 @@
 {
   "name": "qirtas-platform",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "منصة قِرطاس — مكتبة رقمية عربية + قاعدة بيانات + لوحة تحكم + نظام حقوق النشر",
   "main": "server.js",
   "directories": {
@@ -47,12 +47,15 @@
     "books:sanitize": "node --no-warnings tools/sanitize-metadata.js",
     "test:live": "node tools/live-audit.js",
     "test:clicks": "node tools/click-audit.js",
-    "test:all": "npm run verify:integrity && npm run test:smoke && npm run test:ui && npm run test:widths",
+    "test:all": "node tools/verify-all.js",
     "books:quality": "node --no-warnings tools/arabic-quality.js",
     "books:quality-fix": "node --no-warnings tools/arabic-quality.js --fix",
     "books:enrich": "node --no-warnings tools/enrich-arabic.js --titles",
     "site:preview": "node site/tools/build.js && node --no-warnings server.js",
-    "db:checkpoint": "node --no-warnings tools/db-checkpoint.js"
+    "db:checkpoint": "node --no-warnings tools/db-checkpoint.js",
+    "test:unit": "node --no-warnings tools/unit-tests.js",
+    "test:app": "node tools/app-audit.js",
+    "verify:all": "node tools/verify-all.js"
   },
   "keywords": [],
   "type": "commonjs",

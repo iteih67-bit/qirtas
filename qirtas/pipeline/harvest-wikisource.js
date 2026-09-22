@@ -10,6 +10,8 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const metadata = require('./lib/metadata.js');
+const cleanField = metadata.cleanValue;
 const cheerio = require('cheerio');
 const {
   readCatalog, writeCatalog, saveText, countWords, fetchPolite, sleep, log, COVERS, EMOJIS, CACHE,
@@ -24,16 +26,6 @@ const arg = (name, def) => {
 // --- metadata guard -------------------------------------------------------
 // A wiki infobox can leak a template parameter (e.g. "|مؤلف =", "Title|مؤلف=X",
 // "…|ملاحظات = }}"). Such a value is never valid metadata, so it is dropped.
-function cleanField(v) {
-  const t = String(v == null ? '' : v).trim();
-  if (!t) return '';
-  if (/^\|/.test(t)) return '';
-  if (/[{}]{2}/.test(t)) return '';
-  if (/\|/.test(t) && /(=|\{\})/.test(t)) return '';
-  if (/^[^=]{0,24}=\s*$/.test(t)) return '';
-  if (/^(مؤلف|باب|عنوان|محرر|ناشر|مترجم|سنة|وصف)\s*=/.test(t)) return '';
-  return t;
-}
 
 const hasFlag = (name) => process.argv.includes(`--${name}`);
 

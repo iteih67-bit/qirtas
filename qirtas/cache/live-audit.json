@@ -1,6 +1,6 @@
 {
-  "base": "https://iteih67-bit.github.io/qirtas",
-  "when": "2026-09-22T15:49:06.668Z",
+  "base": "http://localhost:8081/qirtas",
+  "when": "2026-09-22T19:22:51.846Z",
   "results": [
     {
       "name": "home",
@@ -18,9 +18,9 @@
       "url": "/library/",
       "result": {
         "cards": 24,
-        "status": "يُعرض 24 من 742 كتاباً متاحاً للقراءة هنا",
+        "status": "يُعرض 24 من 866 كتاباً متاحاً للقراءة هنا",
         "selects": 0,
-        "pager": "1 / 31"
+        "pager": "1 / 37"
       }
     },
     {
@@ -46,7 +46,7 @@
       "url": "/library/?page=2",
       "result": {
         "cards": 24,
-        "pager": "2 / 31"
+        "pager": "2 / 37"
       }
     },
     {
@@ -63,7 +63,7 @@
       "name": "authors",
       "url": "/authors/",
       "result": {
-        "chips": 444
+        "chips": 523
       }
     },
     {
@@ -71,7 +71,7 @@
       "url": "/stats/",
       "result": {
         "tables": 2,
-        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 14:30:05 UTC 742كتاباً كامل"
+        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 19:17:14 UTC 866كتاباً كامل"
       }
     },
     {
@@ -116,8 +116,8 @@
       "name": "flow-book",
       "url": "/",
       "result": {
-        "href": "/qirtas/book/ahsn-altqasym-fy-marfa-alaqalym/",
-        "title": "أحسن التقاسيم في معرفة الأقاليم — مؤلف تراثي | اقرأ مجاناً على قِرطاس",
+        "href": "/qirtas/book/arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ/",
+        "title": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF WRITTEN ARABIC. 397 PAGES. ÁRABE SIMPLIFICADO. GRAMÁTICA PRÁTICA DA LÍNGUA ÁRABE. PROF. DR. DARCY CARVALHO. FEA USP. SÃO PAULO. BRAZIL. ANO 2 — DARCY CARVALHO | اقرأ مجاناً على قِرطاس",
         "readLink": false,
         "epub": true,
         "rights": true,
@@ -126,22 +126,22 @@
     },
     {
       "name": "reader-render",
-      "url": "/read/ahsn-altqasym-fy-marfa-alaqalym/",
+      "url": "/read/arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ/",
       "result": {
-        "book": "أحسن التقاسيم في معرفة الأقاليم — قِرطاس",
-        "paragraphs": 33,
+        "book": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF W",
+        "paragraphs": 303,
         "toolbar": false,
         "fatal": false
       }
     },
     {
       "name": "reader-next",
-      "url": "/read/ahsn-altqasym-fy-marfa-alaqalym/",
+      "url": "/read/arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ/",
       "result": {
         "clicked": true,
         "after": {
-          "indicator": "2 / 11",
-          "paragraphs": 33
+          "indicator": "5 / 44",
+          "paragraphs": 303
         }
       }
     }

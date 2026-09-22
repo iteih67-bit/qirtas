@@ -5,6 +5,8 @@
 const fs = require('fs');
 const path = require('path');
 const Q = path.resolve(__dirname, '..');
+const metadata = require(path.join(Q, 'pipeline', 'lib', 'metadata.js'));
+const ratio = metadata.arabicWordRatio;
 const DIST = path.join(Q, 'site', 'dist');
 const { DatabaseSync } = require('node:sqlite');
 const argOf = (n, d) => { const h = process.argv.find((a) => a.startsWith(`--${n}=`)); return h ? h.slice(n.length + 3) : d; };
@@ -12,18 +14,6 @@ const THRESHOLD = Number(argOf('threshold', 0.35));
 const FIX = process.argv.includes('--fix');
 const db = new DatabaseSync(path.join(Q, 'data', 'qirtas.db'));
 
-function ratio(text) {
-  const toks = String(text || '').slice(0, 30000).split(/\s+/).filter(Boolean);
-  if (!toks.length) return 0;
-  let ok = 0;
-  for (const t of toks) {
-    const letters = t.replace(/[^\p{L}]/gu, '');
-    if (!letters) continue;
-    const ar = (letters.match(/[\u0600-\u06FF]/g) || []).length;
-    if (ar / letters.length > 0.6 && letters.length >= 2 && letters.length <= 20) ok++;
-  }
-  return ok / toks.length;
-}
 
 const hidden = db.prepare('select id, title, words, language, removed_reason from books where hidden = 1').all();
 const now = new Date().toISOString();
@@ -36,7 +26,8 @@ for (const b of hidden) {
   try { const j = JSON.parse(fs.readFileSync(p, 'utf8')); text = (j.chapters || []).map((c) => (c.paragraphs || []).join(' ')).join(' '); } catch (e) {}
   const r = text ? ratio(text) : 0;
   report.push({ id: b.id, title: String(b.title).slice(0, 50), words: b.words, ratio: +r.toFixed(3), reason: b.removed_reason });
-  if (r >= THRESHOLD) {
+  // anything that is not unusable is shown again; 'review' stays visible but flagged
+  if (metadata.qualityVerdict(r) !== 'unusable') {
     if (FIX) {
       db.prepare('update books set hidden = 0, removed_reason = null, updated_at = ? where id = ?').run(now, b.id);
       db.prepare('insert into audit_log (actor, action, target_type, target_id, details, created_at) values (?,?,?,?,?,?)')

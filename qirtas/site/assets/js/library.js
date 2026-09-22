@@ -33,6 +33,10 @@ var __QBASE = (function () {
   if (!el.results) return;
 
   var INDEX = null, EXTERNAL = null, extLoaded = false;
+  var T = window.QSTR || {};
+  var isEn = function () { return (window.QLANG === 'en'); };
+  var L = function (ar, en) { return isEn() ? en : ar; };
+  document.addEventListener('qirtas:lang', function (e) { T = window.QSTR || {}; if (INDEX) { apply(); render(); if (extLoaded) renderExternal(false); } });
   var view = { q: '', page: 1 };
   var filtered = [];
 
@@ -118,14 +122,14 @@ var __QBASE = (function () {
     var slice = filtered.slice((view.page - 1) * PER, view.page * PER);
     el.count.textContent = (INDEX.count || total).toLocaleString('en-US');
     el.status.innerHTML = total
-      ? 'يُعرض <b>' + slice.length + '</b> من <b>' + total.toLocaleString('en-US') + '</b> كتاباً متاحاً للقراءة هنا' +
-        (view.q ? ' — نتائج البحث عن «' + esc(view.q) + '»' : '')
+      ? L('يُعرض <b>', 'Showing <b>') + slice.length + L('</b> من <b>', '</b> of <b>') + total.toLocaleString('en-US') + L('</b> كتاباً متاحاً للقراءة هنا', '</b> books available to read here') +
+        (view.q ? L(' — نتائج البحث عن «', ' — results for «') + esc(view.q) + '»' : '')
       : '';
     if (!total) {
       el.results.innerHTML = '<div class="lib-empty">' +
         '<div class="emoji">🔍</div><h3>لا توجد نتائج مطابقة في الكتب المتاحة للقراءة هنا</h3>' +
-        '<p>جرّب كلمات أقل أو تهجئة أخرى للاسم، أو ابحث في الفهرس الأوسع بالأسفل.</p>' +
-        '<button class="btn btn-accent" id="libResetEmpty">إعادة ضبط البحث</button></div>';
+        '<p>' + (T['lib.emptyBody'] || 'جرّب كلمات أقل أو تهجئة أخرى للاسم، أو ابحث في الفهرس الأوسع بالأسفل.') + '</p>' +
+        '<button class="btn btn-accent" id="libResetEmpty">' + (T['lib.reset'] || 'إعادة ضبط البحث') + '</button></div>';
       var b = document.getElementById('libResetEmpty');
       if (b) b.addEventListener('click', reset);
       el.pager.classList.add('hidden');
@@ -158,8 +162,8 @@ var __QBASE = (function () {
     el.extCount.textContent = (EXTERNAL.length || 0).toLocaleString('en-US');
     el.extResults.innerHTML =
       '<div class="lib-status">' + (list.length
-        ? 'يُعرض <b>' + shown.length + '</b> من <b>' + list.length.toLocaleString('en-US') + '</b> نتيجة في الفهرس الأوسع' + (view.q ? ' عن «' + esc(view.q) + '»' : '')
-        : 'لا نتائج مطابقة في الفهرس الأوسع') + '</div>' +
+        ? L('يُعرض <b>', 'Showing <b>') + shown.length + L('</b> من <b>', '</b> of <b>') + list.length.toLocaleString('en-US') + L('</b> نتيجة في الفهرس الأوسع', '</b> results in the wider catalogue') + (view.q ? L(' عن «', ' for «') + esc(view.q) + '»' : '')
+        : L('لا نتائج مطابقة في الفهرس الأوسع', 'No matches in the wider catalogue')) + '</div>' +
       '<ul class="ext-list">' + shown.map(function (x) {
         return '<li>' +
           '<div class="ext-main"><strong dir="' + (x.lang === 'ar' ? 'rtl' : 'ltr') + '">' + esc(x.t) + '</strong>' +
@@ -167,32 +171,32 @@ var __QBASE = (function () {
           (x.s ? '<em>' + esc(x.s) + '</em>' : '') +
           '<span class="ext-badge">بيانات وصفية — النص لدى المصدر</span></div>' +
           '<div class="ext-actions">' +
-          '<a class="btn btn-ghost small" href="' + esc(x.u) + '" target="_blank" rel="noopener nofollow">اقرأ من المصدر الرسمي ↗</a>' +
-          '<a class="ext-rights" href="/rights/?t=' + encodeURIComponent(x.t) + '&u=' + encodeURIComponent(x.u) + '">صاحب حق؟ اطلب تحويل الرابط</a>' +
+          '<a class="btn btn-ghost small" href="' + esc(x.u) + '" target="_blank" rel="noopener nofollow">' + L('اقرأ من المصدر الرسمي ↗', 'Read from the official source ↗') + '</a>' +
+          '<a class="ext-rights" href="/rights/?t=' + encodeURIComponent(x.t) + '&u=' + encodeURIComponent(x.u) + '">' + L('صاحب حق؟ اطلب تحويل الرابط', 'Rights holder? Ask for a link change') + '</a>' +
           '</div>' +
         '</li>';
       }).join('') + '</ul>' +
-      '<p class="ext-note">هذه عناوين من فهرس مرجعي عام: نعرض بياناتها ونربطك بالمصدر الرسمي، ولا نستضيف ملفاتها. ' +
-      'إن كنت صاحب حق أي كتاب، <a href="/rights/">اطلب تحويل الرابط إلى موقعك الرسمي أو إزالة البيانات</a>.</p>';
+      '<p class="ext-note">' + L('هذه عناوين من فهرس مرجعي عام: نعرض بياناتها ونربطك بالمصدر الرسمي، ولا نستضيف ملفاتها. ', 'These titles come from a public reference catalogue: we show their metadata and link you to the official source; we do not host their files. ') +
+      L('إن كنت صاحب حق أي كتاب، ', 'If you hold the rights to any title, ') + '<a href="/rights/">' + L('اطلب تحويل الرابط إلى موقعك الرسمي أو إزالة البيانات', 'ask us to point the link at your official site or to remove the metadata') + '</a>.</p>';
     if (force) el.extResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function loadExternal() {
     if (extLoaded) { renderExternal(true); return; }
     el.extBtn.disabled = true;
-    el.extBtn.textContent = 'جارٍ تحميل الفهرس الأوسع…';
+    el.extBtn.textContent = T['lib.loading'] || 'جارٍ تحميل الفهرس الأوسع…';
     fetch(__QBASE + '/external-index.json', { cache: 'force-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (j) {
         EXTERNAL = j;
         extLoaded = true;
-        el.extBtn.textContent = 'تحديث النتائج';
+        el.extBtn.textContent = T['ext.load'] || 'تحديث النتائج';
         el.extBtn.disabled = false;
         renderExternal(true);
       })
       .catch(function (e) {
         el.extBtn.disabled = false;
-        el.extBtn.textContent = 'إعادة محاولة التحميل';
+        el.extBtn.textContent = T['lib.retry'] || 'إعادة محاولة التحميل';
         el.extResults.innerHTML = '<div class="lib-empty"><div class="emoji">⚠️</div><h3>تعذّر تحميل الفهرس الأوسع</h3><p>' + esc(String((e && e.message) || e)) + '</p></div>';
       });
   }
@@ -224,7 +228,7 @@ var __QBASE = (function () {
   }
 
   function load() {
-    el.status.textContent = 'جارٍ تحميل الفهرس…';
+    el.status.textContent = T['lib.loading'] || 'جارٍ تحميل الفهرس…';
     fetch(__QBASE + '/books-index.json', { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (j) { INDEX = j; readURL(); apply(); render(); })

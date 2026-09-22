@@ -69,6 +69,7 @@ function shell({ title, desc, lang = 'ar', dir = 'rtl', body, extraHead = '', pa
 <meta name="description" content="${esc(desc)}">
 ${noIndex ? '<meta name="robots" content="noindex">' : ''}
 <meta name="theme-color" content="#0e9488">
+<script src="/assets/js/i18n.js"></script>
 <script>window.QIRTAS={site:${escJson(SITE_URL)},build:${escJson(BUILD_DATE)}};</script> <!-- bootstrap script must run before any asset script -->
 <link rel="canonical" href="${SITE_URL}${pagePath}">
 <meta property="og:type" content="${ogType}">
@@ -93,16 +94,16 @@ ${extraHead}
     <span><span class="brand-name">قِرطاس</span><span class="brand-sub">اقرأ أينما كنت — مجاناً</span></span>
   </a>
   <nav class="site-nav">
-    <a href="/library/">المكتبة</a>
-    <a href="/stats/">الإحصاءات</a>
-    <a href="/about/">عن المنصة</a>
+    <a href="/library/" data-i18n="nav.library">المكتبة</a>
+    <a href="/stats/" data-i18n="nav.stats">الإحصاءات</a>
+    <a href="/about/" data-i18n="nav.about">عن المنصة</a>
   </nav>
   <div class="nav-actions">
     <a class="icon-btn" href="/library/" id="searchLink" title="ابحث في المكتبة" aria-label="ابحث في المكتبة">
       <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.3l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
     </a>
     ${isReader ? '<a class="btn btn-ghost small" href="/" id="backLink">الرئيسية</a>' : ''}
-    <button class="icon-btn" id="langBtn" title="Language">EN</button>
+    <button class="icon-btn" id="langBtn" title="تغيير لغة الواجهة إلى الإنجليزية" aria-label="تغيير لغة الواجهة">EN</button>
     <button class="icon-btn" id="themeBtn" title="الوضع الليلي">🌙</button>
   </div>
 </div></header>
@@ -111,7 +112,7 @@ ${body}
   <span>قِرطاس — مكتبة الملكية العامة المجانية · ${new Date().getFullYear()}</span>
   <footer class="site-footer"><div class="inner container">
   <span>قِرطاس — مكتبة الملكية العامة المجانية · ${new Date().getFullYear()}</span>
-  <span><a href="/library/">المكتبة</a> · <a href="/authors/">المؤلفون</a> · <a href="/stats/">الإحصاءات</a> · <a href="/about/">عن المنصة</a> · <a href="/rights/">حقوق النشر</a> · <a href="/contact/">تواصل</a> · <a href="/privacy/">الخصوصية</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">خريطة الموقع</a></span>
+  <span><a href="/library/" data-i18n="nav.library">المكتبة</a> · <a href="/authors/" data-i18n="nav.authors">المؤلفون</a> · <a href="/stats/" data-i18n="nav.stats">الإحصاءات</a> · <a href="/about/" data-i18n="nav.about">عن المنصة</a> · <a href="/rights/" data-i18n="nav.rights">حقوق النشر</a> · <a href="/contact/" data-i18n="nav.contact">تواصل</a> · <a href="/privacy/" data-i18n="nav.privacy">الخصوصية</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">خريطة الموقع</a></span>
 </div></footer>
 </div></footer>
 <script>
@@ -169,7 +170,7 @@ function homePage(catalog, externalCount = 0) {
       <div class="hstat"><strong>${(words / 1e6).toFixed(1)}M</strong><span>كلمة قابلة للقراءة</span></div>
       <div class="hstat"><strong>${externalCount.toLocaleString('en-US')}</strong><span>كتاباً في الكتالوج الخارجي</span></div>
     </div>
-    <p class="hero-links"><a href="/library/">تصفّح المكتبة كاملة ←</a> · <a href="/authors/">تصفّح حسب المؤلف</a></p>
+    <p class="hero-links"><a href="/library/" data-i18n="cta.browseAll">تصفّح المكتبة كاملة ←</a> · <a href="/authors/" data-i18n="cta.byAuthor">تصفّح حسب المؤلف</a></p>
     <p class="hero-note">+ ${externalCount.toLocaleString('en-US')} كتاباً إضافياً في كتالوج مرجعي عالمي (بيانات وصفية فقط) بروابط قراءة مباشرة من الجهة الناشرة أو الأرشيف الرقمي.</p>
   </section>
 
@@ -181,8 +182,8 @@ function homePage(catalog, externalCount = 0) {
   <h2 class="section-title">أحدث الإضافات</h2>
   ${grid(featured)}
   <div class="section-more">
-    <a class="btn btn-ghost" href="/library/">تصفّح المكتبة كاملة ←</a>
-    <a class="btn btn-ghost" href="/authors/">تصفّح حسب المؤلف ←</a>
+    <a class="btn btn-ghost" href="/library/" data-i18n="cta.browseAll">تصفّح المكتبة كاملة ←</a>
+    <a class="btn btn-ghost" href="/authors/" data-i18n="cta.byAuthor">تصفّح حسب المؤلف ←</a>
   </div>
 </main>
 <script src="/assets/js/home.js"></script>`;
@@ -203,7 +204,7 @@ function libraryPage(catalog, externalCount = 0) {
   <div class="lib-toolbar">
     <div class="lib-search">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.3l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
-      <input id="libSearch" type="search" placeholder="ابحث بالعنوان أو المؤلف…" autocomplete="off" aria-label="ابحث">
+      <input id="libSearch" type="search" placeholder="ابحث بالعنوان أو المؤلف…" data-i18n-ph="nav.search" autocomplete="off" aria-label="ابحث">
       <button class="icon-btn small hidden" id="libClear" aria-label="مسح">✕</button>
     </div>
   </div>
@@ -716,7 +717,7 @@ self.addEventListener('fetch', (e) => {
   const authorMap = {};
   for (const b of catalog) {
     const name = authorOf(b, 'ar').trim();
-    if (!name || name === 'مجهول' || name === 'مؤلف تراثي') continue;
+    if (!name || name === 'مجهول' || name === 'مؤلف تراثي' || name === 'مؤلف غير معروف') continue; // placeholder, not an author
     (authorMap[name] = authorMap[name] || []).push(b);
   }
   const eraMap = {};

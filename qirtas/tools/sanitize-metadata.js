@@ -3,31 +3,17 @@
 'use strict';
 const path = require('path');
 const Q = path.resolve(__dirname, '..');
+const metadata = require(path.join(Q, 'pipeline', 'lib', 'metadata.js'));
+const titleFromUrl = metadata.titleFromUrl;
+const cleanValue = metadata.cleanValue;
 const P = Q + path.sep;
 const { DatabaseSync } = require('node:sqlite');
 const { normKey } = require(path.join(Q, 'pipeline', 'lib', 'arabic.js'));
 const db = new DatabaseSync(path.join(Q, 'data', 'qirtas.db'));
 
 // A value that looks like a leaked template parameter rather than real metadata.
-function cleanValue(s) {
-  const v = String(s == null ? '' : s).trim();
-  if (!v) return '';
-  if (/^\|/.test(v)) return '';                                    // "|مؤلف ="
-  if (/[{}]{2}/.test(v)) return '';                                // "{{...}}"
-  if (/\|/.test(v) && /(=|\{\})/.test(v)) return '';                        // 'Title|مؤلف=…'
-  if (/^[^=]{0,24}=\s*$/.test(v)) return '';                       // "المؤلف ="
-  if (/^(مؤلف|باب|عنوان|محرر|ناشر|مترجم|سنة|وصف)\s*=/.test(v)) return ''; // "مؤلف = س"
-  if (v === '-' || v === '—') return '';
-  return v;
-}
 
 // Recover a usable title from the source URL when the parsed title is unusable.
-function titleFromUrl(url) {
-  try {
-    const seg = decodeURIComponent(String(url).split('/wiki/')[1] || '').replace(/_/g, ' ').trim();
-    return cleanValue(seg);
-  } catch (e) { return ''; }
-}
 
 const VOL = /المجلد\s+(الأول|الثاني|الثالث|الرابع|الخامس|السادس|السابع|الثامن|التاسع|العاشر)/;
 const rows = db.prepare('select id, title, author, source_url from books').all();

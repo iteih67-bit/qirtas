@@ -84,3 +84,18 @@ html[data-reading-font='system'] #readerContent {
   .print-meta { display: block !important; font-size: 9pt; color: #444; margin-bottom: 12pt; }
 }
 .print-meta { display: none; }
+
+/* =====================================================
+   Reader overflow containment (found at 320px by tools/width-check.js):
+   the horizontal page stage is wider than the phone screen, and because the
+   stage did not clip its own overflow the document grew 28px wider than the
+   viewport. The stage must clip; only its inner pager may move.
+   ===================================================== */
+.reader-stage, #readerContent, .reader-wrap { max-width: 100%; }
+.reader-stage { overflow-x: hidden; }
+#readerContent { overflow-x: hidden; }
+@media (max-width: 420px) {
+  #readerContent { padding-inline: 14px; }
+  .reader-top { flex-wrap: wrap; gap: 6px; }
+  .reader-top .titles { min-width: 0; flex: 1 1 auto; }
+}

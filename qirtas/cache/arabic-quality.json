@@ -1,20 +1,17 @@
 {
-  "total": 749,
-  "junkTitles": [
-    {
-      "id": "fth-albary-mwlf-abn-hjr-mlahzat",
-      "title": "فتح الباري|مؤلف=ابن حجر|ملاحظات = }}"
-    },
-    {
-      "id": "mwlf-ar",
-      "title": "|مؤلف ="
-    },
-    {
-      "id": "tarykh-alaslam-wwfyat-almshahyr-walaalam-mwlf-aldhhby-lahq-a",
-      "title": "تاريخ الإسلام ووفيات المشاهير والأعلام|مؤلف=الذهبي |لاحق= ال"
-    }
-  ],
+  "total": 868,
+  "junkTitles": [],
   "placeholderAuthors": [
+    {
+      "id": "cora-n",
+      "author": "مؤلف غير محدد",
+      "title": "Corán"
+    },
+    {
+      "id": "quran-manuscript-1650-ad",
+      "author": "مؤلف غير محدد",
+      "title": "Quran Manuscript, 1650 AD"
+    },
     {
       "id": "alastqama",
       "author": "مؤلف تراثي",
@@ -209,890 +206,62 @@
       "id": "mnha-alqryb-almjyb-fy-alrd-ala-abad-alslyb",
       "author": "مؤلف تراثي",
       "title": "منحة القريب المجيب في الرد على عباد الصليب"
+    },
+    {
+      "id": "copie-dun-dictionnaire-auquel-ont-e-te-ajoute-s-ulte-rieurem",
+      "author": "مؤلف غير محدد",
+      "title": "Copie d'un dictionnaire auquel ont été ajoutés ult"
+    },
+    {
+      "id": "recueil-concernant-le-ta-g-mahall-dagra",
+      "author": "مؤلف غير محدد",
+      "title": "Recueil concernant le Tāğ Mahall d’Agra"
+    },
+    {
+      "id": "quran-notebook-with-blank-lines-21-25",
+      "author": "مؤلف غير محدد",
+      "title": "Quran Notebook With Blank Lines ( 21 - 25 )"
+    },
+    {
+      "id": "holy-quran-unicode-font",
+      "author": "مؤلف غير محدد",
+      "title": "Holy QURAN Unicode Font"
+    },
+    {
+      "id": "seleznyov-nn-book-of-sessions-by-mar-elias-iliyya-metropolit",
+      "author": "مؤلف غير محدد",
+      "title": "Seleznyov N.N., Book of Sessions by Mar Elias (ʾIl"
+    },
+    {
+      "id": "felatun-bey-rakim-efendi-os",
+      "author": "مؤلف غير محدد",
+      "title": "Felatun Bey Rakim Efendi Os"
+    },
+    {
+      "id": "ktab-twarykh-alaalm-ala-wjh-alamwm",
+      "author": "مؤلف غير محدد",
+      "title": "كتاب تواريخ العالم على وجه العموم"
+    },
+    {
+      "id": "it-11-book",
+      "author": "مؤلف غير محدد",
+      "title": "IT 11 Book"
     }
   ],
   "lowQualityText": [
     {
-      "id": "bibliotheca-geographorum-arabicorum",
-      "ratio": 0,
-      "words": 174320,
-      "title": "Bibliotheca geographorum arabicorum",
+      "id": "recueil-concernant-le-ta-g-mahall-dagra",
+      "ratio": 0.354,
+      "words": 26832,
+      "title": "Recueil concernant le Tāğ Mahall d’Agra",
       "source": "archiveorg"
     },
     {
-      "id": "cora-n",
-      "ratio": 0,
-      "words": 22459,
-      "title": "Corán",
+      "id": "holy-quran-unicode-font",
+      "ratio": 0.05,
+      "words": 147118,
+      "title": "Holy QURAN Unicode Font",
       "source": "archiveorg"
-    },
-    {
-      "id": "ktab-alanajyl-alarbaa-almqdsa-lrbna-yswa-almsyh-ballghtyn-al",
-      "ratio": 0,
-      "words": 138238,
-      "title": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح با",
-      "source": "archiveorg"
-    },
-    {
-      "id": "basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
-      "ratio": 0,
-      "words": 23429,
-      "title": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Trea",
-      "source": "archiveorg"
-    },
-    {
-      "id": "mkhtwta-hashya-mla-abdallh-alyzdy-bkht-mhmdaarf-njl-alshykh-",
-      "ratio": 0,
-      "words": 25411,
-      "title": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل ا",
-      "source": "archiveorg"
-    },
-    {
-      "id": "quran-manuscript-1650-ad",
-      "ratio": 0,
-      "words": 44036,
-      "title": "Quran Manuscript, 1650 AD",
-      "source": "archiveorg"
-    },
-    {
-      "id": "fy-alshar-aljahly",
-      "ratio": 0,
-      "words": 31141,
-      "title": "في الشعر الجاهلي",
-      "source": "wikisource"
-    },
-    {
-      "id": "aljml-fy-alnhw",
-      "ratio": 0,
-      "words": 24281,
-      "title": "الجمل في النحو",
-      "source": "wikisource"
-    },
-    {
-      "id": "allgha-alarbya-kayn-hy",
-      "ratio": 0,
-      "words": 15759,
-      "title": "اللغة العربية كائن حي",
-      "source": "wikisource"
-    },
-    {
-      "id": "bhr-aldmwa",
-      "ratio": 0,
-      "words": 14840,
-      "title": "بحر الدموع",
-      "source": "wikisource"
-    },
-    {
-      "id": "thfa-alaryb-fy-alrd-ala-ahl-alslyb",
-      "ratio": 0,
-      "words": 15358,
-      "title": "تحفة الأريب في الرد على أهل الصليب",
-      "source": "wikisource"
-    },
-    {
-      "id": "syana-shyh-mslm-mn-alakhlal-walghlt-whmayth-mn-alasqat-walsq",
-      "ratio": 0,
-      "words": 28058,
-      "title": "صيانة صحيح مسلم من الإخلال والغلط وحمايته من الإسق",
-      "source": "wikisource"
-    },
-    {
-      "id": "alastqama",
-      "ratio": 0,
-      "words": 106684,
-      "title": "الاستقامة",
-      "source": "wikisource"
-    },
-    {
-      "id": "althfa-almktbya-ltqryb-allgha-alarbya",
-      "ratio": 0,
-      "words": 29162,
-      "title": "التحفة المكتبية لتقريب اللغة العربية",
-      "source": "wikisource"
-    },
-    {
-      "id": "jama-alrsayl",
-      "ratio": 0,
-      "words": 97207,
-      "title": "جامع الرسائل",
-      "source": "wikisource"
-    },
-    {
-      "id": "alathar-alnbwya-altbaa-alawla",
-      "ratio": 0,
-      "words": 26635,
-      "title": "الآثار النبوية (الطبعة الأولى)",
-      "source": "wikisource"
-    },
-    {
-      "id": "altmhyd-lma-fy-almwta-mn-almaany-walasanyd",
-      "ratio": 0,
-      "words": 337286,
-      "title": "التمهيد لما في الموطأ من المعاني والأسانيد",
-      "source": "wikisource"
-    },
-    {
-      "id": "aljzayr-almjahda-1960",
-      "ratio": 0,
-      "words": 7737,
-      "title": "الجزائر المجاهدة (1960)",
-      "source": "wikisource"
-    },
-    {
-      "id": "alsfdya",
-      "ratio": 0,
-      "words": 118503,
-      "title": "الصفدية",
-      "source": "wikisource"
-    },
-    {
-      "id": "abqrya-mhmd",
-      "ratio": 0,
-      "words": 45853,
-      "title": "عبقرية محمد",
-      "source": "wikisource"
-    },
-    {
-      "id": "ahsn-altqasym-fy-marfa-alaqalym",
-      "ratio": 0,
-      "words": 36538,
-      "title": "أحسن التقاسيم في معرفة الأقاليم",
-      "source": "wikisource"
-    },
-    {
-      "id": "alsrab",
-      "ratio": 0,
-      "words": 4425,
-      "title": "السراب",
-      "source": "wikisource"
-    },
-    {
-      "id": "khdyja-am-almwmnyn-dar-alfkr-alarby-1948",
-      "ratio": 0,
-      "words": 14838,
-      "title": "خديجة أم المؤمنين (دار الفكر العربي، 1948)",
-      "source": "wikisource"
-    },
-    {
-      "id": "mfatyh-alalwm",
-      "ratio": 0,
-      "words": 27492,
-      "title": "مفاتيح العلوم",
-      "source": "wikisource"
-    },
-    {
-      "id": "aljwab-alshyh-lmn-bdl-dyn-almsyh",
-      "ratio": 0,
-      "words": 411832,
-      "title": "الجواب الصحيح لمن بدل دين المسيح",
-      "source": "wikisource"
-    },
-    {
-      "id": "bshyr-byn-alsltan-walazyz-aljz-althany-aljamaa-allbnanya-alt",
-      "ratio": 0,
-      "words": 41471,
-      "title": "بشير بين السلطان والعزيز، الجزء الثاني (الجامعة ال",
-      "source": "wikisource"
-    },
-    {
-      "id": "tfsyr-alqran-alhkym-tfsyr-almnar",
-      "ratio": 0,
-      "words": 34548,
-      "title": "تفسير القرآن الحكيم (تفسير المنار)",
-      "source": "wikisource"
-    },
-    {
-      "id": "snn-alnsayy",
-      "ratio": 0,
-      "words": 42265,
-      "title": "سنن النسائي",
-      "source": "wikisource"
-    },
-    {
-      "id": "abqrya-amr",
-      "ratio": 0,
-      "words": 70544,
-      "title": "عبقرية عمر",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-alaatbar",
-      "ratio": 0,
-      "words": 39945,
-      "title": "كتاب الاعتبار",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-almnazr",
-      "ratio": 0,
-      "words": 39393,
-      "title": "كتاب المناظر",
-      "source": "wikisource"
-    },
-    {
-      "id": "mstlh-altarykh-altbaa-althaltha",
-      "ratio": 0,
-      "words": 33675,
-      "title": "مصطلح التاريخ (الطبعة الثالثة)",
-      "source": "wikisource"
-    },
-    {
-      "id": "aalam-almhndsyn-fy-alaslam-altbaa-alawla",
-      "ratio": 0,
-      "words": 17634,
-      "title": "أعلام المهندسين في الإسلام (الطبعة الأولى)",
-      "source": "wikisource"
-    },
-    {
-      "id": "awqranya-rwsyh-wtwrkyh-mqal-lr-mjmwa-sa",
-      "ratio": 0,
-      "words": 12373,
-      "title": "أوقرانيا، روسيه وتوركيه (مقالەلر مجموعەسى)",
-      "source": "wikisource"
-    },
-    {
-      "id": "alakhlaq-walsyr-fy-mdawaa-alnfws",
-      "ratio": 0,
-      "words": 17152,
-      "title": "الأخلاق والسير في مداواة النفوس",
-      "source": "wikisource"
-    },
-    {
-      "id": "aljzayr-almjahda-1960-ar",
-      "ratio": 0,
-      "words": 6519,
-      "title": "الجزائر المجاهدة 1960",
-      "source": "wikisource"
-    },
-    {
-      "id": "sr-alnjah",
-      "ratio": 0,
-      "words": 46789,
-      "title": "سر النجاح",
-      "source": "wikisource"
-    },
-    {
-      "id": "tbaya-alastbdad-wmsara-alastabad",
-      "ratio": 0,
-      "words": 65556,
-      "title": "طبائع الاستبداد ومصارع الاستعباد",
-      "source": "wikisource"
-    },
-    {
-      "id": "alfqyh-walmtfqh",
-      "ratio": 0,
-      "words": 145211,
-      "title": "الفقيه والمتفقه",
-      "source": "wikisource"
-    },
-    {
-      "id": "almnhaj-shrh-shyh-mslm-bn-alhjaj",
-      "ratio": 0,
-      "words": 10898,
-      "title": "المنهاج شرح صحيح مسلم بن الحجاج",
-      "source": "wikisource"
-    },
-    {
-      "id": "tarykh-trabls-alghrb-almtbaa-alslfya-1349h",
-      "ratio": 0,
-      "words": 6167,
-      "title": "تاريخ طرابلس الغرب (المطبعة السلفية، 1349هـ)",
-      "source": "wikisource"
-    },
-    {
-      "id": "khlasa-alhsab",
-      "ratio": 0,
-      "words": 7281,
-      "title": "خلاصة الحساب",
-      "source": "wikisource"
-    },
-    {
-      "id": "dhw-alnwryn-athman-bn-afan",
-      "ratio": 0,
-      "words": 45647,
-      "title": "ذو النورين عثمان بن عفان",
-      "source": "wikisource"
-    },
-    {
-      "id": "rsala-alsjzy-ala-ahl-zbyd-fy-alrd-ala-mn-ankr-alhrf-walswt",
-      "ratio": 0,
-      "words": 13345,
-      "title": "رسالة السجزي إلى أهل زبيد في الرد على من أنكر الحر",
-      "source": "wikisource"
-    },
-    {
-      "id": "rqayq-alhqayq-fy-hsab-aldrj-waldqayq",
-      "ratio": 0,
-      "words": 10087,
-      "title": "رقائق الحقائق في حساب الدرج والدقائق",
-      "source": "wikisource"
-    },
-    {
-      "id": "abqrya-alamam-aly",
-      "ratio": 0,
-      "words": 39812,
-      "title": "عبقرية الامام علي",
-      "source": "wikisource"
-    },
-    {
-      "id": "ashayr-alaraq",
-      "ratio": 0,
-      "words": 154709,
-      "title": "عشائر العراق",
-      "source": "wikisource"
-    },
-    {
-      "id": "alm-almlaha-fy-alm-alflaha",
-      "ratio": 0,
-      "words": 46711,
-      "title": "علم الملاحة في علم الفلاحة",
-      "source": "wikisource"
-    },
-    {
-      "id": "fth-almjyd",
-      "ratio": 0,
-      "words": 134387,
-      "title": "فتح المجيد",
-      "source": "wikisource"
-    },
-    {
-      "id": "qaada-jlyla-fy-altwsl-walwsyla",
-      "ratio": 0,
-      "words": 48672,
-      "title": "قاعدة جليلة في التوسل والوسيلة",
-      "source": "wikisource"
-    },
-    {
-      "id": "qanwn-rqm-45-lsna-2002m-bshan-hqwq-altfl",
-      "ratio": 0,
-      "words": 8786,
-      "title": "قانون رقم (45) لسنة 2002م بشأن حقوق الطفل",
-      "source": "wikisource"
-    },
-    {
-      "id": "qanwn-rqm-15-lsna-2012-bshan-hq-almwlf-walhqwq-almjawra",
-      "ratio": 0,
-      "words": 8554,
-      "title": "قانون رقم 15 لسنة 2012 بشأن حق المؤلف والحقوق المج",
-      "source": "wikisource"
-    },
-    {
-      "id": "mjmwaa-flsfa-aby-nsr-alfaraby",
-      "ratio": 0,
-      "words": 30454,
-      "title": "مجموعة فلسفة أبي نصر الفارابي",
-      "source": "wikisource"
-    },
-    {
-      "id": "mkhtsr-althfa-alathny-ashrya",
-      "ratio": 0,
-      "words": 146404,
-      "title": "مختصر التحفة الاثني عشرية",
-      "source": "wikisource"
-    },
-    {
-      "id": "akhbar-alnhwyyn-albsryyn",
-      "ratio": 0,
-      "words": 8216,
-      "title": "أخبار النحويين البصريين",
-      "source": "wikisource"
-    },
-    {
-      "id": "akhbar-alnhwyyn-laby-tahr-almqry",
-      "ratio": 0,
-      "words": 9216,
-      "title": "أخبار النحويين لأبي طاهر المقرئ",
-      "source": "wikisource"
-    },
-    {
-      "id": "alf-lyla-wlyla-mwssa-hndawy-2022",
-      "ratio": 0,
-      "words": 10390,
-      "title": "ألف ليلة وليلة (مؤسسة هنداوي، 2022)",
-      "source": "wikisource"
-    },
-    {
-      "id": "alajnha-almtksra",
-      "ratio": 0,
-      "words": 16006,
-      "title": "الأجنحة المتكسرة",
-      "source": "wikisource"
-    },
-    {
-      "id": "alfhrst",
-      "ratio": 0,
-      "words": 114215,
-      "title": "الفهرست",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-sybwyh",
-      "ratio": 0,
-      "words": 270603,
-      "title": "كتاب سيبويه",
-      "source": "wikisource"
-    },
-    {
-      "id": "almdyna-almshwra",
-      "ratio": 0,
-      "words": 20124,
-      "title": "المدينة المسحورة",
-      "source": "wikisource"
-    },
-    {
-      "id": "almwswaa-almysra-fy-aladyan-walmdhahb-walahzab-almaasra",
-      "ratio": 0,
-      "words": 28681,
-      "title": "الموسوعة الميسرة في الأديان والمذاهب والأحزاب المع",
-      "source": "wikisource"
-    },
-    {
-      "id": "almyrza-aly-alahqaqy-alhayry",
-      "ratio": 0,
-      "words": 3084,
-      "title": "الميرزا علي الإحقاقي الحائري",
-      "source": "wikisource"
-    },
-    {
-      "id": "alnbwat",
-      "ratio": 0,
-      "words": 100725,
-      "title": "النبوات",
-      "source": "wikisource"
-    },
-    {
-      "id": "tarykh-aldwla-alsawdya",
-      "ratio": 0,
-      "words": 5694,
-      "title": "تاريخ الدولة السعودية",
-      "source": "wikisource"
-    },
-    {
-      "id": "tarykh-altbry",
-      "ratio": 0,
-      "words": 402484,
-      "title": "تاريخ الطبري",
-      "source": "wikisource"
-    },
-    {
-      "id": "hrb-fy-alknays",
-      "ratio": 0,
-      "words": 18695,
-      "title": "حرب في الكنائس",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-alaatsam",
-      "ratio": 0,
-      "words": 173026,
-      "title": "كتاب الاعتصام",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-alslaa-whkm-tarkha",
-      "ratio": 0,
-      "words": 46512,
-      "title": "كتاب الصلاة وحكم تاركها",
-      "source": "wikisource"
-    },
-    {
-      "id": "aladb-almfrd",
-      "ratio": 0,
-      "words": 75921,
-      "title": "الأدب المفرد",
-      "source": "wikisource"
-    },
-    {
-      "id": "alsdyqa-bnt-alsdyq-mtbaa-almaarf-1943",
-      "ratio": 0,
-      "words": 24728,
-      "title": "الصديقة بنت الصديق (مطبعة المعارف، 1943)",
-      "source": "wikisource"
-    },
-    {
-      "id": "bshyr-byn-alsltan-walazyz-aljz-alawl-aljamaa-allbnanya-altba",
-      "ratio": 0,
-      "words": 36517,
-      "title": "بشير بين السلطان والعزيز، الجزء الأول (الجامعة الل",
-      "source": "wikisource"
-    },
-    {
-      "id": "daay-alsma-blal-bn-rbah",
-      "ratio": 0,
-      "words": 26199,
-      "title": "داعي السماء: بلال بن رباح",
-      "source": "wikisource"
-    },
-    {
-      "id": "dstwr-dwla-alamarat-alarbya-almthda-bad-tadylat-alsna-1996",
-      "ratio": 0,
-      "words": 7059,
-      "title": "دستور دولة الإمارات العربية المتحدة بعد تعديلات ال",
-      "source": "wikisource"
-    },
-    {
-      "id": "fth-albary-mwlf-abn-hjr-mlahzat",
-      "ratio": 0,
-      "words": 26734,
-      "title": "فتح الباري|مؤلف=ابن حجر|ملاحظات = }}",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-alfwayd",
-      "ratio": 0,
-      "words": 57527,
-      "title": "كتاب الفوائد",
-      "source": "wikisource"
-    },
-    {
-      "id": "lsan-ghsn-lbnan-fy-antqad-alarbya-alasrya",
-      "ratio": 0,
-      "words": 16994,
-      "title": "لسان غصن لبنان في انتقاد العربية العصرية",
-      "source": "wikisource"
-    },
-    {
-      "id": "maawya-bn-aby-sfyan",
-      "ratio": 0,
-      "words": 35033,
-      "title": "معاوية بن أبي سفيان",
-      "source": "wikisource"
-    },
-    {
-      "id": "nhn-wrwma-walfatykan-altbaa-alawla",
-      "ratio": 0,
-      "words": 18450,
-      "title": "نحن ورومة والفاتيكان (الطبعة الأولى)",
-      "source": "wikisource"
-    },
-    {
-      "id": "alaalam-bhdwd-qwaad-alaslam",
-      "ratio": 0,
-      "words": 8653,
-      "title": "الإعلام بحدود قواعد الإسلام",
-      "source": "wikisource"
-    },
-    {
-      "id": "alsywf-almshrqa",
-      "ratio": 0,
-      "words": 95472,
-      "title": "السيوف المشرقة",
-      "source": "wikisource"
-    },
-    {
-      "id": "almdhahb-alfqhya-alarbaa-wantsharha-and-jmhwr-almslmyn",
-      "ratio": 0,
-      "words": 7478,
-      "title": "المذاهب الفقهية الأربعة وانتشارها عند جمهور المسلم",
-      "source": "wikisource"
-    },
-    {
-      "id": "almnbhat-ala-alastadad-lywm-almaad-llnsh-walwdad",
-      "ratio": 0,
-      "words": 9442,
-      "title": "المنبهات على الاستعداد ليوم المعاد للنصح والوداد",
-      "source": "wikisource"
-    },
-    {
-      "id": "ghaba-alhq",
-      "ratio": 0,
-      "words": 24479,
-      "title": "غابة الحق",
-      "source": "wikisource"
-    },
-    {
-      "id": "qanwn-alajraat-aljzayya-alaskrya-alymn",
-      "ratio": 0,
-      "words": 4732,
-      "title": "قانون الإجراءات الجزائية العسكرية (اليمن)",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-myzan-alhkma",
-      "ratio": 0,
-      "words": 4398,
-      "title": "كتاب ميزان الحكمة",
-      "source": "wikisource"
-    },
-    {
-      "id": "majm-albldan",
-      "ratio": 0,
-      "words": 97338,
-      "title": "معجم البلدان",
-      "source": "wikisource"
-    },
-    {
-      "id": "altbqat-alkbra",
-      "ratio": 0,
-      "words": 9628,
-      "title": "الطبقات الكبرى",
-      "source": "wikisource"
-    },
-    {
-      "id": "alkaml-fy-allgha-waladb",
-      "ratio": 0,
-      "words": 189005,
-      "title": "الكامل في اللغة والأدب",
-      "source": "wikisource"
-    },
-    {
-      "id": "almntqa-mn-mnhaj-alaatdal",
-      "ratio": 0,
-      "words": 119025,
-      "title": "المنتقى من منهاج الاعتدال",
-      "source": "wikisource"
-    },
-    {
-      "id": "hyaa-alnfs-fy-hdra-alqds",
-      "ratio": 0,
-      "words": 12024,
-      "title": "حياة النفس في حضرة القدس",
-      "source": "wikisource"
-    },
-    {
-      "id": "qada-alfkr",
-      "ratio": 0,
-      "words": 27376,
-      "title": "قادة الفكر",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-alrd-ala-abn-alnghryla",
-      "ratio": 0,
-      "words": 8816,
-      "title": "كتاب الرد على ابن النغريلة",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktb-wshkhsyat",
-      "ratio": 0,
-      "words": 83113,
-      "title": "كتب وشخصيات",
-      "source": "wikisource"
-    },
-    {
-      "id": "klyla-wdmna-ar",
-      "ratio": 0,
-      "words": 25963,
-      "title": "كليلة ودمنة",
-      "source": "wikisource"
-    },
-    {
-      "id": "lsan-almyzan",
-      "ratio": 0,
-      "words": 259608,
-      "title": "لسان الميزان",
-      "source": "wikisource"
-    },
-    {
-      "id": "nhj-alslama-ala-mbahth-alamama",
-      "ratio": 0,
-      "words": 31083,
-      "title": "نهج السلامة إلى مباحث الإمامة",
-      "source": "wikisource"
-    },
-    {
-      "id": "aladb-alsghyr",
-      "ratio": 0,
-      "words": 8490,
-      "title": "الأدب الصغير",
-      "source": "wikisource"
-    },
-    {
-      "id": "albhth-alsryh-fy-ayma-hw-aldyn-alshyh",
-      "ratio": 0,
-      "words": 29716,
-      "title": "البحث الصريح في أيما هو الدين الصحيح",
-      "source": "wikisource"
-    },
-    {
-      "id": "aljma-byn-alshyhyn-llhmydy",
-      "ratio": 0,
-      "words": 269441,
-      "title": "الجمع بين الصحيحين للحميدي",
-      "source": "wikisource"
-    },
-    {
-      "id": "alsarm-almnky-fy-alrd-ala-alsbky",
-      "ratio": 0,
-      "words": 107480,
-      "title": "الصارم المنكي في الرد على السبكي",
-      "source": "wikisource"
-    },
-    {
-      "id": "alnbdh-fy-aswl-alfqh-alzahry",
-      "ratio": 0,
-      "words": 13644,
-      "title": "النبذ في أصول الفقه الظاهري",
-      "source": "wikisource"
-    },
-    {
-      "id": "mwlf-ar",
-      "ratio": 0,
-      "words": 40778,
-      "title": "|مؤلف =",
-      "source": "wikisource"
-    },
-    {
-      "id": "shyh-abn-khzyma",
-      "ratio": 0,
-      "words": 140046,
-      "title": "صحيح ابن خزيمة",
-      "source": "wikisource"
-    },
-    {
-      "id": "alsna-llkhlal",
-      "ratio": 0,
-      "words": 157879,
-      "title": "السنة للخلال",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-jmaa-alalm",
-      "ratio": 0,
-      "words": 17662,
-      "title": "كتاب جماع العلم",
-      "source": "wikisource"
-    },
-    {
-      "id": "mghamrat-twm-swyr",
-      "ratio": 0,
-      "words": 7678,
-      "title": "مغامرات توم سوير",
-      "source": "wikisource"
-    },
-    {
-      "id": "wfyat-alaayan",
-      "ratio": 0,
-      "words": 6378,
-      "title": "وفيات الأعيان",
-      "source": "wikisource"
-    },
-    {
-      "id": "aalam-almwqayn-an-rb-alaalmyn",
-      "ratio": 0,
-      "words": 284265,
-      "title": "إعلام الموقعين عن رب العالمين",
-      "source": "wikisource"
-    },
-    {
-      "id": "atfaqya-jnyf-bshan-maamla-asra-alhrb",
-      "ratio": 0,
-      "words": 18468,
-      "title": "اتفاقية جنيف بشأن معاملة أسرى الحرب",
-      "source": "wikisource"
-    },
-    {
-      "id": "aladb-alkbyr",
-      "ratio": 0,
-      "words": 12396,
-      "title": "الأدب الكبير",
-      "source": "wikisource"
-    },
-    {
-      "id": "alhsam-almmdwd-fy-alrd-ala-alyhwd",
-      "ratio": 0,
-      "words": 6791,
-      "title": "الحسام الممدود في الرد على اليهود",
-      "source": "wikisource"
-    },
-    {
-      "id": "alaqyda-alhmwya-alkbra",
-      "ratio": 0,
-      "words": 23005,
-      "title": "العقيدة الحموية الكبرى",
-      "source": "wikisource"
-    },
-    {
-      "id": "alkylanya",
-      "ratio": 0,
-      "words": 32973,
-      "title": "الكيلانية",
-      "source": "wikisource"
-    },
-    {
-      "id": "tarykh-alaslam-wwfyat-almshahyr-walaalam-mwlf-aldhhby-lahq-a",
-      "ratio": 0,
-      "words": 106050,
-      "title": "تاريخ الإسلام ووفيات المشاهير والأعلام|مؤلف=الذهبي",
-      "source": "wikisource"
-    },
-    {
-      "id": "tarykh-alaslah-fy-alazhr-mtbaa-alaatmad-1943",
-      "ratio": 0,
-      "words": 9867,
-      "title": "تاريخ الإصلاح في الأزهر (مطبعة الاعتماد، 1943)",
-      "source": "wikisource"
-    },
-    {
-      "id": "tarykh-alkwyt-alsyasy-aljz-althany",
-      "ratio": 0,
-      "words": 20778,
-      "title": "تاريخ الكويت السياسي - الجزء الثاني",
-      "source": "wikisource"
-    },
-    {
-      "id": "tjarb-alamm",
-      "ratio": 0,
-      "words": 142338,
-      "title": "تجارب الأمم",
-      "source": "wikisource"
-    },
-    {
-      "id": "zad-almaad-fy-hdy-khyr-alabad",
-      "ratio": 0,
-      "words": 145030,
-      "title": "زاد المعاد في هدي خير العباد",
-      "source": "wikisource"
-    },
-    {
-      "id": "shrh-qtr-alnda-t-mhmd-mhyy-aldyn-abd-alhmyd",
-      "ratio": 0,
-      "words": 10758,
-      "title": "شرح قطر الندى - ت: محمد محيي الدين عبد الحميد",
-      "source": "wikisource"
-    },
-    {
-      "id": "shyh-abn-hban",
-      "ratio": 0,
-      "words": 101908,
-      "title": "صحيح ابن حبان",
-      "source": "wikisource"
-    },
-    {
-      "id": "fyma-yhtaj-alyh-alsana-mn-aamal-alhndsa",
-      "ratio": 0,
-      "words": 5999,
-      "title": "فيما يحتاج إليه الصانع من أعمال الهندسة",
-      "source": "wikisource"
-    },
-    {
-      "id": "qanwn-rqm-25-lsna-1990-alymn-bshan-alshafa-walmtbwaat",
-      "ratio": 0,
-      "words": 7377,
-      "title": "قانون رقم 25 لسنة 1990 (اليمن) بشأن الصحافة والمطب",
-      "source": "wikisource"
-    },
-    {
-      "id": "ktab-fy-alaswl-alhndsya",
-      "ratio": 0,
-      "words": 32256,
-      "title": "كتاب في الأصول الهندسية",
-      "source": "wikisource"
-    },
-    {
-      "id": "mblgh-alarb-fy-fkhr-alarb",
-      "ratio": 0,
-      "words": 8786,
-      "title": "مبلغ الأرب في فخر العرب",
-      "source": "wikisource"
-    },
-    {
-      "id": "mnha-alqryb-almjyb-fy-alrd-ala-abad-alslyb",
-      "ratio": 0,
-      "words": 70288,
-      "title": "منحة القريب المجيب في الرد على عباد الصليب",
-      "source": "wikisource"
     }
   ],
   "latinTitlesInArabic": [
@@ -1227,6 +396,107 @@
     {
       "id": "dlail-ali3jaz-lljorjane",
       "title": "dlail_ali3jaz_lljorjane"
+    },
+    {
+      "id": "es-5444-forced-draught-oil-burners-definitions-requirements-",
+      "title": "ES 5444: Forced draught oil burners - Definitions, requireme"
+    },
+    {
+      "id": "es-6974-transportable-gas-cylinders-fully-wrapped-composite-",
+      "title": "ES 6974: Transportable gas cylinders - Fully wrapped Composi"
+    },
+    {
+      "id": "luba-b-al-a-da-b",
+      "title": "Lubāb al-ʾĀdāb"
+    },
+    {
+      "id": "copie-dun-dictionnaire-auquel-ont-e-te-ajoute-s-ulte-rieurem",
+      "title": "Copie d'un dictionnaire auquel ont été ajoutés ultérieuremen"
+    },
+    {
+      "id": "recueil-concernant-le-ta-g-mahall-dagra",
+      "title": "Recueil concernant le Tāğ Mahall d’Agra"
+    },
+    {
+      "id": "recueil",
+      "title": "Recueil"
+    },
+    {
+      "id": "energy-lie",
+      "title": "energy-lie"
+    },
+    {
+      "id": "quran-notebook-with-blank-lines-21-25",
+      "title": "Quran Notebook With Blank Lines ( 21 - 25 )"
+    },
+    {
+      "id": "d8-b5-d8-ad-db-8c-d8-ad-20-d9-85-d8-b3-d9-84-d9-85-20-d9-85-",
+      "title": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85"
+    },
+    {
+      "id": "holy-quran-unicode-font",
+      "title": "Holy QURAN Unicode Font"
+    },
+    {
+      "id": "arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ",
+      "title": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF W"
+    },
+    {
+      "id": "arabic-the-gospels-and-the-acts-of-the-apostles",
+      "title": "Arabic The Gospels And The Acts Of The Apostles"
+    },
+    {
+      "id": "dimensional-analysis-of-systemic-reception-arabic",
+      "title": "Dimensional Analysis Of Systemic Reception - Arabic"
+    },
+    {
+      "id": "felatun-bey-rakim-efendi-os",
+      "title": "Felatun Bey Rakim Efendi Os"
+    },
+    {
+      "id": "fiqh05628",
+      "title": "fiqh05628"
+    },
+    {
+      "id": "fiqh-bulughul-maram-zaen",
+      "title": "Fiqh Bulughul Maram Zaen"
+    },
+    {
+      "id": "faiz-ul-bari-vol-5",
+      "title": "Faiz Ul Bari Vol 5"
+    },
+    {
+      "id": "inaroh-duja",
+      "title": "Inaroh_duja"
+    },
+    {
+      "id": "623-hijri-sharh-musnad-al-shafai-al-imam-abdul-kareem-al-raf",
+      "title": "[623 Hijri] Sharh Musnad al Shafai Al Imam Abdul-Kareem al-R"
+    },
+    {
+      "id": "iman-mhmd",
+      "title": "Iman Mhmd"
+    },
+    {
+      "id": "543-h-kitab-al-qabas-al-ibn-arabi-al-maliki-fi-sharh-muwatta",
+      "title": "[543 H] Kitab al Qabas al ibn Arabi al Maliki fi Sharh Muwat"
+    },
+    {
+      "id": "coran-en-couleurs-pdf",
+      "title": "CORAN EN COULEURS PDF"
+    },
+    {
+      "id": "python-for-beginners",
+      "title": "python_for_beginners"
+    },
+    {
+      "id": "ghadir-khotbeh-handwriting",
+      "title": "ghadir-khotbeh-handwriting"
+    },
+    {
+      "id": "it-11-book",
+      "title": "IT 11 Book"
     }
-  ]
+  ],
+  "unreadable": []
 }

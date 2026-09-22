@@ -1,51 +1,5 @@
 [
   {
-    "id": "d8-b5-d8-ad-db-8c-d8-ad-20-d9-85-d8-b3-d9-84-d9-85-20-d9-85-",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/islamic-lib-1778286891587",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
-      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
-    },
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
-    "title": {
-      "ar": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85%D8%AA%D8%B1%D8%AC%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%DB%8C%D8%AD%DB%8C%DB%8C%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%AC%D9%84%D8%AF%20%D9%8",
-      "en": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85%D8%AA%D8%B1%D8%AC%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%DB%8C%D8%AD%DB%8C%DB%8C%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%AC%D9%84%D8%AF%20%D9%8"
-    },
-    "author": {
-      "ar": "%D8%A7%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A8%D9%86%20%D8%AD%D8%AC%D8%A7%D8%AC%20%D9%86%DB%8C%D8%B4%D8%A7",
-      "en": "%D8%A7%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A8%D9%86%20%D8%AD%D8%AC%D8%A7%D8%AC%20%D9%86%DB%8C%D8%B4%D8%A7"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": null,
-    "era": "تراث عربي",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85%D8%AA%D8%B1%D8%AC%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%DB%8C%D8%AD%DB%8C%DB%8C%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%AC%D9%84%D8%AF%20%D9%8 — %D8%A7%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A8%D9%86%20%D8%AD%D8%AC%D8%A7%D8%AC%20%D9%86%DB%8C%D8%B4%D8%A7. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85%D8%AA%D8%B1%D8%AC%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%DB%8C%D8%AD%DB%8C%DB%8C%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%AC%D9%84%D8%AF%20%D9%8 by %D8%A7%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A8%D9%86%20%D8%AD%D8%AC%D8%A7%D8%AC%20%D9%86%DB%8C%D8%B4%D8%A7. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g3",
-    "emoji": "🕊️",
-    "chapters": 18,
-    "words": 291304,
-    "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T15:46:48.380Z"
-  },
-  {
     "id": "arthur-t-upton-arabic-simplified-a-practical-grammar-of-writ",
     "source": "archiveorg",
     "sourceKey": "archiveorg",
@@ -506,52 +460,6 @@
     "updatedAt": "2026-09-22T15:46:48.433Z"
   },
   {
-    "id": "holy-quran-unicode-font",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/holy-quran-unicode-font",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
-    "title": {
-      "ar": "Holy QURAN Unicode Font",
-      "en": "Holy QURAN Unicode Font"
-    },
-    "author": {
-      "ar": "مؤلف غير محدد",
-      "en": "مؤلف غير محدد"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": null,
-    "era": "تراث عربي",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "Holy QURAN Unicode Font — مؤلف غير محدد. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "Holy QURAN Unicode Font by مؤلف غير محدد. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g5",
-    "emoji": "⚓",
-    "chapters": 18,
-    "words": 147118,
-    "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T15:46:48.392Z"
-  },
-  {
     "id": "it-11-book",
     "source": "archiveorg",
     "sourceKey": "archiveorg",
@@ -826,52 +734,6 @@
     "words": 65779,
     "addedAt": "2026-09-22",
     "updatedAt": "2026-09-22T15:46:48.338Z"
-  },
-  {
-    "id": "recueil-concernant-le-ta-g-mahall-dagra",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/MS.PERS.90",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
-    "title": {
-      "ar": "Recueil concernant le Tāğ Mahall d’Agra",
-      "en": "Recueil concernant le Tāğ Mahall d’Agra"
-    },
-    "author": {
-      "ar": "مؤلف غير محدد",
-      "en": "مؤلف غير محدد"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "1804",
-    "era": "القرن التاسع عشر",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "Recueil concernant le Tāğ Mahall d’Agra — مؤلف غير محدد. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "Recueil concernant le Tāğ Mahall d’Agra by مؤلف غير محدد. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g1",
-    "emoji": "⚓",
-    "chapters": 8,
-    "words": 26832,
-    "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T15:46:48.336Z"
   },
   {
     "id": "seleznyov-nn-book-of-sessions-by-mar-elias-iliyya-metropolit",
@@ -6210,6 +6072,52 @@
     "updatedAt": "2026-09-22T15:46:48.277Z"
   },
   {
+    "id": "sh-h-mslm-mtrjm-mhmd-h-sltan-jld",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/islamic-lib-1778286891587",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "صحیح مسلم مترجم محمد یحیی سلطان جلد",
+      "en": "صحیح مسلم مترجم محمد یحیی سلطان جلد"
+    },
+    "author": {
+      "ar": "امام مسلم بن حجاج نیشا",
+      "en": "امام مسلم بن حجاج نیشا"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85%D8%AA%D8%B1%D8%AC%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%DB%8C%D8%AD%DB%8C%DB%8C%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%AC%D9%84%D8%AF%20%D9%8 — %D8%A7%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A8%D9%86%20%D8%AD%D8%AC%D8%A7%D8%AC%20%D9%86%DB%8C%D8%B4%D8%A7. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "%D8%B5%D8%AD%DB%8C%D8%AD%20%D9%85%D8%B3%D9%84%D9%85%20%D9%85%D8%AA%D8%B1%D8%AC%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%DB%8C%D8%AD%DB%8C%DB%8C%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%AC%D9%84%D8%AF%20%D9%8 by %D8%A7%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A8%D9%86%20%D8%AD%D8%AC%D8%A7%D8%AC%20%D9%86%DB%8C%D8%B4%D8%A7. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g3",
+    "emoji": "🕊️",
+    "chapters": 18,
+    "words": 291304,
+    "addedAt": "2026-09-22",
+    "updatedAt": "2026-09-22T17:57:49.315Z"
+  },
+  {
     "id": "syana-shyh-mslm-mn-alakhlal-walghlt-whmayth-mn-alasqat-walsq",
     "source": "wikisource",
     "sourceKey": "wikisource",
@@ -7910,6 +7818,52 @@
     "words": 39199,
     "addedAt": "2026-09-22",
     "updatedAt": "2026-09-22T15:46:48.432Z"
+  },
+  {
+    "id": "ktab-fy-alaswl-alhndsya",
+    "source": "wikisource",
+    "sourceKey": "wikisource",
+    "sourceLabel": {
+      "ar": "wikisource",
+      "en": "wikisource"
+    },
+    "sourceUrl": "https://ar.wikisource.org/wiki/%D9%83%D8%AA%D8%A7%D8%A8_%D9%81%D9%8A_%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84_%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9",
+    "license": "public-domain",
+    "licenseLabel": {
+      "ar": "ملكية عامة",
+      "en": "Public domain"
+    },
+    "licenseUrl": "",
+    "licenseAudit": "",
+    "title": {
+      "ar": "كتاب في الأصول الهندسية",
+      "en": "كتاب في الأصول الهندسية"
+    },
+    "author": {
+      "ar": "مؤلف تراثي",
+      "en": "مؤلف تراثي"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "كتاب في الأصول الهندسية — مؤلف تراثي. نص كامل من الملكية العامة منشور على ويكي مصدر العربية، مقروء مجاناً على منصة قِرطاس.",
+      "en": "كتاب في الأصول الهندسية by مؤلف تراثي. Full public-domain text from Wikisource, free to read on Qirtas."
+    },
+    "grad": "cover-g1",
+    "emoji": "⚔️",
+    "chapters": 5,
+    "words": 32256,
+    "addedAt": "2026-09-22",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
   },
   {
     "id": "ktab-qsa-ywsf-drasa-tdbrya-thlylya-ad-rshyd-aljrah",
@@ -12166,6 +12120,52 @@
     "updatedAt": "2026-09-22T15:46:47.328Z"
   },
   {
+    "id": "basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/EcIX_basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures",
+      "en": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures"
+    },
+    "author": {
+      "ar": "Kashmir Treasures",
+      "en": "Kashmir Treasures"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures — Kashmir Treasures. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures by Kashmir Treasures. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g1",
+    "emoji": "🌙",
+    "chapters": 6,
+    "words": 23429,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
+  },
+  {
     "id": "beowulf-an-anglo-saxon-epic-poem",
     "gutenbergId": "16328",
     "source": "gutenberg",
@@ -12211,6 +12211,52 @@
     "words": 39170,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-22T15:46:47.329Z"
+  },
+  {
+    "id": "bibliotheca-geographorum-arabicorum",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/bibliothecageog02goejgoog",
+    "license": "public-domain",
+    "licenseLabel": {
+      "ar": "ملكية عامة",
+      "en": "ملكية عامة"
+    },
+    "licenseUrl": "",
+    "licenseAudit": "public-domain via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "Bibliotheca geographorum arabicorum",
+      "en": "Bibliotheca geographorum arabicorum"
+    },
+    "author": {
+      "ar": "Goeje, M. J. de (Michael Jan), 1836-1909",
+      "en": "Goeje, M. J. de (Michael Jan), 1836-1909"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "1870",
+    "era": "القرن التاسع عشر",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "Bibliotheca geographorum arabicorum — Goeje, M. J. de (Michael Jan), 1836-1909. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "Bibliotheca geographorum arabicorum by Goeje, M. J. de (Michael Jan), 1836-1909. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g3",
+    "emoji": "🕊️",
+    "chapters": 4,
+    "words": 174320,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
   },
   {
     "id": "biographia-literaria",
@@ -12725,6 +12771,52 @@
     "words": 96262,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-22T15:46:47.346Z"
+  },
+  {
+    "id": "cora-n",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/A332121",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "Corán",
+      "en": "Corán"
+    },
+    "author": {
+      "ar": "مؤلف غير محدد",
+      "en": "مؤلف غير محدد"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "1701",
+    "era": "كلاسيكيات ما قبل 1800",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "Corán — مؤلف غير محدد. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "Corán by مؤلف غير محدد. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g4",
+    "emoji": "⛵",
+    "chapters": 18,
+    "words": 22459,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
   },
   {
     "id": "cranford",
@@ -16099,6 +16191,52 @@
     "words": 93006,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-22T15:46:47.457Z"
+  },
+  {
+    "id": "quran-manuscript-1650-ad",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/quran-manuscript-1650-ad",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "Quran Manuscript, 1650 AD",
+      "en": "Quran Manuscript, 1650 AD"
+    },
+    "author": {
+      "ar": "مؤلف غير محدد",
+      "en": "مؤلف غير محدد"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "1650",
+    "era": "كلاسيكيات ما قبل 1800",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "Quran Manuscript, 1650 AD — مؤلف غير محدد. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "Quran Manuscript, 1650 AD by مؤلف غير محدد. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g3",
+    "emoji": "🌹",
+    "chapters": 18,
+    "words": 44036,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
   },
   {
     "id": "reminiscences-of-a-stock-operator",
@@ -31567,6 +31705,52 @@
     "updatedAt": "2026-09-22T15:46:47.982Z"
   },
   {
+    "id": "ktab-alanajyl-alarbaa-almqdsa-lrbna-yswa-almsyh-ballghtyn-al",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/KitabAlanageelAlArbaaAlMokaddasa",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية",
+      "en": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية"
+    },
+    "author": {
+      "ar": "Richard Watts,رجارد واتس",
+      "en": "Richard Watts,رجارد واتس"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "1829",
+    "era": "القرن التاسع عشر",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية — Richard Watts,رجارد واتس. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية by Richard Watts,رجارد واتس. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g5",
+    "emoji": "📚",
+    "chapters": 18,
+    "words": 138238,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
+  },
+  {
     "id": "ktab-alzhd-labn-mbark",
     "source": "wikisource",
     "sourceKey": "wikisource",
@@ -33635,6 +33819,52 @@
     "words": 51319,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-22T15:46:48.049Z"
+  },
+  {
+    "id": "mkhtwta-hashya-mla-abdallh-alyzdy-bkht-mhmdaarf-njl-alshykh-",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/Ahmad_20171122",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "http://creativecommons.org/licenses/by-nd/3.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-22)",
+    "title": {
+      "ar": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي",
+      "en": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي"
+    },
+    "author": {
+      "ar": "ملا عبد الله اليزدي",
+      "en": "ملا عبد الله اليزدي"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2017",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي — ملا عبد الله اليزدي. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي by ملا عبد الله اليزدي. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g2",
+    "emoji": "🦁",
+    "chapters": 11,
+    "words": 25411,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T17:23:37.826Z"
   },
   {
     "id": "mdars-almghrb-alawst-alzyanya-w-almrynya-drasa-tarykhya-athr",
