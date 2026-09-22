@@ -105,32 +105,32 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 21.4
+      "kb": 25.3
     },
     {
       "page": "library/index.html",
       "exists": true,
-      "kb": 6.8
+      "kb": 9.2
     },
     {
       "page": "rights/index.html",
       "exists": true,
-      "kb": 10.8
+      "kb": 11.7
     },
     {
       "page": "contact/index.html",
       "exists": true,
-      "kb": 5.7
+      "kb": 6.6
     },
     {
       "page": "privacy/index.html",
       "exists": true,
-      "kb": 6
+      "kb": 6.9
     },
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 59.6
+      "kb": 60.5
     },
     {
       "page": "sitemap.xml",
@@ -145,17 +145,17 @@
     {
       "page": "404.html",
       "exists": true,
-      "kb": 5.6
+      "kb": 6.5
     },
     {
       "page": "stats/index.html",
       "exists": true,
-      "kb": 9
+      "kb": 9.9
     },
     {
       "page": "about/index.html",
       "exists": true,
-      "kb": 7.7
+      "kb": 8.6
     }
   ],
   "sitemap": {
@@ -183,9 +183,7 @@
       "arabicSampleBook": "tafsir-al-kashshaf-classical-quran-commentary",
       "screenshotsDir": "C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\cache\\screens",
       "checks": 64,
-      "failures": [
-        "reader@phone-320: overflowX=28"
-      ]
+      "failures": []
     }
   },
   "cdp": {

@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:8081/qirtas",
-  "when": "2026-09-22T19:23:19.570Z",
+  "when": "2026-09-22T20:01:03.954Z",
   "pagesScanned": 9,
   "linksFound": 618,
   "linksChecked": 618,
@@ -9,48 +9,48 @@
   "weights": [
     {
       "page": "/",
-      "kb": 69,
-      "domMs": 171
+      "kb": 79,
+      "domMs": 264
     },
     {
       "page": "/library/",
-      "kb": 486,
-      "domMs": 62
+      "kb": 495,
+      "domMs": 46
     },
     {
       "page": "/library/?page=3",
-      "kb": 486,
-      "domMs": 44
+      "kb": 495,
+      "domMs": 42
     },
     {
       "page": "/authors/",
-      "kb": 105,
-      "domMs": 126
+      "kb": 112,
+      "domMs": 164
     },
     {
       "page": "/stats/",
-      "kb": 54,
-      "domMs": 30
+      "kb": 62,
+      "domMs": 41
     },
     {
       "page": "/about/",
-      "kb": 53,
-      "domMs": 45
+      "kb": 60,
+      "domMs": 49
     },
     {
       "page": "/rights/",
-      "kb": 56,
-      "domMs": 47
+      "kb": 64,
+      "domMs": 49
     },
     {
       "page": "/contact/",
-      "kb": 51,
-      "domMs": 24
+      "kb": 58,
+      "domMs": 57
     },
     {
       "page": "/privacy/",
-      "kb": 51,
-      "domMs": 22
+      "kb": 59,
+      "domMs": 29
     }
   ]
 }

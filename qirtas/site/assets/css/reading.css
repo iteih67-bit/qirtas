@@ -99,3 +99,21 @@ html[data-reading-font='system'] #readerContent {
   .reader-top { flex-wrap: wrap; gap: 6px; }
   .reader-top .titles { min-width: 0; flex: 1 1 auto; }
 }
+
+
+/* --- on-demand machine translation panel --- */
+.tr-panel {
+  margin: 18px auto 40px;
+  max-width: var(--measure);
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  line-height: 1.95;
+}
+.tr-panel .tr-head { font-weight: 800; margin-bottom: 10px; }
+.tr-panel .tr-src { font-weight: 400; color: var(--ink-soft); font-size: .8rem; margin-inline-start: 8px; }
+.tr-panel p { margin: 0 0 .9em; }
+.tr-panel .tr-note { color: var(--ink-soft); font-size: .82rem; }
+.tr-panel .tr-warn { color: #a4451a; }
+#btnTranslate { font-weight: 700; }

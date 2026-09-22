@@ -382,3 +382,119 @@ pre, code { overflow-wrap: anywhere; }
   .nav-actions { gap: 6px; }
   .reader-top { flex-wrap: wrap; }
 }
+
+/* =====================================================
+   Professional pass — 2026-09-22 (request: "اجعل الموقع أكثر احترافية")
+   Goals: a disciplined type scale, a real page-header pattern, a multi-column
+   footer, refined cards, visible focus states, skeletons, print styles and a
+   trust strip. Built on the existing paper-calm palette; nothing decorative is
+   added that does not carry information.
+   ===================================================== */
+
+:root {
+  /* modular scale (1.25) + 8pt spacing rhythm */
+  --fs-300: 0.82rem; --fs-400: 0.95rem; --fs-500: 1.06rem; --fs-600: 1.24rem;
+  --fs-700: 1.55rem; --fs-800: 2rem; --fs-900: 2.5rem;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 48px; --s6: 72px;
+  --radius: 12px; --radius-sm: 8px;
+  --ok-soft: rgba(43, 111, 104, 0.08);
+}
+
+/* ---------- 1. page header pattern ---------- */
+.page-head {
+  padding: clamp(28px, 5vw, 56px) 0 var(--s3);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--s4);
+}
+.page-head .eyebrow {
+  display: inline-block; font-size: var(--fs-300); letter-spacing: .08em;
+  text-transform: uppercase; color: var(--accent-deep); background: var(--ok-soft);
+  padding: 4px 10px; border-radius: 999px; margin-bottom: 10px; font-weight: 700;
+}
+.page-head h1 { font-size: clamp(1.45rem, 4vw, var(--fs-800)); line-height: 1.45; margin: 0 0 8px; }
+.page-head .lede { color: var(--ink-soft); font-size: var(--fs-500); max-width: 68ch; line-height: 1.9; }
+.page-head .meta-line {
+  display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px;
+  font-size: var(--fs-300); color: var(--ink-soft);
+}
+.page-head .meta-line b { color: var(--ink); }
+
+/* ---------- 2. trust strip ---------- */
+.trust-strip {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--s2); margin: var(--s4) 0 0;
+}
+.trust-strip .item {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.trust-strip .item b { display: block; font-size: var(--fs-700); color: var(--accent-deep); line-height: 1.25; }
+.trust-strip .item span { font-size: var(--fs-300); color: var(--ink-soft); }
+
+/* ---------- 3. refined cards ---------- */
+.book-card { position: relative; border-radius: var(--radius); overflow: hidden; }
+.book-card .cover { position: relative; border-bottom: 1px solid var(--line); }
+.book-card .cover::after {          /* a book spine: informational, not decorative */
+  content: ''; position: absolute; inset-block: 0; inset-inline-start: 0; width: 5px;
+  background: linear-gradient(180deg, rgba(43,111,104,.55), rgba(43,111,104,.18));
+}
+.book-card .badges {
+  position: absolute; inset-block-start: 8px; inset-inline-end: 8px;
+  display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end;
+}
+.book-card .badge {
+  font-size: .68rem; font-weight: 700; padding: 2px 7px; border-radius: 999px;
+  background: rgba(255, 253, 250, .92); color: var(--accent-deep); border: 1px solid var(--line);
+}
+.book-card:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 2px; border-radius: var(--radius-sm);
+}
+
+/* ---------- 4. footer with structure ---------- */
+.site-footer { border-top: 1px solid var(--line); margin-top: var(--s6); padding: var(--s5) 0 var(--s4); }
+.footer-grid {
+  display: grid; grid-template-columns: 1.4fr repeating(auto-fit, minmax(160px, 1fr));
+  gap: var(--s4); align-items: start;
+}
+.footer-grid h2 { font-size: var(--fs-400); margin: 0 0 10px; color: var(--ink); }
+.footer-grid ul { list-style: none; margin: 0; padding: 0; }
+.footer-grid li { margin: 0 0 6px; font-size: var(--fs-300); }
+.footer-grid .about p { font-size: var(--fs-300); color: var(--ink-soft); line-height: 1.85; margin: 0 0 10px; }
+.footer-bottom {
+  display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: space-between;
+  margin-top: var(--s4); padding-top: var(--s2); border-top: 1px solid var(--line);
+  font-size: var(--fs-300); color: var(--ink-soft);
+}
+
+/* ---------- 5. states: skeleton + panels ---------- */
+.skeleton-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr)); gap: var(--s3); }
+.skeleton-card { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+.skeleton-card .sk-cover { aspect-ratio: 3 / 4; background: linear-gradient(100deg, rgba(43,38,33,.05) 30%, rgba(43,38,33,.09) 50%, rgba(43,38,33,.05) 70%); background-size: 200% 100%; animation: sk 1.4s ease-in-out infinite; }
+.skeleton-card .sk-line { height: 10px; margin: 12px; border-radius: 6px; background: rgba(43,38,33,.07); }
+.skeleton-card .sk-line.short { width: 55%; }
+@keyframes sk { from { background-position: 200% 0; } to { background-position: -60% 0; } }
+@media (prefers-reduced-motion: reduce) { .skeleton-card .sk-cover { animation: none; } }
+
+.panel {
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface);
+  padding: var(--s3); margin: var(--s3) 0;
+}
+.panel h3 { margin: 0 0 8px; font-size: var(--fs-600); }
+.panel p { margin: 0 0 10px; color: var(--ink-soft); font-size: var(--fs-400); }
+
+/* ---------- 6. skip link ---------- */
+.skip-link {
+  position: absolute; inset-block-start: -60px; inset-inline-start: 12px; z-index: 50;
+  background: var(--accent); color: #fff; padding: 10px 14px; border-radius: var(--radius-sm);
+  font-weight: 700; transition: inset-block-start .2s ease;
+}
+.skip-link:focus { inset-block-start: 12px; }
+
+/* ---------- 7. print ---------- */
+@media print {
+  .site-header, .site-footer, .reader-top, .lib-toolbar, .pager, #trPanel, .skip-link { display: none !important; }
+  body { background: #fff; color: #000; }
+  a[href^="http"]::after { content: ' (' attr(href) ')'; font-size: .8em; color: #444; }
+  .prose, #readerContent { max-width: none; font-size: 12pt; line-height: 1.7; }
+  .book-grid { grid-template-columns: repeat(2, 1fr); }
+}

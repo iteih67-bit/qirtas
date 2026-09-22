@@ -10,6 +10,16 @@ const { arSlug, shortHash } = require('../../pipeline/lib/arabic');
 
 const SITE = path.join(ROOT, 'site');
 const DIST = path.join(SITE, 'dist');
+const SITE_COUNTS = (() => {
+  const c = readCatalog();
+  return {
+    books: c.length,
+    arabic: c.filter((b) => b.lang === 'ar').length,
+    wordsM: Math.round(c.reduce((n, b) => n + (b.words || 0), 0) / 1000000),
+    licences: new Set(c.map((b) => (b.licenseLabel && b.licenseLabel.ar) || 'ملكية عامة')).size,
+  };
+})();
+
 const SITE_URL = (process.env.SITE_URL || 'https://iteih67-bit.github.io/qirtas').replace(/\/$/, '');
 // Path prefix the site is served from ('' at the domain root, '/qirtas' on GitHub Pages).
 const SITE_BASE = (process.env.SITE_BASE !== undefined ? process.env.SITE_BASE : new URL(SITE_URL).pathname).replace(/\/$/, '');
@@ -20,7 +30,17 @@ const esc = (s) => String(s ?? '')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 const escJson = (o) => JSON.stringify(o).replace(/</g, '\\u003c').replace(/>/g, '\\u003e');
 
+// standard page header pattern for every content page
+function pageHeadify(html) {
+  return html
+    .replace(/<h1 class="page-title">([\s\S]*?)<\/h1>\s*<p class="page-sub">([\s\S]*?)<\/p>/,
+      '<header class="page-head"><h1 class="page-title">$1</h1><p class="lede">$2</p></header>')
+    .replace(/<main class="container">/, '<main class="container" id="main">')
+    .replace(/<main class="container" style=/g, '<main class="container" id="main" style=');
+}
+
 function write(rel, content) {
+  content = pageHeadify(String(content));
   if (SITE_BASE) {
     // prefix root-absolute asset/link references so a sub-path deployment works
     content = String(content)
@@ -88,6 +108,7 @@ ${noIndex ? '<meta name="robots" content="noindex">' : ''}
 ${extraHead}
 </head>
 <body>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
 <header class="site-header"><div class="inner container">
   <a class="brand" href="/">
     <svg class="brand-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="10" fill="#0e9488"/><rect x="12" y="12" width="24" height="24" rx="4" fill="#fffdf8"/><rect x="16" y="18" width="16" height="2.6" rx="1.3" fill="#0d645e"/><rect x="16" y="23" width="16" height="2.6" rx="1.3" fill="#0d645e"/><rect x="16" y="28" width="9" height="2.6" rx="1.3" fill="#0d645e"/><path d="M28 12 h6 v10 l-3 -2.6 -3 2.6 z" fill="#f5a623"/></svg>
@@ -109,10 +130,42 @@ ${extraHead}
 </div></header>
 ${body}
 <footer class="site-footer"><div class="inner container">
-  <span>قِرطاس — مكتبة الملكية العامة المجانية · ${new Date().getFullYear()}</span>
-  <footer class="site-footer"><div class="inner container">
-  <span>قِرطاس — مكتبة الملكية العامة المجانية · ${new Date().getFullYear()}</span>
-  <span><a href="/library/" data-i18n="nav.library">المكتبة</a> · <a href="/authors/" data-i18n="nav.authors">المؤلفون</a> · <a href="/stats/" data-i18n="nav.stats">الإحصاءات</a> · <a href="/about/" data-i18n="nav.about">عن المنصة</a> · <a href="/rights/" data-i18n="nav.rights">حقوق النشر</a> · <a href="/contact/" data-i18n="nav.contact">تواصل</a> · <a href="/privacy/" data-i18n="nav.privacy">الخصوصية</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">خريطة الموقع</a></span>
+  <div class="footer-grid">
+    <div class="about">
+      <h2>قِرطاس</h2>
+      <p>مكتبة قراءة مجانية للكتب العربية والعالمية في الملكية العامة، مع إشعار حقوق واضح ومسار طلب إزالة لأصحاب الحقوق.</p>
+      <p>${SITE_COUNTS.books} كتابًا كامل النص · ${SITE_COUNTS.arabic} بالعربية · ${SITE_COUNTS.wordsM} مليون كلمة</p>
+    </div>
+    <div>
+      <h2>تصفّح</h2>
+      <ul>
+        <li><a href="/library/" data-i18n="nav.library">المكتبة</a></li>
+        <li><a href="/authors/" data-i18n="nav.authors">المؤلفون</a></li>
+        <li><a href="/stats/" data-i18n="nav.stats">الإحصاءات</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>السياسات</h2>
+      <ul>
+        <li><a href="/rights/" data-i18n="nav.rights">حقوق النشر</a></li>
+        <li><a href="/privacy/" data-i18n="nav.privacy">الخصوصية</a></li>
+        <li><a href="/about/" data-i18n="nav.about">عن المنصة</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>تواصل</h2>
+      <ul>
+        <li><a href="/contact/" data-i18n="nav.contact">راسلنا</a></li>
+        <li><a href="/rights/">طلب إزالة / تحويل رابط</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+        <li><a href="/sitemap.xml">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© ${new Date().getFullYear()} قِرطاس — المحتوى من الملكية العامة أو برخص حرة، مع ذكر المصدر.</span>
+    <span>آخر تحديث: ${BUILD_DATE.slice(0, 10)} · ${SITE_COUNTS.books} كتابًا</span>
+  </div>
 </div></footer>
 </div></footer>
 <script>
@@ -131,7 +184,10 @@ function cardHTML(b) {
   const t = titleOf(b, 'ar');
   const a = authorOf(b, 'ar');
   const badge = srcName(b);
+  const langBadge = b.lang === 'ar' ? 'عربي' : 'English';
+  const licBadge = /ملكية عامة/.test(String((b.licenseLabel || {}).ar || '')) ? 'ملكية عامة' : 'رخصة حرة';
   return `<a class="book-card" href="/book/${b.id}/" aria-label="${esc(t)}">
+    <span class="badges"><span class="badge">${langBadge}</span><span class="badge">${licBadge}</span></span>
     <div class="cover ${b.grad || 'cover-g3'}">
       <span class="cov-title">${esc(t)}</span>
       <span class="cov-author">${esc(a)}</span>
@@ -169,6 +225,12 @@ function homePage(catalog, externalCount = 0) {
       <div class="hstat"><strong>${en.length}</strong><span>كتاباً بالإنجليزية</span></div>
       <div class="hstat"><strong>${(words / 1e6).toFixed(1)}M</strong><span>كلمة قابلة للقراءة</span></div>
       <div class="hstat"><strong>${externalCount.toLocaleString('en-US')}</strong><span>كتاباً في الكتالوج الخارجي</span></div>
+    </div>
+    <div class="trust-strip">
+      <div class="item"><b>${catalog.length}</b><span>كتاب كامل النص</span></div>
+      <div class="item"><b>${Math.round(catalog.reduce((n, b) => n + (b.words || 0), 0) / 1000000)}M</b><span>كلمة متاحة للقراءة</span></div>
+      <div class="item"><b>${catalog.filter((b) => b.lang === 'ar').length}</b><span>كتاب بالعربية</span></div>
+      <div class="item"><b>${new Set(catalog.map((b) => (b.licenseLabel && b.licenseLabel.ar) || 'ملكية عامة')).size}</b><span>حالات ترخيص موثّقة</span></div>
     </div>
     <p class="hero-links"><a href="/library/" data-i18n="cta.browseAll">تصفّح المكتبة كاملة ←</a> · <a href="/authors/" data-i18n="cta.byAuthor">تصفّح حسب المؤلف</a></p>
     <p class="hero-note">+ ${externalCount.toLocaleString('en-US')} كتاباً إضافياً في كتالوج مرجعي عالمي (بيانات وصفية فقط) بروابط قراءة مباشرة من الجهة الناشرة أو الأرشيف الرقمي.</p>
@@ -210,7 +272,9 @@ function libraryPage(catalog, externalCount = 0) {
   </div>
 
   <div class="lib-status" id="libStatus" role="status" aria-live="polite">جارٍ التحميل…</div>
-  <div id="libResults"></div>
+  <div id="libResults"><div class="skeleton-grid" id="libSkeleton" aria-hidden="true">
+      ${Array.from({ length: 12 }).map(() => '<div class="skeleton-card"><div class="sk-cover"></div><div class="sk-line"></div><div class="sk-line short"></div></div>').join('')}
+    </div></div>
   <div class="lib-pager hidden" id="libPager">
     <button class="btn btn-ghost small" id="pagePrev">السابق</button>
     <span id="pageInfo">1 / 1</span>
@@ -397,7 +461,9 @@ function readerShell(b) {
 </div>
 <div id="toast" class="toast hidden"></div>
 <noscript><div class="container" style="padding:40px 0">يحتاج القارئ إلى تفعيل JavaScript. <a href="/book/${b.id}/">عد لصفحة الكتاب</a>.</div></noscript>
-<script src="/assets/js/reader.js"></script>`;
+<script>window.QBOOK_LANG = '${b.lang}';</script>
+  <script src="/assets/js/translate.js"></script>
+  <script src="/assets/js/reader.js"></script>`;
   return shell({
     title: `${titleOf(b, 'ar')} — اقرأ مجاناً | قِرطاس`,
     desc: `اقرأ ${titleOf(b, 'ar')} لـ${authorOf(b, 'ar')} كاملاً ومجاناً على قِرطاس.`,

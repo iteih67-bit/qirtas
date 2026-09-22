@@ -1,5 +1,5 @@
 {
-  "when": "2026-09-22T19:23:19.674Z",
+  "when": "2026-09-22T20:01:06.560Z",
   "base": "http://localhost:8081/qirtas",
   "appBase": null,
   "total": 7,
@@ -11,7 +11,7 @@
       "label": "اختبارات الوحدة للدوال النقية",
       "exit": 0,
       "ok": true,
-      "ms": 148,
+      "ms": 109,
       "retried": false,
       "tail": "unit tests: 49 passed, 0 failed"
     },
@@ -20,7 +20,7 @@
       "label": "تدقيق الطبقات (بيانات ↔ كتالوج ↔ صفحات ↔ EPUB)",
       "exit": 0,
       "ok": true,
-      "ms": 2618,
+      "ms": 3575,
       "retried": false,
       "tail": "  } | } | integrity: OK — 866 books, 866 pages, 0 EPUB files, sitemap 2263 unique URLs"
     },
@@ -29,7 +29,7 @@
       "label": "فحص البنية والروابط",
       "exit": 0,
       "ok": true,
-      "ms": 415,
+      "ms": 389,
       "retried": false,
       "tail": "صفحات كتاب في dist: 866   ملفات نص في dist: 866 | سطور sitemap: 2263   مفقودة: 0 | فحوص ناجحة: 52/52"
     },
@@ -38,7 +38,7 @@
       "label": "واجهة بمتصفح حقيقي (تنقّل، بحث، حالات فشل)",
       "exit": 0,
       "ok": true,
-      "ms": 42425,
+      "ms": 42390,
       "retried": false,
       "tail": "  \"failures\": [] | } | checks: 19 | passed: 19 | failed: 0"
     },
@@ -47,7 +47,7 @@
       "label": "المقاسات 320→1440",
       "exit": 0,
       "ok": true,
-      "ms": 186216,
+      "ms": 185918,
       "retried": false,
       "tail": "    } |   ] | }"
     },
@@ -56,7 +56,7 @@
       "label": "تدقيق تفاعلي شامل + موارد مفقودة",
       "exit": 0,
       "ok": true,
-      "ms": 57639,
+      "ms": 57669,
       "retried": false,
       "tail": "  ] |  } | }"
     },
@@ -65,9 +65,9 @@
       "label": "كل رابط داخلي (زحف)",
       "exit": 0,
       "ok": true,
-      "ms": 27728,
+      "ms": 28095,
       "retried": false,
-      "tail": "   - /rights/ → 56 KB, DOM 47 ms |    - /contact/ → 51 KB, DOM 24 ms |    - /privacy/ → 51 KB, DOM 22 ms"
+      "tail": "   - /rights/ → 64 KB, DOM 49 ms |    - /contact/ → 58 KB, DOM 57 ms |    - /privacy/ → 59 KB, DOM 29 ms"
     }
   ]
 }

@@ -128,7 +128,7 @@
         "paragraphs": 303,
         "chapterTitle": "الجزء 1",
         "bookTitle": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF WRITTEN ARABIC. 397 PAGES. ÁRABE SIMPLIFICADO. GRAMÁTICA PRÁTICA DA LÍNGUA ÁRABE. PROF. DR. DARCY CARVALHO. FEA USP. SÃO PAULO. BRAZIL. ANO 2",
-        "pages": "4 / 44",
+        "pages": "5 / 44",
         "fatal": false
       }
     },
@@ -138,7 +138,7 @@
         "paragraphs": 303,
         "chapterTitle": "الجزء 1",
         "bookTitle": "ARTHUR T. UPTON. ARABIC SIMPLIFIED. A PRACTICAL GRAMMAR OF WRITTEN ARABIC. 397 PAGES. ÁRABE SIMPLIFICADO. GRAMÁTICA PRÁTICA DA LÍNGUA ÁRABE. PROF. DR. DARCY CARVALHO. FEA USP. SÃO PAULO. BRAZIL. ANO 2",
-        "pages": "4 / 44",
+        "pages": "5 / 44",
         "fatal": false
       },
       "pass": true,
@@ -147,7 +147,7 @@
     {
       "name": "reader.after_next_page",
       "value": {
-        "pages": "5 / 44"
+        "pages": "6 / 44"
       }
     },
     {

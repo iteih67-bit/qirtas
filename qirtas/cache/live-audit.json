@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:8081/qirtas",
-  "when": "2026-09-22T19:22:51.846Z",
+  "when": "2026-09-22T20:00:35.857Z",
   "results": [
     {
       "name": "home",
@@ -10,7 +10,7 @@
         "cards": 24,
         "hasSearch": true,
         "selects": 0,
-        "links": 43
+        "links": 45
       }
     },
     {
@@ -71,14 +71,14 @@
       "url": "/stats/",
       "result": {
         "tables": 2,
-        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 19:17:14 UTC 866كتاباً كامل"
+        "text": " تخطَّ إلى المحتوى قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبةآخر تحديث: 2026-09-22 19:53:57 U"
       }
     },
     {
       "name": "about",
       "url": "/about/",
       "result": {
-        "chars": 2211,
+        "chars": 2650,
         "mentionsSource": false
       }
     },
@@ -94,14 +94,14 @@
       "name": "contact",
       "url": "/contact/",
       "result": {
-        "text": 1239
+        "text": 1678
       }
     },
     {
       "name": "privacy",
       "url": "/privacy/",
       "result": {
-        "text": 1402
+        "text": 1841
       }
     },
     {
@@ -109,7 +109,7 @@
       "url": "/no-such-page-xyz/",
       "result": {
         "title": "404 — الصفحة غير موجودة | قِرطاس",
-        "links": 16
+        "links": 18
       }
     },
     {
@@ -140,7 +140,7 @@
       "result": {
         "clicked": true,
         "after": {
-          "indicator": "5 / 44",
+          "indicator": "6 / 44",
           "paragraphs": 303
         }
       }
