@@ -205,7 +205,7 @@
     },
     "author": {
       "ar": "",
-      "en": "| مترجم ="
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -227,7 +227,7 @@
     "chapters": 9,
     "words": 10390,
     "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "awqranya-rwsyh-wtwrkyh-mqal-lr-mjmwa-sa",
@@ -343,7 +343,7 @@
     },
     "author": {
       "ar": "",
-      "en": "|ملاحظات="
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -365,7 +365,7 @@
     "chapters": 6,
     "words": 18468,
     "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "alathar-alnbwya-altbaa-alawla",
@@ -2317,11 +2317,11 @@
     "licenseAudit": "",
     "title": {
       "ar": "تاريخ الإسلام",
-      "en": "تاريخ الإسلام ووفيات المشاهير والأعلام|مؤلف=الذهبي |لاحق= الجزء الأول ←}}"
+      "en": "تاريخ الإسلام"
     },
     "author": {
       "ar": "",
-      "en": "الذهبي |لاحق= الجزء الأول ←}}"
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -2343,7 +2343,7 @@
     "chapters": 5,
     "words": 106050,
     "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "tarykh-alaslah-fy-alazhr-mtbaa-alaatmad-1943",
@@ -3329,11 +3329,11 @@
     "licenseAudit": "",
     "title": {
       "ar": "شرح ابن عقيل",
-      "en": "|مؤلف ="
+      "en": "شرح ابن عقيل"
     },
     "author": {
       "ar": "",
-      "en": "|باب ="
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -3355,7 +3355,7 @@
     "chapters": 6,
     "words": 40778,
     "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "shrh-qtr-alnda-t-mhmd-mhyy-aldyn-abd-alhmyd",
@@ -3881,11 +3881,11 @@
     "licenseAudit": "",
     "title": {
       "ar": "فتح الباري",
-      "en": "فتح الباري|مؤلف=ابن حجر|ملاحظات = }}"
+      "en": "فتح الباري"
     },
     "author": {
       "ar": "",
-      "en": "ابن حجر|ملاحظات = }}"
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -3907,7 +3907,7 @@
     "chapters": 10,
     "words": 26734,
     "addedAt": "2026-09-22",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "fth-almjyd",
@@ -20130,11 +20130,11 @@
     "licenseAudit": "platform-policy",
     "title": {
       "ar": "الروح",
-      "en": "|مؤلف ="
+      "en": "الروح"
     },
     "author": {
       "ar": "ابن قيم الجوزية",
-      "en": "|باب ="
+      "en": "ابن قيم الجوزية"
     },
     "translator": null,
     "publisher": null,
@@ -20156,7 +20156,7 @@
     "chapters": 18,
     "words": 14876,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-22T12:29:11.693Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "alrwd-alaatr-fy-nzha-alkhatr",
@@ -21280,11 +21280,11 @@
     "licenseAudit": "platform-policy",
     "title": {
       "ar": "العقد الفريد",
-      "en": "العقد الفريد|مؤلف=ابن عبد ربه|ملاحظات= }}"
+      "en": "العقد الفريد"
     },
     "author": {
       "ar": "",
-      "en": "ابن عبد ربه|ملاحظات= }}"
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -21306,7 +21306,7 @@
     "chapters": 17,
     "words": 80390,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "alaqd-alfryd",
@@ -24684,11 +24684,11 @@
     "licenseAudit": "",
     "title": {
       "ar": "سيرة ابن هشام",
-      "en": "سيرة ابن هشام|مؤلف=ابن هشام}}"
+      "en": "سيرة ابن هشام"
     },
     "author": {
       "ar": "",
-      "en": "ابن هشام}}"
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -24710,7 +24710,7 @@
     "chapters": 16,
     "words": 4412,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "shrh-alaqyda-althawya",
@@ -24914,11 +24914,11 @@
     "licenseAudit": "platform-policy",
     "title": {
       "ar": "صحيح البخاري",
-      "en": "صحيح البخاري|مؤلف=البخاري|سابق= → كتب الحديث النبوي |لاحق= كتاب بدء الوحي ← |ملاحظات= توجد نسخة مطبوعة مشروحة للتنزيل }}"
+      "en": "صحيح البخاري"
     },
     "author": {
       "ar": "",
-      "en": "البخاري|سابق= → كتب الحديث النبوي |لاحق= كتاب بدء الوحي ← |ملاحظات= توجد نسخة مطبوعة مشروحة للتنزيل }}"
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -24940,7 +24940,7 @@
     "chapters": 18,
     "words": 62620,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "shyh-mslm",
@@ -26620,7 +26620,7 @@
     },
     "author": {
       "ar": "",
-      "en": "| مترجم ="
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -26642,7 +26642,7 @@
     "chapters": 16,
     "words": 33101,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "mjla-alhjaz-103",
@@ -26712,7 +26712,7 @@
     },
     "author": {
       "ar": "",
-      "en": "| مترجم ="
+      "en": ""
     },
     "translator": null,
     "publisher": null,
@@ -26734,7 +26734,7 @@
     "chapters": 18,
     "words": 18388,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-22T14:14:25.174Z"
+    "updatedAt": "2026-09-22T14:28:20.159Z"
   },
   {
     "id": "mjla-alsmwd-101",

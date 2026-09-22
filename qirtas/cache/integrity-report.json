@@ -28,7 +28,7 @@
         "c": 7
       }
     ],
-    "auditLog": 338,
+    "auditLog": 349,
     "takedown": [
       {
         "id": 1,
@@ -59,10 +59,10 @@
     "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 1945,
+    "htmlScanned": 1937,
     "hits": {
       "wikisource": {
-        "count": 500,
+        "count": 494,
         "samples": [
           "author\\abas-alaqad\\index.html",
           "author\\abd-alghny-alnablsy\\index.html",
@@ -130,17 +130,17 @@
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 50.6
+      "kb": 49.6
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 232.7
+      "kb": 231.7
     },
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 31
+      "kb": 30.9
     },
     {
       "page": "404.html",
@@ -159,8 +159,8 @@
     }
   ],
   "sitemap": {
-    "urls": 1944,
-    "unique": 1944,
+    "urls": 1936,
+    "unique": 1936,
     "dupes": 0,
     "duplicates": [],
     "allHttps": true,
