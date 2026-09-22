@@ -1,6 +1,6 @@
 {
   "base": "https://iteih67-bit.github.io/qirtas",
-  "when": "2026-09-22T11:52:40.517Z",
+  "when": "2026-09-22T13:38:15.210Z",
   "results": [
     {
       "name": "home",
@@ -18,17 +18,17 @@
       "url": "/library/",
       "result": {
         "cards": 24,
-        "status": "يُعرض 24 من 623 كتاباً متاحاً للقراءة هنا",
+        "status": "يُعرض 24 من 742 كتاباً متاحاً للقراءة هنا",
         "selects": 0,
-        "pager": "1 / 26"
+        "pager": "1 / 31"
       }
     },
     {
       "name": "library-search-ar",
       "url": "/library/",
       "result": {
-        "cards": 3,
-        "status": "يُعرض 3 من 3 كتاباً متاحاً للقراءة هنا — نتائج البحث عن «ابن القيم»",
+        "cards": 5,
+        "status": "يُعرض 5 من 5 كتاباً متاحاً للقراءة هنا — نتائج البحث عن «ابن القيم»",
         "url": "?q=%D8%A7%D8%A8%D9%86+%D8%A7%D9%84%D9%82%D9%8A%D9%85"
       }
     },
@@ -46,7 +46,7 @@
       "url": "/library/?page=2",
       "result": {
         "cards": 24,
-        "pager": "2 / 26"
+        "pager": "2 / 31"
       }
     },
     {
@@ -63,7 +63,7 @@
       "name": "authors",
       "url": "/authors/",
       "result": {
-        "chips": 407
+        "chips": 452
       }
     },
     {
@@ -71,7 +71,7 @@
       "url": "/stats/",
       "result": {
         "tables": 2,
-        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 11:30:34 UTC 623كتاباً كامل"
+        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 13:29:57 UTC 742كتاباً كامل"
       }
     },
     {
@@ -116,8 +116,8 @@
       "name": "flow-book",
       "url": "/",
       "result": {
-        "href": "/qirtas/book/and-thats-how-it-was-officer/",
-        "title": "\"And That's How It Was, Officer\" — Ralph Sholto | اقرأ مجاناً على قِرطاس",
+        "href": "/qirtas/book/mwlf-ar/",
+        "title": "|مؤلف = — |باب = | اقرأ مجاناً على قِرطاس",
         "readLink": false,
         "epub": true,
         "rights": true,
@@ -126,22 +126,22 @@
     },
     {
       "name": "reader-render",
-      "url": "/read/al-qawid-al-jalyah-f-ilm-al-arabyah/",
+      "url": "/read/mwlf-ar/",
       "result": {
-        "book": "Al-Qaw'id al-jalyah f 'ilm al-Arabyah — قِرطاس",
-        "paragraphs": 223,
+        "book": "|مؤلف = — قِرطاس",
+        "paragraphs": 17,
         "toolbar": false,
         "fatal": false
       }
     },
     {
       "name": "reader-next",
-      "url": "/read/al-qawid-al-jalyah-f-ilm-al-arabyah/",
+      "url": "/read/mwlf-ar/",
       "result": {
         "clicked": true,
         "after": {
-          "indicator": "2 / 31",
-          "paragraphs": 223
+          "indicator": "2 / 7",
+          "paragraphs": 17
         }
       }
     }
