@@ -28,7 +28,7 @@
         "c": 7
       }
     ],
-    "auditLog": 335,
+    "auditLog": 338,
     "takedown": [
       {
         "id": 1,
@@ -105,7 +105,7 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 19.7
+      "kb": 19.8
     },
     {
       "page": "library/index.html",
@@ -140,7 +140,7 @@
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 30.6
+      "kb": 31
     },
     {
       "page": "404.html",

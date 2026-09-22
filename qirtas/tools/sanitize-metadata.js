@@ -1,10 +1,12 @@
 // sanitize-metadata.js — keep template-fragment junk out of the catalog.
 // Idempotent: safe to run after every import. Records any change in audit_log.
 'use strict';
-const P = path.join(Q, '');
+const path = require('path');
+const Q = path.resolve(__dirname, '..');
+const P = Q + path.sep;
 const { DatabaseSync } = require('node:sqlite');
-const { normKey } = require(P + 'pipeline\\lib\\arabic.js');
-const db = new DatabaseSync(P + 'data\\qirtas.db');
+const { normKey } = require(path.join(Q, 'pipeline', 'lib', 'arabic.js'));
+const db = new DatabaseSync(path.join(Q, 'data', 'qirtas.db'));
 
 // A value that looks like a leaked template parameter rather than real metadata.
 function cleanValue(s) {
@@ -12,6 +14,7 @@ function cleanValue(s) {
   if (!v) return '';
   if (/^\|/.test(v)) return '';                                    // "|مؤلف ="
   if (/[{}]{2}/.test(v)) return '';                                // "{{...}}"
+  if (/\|/.test(v) && /(=|\{\})/.test(v)) return '';                        // 'Title|مؤلف=…'
   if (/^[^=]{0,24}=\s*$/.test(v)) return '';                       // "المؤلف ="
   if (/^(مؤلف|باب|عنوان|محرر|ناشر|مترجم|سنة|وصف)\s*=/.test(v)) return ''; // "مؤلف = س"
   if (v === '-' || v === '—') return '';

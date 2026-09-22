@@ -1,10 +1,12 @@
 // Two records that the duplicate check flagged are actually different volumes of
 // ابن حزم «المحلى» (volume 3 vs volume 6 — see their source URLs). Give each its volume.
 'use strict';
-const P = path.join(Q, '');
+const path = require('path');
+const Q = path.resolve(__dirname, '..');
+const P = Q + path.sep;
 const { DatabaseSync } = require('node:sqlite');
-const { normKey } = require(P + 'pipeline\\lib\\arabic.js');
-const db = new DatabaseSync(P + 'data\\qirtas.db');
+const { normKey } = require(path.join(Q, 'pipeline', 'lib', 'arabic.js'));
+const db = new DatabaseSync(path.join(Q, 'data', 'qirtas.db'));
 
 const fixes = [
   { id: 'abn-hzm-almhla', title: 'المحلى — المجلد الثالث', reason: 'ليس مكررًا: مصدره «المحلى - المجلد الثالث»؛ العنوان كان عامًّا فيظهر مكررًا مع مجلد آخر' },

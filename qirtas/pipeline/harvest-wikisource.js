@@ -21,6 +21,20 @@ const arg = (name, def) => {
   const hit = process.argv.find((a) => a.startsWith(`--${name}=`));
   return hit ? hit.split('=').slice(1).join('=') : def;
 };
+// --- metadata guard -------------------------------------------------------
+// A wiki infobox can leak a template parameter (e.g. "|مؤلف =", "Title|مؤلف=X",
+// "…|ملاحظات = }}"). Such a value is never valid metadata, so it is dropped.
+function cleanField(v) {
+  const t = String(v == null ? '' : v).trim();
+  if (!t) return '';
+  if (/^\|/.test(t)) return '';
+  if (/[{}]{2}/.test(t)) return '';
+  if (/\|/.test(t) && /(=|\{\})/.test(t)) return '';
+  if (/^[^=]{0,24}=\s*$/.test(t)) return '';
+  if (/^(مؤلف|باب|عنوان|محرر|ناشر|مترجم|سنة|وصف)\s*=/.test(t)) return '';
+  return t;
+}
+
 const hasFlag = (name) => process.argv.includes(`--${name}`);
 
 const LANG = arg('lang', 'ar');
@@ -219,8 +233,8 @@ async function subpages(root) {
         continue;
       }
 
-      const title = header.title || root;
-      const author = header.author || (LANG === 'ar' ? 'مؤلف تراثي' : 'Unknown author');
+      const title = cleanField(header.title) || root;
+      const author = cleanField(header.author) || (LANG === 'ar' ? 'مؤلف غير معروف' : 'Unknown author');
       let id = arSlug(title, LANG === 'ar' ? 'ar' : 'ws');
       if (slugs.has(id)) id = `${id}-${LANG}`;
       if (slugs.has(id)) { report.push({ root, status: 'SKIP', reason: 'slug clash' }); continue; }

@@ -1,9 +1,11 @@
 // Repair the three malformed metadata records, with audit entries.
 'use strict';
-const P = path.join(Q, '');
+const path = require('path');
+const Q = path.resolve(__dirname, '..');
+const P = Q + path.sep;
 const { DatabaseSync } = require('node:sqlite');
-const { normKey } = require(P + 'pipeline\\lib\\arabic.js');
-const db = new DatabaseSync(P + 'data\\qirtas.db');
+const { normKey } = require(path.join(Q, 'pipeline', 'lib', 'arabic.js'));
+const db = new DatabaseSync(path.join(Q, 'data', 'qirtas.db'));
 
 const fixes = [
   { id: 'mwlf', title: 'الروح', author: 'ابن قيم الجوزية', reason: 'العنوان والمؤلف كانا بقايا قالب ويكي («|مؤلف =»)؛ صُحّحا من رأس صفحة المصدر: الروح — ابن قيم الجوزية' },
