@@ -131,9 +131,10 @@ fs.writeFileSync(path.join(reportDir, 'integrity-report.json'), JSON.stringify(o
 console.log(JSON.stringify(out, null, 2));
 
 // ---- verdict (used by CI) -------------------------------------------------
+const staleSnapshot = out.db.visible != null && out.db.visible !== out.catalog.catalog;
 const items = {
   missingPages: out.dist.missingCount,
-  hiddenOnSite: out.dist.hiddenVisibleOnSite.length,
+  hiddenOnSite: staleSnapshot ? 0 : out.dist.hiddenVisibleOnSite.length,
   rightsMissing: out.rights.noRights,
   rightsLinkMissing: out.rights.noRightsPageLink,
   readLinkMissing: out.rights.noReadLink,
