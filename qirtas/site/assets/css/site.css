@@ -1,10 +1,10 @@
 /* =====================================================
    Qirtas website + reader — unified design system (RTL-first)
    ===================================================== */
-@font-face { font-family: 'Cairo'; src: url('/fonts/Cairo-Variable.ttf') format('truetype'); font-weight: 200 900; font-display: swap; }
-@font-face { font-family: 'Noto Naskh'; src: url('/fonts/NotoNaskhArabic-Variable.ttf') format('truetype'); font-weight: 400 700; font-display: swap; }
-@font-face { font-family: 'Amiri'; src: url('/fonts/Amiri-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
-@font-face { font-family: 'Amiri'; src: url('/fonts/Amiri-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Cairo'; src: url('../../fonts/Cairo-Variable.ttf') format('truetype'); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: 'Noto Naskh'; src: url('../../fonts/NotoNaskhArabic-Variable.ttf') format('truetype'); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: 'Amiri'; src: url('../../fonts/Amiri-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Amiri'; src: url('../../fonts/Amiri-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
 
 :root {
   --accent: #0e9488;

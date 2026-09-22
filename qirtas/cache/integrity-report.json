@@ -1,7 +1,7 @@
 {
   "db": {
     "total": 629,
-    "visible": 629,
+    "visible": 623,
     "byLang": [
       {
         "l": "ar",
@@ -20,10 +20,15 @@
       {
         "hidden": 0,
         "removed": 0,
-        "c": 629
+        "c": 623
+      },
+      {
+        "hidden": 1,
+        "removed": 0,
+        "c": 6
       }
     ],
-    "auditLog": 22,
+    "auditLog": 74,
     "takedown": [
       {
         "id": 1,
@@ -40,24 +45,24 @@
     ]
   },
   "catalog": {
-    "catalog": 629,
-    "index": 629,
+    "catalog": 623,
+    "index": 623,
     "dbMatch": true,
     "indexMatch": true
   },
   "dist": {
-    "dbIds": 629,
-    "bookDirs": 629,
-    "readDirs": 629,
+    "dbIds": 623,
+    "bookDirs": 623,
+    "readDirs": 623,
     "missingDirs": [],
     "missingCount": 0,
     "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 1685,
+    "htmlScanned": 1662,
     "hits": {
       "wikisource": {
-        "count": 185,
+        "count": 181,
         "samples": [
           "author\\abas-alaqad\\index.html",
           "author\\abd-alrzaq-alsnaany\\index.html",
@@ -65,7 +70,7 @@
         ]
       },
       "archive.org": {
-        "count": 150,
+        "count": 144,
         "samples": [
           "book\\12-mjla-alfysl-alalmya\\index.html",
           "book\\16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy\\index.html",
@@ -86,7 +91,7 @@
     "apiLinkedFromPublic": []
   },
   "rights": {
-    "pages": 629,
+    "pages": 623,
     "noRights": 0,
     "noRightsSample": [],
     "noRightsPageLink": 0,
@@ -100,62 +105,62 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 36.9
+      "kb": 18.8
     },
     {
       "page": "library/index.html",
       "exists": true,
-      "kb": 8.1
+      "kb": 6.4
     },
     {
       "page": "rights/index.html",
       "exists": true,
-      "kb": 10.2
+      "kb": 10.4
     },
     {
       "page": "contact/index.html",
       "exists": true,
-      "kb": 5.1
+      "kb": 5.3
     },
     {
       "page": "privacy/index.html",
       "exists": true,
-      "kb": 5.4
+      "kb": 5.6
     },
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 43.5
+      "kb": 46.1
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 202
+      "kb": 199.1
     },
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 31.8
+      "kb": 31.4
     },
     {
       "page": "404.html",
       "exists": true,
-      "kb": 5
+      "kb": 5.2
     },
     {
       "page": "stats/index.html",
       "exists": true,
-      "kb": 9
+      "kb": 8.4
     },
     {
       "page": "about/index.html",
       "exists": true,
-      "kb": 7.1
+      "kb": 7.3
     }
   ],
   "sitemap": {
-    "urls": 1684,
-    "unique": 1684,
+    "urls": 1661,
+    "unique": 1661,
     "dupes": 0,
     "allHttps": true,
     "sample": [
@@ -164,20 +169,22 @@
     ]
   },
   "epub": {
-    "count": 629,
+    "count": 623,
     "minKB": 10.7,
     "maxKB": 8493.8
   },
   "width": {
-    "checks": 40,
+    "checks": 64,
     "failed": 0,
     "summary": {
-      "base": "http://localhost:8081",
+      "base": "http://localhost:8081/qirtas",
       "browser": "Edg/153.0.4234.32",
-      "arabicSampleBook": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
+      "arabicSampleBook": "tafsir-al-kashshaf-classical-quran-commentary",
       "screenshotsDir": "C:\\Users\\AsaadM\\Documents\\Books\\qirtas\\cache\\screens",
-      "checks": 40,
-      "failures": []
+      "checks": 64,
+      "failures": [
+        "reader@phone-320: overflowX=24"
+      ]
     }
   },
   "cdp": {

@@ -47,282 +47,6 @@
     "updatedAt": "2026-09-21T21:43:53.490Z"
   },
   {
-    "id": "12-mjla-alfysl-alalmya",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/AlfaisalAl3limiyaMagazine_012",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "12 مجلة الفيصل العلمية",
-      "en": "12 مجلة الفيصل العلمية"
-    },
-    "author": {
-      "ar": "مركز الملك فيصل للبحوث والدراسات الإسلامية",
-      "en": "مركز الملك فيصل للبحوث والدراسات الإسلامية"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "2006",
-    "era": "القرن العشرون",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "12 مجلة الفيصل العلمية — مركز الملك فيصل للبحوث والدراسات الإسلامية. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "12 مجلة الفيصل العلمية by مركز الملك فيصل للبحوث والدراسات الإسلامية. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g3",
-    "emoji": "🐇",
-    "chapters": 4,
-    "words": 28530,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.493Z"
-  },
-  {
-    "id": "16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/16-line-rangeen-tajweed-quran",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading",
-      "en": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading"
-    },
-    "author": {
-      "ar": "Jamia Saeedia Darul Quran",
-      "en": "Jamia Saeedia Darul Quran"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "2026",
-    "era": "القرن العشرون",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading — Jamia Saeedia Darul Quran. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading by Jamia Saeedia Darul Quran. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g3",
-    "emoji": "🌙",
-    "chapters": 18,
-    "words": 63850,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.495Z"
-  },
-  {
-    "id": "2-jama-altrmdh",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/amj-islamic-media-jami-u-ttirmizi-02-",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
-      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
-    },
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "2 جامع الترمذی",
-      "en": "2 جامع الترمذی"
-    },
-    "author": {
-      "ar": "Abdul Musawvir",
-      "en": "Abdul Musawvir"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "2022",
-    "era": "القرن العشرون",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "2 جامع الترمذی — Abdul Musawvir. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "2 جامع الترمذی by Abdul Musawvir. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g2",
-    "emoji": "⛵",
-    "chapters": 18,
-    "words": 411065,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.497Z"
-  },
-  {
-    "id": "40-mjla-alfysl-alalmya",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/AlfaisalAl3limiyaMagazine_040",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "40 مجلة الفيصل العلمية",
-      "en": "40 مجلة الفيصل العلمية"
-    },
-    "author": {
-      "ar": "مركز الملك فيصل للبحوث والدراسات الإسلامية",
-      "en": "مركز الملك فيصل للبحوث والدراسات الإسلامية"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "2013",
-    "era": "القرن العشرون",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "40 مجلة الفيصل العلمية — مركز الملك فيصل للبحوث والدراسات الإسلامية. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "40 مجلة الفيصل العلمية by مركز الملك فيصل للبحوث والدراسات الإسلامية. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g4",
-    "emoji": "⚓",
-    "chapters": 4,
-    "words": 27965,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.499Z"
-  },
-  {
-    "id": "47-mjla-alfysl-alalmya",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/AlfaisalAl3limiyaMagazine_047",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "47 مجلة الفيصل العلمية",
-      "en": "47 مجلة الفيصل العلمية"
-    },
-    "author": {
-      "ar": "مركز الملك فيصل للبحوث والدراسات الإسلامية",
-      "en": "مركز الملك فيصل للبحوث والدراسات الإسلامية"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "2014",
-    "era": "القرن العشرون",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "47 مجلة الفيصل العلمية — مركز الملك فيصل للبحوث والدراسات الإسلامية. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "47 مجلة الفيصل العلمية by مركز الملك فيصل للبحوث والدراسات الإسلامية. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g2",
-    "emoji": "⚔️",
-    "chapters": 4,
-    "words": 21006,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.501Z"
-  },
-  {
-    "id": "7-aktwbr-qraa-fy-alwqaya-allybya",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/7OctoberQiraaFiAlWakaeAlLibyia",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
-      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
-    },
-    "licenseUrl": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "7 أكتوبر قراءة في الوقائع الليبية",
-      "en": "7 أكتوبر قراءة في الوقائع الليبية"
-    },
-    "author": {
-      "ar": "رابطة الأدباء و الكتاب و الفنانين الليبين",
-      "en": "رابطة الأدباء و الكتاب و الفنانين الليبين"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": null,
-    "era": "تراث عربي",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "7 أكتوبر قراءة في الوقائع الليبية — رابطة الأدباء و الكتاب و الفنانين الليبين. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "7 أكتوبر قراءة في الوقائع الليبية by رابطة الأدباء و الكتاب و الفنانين الليبين. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g1",
-    "emoji": "⚔️",
-    "chapters": 9,
-    "words": 20852,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.503Z"
-  },
-  {
     "id": "a-case-in-camera",
     "gutenbergId": "43063",
     "source": "gutenberg",
@@ -1494,52 +1218,6 @@
     "updatedAt": "2026-09-21T21:43:53.553Z"
   },
   {
-    "id": "basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/EcIX_basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures",
-      "en": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures"
-    },
-    "author": {
-      "ar": "Kashmir Treasures",
-      "en": "Kashmir Treasures"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": null,
-    "era": "تراث عربي",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures — Kashmir Treasures. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures by Kashmir Treasures. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g2",
-    "emoji": "🕊️",
-    "chapters": 6,
-    "words": 23429,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.554Z"
-  },
-  {
     "id": "beowulf-an-anglo-saxon-epic-poem",
     "gutenbergId": "16328",
     "source": "gutenberg",
@@ -1585,52 +1263,6 @@
     "words": 39170,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T21:43:53.556Z"
-  },
-  {
-    "id": "bibliotheca-geographorum-arabicorum",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/bibliothecageog02goejgoog",
-    "license": "public-domain",
-    "licenseLabel": {
-      "ar": "ملكية عامة",
-      "en": "ملكية عامة"
-    },
-    "licenseUrl": "",
-    "licenseAudit": "public-domain via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "Bibliotheca geographorum arabicorum",
-      "en": "Bibliotheca geographorum arabicorum"
-    },
-    "author": {
-      "ar": "Goeje, M. J. de (Michael Jan), 1836-1909",
-      "en": "Goeje, M. J. de (Michael Jan), 1836-1909"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "1870",
-    "era": "القرن التاسع عشر",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "Bibliotheca geographorum arabicorum — Goeje, M. J. de (Michael Jan), 1836-1909. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "Bibliotheca geographorum arabicorum by Goeje, M. J. de (Michael Jan), 1836-1909. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g5",
-    "emoji": "🕌",
-    "chapters": 4,
-    "words": 174320,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.558Z"
   },
   {
     "id": "biographia-literaria",
@@ -2145,52 +1777,6 @@
     "words": 96262,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T21:43:53.581Z"
-  },
-  {
-    "id": "cora-n",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/A332121",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة مفتوحة",
-      "en": "رخصة مفتوحة"
-    },
-    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "Corán",
-      "en": "Corán"
-    },
-    "author": {
-      "ar": "مؤلف غير محدد",
-      "en": "مؤلف غير محدد"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "1701",
-    "era": "كلاسيكيات ما قبل 1800",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "Corán — مؤلف غير محدد. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "Corán by مؤلف غير محدد. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g3",
-    "emoji": "🕊️",
-    "chapters": 18,
-    "words": 22459,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.582Z"
   },
   {
     "id": "cranford",
@@ -3805,7 +3391,7 @@
       "en": "Kitab ul-Idraak Lil-Lisan il-Atraak - Aseeruddin Abi Hayyan Al-Andalusi (Arabi)"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -3828,7 +3414,7 @@
     "chapters": 13,
     "words": 37738,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.652Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "kita-b-aja-ib-al-makhlu-qa-t-wa-ghara-ib-al-mawju-da-t",
@@ -4110,6 +3696,52 @@
     "words": 193336,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T21:43:53.664Z"
+  },
+  {
+    "id": "16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/16-line-rangeen-tajweed-quran",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading",
+      "en": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading"
+    },
+    "author": {
+      "ar": "Jamia Saeedia Darul Quran",
+      "en": "Jamia Saeedia Darul Quran"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2026",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading — Jamia Saeedia Darul Quran. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "16 Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Reading by Jamia Saeedia Darul Quran. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g3",
+    "emoji": "🌙",
+    "chapters": 18,
+    "words": 63850,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T11:17:33.883Z"
   },
   {
     "id": "lives-of-fair-and-gallant-ladies-vol-1",
@@ -5521,52 +5153,6 @@
     "updatedAt": "2026-09-21T21:43:53.726Z"
   },
   {
-    "id": "quran-manuscript-1650-ad",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/quran-manuscript-1650-ad",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
-      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
-    },
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "Quran Manuscript, 1650 AD",
-      "en": "Quran Manuscript, 1650 AD"
-    },
-    "author": {
-      "ar": "مؤلف غير محدد",
-      "en": "مؤلف غير محدد"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "1650",
-    "era": "كلاسيكيات ما قبل 1800",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "Quran Manuscript, 1650 AD — مؤلف غير محدد. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "Quran Manuscript, 1650 AD by مؤلف غير محدد. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g2",
-    "emoji": "🐇",
-    "chapters": 18,
-    "words": 44036,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.729Z"
-  },
-  {
     "id": "reminiscences-of-a-stock-operator",
     "gutenbergId": "60979",
     "source": "gutenberg",
@@ -6103,7 +5689,7 @@
       "en": "Sunan Ibn Majah - Arabic"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -6126,7 +5712,7 @@
     "chapters": 18,
     "words": 835261,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:53.768Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "supermind",
@@ -13095,7 +12681,7 @@
       "en": "آثار البلاد وأخبار العباد"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -13118,7 +12704,7 @@
     "chapters": 11,
     "words": 145084,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.064Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "abw-bkr-alsdyq-awl-alkhlfa-alrashdyn",
@@ -13187,7 +12773,7 @@
       "en": "أثر العرب في الحضارة الأوربية (1946)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -13210,7 +12796,7 @@
     "chapters": 17,
     "words": 25205,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.067Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "adb-altlb-wnhaya-alarb",
@@ -13279,7 +12865,7 @@
       "en": "أسرار ترتيب القرآن"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -13302,7 +12888,7 @@
     "chapters": 11,
     "words": 4859,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.071Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "aswat-srdya",
@@ -13441,6 +13027,52 @@
     "words": 77563,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T21:43:54.076Z"
+  },
+  {
+    "id": "7-aktwbr-qraa-fy-alwqaya-allybya",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/7OctoberQiraaFiAlWakaeAlLibyia",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "أكتوبر قراءة في الوقائع الليبية",
+      "en": "7 أكتوبر قراءة في الوقائع الليبية"
+    },
+    "author": {
+      "ar": "رابطة الأدباء و الكتاب و الفنانين الليبين",
+      "en": "رابطة الأدباء و الكتاب و الفنانين الليبين"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": null,
+    "era": "تراث عربي",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "7 أكتوبر قراءة في الوقائع الليبية — رابطة الأدباء و الكتاب و الفنانين الليبين. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "7 أكتوبر قراءة في الوقائع الليبية by رابطة الأدباء و الكتاب و الفنانين الليبين. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g1",
+    "emoji": "⚔️",
+    "chapters": 9,
+    "words": 20852,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T11:17:33.883Z"
   },
   {
     "id": "amyn-alzawy-whsha-alymama",
@@ -13877,7 +13509,7 @@
       "en": "الآراء والمعتقدات (1926)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -13900,7 +13532,7 @@
     "chapters": 17,
     "words": 11593,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.095Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "aladla-aljlya-fa-altmsk-balarwa-alwthqa-almhmdya",
@@ -13923,7 +13555,7 @@
       "en": "الأدلة الجلية فى التمسك بالعروة الوثقى المحمدية"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -13946,7 +13578,7 @@
     "chapters": 6,
     "words": 31177,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.097Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alamthal-alaamya-mshrwha-wmrtba-ala-alhrf-alawl-mn-almthl-al",
@@ -13969,7 +13601,7 @@
       "en": "الأمثال العامية- مشروحة ومرتبة على الحرف الأول من المثل (الطبعة الثانية)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -13992,7 +13624,7 @@
     "chapters": 18,
     "words": 96988,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.099Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alanys-almtrb-brwd-alqrtas-fy-akhbar-mlwk-almghrb-wtarykh-md",
@@ -14015,7 +13647,7 @@
       "en": "الأنيس المطرب بروض القرطاس في أخبار ملوك المغرب وتاريخ مدينة فاس"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -14038,7 +13670,7 @@
     "chapters": 18,
     "words": 16856,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.101Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alahkam-fy-aswl-alahkam",
@@ -14199,7 +13831,7 @@
       "en": "الاختيارات الفقهية لشيخ الإسلام ابن تيمية"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -14222,7 +13854,7 @@
     "chapters": 18,
     "words": 41785,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.108Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "albdaya-walnhaya",
@@ -14429,7 +14061,7 @@
       "en": "التهذيب في أصول التعريب"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -14452,7 +14084,7 @@
     "chapters": 18,
     "words": 15777,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.118Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "altyjan-fy-mlwk-hmyr",
@@ -14475,7 +14107,7 @@
       "en": "التيجان في ملوك حمير"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -14498,7 +14130,7 @@
     "chapters": 18,
     "words": 21295,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.120Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "althwra-aljzayrya-wqaya-wabaad",
@@ -14889,7 +14521,7 @@
       "en": "الدولة السليمانية والإمارات العلوية في المغرب الأوسط بهلولي سليمان"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -14912,7 +14544,7 @@
     "chapters": 18,
     "words": 101455,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.137Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alrd-ala-almntqyyn",
@@ -14935,7 +14567,7 @@
       "en": "الرد على المنطقيين"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -14958,7 +14590,7 @@
     "chapters": 18,
     "words": 118877,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.139Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alrsala",
@@ -15165,7 +14797,7 @@
       "en": "الروم في سياستهم وحضارتهم ودينهم وثقافتهم وصلاتهم بالعرب (1951)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -15188,7 +14820,7 @@
     "chapters": 11,
     "words": 41162,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.149Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alsba-almalqat-qraa-symyayya-antrwbwlwjya-lnswsha-alsba-alma",
@@ -15303,7 +14935,7 @@
       "en": "الشيخ محمد سيد طنطاوى التفسير الوسيط الجزء التاسع والعشرون تبارك"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -15326,7 +14958,7 @@
     "chapters": 4,
     "words": 165829,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.155Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alswaaq-almrsla-fy-alrd-ala-aljhmya-walmatla",
@@ -15395,7 +15027,7 @@
       "en": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الثالث"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -15418,7 +15050,7 @@
     "chapters": 4,
     "words": 96106,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.158Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-alkhams",
@@ -15441,7 +15073,7 @@
       "en": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الخامس"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -15464,7 +15096,7 @@
     "chapters": 4,
     "words": 80042,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.160Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "altryq-ala-almydan-jmal-aljzyry-mjmwaa-qssya",
@@ -16407,7 +16039,7 @@
       "en": "القرآن الكريم (بالرسم الإملائي)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -16430,7 +16062,7 @@
     "chapters": 17,
     "words": 195222,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.200Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alqrn-alashrwn-ma-kan-wma-sykwn",
@@ -16499,7 +16131,7 @@
       "en": "الكافي"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -16522,7 +16154,7 @@
     "chapters": 10,
     "words": 7125,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.204Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "alktab-alakhdr",
@@ -16683,7 +16315,7 @@
       "en": "اللباب في فصول الآداب"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -16706,7 +16338,7 @@
     "chapters": 6,
     "words": 56161,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.214Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "almjla-alzytwnya-2-04",
@@ -16867,7 +16499,7 @@
       "en": "المزهر"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -16890,7 +16522,7 @@
     "chapters": 18,
     "words": 86123,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.222Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "almsala-alswdanya",
@@ -17143,7 +16775,7 @@
       "en": "النظرات"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -17166,7 +16798,7 @@
     "chapters": 18,
     "words": 13806,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.234Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "anaam-albar-ardw-shrh-sh-h-albkhar-6",
@@ -17373,7 +17005,7 @@
       "en": "بيان تلبيس الجهمية في تأسيس بدعهم الكلامية"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -17396,7 +17028,7 @@
     "chapters": 18,
     "words": 277748,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.245Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "taj-alarws",
@@ -17419,7 +17051,7 @@
       "en": "تاج العروس"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -17442,7 +17074,7 @@
     "chapters": 18,
     "words": 142107,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.247Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "tarykh-alhrka-alsnwsya-fy-afryqya-d-aly-mhmd-alslaby",
@@ -17557,7 +17189,7 @@
       "en": "تاريخ الكويت السياسي - الجزء الأول"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -17580,7 +17212,7 @@
     "chapters": 18,
     "words": 29755,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.252Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "thfa-alnzar-fy-ghrayb-alamsar-wajayb-alasfar",
@@ -17879,7 +17511,7 @@
       "en": "تفسير ابن كثير مجلد 4"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -17902,7 +17534,7 @@
     "chapters": 4,
     "words": 232316,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.265Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
@@ -17925,7 +17557,7 @@
       "en": "تفسير البحر المحيط أبي حيان الغرناطي"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -17948,7 +17580,7 @@
     "chapters": 18,
     "words": 515390,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.266Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "tfsyr-alqran-alazym",
@@ -18017,7 +17649,7 @@
       "en": "تفسير المراغي"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -18040,7 +17672,7 @@
     "chapters": 18,
     "words": 382027,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.270Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "tqryb-althdhyb",
@@ -18179,6 +17811,52 @@
     "words": 493907,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T21:43:54.276Z"
+  },
+  {
+    "id": "2-jama-altrmdh",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/amj-islamic-media-jami-u-ttirmizi-02-",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
+      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
+    },
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "جامع الترمذی",
+      "en": "2 جامع الترمذی"
+    },
+    "author": {
+      "ar": "Abdul Musawvir",
+      "en": "Abdul Musawvir"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2022",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "2 جامع الترمذی — Abdul Musawvir. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "2 جامع الترمذی by Abdul Musawvir. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g2",
+    "emoji": "⛵",
+    "chapters": 18,
+    "words": 411065,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T11:17:33.883Z"
   },
   {
     "id": "jama-alalwm-walhkm",
@@ -18385,7 +18063,7 @@
       "en": "جمهرة أنساب العرب"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -18408,7 +18086,7 @@
     "chapters": 16,
     "words": 4423,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.286Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "hwadth-dmshq-alywmya",
@@ -18753,7 +18431,7 @@
       "en": "رجوع الشيخ إلى صباه"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -18776,7 +18454,7 @@
     "chapters": 17,
     "words": 8047,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.306Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "rhla-abn-jbyr",
@@ -18937,7 +18615,7 @@
       "en": "رسالة ابن فضلان (ت. سامي الدهان)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -18960,7 +18638,7 @@
     "chapters": 14,
     "words": 23953,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.316Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "rwaya-alftaa-almadhba",
@@ -19121,7 +18799,7 @@
       "en": "سر تقدم الإنكليز السكسونيين"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -19144,7 +18822,7 @@
     "chapters": 18,
     "words": 75564,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.322Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "slam-ma-badh-slam-wlada-alshrq-alawst-1914-1922-dafyd-frwmky",
@@ -19167,7 +18845,7 @@
       "en": "سلام ما بعده سلام ولادة الشرق الأوسط 1914 1922 دافيد فرومكين"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -19190,7 +18868,7 @@
     "chapters": 5,
     "words": 199164,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.325Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "snn-aby-dawd",
@@ -19397,7 +19075,7 @@
       "en": "سنن الدارمي"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -19420,7 +19098,7 @@
     "chapters": 18,
     "words": 117004,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.334Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "sydna-mhmd-sla-allh-alyh-wslm",
@@ -19443,7 +19121,7 @@
       "en": "سيدنا محمد صلى الله عليه وسلم"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -19466,7 +19144,7 @@
     "chapters": 18,
     "words": 11625,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.336Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "syr-aalam-alnbla",
@@ -19811,7 +19489,7 @@
       "en": "صحيح مسلم"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -19834,7 +19512,7 @@
     "chapters": 18,
     "words": 136246,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.350Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "shyfa-aba-015",
@@ -20225,7 +19903,7 @@
       "en": "صور الكواكب الثمانية والأربعين"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -20248,7 +19926,7 @@
     "chapters": 18,
     "words": 14828,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.367Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "syd-alkhatr",
@@ -20271,7 +19949,7 @@
       "en": "صيد الخاطر"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -20294,7 +19972,7 @@
     "chapters": 18,
     "words": 5186,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.369Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "twq-alhmama",
@@ -20409,7 +20087,7 @@
       "en": "عجائب المخلوقات وغرائب الموجودات"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -20432,7 +20110,7 @@
     "chapters": 18,
     "words": 24336,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.375Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "asr-almghwl-ljwrj-layn-trjma-tghryd-alghdban",
@@ -20941,52 +20619,6 @@
     "updatedAt": "2026-09-21T21:43:54.394Z"
   },
   {
-    "id": "ktab-alanajyl-alarbaa-almqdsa-lrbna-yswa-almsyh-ballghtyn-al",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/KitabAlanageelAlArbaaAlMokaddasa",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
-      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
-    },
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية",
-      "en": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية"
-    },
-    "author": {
-      "ar": "Richard Watts,رجارد واتس",
-      "en": "Richard Watts,رجارد واتس"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "1829",
-    "era": "القرن التاسع عشر",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية — Richard Watts,رجارد واتس. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح باللغتين القبطية والعربية by Richard Watts,رجارد واتس. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g5",
-    "emoji": "⚓",
-    "chapters": 18,
-    "words": 138238,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.397Z"
-  },
-  {
     "id": "ktab-alzhd-labn-mbark",
     "source": "wikisource",
     "sourceKey": "wikisource",
@@ -21421,7 +21053,7 @@
       "en": "لعب العرب (الطبعة الأولى)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -21444,7 +21076,7 @@
     "chapters": 17,
     "words": 6198,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.415Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mjla-ansar-alsna-2",
@@ -21905,6 +21537,144 @@
     "words": 37796,
     "addedAt": "2026-09-21",
     "updatedAt": "2026-09-21T21:43:54.436Z"
+  },
+  {
+    "id": "12-mjla-alfysl-alalmya",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/AlfaisalAl3limiyaMagazine_012",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "مجلة الفيصل العلمية — العدد 12",
+      "en": "12 مجلة الفيصل العلمية"
+    },
+    "author": {
+      "ar": "مركز الملك فيصل للبحوث والدراسات الإسلامية",
+      "en": "مركز الملك فيصل للبحوث والدراسات الإسلامية"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2006",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "12 مجلة الفيصل العلمية — مركز الملك فيصل للبحوث والدراسات الإسلامية. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "12 مجلة الفيصل العلمية by مركز الملك فيصل للبحوث والدراسات الإسلامية. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g3",
+    "emoji": "🐇",
+    "chapters": 4,
+    "words": 28530,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T11:17:33.883Z"
+  },
+  {
+    "id": "40-mjla-alfysl-alalmya",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/AlfaisalAl3limiyaMagazine_040",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "مجلة الفيصل العلمية — العدد 40",
+      "en": "40 مجلة الفيصل العلمية"
+    },
+    "author": {
+      "ar": "مركز الملك فيصل للبحوث والدراسات الإسلامية",
+      "en": "مركز الملك فيصل للبحوث والدراسات الإسلامية"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2013",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "40 مجلة الفيصل العلمية — مركز الملك فيصل للبحوث والدراسات الإسلامية. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "40 مجلة الفيصل العلمية by مركز الملك فيصل للبحوث والدراسات الإسلامية. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g4",
+    "emoji": "⚓",
+    "chapters": 4,
+    "words": 27965,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T11:17:33.883Z"
+  },
+  {
+    "id": "47-mjla-alfysl-alalmya",
+    "source": "archiveorg",
+    "sourceKey": "archiveorg",
+    "sourceLabel": {
+      "ar": "archiveorg",
+      "en": "archiveorg"
+    },
+    "sourceUrl": "https://archive.org/details/AlfaisalAl3limiyaMagazine_047",
+    "license": "open-license",
+    "licenseLabel": {
+      "ar": "رخصة مفتوحة",
+      "en": "رخصة مفتوحة"
+    },
+    "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
+    "title": {
+      "ar": "مجلة الفيصل العلمية — العدد 47",
+      "en": "47 مجلة الفيصل العلمية"
+    },
+    "author": {
+      "ar": "مركز الملك فيصل للبحوث والدراسات الإسلامية",
+      "en": "مركز الملك فيصل للبحوث والدراسات الإسلامية"
+    },
+    "translator": null,
+    "publisher": null,
+    "deathYear": null,
+    "year": "2014",
+    "era": "القرن العشرون",
+    "lang": "ar",
+    "langLabel": {
+      "ar": "العربية",
+      "en": "Arabic"
+    },
+    "cat": "arabic",
+    "description": {
+      "ar": "47 مجلة الفيصل العلمية — مركز الملك فيصل للبحوث والدراسات الإسلامية. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
+      "en": "47 مجلة الفيصل العلمية by مركز الملك فيصل للبحوث والدراسات الإسلامية. Full public-domain text from Internet Archive, free to read and download on Qirtas."
+    },
+    "grad": "cover-g2",
+    "emoji": "⚔️",
+    "chapters": 4,
+    "words": 21006,
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-22T11:17:33.883Z"
   },
   {
     "id": "mjla-alktayb-63",
@@ -22571,7 +22341,7 @@
       "en": "مجمع الزوائد"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -22594,7 +22364,7 @@
     "chapters": 18,
     "words": 192207,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.466Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mjmwa-ftawa-abn-tymya",
@@ -22755,7 +22525,7 @@
       "en": "محاضرات في تاريخ الدولة العباسية"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -22778,7 +22548,7 @@
     "chapters": 16,
     "words": 58940,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.474Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mkhtar-alshah",
@@ -22801,7 +22571,7 @@
       "en": "مختار الصحاح"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -22824,7 +22594,7 @@
     "chapters": 18,
     "words": 98668,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.477Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mkhtar-alshah-ia",
@@ -22893,7 +22663,7 @@
       "en": "مختصر صحيح مسلم"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -22916,53 +22686,7 @@
     "chapters": 18,
     "words": 51319,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.481Z"
-  },
-  {
-    "id": "mkhtwta-hashya-mla-abdallh-alyzdy-bkht-mhmdaarf-njl-alshykh-",
-    "source": "archiveorg",
-    "sourceKey": "archiveorg",
-    "sourceLabel": {
-      "ar": "archiveorg",
-      "en": "archiveorg"
-    },
-    "sourceUrl": "https://archive.org/details/Ahmad_20171122",
-    "license": "open-license",
-    "licenseLabel": {
-      "ar": "رخصة المشاع الإبداعي (نسبة المصنف)",
-      "en": "رخصة المشاع الإبداعي (نسبة المصنف)"
-    },
-    "licenseUrl": "http://creativecommons.org/licenses/by-nd/3.0/",
-    "licenseAudit": "open-license via archive.org metadata (2026-09-21)",
-    "title": {
-      "ar": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي",
-      "en": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي"
-    },
-    "author": {
-      "ar": "ملا عبد الله اليزدي",
-      "en": "ملا عبد الله اليزدي"
-    },
-    "translator": null,
-    "publisher": null,
-    "deathYear": null,
-    "year": "2017",
-    "era": "القرن العشرون",
-    "lang": "ar",
-    "langLabel": {
-      "ar": "العربية",
-      "en": "Arabic"
-    },
-    "cat": "arabic",
-    "description": {
-      "ar": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي — ملا عبد الله اليزدي. نص كامل من الملكية العامة منشور على أرشيف الإنترنت، متاح للقراءة والتنزيل مجاناً على قِرطاس.",
-      "en": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل الشيخ محمد سعيد الخالدي by ملا عبد الله اليزدي. Full public-domain text from Internet Archive, free to read and download on Qirtas."
-    },
-    "grad": "cover-g1",
-    "emoji": "🦁",
-    "chapters": 11,
-    "words": 25411,
-    "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.482Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mdars-almghrb-alawst-alzyanya-w-almrynya-drasa-tarykhya-athr",
@@ -23491,7 +23215,7 @@
       "en": "مفيد العلوم ومبيد الهموم"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -23514,7 +23238,7 @@
     "chapters": 16,
     "words": 7733,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.502Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mn-almlwm-rwaya-adbya-ghzlya-hqyqya-byn-shab-swry-wftaa-afrn",
@@ -23583,7 +23307,7 @@
       "en": "من حکم اولیاء اللہ"
     },
     "author": {
-      "ar": "مؤلف غير محدد",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف غير محدد"
     },
     "translator": null,
@@ -23606,7 +23330,7 @@
     "chapters": 7,
     "words": 49637,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.506Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "mnhaj-alsna-alnbwya-fy-nqd-klam-alshyaa-alqdrya",
@@ -23721,7 +23445,7 @@
       "en": "موطأ الإمام مالك"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -23744,7 +23468,7 @@
     "chapters": 18,
     "words": 81767,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.511Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "nhn-walrqy",
@@ -23905,7 +23629,7 @@
       "en": "نساء الخلفاء (دار المعارف، 1950)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -23928,7 +23652,7 @@
     "chapters": 17,
     "words": 30714,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.519Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "nshra-alaslam-alywm-43",
@@ -23997,7 +23721,7 @@
       "en": "نصوص قانون مجلس الدولة (مصر)"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -24020,7 +23744,7 @@
     "chapters": 15,
     "words": 11327,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.523Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "nzam-alathynyyn",
@@ -24181,7 +23905,7 @@
       "en": "هداية الحيارى"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -24204,7 +23928,7 @@
     "chapters": 18,
     "words": 19057,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.530Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "hdy-alsary-mqdma-fth-albary",
@@ -24365,7 +24089,7 @@
       "en": "وثيقة مؤتمر الحوار الوطني الشامل"
     },
     "author": {
-      "ar": "مؤلف تراثي",
+      "ar": "مؤلف غير معروف",
       "en": "مؤلف تراثي"
     },
     "translator": null,
@@ -24388,7 +24112,7 @@
     "chapters": 16,
     "words": 17918,
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21T21:43:54.538Z"
+    "updatedAt": "2026-09-22T11:20:50.817Z"
   },
   {
     "id": "ytyma-aldhr-fy-shara-ahl-alasr-aljz-althalth",

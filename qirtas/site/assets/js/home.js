@@ -1,3 +1,13 @@
+var __QBASE = (function () {
+  // derive the deployed base from this script's own URL first (order independent),
+  // then fall back to the injected site URL
+  try {
+    var src = (document.currentScript && document.currentScript.src) || '';
+    if (src) { var m = new URL(src).pathname.match(/^(.*?)\/assets\/js\/[^/]+$/); if (m) return m[1] || ''; }
+  } catch (e) {}
+  try { if (window.QIRTAS && window.QIRTAS.site) return new URL(window.QIRTAS.site).pathname.replace(/\/$/, ''); } catch (e) {}
+  return '';
+})();
 /* Qirtas home — continue-reading card. */
 'use strict';
 (function () {

@@ -1,0 +1,454 @@
+{
+  "total": 629,
+  "junkTitles": [],
+  "placeholderAuthors": [
+    {
+      "id": "athr-alarb-fy-alhdara-alawrbya-1946",
+      "author": "مؤلف تراثي",
+      "title": "أثر العرب في الحضارة الأوربية (1946)"
+    },
+    {
+      "id": "athar-alblad-wakhbar-alabad",
+      "author": "مؤلف تراثي",
+      "title": "آثار البلاد وأخبار العباد"
+    },
+    {
+      "id": "syd-alkhatr",
+      "author": "مؤلف تراثي",
+      "title": "صيد الخاطر"
+    },
+    {
+      "id": "sydna-mhmd-sla-allh-alyh-wslm",
+      "author": "مؤلف تراثي",
+      "title": "سيدنا محمد صلى الله عليه وسلم"
+    },
+    {
+      "id": "tfsyr-almraghy",
+      "author": "مؤلف تراثي",
+      "title": "تفسير المراغي"
+    },
+    {
+      "id": "alqran-alkrym-balrsm-alamlayy",
+      "author": "مؤلف تراثي",
+      "title": "القرآن الكريم (بالرسم الإملائي)"
+    },
+    {
+      "id": "asrar-trtyb-alqran",
+      "author": "مؤلف تراثي",
+      "title": "أسرار ترتيب القرآن"
+    },
+    {
+      "id": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
+      "author": "مؤلف تراثي",
+      "title": "تفسير البحر المحيط أبي حيان الغرناطي"
+    },
+    {
+      "id": "wthyqa-mwtmr-alhwar-alwtny-alshaml",
+      "author": "مؤلف تراثي",
+      "title": "وثيقة مؤتمر الحوار الوطني الشامل"
+    },
+    {
+      "id": "alanys-almtrb-brwd-alqrtas-fy-akhbar-mlwk-almghrb-wtarykh-md",
+      "author": "مؤلف تراثي",
+      "title": "الأنيس المطرب بروض القرطاس في أخبار ملوك المغرب وت"
+    },
+    {
+      "id": "alnzrat",
+      "author": "مؤلف تراثي",
+      "title": "النظرات"
+    },
+    {
+      "id": "hdaya-alhyara",
+      "author": "مؤلف تراثي",
+      "title": "هداية الحيارى"
+    },
+    {
+      "id": "mfyd-alalwm-wmbyd-alhmwm",
+      "author": "مؤلف تراثي",
+      "title": "مفيد العلوم ومبيد الهموم"
+    },
+    {
+      "id": "mkhtsr-shyh-mslm",
+      "author": "مؤلف تراثي",
+      "title": "مختصر صحيح مسلم"
+    },
+    {
+      "id": "alkafy",
+      "author": "مؤلف تراثي",
+      "title": "الكافي"
+    },
+    {
+      "id": "rjwa-alshykh-ala-sbah",
+      "author": "مؤلف تراثي",
+      "title": "رجوع الشيخ إلى صباه"
+    },
+    {
+      "id": "shyh-mslm",
+      "author": "مؤلف تراثي",
+      "title": "صحيح مسلم"
+    },
+    {
+      "id": "altyjan-fy-mlwk-hmyr",
+      "author": "مؤلف تراثي",
+      "title": "التيجان في ملوك حمير"
+    },
+    {
+      "id": "almzhr",
+      "author": "مؤلف تراثي",
+      "title": "المزهر"
+    },
+    {
+      "id": "swr-alkwakb-althmanya-walarbayn",
+      "author": "مؤلف تراثي",
+      "title": "صور الكواكب الثمانية والأربعين"
+    },
+    {
+      "id": "alara-walmatqdat-1926",
+      "author": "مؤلف تراثي",
+      "title": "الآراء والمعتقدات (1926)"
+    },
+    {
+      "id": "mjma-alzwayd",
+      "author": "مؤلف تراثي",
+      "title": "مجمع الزوائد"
+    },
+    {
+      "id": "mwta-alamam-malk",
+      "author": "مؤلف تراثي",
+      "title": "موطأ الإمام مالك"
+    },
+    {
+      "id": "nsws-qanwn-mjls-aldwla-msr",
+      "author": "مؤلف تراثي",
+      "title": "نصوص قانون مجلس الدولة (مصر)"
+    },
+    {
+      "id": "nsa-alkhlfa-dar-almaarf-1950",
+      "author": "مؤلف تراثي",
+      "title": "نساء الخلفاء (دار المعارف، 1950)"
+    },
+    {
+      "id": "althdhyb-fy-aswl-altaryb",
+      "author": "مؤلف تراثي",
+      "title": "التهذيب في أصول التعريب"
+    },
+    {
+      "id": "alamthal-alaamya-mshrwha-wmrtba-ala-alhrf-alawl-mn-almthl-al",
+      "author": "مؤلف تراثي",
+      "title": "الأمثال العامية- مشروحة ومرتبة على الحرف الأول من "
+    },
+    {
+      "id": "lab-alarb-altbaa-alawla",
+      "author": "مؤلف تراثي",
+      "title": "لعب العرب (الطبعة الأولى)"
+    },
+    {
+      "id": "rsala-abn-fdlan-t-samy-aldhan",
+      "author": "مؤلف تراثي",
+      "title": "رسالة ابن فضلان (ت. سامي الدهان)"
+    },
+    {
+      "id": "alakhtyarat-alfqhya-lshykh-alaslam-abn-tymya",
+      "author": "مؤلف تراثي",
+      "title": "الاختيارات الفقهية لشيخ الإسلام ابن تيمية"
+    },
+    {
+      "id": "mkhtar-alshah",
+      "author": "مؤلف تراثي",
+      "title": "مختار الصحاح"
+    },
+    {
+      "id": "taj-alarws",
+      "author": "مؤلف تراثي",
+      "title": "تاج العروس"
+    },
+    {
+      "id": "alrwm-fy-syasthm-whdarthm-wdynhm-wthqafthm-wslathm-balarb-19",
+      "author": "مؤلف تراثي",
+      "title": "الروم في سياستهم وحضارتهم ودينهم وثقافتهم وصلاتهم "
+    },
+    {
+      "id": "ajayb-almkhlwqat-wghrayb-almwjwdat",
+      "author": "مؤلف تراثي",
+      "title": "عجائب المخلوقات وغرائب الموجودات"
+    },
+    {
+      "id": "jmhra-ansab-alarb",
+      "author": "مؤلف تراثي",
+      "title": "جمهرة أنساب العرب"
+    },
+    {
+      "id": "snn-aldarmy",
+      "author": "مؤلف تراثي",
+      "title": "سنن الدارمي"
+    },
+    {
+      "id": "tarykh-alkwyt-alsyasy-aljz-alawl",
+      "author": "مؤلف تراثي",
+      "title": "تاريخ الكويت السياسي - الجزء الأول"
+    },
+    {
+      "id": "mhadrat-fy-tarykh-aldwla-alabasya",
+      "author": "مؤلف تراثي",
+      "title": "محاضرات في تاريخ الدولة العباسية"
+    },
+    {
+      "id": "sr-tqdm-alanklyz-alskswnyyn",
+      "author": "مؤلف تراثي",
+      "title": "سر تقدم الإنكليز السكسونيين"
+    },
+    {
+      "id": "alrd-ala-almntqyyn",
+      "author": "مؤلف تراثي",
+      "title": "الرد على المنطقيين"
+    },
+    {
+      "id": "byan-tlbys-aljhmya-fy-tasys-bdahm-alklamya",
+      "author": "مؤلف تراثي",
+      "title": "بيان تلبيس الجهمية في تأسيس بدعهم الكلامية"
+    },
+    {
+      "id": "allbab-fy-fswl-aladab",
+      "author": "مؤلف غير محدد",
+      "title": "اللباب في فصول الآداب"
+    },
+    {
+      "id": "tfsyr-abn-kthyr-mjld-4",
+      "author": "مؤلف غير محدد",
+      "title": "تفسير ابن كثير مجلد 4"
+    },
+    {
+      "id": "mn-h-m-awl-a-all",
+      "author": "مؤلف غير محدد",
+      "title": "من حکم اولیاء اللہ"
+    },
+    {
+      "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-althalth",
+      "author": "مؤلف غير محدد",
+      "title": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الثال"
+    },
+    {
+      "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-alkhams",
+      "author": "مؤلف غير محدد",
+      "title": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الخام"
+    },
+    {
+      "id": "sunan-ibn-majah-arabic",
+      "author": "مؤلف غير محدد",
+      "title": "Sunan Ibn Majah - Arabic"
+    },
+    {
+      "id": "slam-ma-badh-slam-wlada-alshrq-alawst-1914-1922-dafyd-frwmky",
+      "author": "مؤلف غير محدد",
+      "title": "سلام ما بعده سلام ولادة الشرق الأوسط 1914 1922 داف"
+    },
+    {
+      "id": "cora-n",
+      "author": "مؤلف غير محدد",
+      "title": "Corán"
+    },
+    {
+      "id": "kitab-ul-idraak-lil-lisan-il-atraak-aseeruddin-abi-hayyan-al",
+      "author": "مؤلف غير محدد",
+      "title": "Kitab ul-Idraak Lil-Lisan il-Atraak - Aseeruddin A"
+    },
+    {
+      "id": "alshykh-mhmd-syd-tntawa-altfsyr-alwsyt-aljz-altasa-walashrwn",
+      "author": "مؤلف غير محدد",
+      "title": "الشيخ محمد سيد طنطاوى التفسير الوسيط الجزء التاسع "
+    },
+    {
+      "id": "aladla-aljlya-fa-altmsk-balarwa-alwthqa-almhmdya",
+      "author": "مؤلف غير محدد",
+      "title": "الأدلة الجلية فى التمسك بالعروة الوثقى المحمدية"
+    },
+    {
+      "id": "aldwla-alslymanya-walamarat-alalwya-fy-almghrb-alawst-bhlwly",
+      "author": "مؤلف غير محدد",
+      "title": "الدولة السليمانية والإمارات العلوية في المغرب الأو"
+    },
+    {
+      "id": "quran-manuscript-1650-ad",
+      "author": "مؤلف غير محدد",
+      "title": "Quran Manuscript, 1650 AD"
+    }
+  ],
+  "lowQualityText": [
+    {
+      "id": "bibliotheca-geographorum-arabicorum",
+      "ratio": 0.442,
+      "words": 174320,
+      "title": "Bibliotheca geographorum arabicorum",
+      "source": "archiveorg"
+    },
+    {
+      "id": "cora-n",
+      "ratio": 0.389,
+      "words": 22459,
+      "title": "Corán",
+      "source": "archiveorg"
+    },
+    {
+      "id": "ktab-alanajyl-alarbaa-almqdsa-lrbna-yswa-almsyh-ballghtyn-al",
+      "ratio": 0.515,
+      "words": 138238,
+      "title": "كتاب الاناجيل الاربعة المقدسة لربنا يسوع المسيح با",
+      "source": "archiveorg"
+    },
+    {
+      "id": "basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
+      "ratio": 0.492,
+      "words": 23429,
+      "title": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Trea",
+      "source": "archiveorg"
+    },
+    {
+      "id": "mkhtwta-hashya-mla-abdallh-alyzdy-bkht-mhmdaarf-njl-alshykh-",
+      "ratio": 0.529,
+      "words": 25411,
+      "title": "مخطوطة حاشية ملا عبدالله اليزدي بخط محمدعارف نجل ا",
+      "source": "archiveorg"
+    },
+    {
+      "id": "quran-manuscript-1650-ad",
+      "ratio": 0.499,
+      "words": 44036,
+      "title": "Quran Manuscript, 1650 AD",
+      "source": "archiveorg"
+    }
+  ],
+  "latinTitlesInArabic": [
+    {
+      "id": "annales",
+      "title": "Annales"
+    },
+    {
+      "id": "faiz-ul-bari-vol-3",
+      "title": "Faiz Ul Bari Vol 3"
+    },
+    {
+      "id": "maarif-us-sunan-vol-05",
+      "title": "Ma'arif Us Sunan Vol 05"
+    },
+    {
+      "id": "al-umm",
+      "title": "al-Umm"
+    },
+    {
+      "id": "alnass-walmojtamaa-zema",
+      "title": "alnass_walmojtamaa_zema"
+    },
+    {
+      "id": "al-ustdh",
+      "title": "al-Ustdh"
+    },
+    {
+      "id": "al-urwah-al-wuthqa",
+      "title": "al-Urwah al-wuthqá"
+    },
+    {
+      "id": "al-tafsir-al-kabir",
+      "title": "Al-Tafsir al-kabir"
+    },
+    {
+      "id": "hadafabd-gamilcom",
+      "title": "hadafabd@gamil.com"
+    },
+    {
+      "id": "al-qawid-al-jalyah-f-ilm-al-arabyah",
+      "title": "Al-Qaw'id al-jalyah f 'ilm al-Arabyah"
+    },
+    {
+      "id": "al-rawdah-al-zakiyah",
+      "title": "Al-Rawdah al-zakiyah"
+    },
+    {
+      "id": "sadak-ja-rahi-hai-urdu-short-stories-vehshi-syed-kashmir-tre",
+      "title": "Sadak Ja Rahi Hai- urdu short Stories - Vehshi Syed-kashmir "
+    },
+    {
+      "id": "tafsir-al-kashshaf-classical-quran-commentary",
+      "title": "Tafsir al-Kashshaf | Classical Quran Commentary"
+    },
+    {
+      "id": "indonesian-foods-health",
+      "title": "Indonesian Foods Health"
+    },
+    {
+      "id": "indonesia-fish-islands",
+      "title": "INDONESIA FISH ISLANDS"
+    },
+    {
+      "id": "indinesian-color-food",
+      "title": "Indinesian Color Food"
+    },
+    {
+      "id": "chemistry",
+      "title": "Chemistry"
+    },
+    {
+      "id": "bibliotheca-geographorum-arabicorum",
+      "title": "Bibliotheca geographorum arabicorum"
+    },
+    {
+      "id": "kita-b-aja-ib-al-makhlu-qa-t-wa-ghara-ib-al-mawju-da-t",
+      "title": "Kitāb ʿAjāʾib al-makhlūqāt wa-gharāʾib al-mawjūdāt"
+    },
+    {
+      "id": "sunan-ibn-majah-arabic",
+      "title": "Sunan Ibn Majah - Arabic"
+    },
+    {
+      "id": "ar-8b9ecf29",
+      "title": "e604"
+    },
+    {
+      "id": "cma-18-3",
+      "title": "CMA 18 3"
+    },
+    {
+      "id": "cma-18-5",
+      "title": "CMA 18 5"
+    },
+    {
+      "id": "hizbi-dua-i-muhammed",
+      "title": "Hizbi Dua-i Muhammed"
+    },
+    {
+      "id": "cora-n",
+      "title": "Corán"
+    },
+    {
+      "id": "kitab-ul-idraak-lil-lisan-il-atraak-aseeruddin-abi-hayyan-al",
+      "title": "Kitab ul-Idraak Lil-Lisan il-Atraak - Aseeruddin Abi Hayyan "
+    },
+    {
+      "id": "16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy",
+      "title": "Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Eas"
+    },
+    {
+      "id": "tafseer-e-ibn-e-kaseer",
+      "title": "Tafseer E Ibn E Kaseer"
+    },
+    {
+      "id": "elbdor-nerat-abd-alaa-abaat",
+      "title": "elbdor_nerat_abd_alaa_abaat"
+    },
+    {
+      "id": "historical-kan-issue-20",
+      "title": "Historical Kan Issue 20"
+    },
+    {
+      "id": "basti-basti-sehra-sehra-by-hasan-saho-kashmir-treasures",
+      "title": "Basti Basti Sehra Sehra By Hasan Saho Kashmir Treasures"
+    },
+    {
+      "id": "quran-manuscript-1650-ad",
+      "title": "Quran Manuscript, 1650 AD"
+    },
+    {
+      "id": "dlail-ali3jaz-lljorjane",
+      "title": "dlail_ali3jaz_lljorjane"
+    }
+  ]
+}

@@ -392,7 +392,10 @@ ${(c.paragraphs || []).map((p) => `<p>${esc2(p)}</p>`).join('\n')}
 /* --------------------------------------------------------------- routes */
 async function handle(req, res) {
   const url = new URL(req.url, 'http://localhost');
-  const p = decodeURIComponent(url.pathname);
+  // the published site lives under /qirtas/ â€” accept the same paths locally
+  const rawPath = decodeURIComponent(url.pathname).replace(/^\/qirtas(?=\/|$)/, '') || '/';
+  const p = rawPath;
+  const servedBase = decodeURIComponent(url.pathname).startsWith('/qirtas') ? '/qirtas' : '';
 
   /* ---- public API ---- */
   if (p === '/api/stats' && req.method === 'GET') {

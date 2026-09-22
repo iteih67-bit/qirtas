@@ -17,8 +17,11 @@ const PROFILE = path.join(os.tmpdir(), 'qirtas-width-' + Date.now());
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const WIDTHS = [
+  { name: 'phone-320', w: 320, h: 640, mobile: true },
   { name: 'phone-360', w: 360, h: 740, mobile: true },
-  { name: 'phone-414', w: 414, h: 896, mobile: true },
+  { name: 'phone-375', w: 375, h: 812, mobile: true },
+  { name: 'phone-390', w: 390, h: 844, mobile: true },
+  { name: 'phone-430', w: 430, h: 932, mobile: true },
   { name: 'tablet-768', w: 768, h: 1024, mobile: true },
   { name: 'laptop-1280', w: 1280, h: 800, mobile: false },
   { name: 'desktop-1440', w: 1440, h: 900, mobile: false },
@@ -88,14 +91,14 @@ class CDP {
   }
 
   const pages = [
+    { name: 'home', url: '/' },
     { name: 'library', url: '/library/' },
     { name: 'book', url: `/book/${encodeURIComponent(arabicId)}/` },
     { name: 'reader', url: `/read/${encodeURIComponent(arabicId)}/` },
-    { name: 'rights', url: '/rights/' },
     { name: 'authors', url: '/authors/' },
-    { name: 'author', url: '/author/agatha-christie/' },
-    { name: 'era', url: '/era/trath-arby/' },
-    { name: 'home', url: '/' },
+    { name: 'stats', url: '/stats/' },
+    { name: 'rights', url: '/rights/' },
+    { name: 'about', url: '/about/' },
   ];
 
   const results = [];

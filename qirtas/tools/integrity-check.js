@@ -49,11 +49,12 @@ const index = JSON.parse(fs.readFileSync(path.join(Q, 'books-data', 'index.json'
 out.catalog = { catalog: catalog.length, index: index.books.length, dbMatch: out.db.visible == null ? null : catalog.length === out.db.visible, indexMatch: catalog.length === index.books.length };
 
 // ---------- 3) dist book dirs vs db ids ----------
-const dbIds = qa('select id, hidden, removed from books').map((r) => ({ id: r.id, hide: !!(r.hidden || r.removed) }));
+const allIds = qa('select id, hidden, removed from books').map((r) => ({ id: r.id, hide: !!(r.hidden || r.removed) }));
+const dbIds = allIds.filter((r) => !r.hide);
 const bookDirs = fs.readdirSync(path.join(DIST, 'book')).filter((d) => fs.statSync(path.join(DIST, 'book', d)).isDirectory());
 const readDirs = fs.readdirSync(path.join(DIST, 'read')).filter((d) => fs.statSync(path.join(DIST, 'read', d)).isDirectory());
 const missingDirs = dbIds.filter((r) => !bookDirs.includes(r.id)).map((r) => r.id);
-const hiddenVisible = dbIds.filter((r) => r.hide && bookDirs.includes(r.id)).map((r) => r.id);
+const hiddenVisible = allIds.filter((r) => r.hide && bookDirs.includes(r.id)).map((r) => r.id);
 out.dist = { dbIds: dbIds.length, bookDirs: bookDirs.length, readDirs: readDirs.length, missingDirs: missingDirs.slice(0, 10), missingCount: missingDirs.length, hiddenVisibleOnSite: hiddenVisible };
 
 // ---------- 4) leak scan on public HTML ----------
@@ -87,8 +88,8 @@ for (const d of bookDirs) {
   r.pages++;
   const t = fs.readFileSync(p, 'utf8');
   if (!/حقوق/.test(t)) r.noRights.push(d);
-  if (!/href="\/rights\//.test(t)) r.noSourceLink.push(d);
-  if (!new RegExp(`href="/read/${d}/`).test(t)) r.noReadLink.push(d);
+  if (!/href="(?:[^"]*?)?\/rights\//.test(t)) r.noSourceLink.push(d);
+  if (!new RegExp(`href="(?:[^"]*?)?/read/${d}/`).test(t)) r.noReadLink.push(d);
   if (!new RegExp(`${d}\\.epub`).test(t)) r.noEpub.push(d);
 }
 out.rights = {

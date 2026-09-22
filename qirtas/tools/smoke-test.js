@@ -56,8 +56,11 @@ const get = (url) => new Promise((resolve) => {
   await check('المكتبة', '/library/', 200);
   await check('الإحصاءات', '/stats/', 200);
   await check('عن المنصة', '/about/', 200);
-  await check('تصنيف عربي', '/category/arabic/', 200);
-  await check('تصنيف إنجليزي', '/category/english/', 200);
+  // the interface is deliberately filter-free: no categories, no filter controls
+  const libHtml = await get('/library/');
+  await check('المكتبة بلا فلاتر', '/library/', 200, (h) => !/<select/i.test(h) && !/lib-filters/.test(h));
+  const homeHtml = await get('/');
+  await check('لا روابط تصنيفات', '/', 200, (h) => !/href="[^"]*\/category\//.test(h) && !/href="[^"]*\/era\//.test(h));
   await check('فهرس البحث JSON', '/books-index.json', 200);
   await check('الكتالوج JSON', '/catalog.json', 200);
   await check('RSS', '/feed.xml', 200);

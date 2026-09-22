@@ -1,17 +1,23 @@
-/* Qirtas library — client-side search, filters, sorting, pagination,
-   plus an on-demand external catalogue (Open Library / Internet Archive metadata). */
+var __QBASE = (function () {
+  // derive the deployed base from this script's own URL first (order independent),
+  // then fall back to the injected site URL
+  try {
+    var src = (document.currentScript && document.currentScript.src) || '';
+    if (src) { var m = new URL(src).pathname.match(/^(.*?)\/assets\/js\/[^/]+$/); if (m) return m[1] || ''; }
+  } catch (e) {}
+  try { if (window.QIRTAS && window.QIRTAS.site) return new URL(window.QIRTAS.site).pathname.replace(/\/$/, ''); } catch (e) {}
+  return '';
+})();
+/* Qirtas library — client-side search and pagination, plus an on-demand
+   external catalogue (metadata + outbound reading links).
+   There are deliberately no categories and no filters in this interface:
+   the only controls are the search box and the pagination buttons. */
 'use strict';
 (function () {
   var PER = 24;
   var el = {
     input: document.getElementById('libSearch'),
     clear: document.getElementById('libClear'),
-    lang: document.getElementById('fLang'),
-    cat: document.getElementById('fCat'),
-    src: document.getElementById('fSrc'),
-    era: document.getElementById('fEra'),
-    sort: document.getElementById('fSort'),
-    reset: document.getElementById('fReset'),
     status: document.getElementById('libStatus'),
     results: document.getElementById('libResults'),
     pager: document.getElementById('libPager'),
@@ -27,7 +33,7 @@
   if (!el.results) return;
 
   var INDEX = null, EXTERNAL = null, extLoaded = false;
-  var view = { q: '', lang: '', cat: '', src: '', era: '', sort: 'rel', page: 1 };
+  var view = { q: '', page: 1 };
   var filtered = [];
 
   /* --- Arabic-aware normalization (mirrors pipeline/lib/arabic.js) --- */
@@ -64,32 +70,19 @@
   function readURL() {
     var p = new URLSearchParams(location.search);
     view.q = p.get('q') || '';
-    view.lang = p.get('lang') || '';
-    view.cat = p.get('cat') || '';
-    view.src = p.get('src') || '';
-    view.era = p.get('era') || '';
-    view.sort = p.get('sort') || 'rel';
     view.page = Math.max(1, parseInt(p.get('page') || '1', 10) || 1);
     el.input.value = view.q;
-    el.lang.value = view.lang; el.cat.value = view.cat; el.src.value = view.src; el.sort.value = view.sort;
-    if (el.era) el.era.value = view.era;
     el.clear.classList.toggle('hidden', !view.q);
   }
   function writeURL() {
     var p = new URLSearchParams();
     if (view.q) p.set('q', view.q);
-    if (view.lang) p.set('lang', view.lang);
-    if (view.cat) p.set('cat', view.cat);
-    if (view.src) p.set('src', view.src);
-    if (view.era) p.set('era', view.era);
-    if (view.sort && view.sort !== 'rel') p.set('sort', view.sort);
     if (view.page > 1) p.set('page', String(view.page));
     var qs = p.toString();
     history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
   }
 
-  function matches(item, terms, lang) {
-    if (lang && item.lang !== lang) return false;
+  function matches(item, terms) {
     if (!terms.length) return true;
     var hay = item.k || norm(item.t + ' ' + item.a);
     for (var i = 0; i < terms.length; i++) if (hay.indexOf(terms[i]) === -1) return false;
@@ -100,20 +93,12 @@
     var q = norm(view.q);
     var terms = q ? q.split(' ').filter(Boolean) : [];
     filtered = (INDEX.books || []).filter(function (b) {
-      if (view.lang && b.lang !== view.lang) return false;
-      if (view.cat && b.cat !== view.cat) return false;
-      if (view.src && b.src !== view.src) return false;
-      if (view.era && b.era !== view.era) return false;
       if (!terms.length) return true;
       var hay = b.k || norm(b.t + ' ' + b.te + ' ' + b.a + ' ' + b.ae);
       for (var i = 0; i < terms.length; i++) if (hay.indexOf(terms[i]) === -1) return false;
       return true;
     });
-    var s = view.sort;
-    if (s === 'words') filtered.sort(function (a, b) { return (b.w || 0) - (a.w || 0); });
-    else if (s === 'new') filtered.sort(function (a, b) { return String(b.ad || '').localeCompare(String(a.ad || '')); });
-    else if (s === 'az') filtered.sort(function (a, b) { return String(a.t).localeCompare(String(b.t), 'ar'); });
-    else if (q) {
+    if (q) {
       var first = terms[0];
       filtered.sort(function (a, b) {
         var ai = (a.k || '').indexOf(first), bi = (b.k || '').indexOf(first);
@@ -121,6 +106,8 @@
         if (ap !== bp) return ap - bp;
         return String(a.t).localeCompare(String(b.t), 'ar');
       });
+    } else {
+      filtered.sort(function (a, b) { return String(b.ad || '').localeCompare(String(a.ad || '')); });
     }
   }
 
@@ -137,7 +124,7 @@
     if (!total) {
       el.results.innerHTML = '<div class="lib-empty">' +
         '<div class="emoji">🔍</div><h3>لا توجد نتائج مطابقة في الكتب المتاحة للقراءة هنا</h3>' +
-        '<p>جرّب كلمات أقل أو أزل الفلاتر — أو ابحث في الكتالوج الخارجي بالأسفل.</p>' +
+        '<p>جرّب كلمات أقل أو تهجئة أخرى للاسم، أو ابحث في الفهرس الأوسع بالأسفل.</p>' +
         '<button class="btn btn-accent" id="libResetEmpty">إعادة ضبط البحث</button></div>';
       var b = document.getElementById('libResetEmpty');
       if (b) b.addEventListener('click', reset);
@@ -155,9 +142,8 @@
   function refresh() { apply(); render(); writeURL(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
   function reset() {
-    view = { q: '', lang: '', cat: '', src: '', era: '', sort: 'rel', page: 1 };
-    el.input.value = ''; el.lang.value = ''; el.cat.value = ''; el.src.value = ''; el.sort.value = 'rel';
-    if (el.era) el.era.value = '';
+    view = { q: '', page: 1 };
+    el.input.value = '';
     el.clear.classList.add('hidden');
     refresh();
   }
@@ -167,27 +153,26 @@
     if (!EXTERNAL) return;
     var q = norm(view.q);
     var terms = q ? q.split(' ').filter(Boolean) : [];
-    var list = EXTERNAL.filter(function (x) { return matches(x, terms, view.lang); });
+    var list = EXTERNAL.filter(function (x) { return matches(x, terms); });
     var shown = list.slice(0, 60);
     el.extCount.textContent = (EXTERNAL.length || 0).toLocaleString('en-US');
     el.extResults.innerHTML =
       '<div class="lib-status">' + (list.length
-        ? 'يُعرض <b>' + shown.length + '</b> من <b>' + list.length.toLocaleString('en-US') + '</b> نتيجة في الكتالوج الخارجي' + (view.q ? ' عن «' + esc(view.q) + '»' : '')
-        : 'لا نتائج مطابقة في الكتالوج الخارجي') + '</div>' +
+        ? 'يُعرض <b>' + shown.length + '</b> من <b>' + list.length.toLocaleString('en-US') + '</b> نتيجة في الفهرس الأوسع' + (view.q ? ' عن «' + esc(view.q) + '»' : '')
+        : 'لا نتائج مطابقة في الفهرس الأوسع') + '</div>' +
       '<ul class="ext-list">' + shown.map(function (x) {
         return '<li>' +
           '<div class="ext-main"><strong dir="' + (x.lang === 'ar' ? 'rtl' : 'ltr') + '">' + esc(x.t) + '</strong>' +
           '<span>' + esc(x.a || '—') + (x.y ? ' · ' + esc(String(x.y)) : '') + '</span>' +
           (x.s ? '<em>' + esc(x.s) + '</em>' : '') +
-          '<span class="ext-badge">حقوق محفوظة — لا نستضيف الملف</span></div>' +
+          '<span class="ext-badge">بيانات وصفية — النص لدى المصدر</span></div>' +
           '<div class="ext-actions">' +
-          '<a class="btn btn-ghost small" href="' + esc(x.u) + '" target="_blank" rel="noopener nofollow">' +
-          (x.src === 'archiveorg' ? 'أرشيف الإنترنت ↗' : 'Open Library ↗') + '</a>' +
+          '<a class="btn btn-ghost small" href="' + esc(x.u) + '" target="_blank" rel="noopener nofollow">اقرأ من المصدر الرسمي ↗</a>' +
           '<a class="ext-rights" href="/rights/?t=' + encodeURIComponent(x.t) + '&u=' + encodeURIComponent(x.u) + '">صاحب حق؟ اطلب تحويل الرابط</a>' +
           '</div>' +
         '</li>';
       }).join('') + '</ul>' +
-      '<p class="ext-note">هذه الكتب من كتالوج Open Library وأرشيف الإنترنت — نعرض بياناتها ونربطك بالمصدر الأصلي، ولا نستضيف ملفاتها لأن ترخيص كثير منها لا يسمح بإعادة النشر. ' +
+      '<p class="ext-note">هذه عناوين من فهرس مرجعي عام: نعرض بياناتها ونربطك بالمصدر الرسمي، ولا نستضيف ملفاتها. ' +
       'إن كنت صاحب حق أي كتاب، <a href="/rights/">اطلب تحويل الرابط إلى موقعك الرسمي أو إزالة البيانات</a>.</p>';
     if (force) el.extResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -195,20 +180,20 @@
   function loadExternal() {
     if (extLoaded) { renderExternal(true); return; }
     el.extBtn.disabled = true;
-    el.extBtn.textContent = 'جارٍ تحميل الكتالوج الخارجي…';
-    fetch('/external-index.json', { cache: 'force-cache' })
+    el.extBtn.textContent = 'جارٍ تحميل الفهرس الأوسع…';
+    fetch(__QBASE + '/external-index.json', { cache: 'force-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (j) {
         EXTERNAL = j;
         extLoaded = true;
-        el.extBtn.textContent = 'تحديث النتائج الخارجية';
+        el.extBtn.textContent = 'تحديث النتائج';
         el.extBtn.disabled = false;
         renderExternal(true);
       })
       .catch(function (e) {
         el.extBtn.disabled = false;
-        el.extBtn.textContent = 'إعادة محاولة تحميل الكتالوج الخارجي';
-        el.extResults.innerHTML = '<div class="lib-empty"><div class="emoji">⚠️</div><h3>تعذّر تحميل الكتالوج الخارجي</h3><p>' + esc(String((e && e.message) || e)) + '</p></div>';
+        el.extBtn.textContent = 'إعادة محاولة التحميل';
+        el.extResults.innerHTML = '<div class="lib-empty"><div class="emoji">⚠️</div><h3>تعذّر تحميل الفهرس الأوسع</h3><p>' + esc(String((e && e.message) || e)) + '</p></div>';
       });
   }
 
@@ -224,12 +209,6 @@
     }, 180);
   });
   el.clear.addEventListener('click', function () { el.input.value = ''; view.q = ''; el.clear.classList.add('hidden'); view.page = 1; refresh(); el.input.focus(); });
-  el.lang.addEventListener('change', function () { view.lang = el.lang.value; view.page = 1; refresh(); if (extLoaded) renderExternal(false); });
-  el.cat.addEventListener('change', function () { view.cat = el.cat.value; view.page = 1; refresh(); });
-  el.src.addEventListener('change', function () { view.src = el.src.value; view.page = 1; refresh(); });
-  if (el.era) el.era.addEventListener('change', function () { view.era = el.era.value; view.page = 1; refresh(); });
-  el.sort.addEventListener('change', function () { view.sort = el.sort.value; view.page = 1; refresh(); });
-  el.reset.addEventListener('click', reset);
   el.prev.addEventListener('click', function () { if (view.page > 1) { view.page--; refresh(); } });
   el.next.addEventListener('click', function () { view.page++; refresh(); });
   addEventListener('popstate', function () { readURL(); apply(); render(); if (extLoaded) renderExternal(false); });
@@ -246,7 +225,7 @@
 
   function load() {
     el.status.textContent = 'جارٍ تحميل الفهرس…';
-    fetch('/books-index.json', { cache: 'no-cache' })
+    fetch(__QBASE + '/books-index.json', { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (j) { INDEX = j; readURL(); apply(); render(); })
       .catch(function (e) { fail(String((e && e.message) || e)); });

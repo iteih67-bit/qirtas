@@ -1,0 +1,155 @@
+{
+  "base": "http://localhost:8081/qirtas",
+  "when": "2026-09-22T11:28:39.527Z",
+  "results": [
+    {
+      "name": "home",
+      "url": "/",
+      "result": {
+        "title": "قِرطاس — مكتبة الكلاسيكيات العربية والعالمية المجانية",
+        "cards": 24,
+        "hasSearch": true,
+        "selects": 0,
+        "links": 43
+      }
+    },
+    {
+      "name": "library",
+      "url": "/library/",
+      "result": {
+        "cards": 24,
+        "status": "يُعرض 24 من 623 كتاباً متاحاً للقراءة هنا",
+        "selects": 0,
+        "pager": "1 / 26"
+      }
+    },
+    {
+      "name": "library-search-ar",
+      "url": "/library/",
+      "result": {
+        "cards": 3,
+        "status": "يُعرض 3 من 3 كتاباً متاحاً للقراءة هنا — نتائج البحث عن «ابن القيم»",
+        "url": "?q=%D8%A7%D8%A8%D9%86+%D8%A7%D9%84%D9%82%D9%8A%D9%85"
+      }
+    },
+    {
+      "name": "library-no-results",
+      "url": "/library/",
+      "result": {
+        "cards": 0,
+        "empty": true,
+        "resetBtn": true
+      }
+    },
+    {
+      "name": "library-pagination",
+      "url": "/library/?page=2",
+      "result": {
+        "cards": 24,
+        "pager": "2 / 26"
+      }
+    },
+    {
+      "name": "library-external",
+      "url": "/library/",
+      "result": {
+        "clicked": true,
+        "rows": 60,
+        "outbound": 60,
+        "badge": true
+      }
+    },
+    {
+      "name": "authors",
+      "url": "/authors/",
+      "result": {
+        "chips": 407
+      }
+    },
+    {
+      "name": "stats",
+      "url": "/stats/",
+      "result": {
+        "tables": 2,
+        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 11:20:52 UTC 623كتاباً كامل"
+      }
+    },
+    {
+      "name": "about",
+      "url": "/about/",
+      "result": {
+        "chars": 2211,
+        "mentionsSource": false
+      }
+    },
+    {
+      "name": "rights",
+      "url": "/rights/",
+      "result": {
+        "form": true,
+        "fields": 7
+      }
+    },
+    {
+      "name": "contact",
+      "url": "/contact/",
+      "result": {
+        "text": 1239
+      }
+    },
+    {
+      "name": "privacy",
+      "url": "/privacy/",
+      "result": {
+        "text": 1402
+      }
+    },
+    {
+      "name": "404",
+      "url": "/no-such-page-xyz/",
+      "result": {
+        "title": "404 — الصفحة غير موجودة | قِرطاس",
+        "links": 16
+      }
+    },
+    {
+      "name": "flow-book",
+      "url": "/",
+      "result": {
+        "href": "/qirtas/book/and-thats-how-it-was-officer/",
+        "title": "\"And That's How It Was, Officer\" — Ralph Sholto | اقرأ مجاناً على قِرطاس",
+        "readLink": false,
+        "epub": true,
+        "rights": true,
+        "tocItems": 0
+      }
+    },
+    {
+      "name": "reader-render",
+      "url": "/read/al-qawid-al-jalyah-f-ilm-al-arabyah/",
+      "result": {
+        "book": "Al-Qaw'id al-jalyah f 'ilm al-Arabyah — قِرطاس",
+        "paragraphs": 223,
+        "toolbar": false,
+        "fatal": false
+      }
+    },
+    {
+      "name": "reader-next",
+      "url": "/read/al-qawid-al-jalyah-f-ilm-al-arabyah/",
+      "result": {
+        "clicked": false,
+        "after": {
+          "paragraphs": 223
+        }
+      }
+    }
+  ],
+  "problems": {
+    "consoleErrors": [],
+    "failedRequests": [],
+    "missingResources": [
+      "404 /no-such-page-xyz/"
+    ]
+  }
+}

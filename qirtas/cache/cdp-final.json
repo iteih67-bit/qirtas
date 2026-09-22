@@ -1,16 +1,16 @@
 {
-  "base": "http://localhost:8081",
+  "base": "http://localhost:8081/qirtas",
   "browser": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
   "checks": [
     {
       "name": "library.initial",
       "value": {
         "cards": 24,
-        "count": "484",
-        "status": "يُعرض 24 من 484 كتاباً متاحاً للقراءة هنا",
-        "pager": "1 / 21",
-        "langOptions": 3,
-        "srcOptions": 5
+        "count": "623",
+        "status": "يُعرض 24 من 623 كتاباً متاحاً للقراءة هنا",
+        "pager": "1 / 26",
+        "langOptions": 0,
+        "srcOptions": 0
       }
     },
     {
@@ -25,7 +25,7 @@
       "name": "library.search_love_lang_en",
       "value": {
         "cards": 16,
-        "url": "?q=love&lang=en",
+        "url": "?q=love",
         "allEnglish": true
       }
     },
@@ -43,13 +43,13 @@
       "value": {
         "cards": 24,
         "pagerVisible": true,
-        "pager": "1 / 21"
+        "pager": "1 / 26"
       }
     },
     {
       "name": "library.page_2",
       "value": {
-        "pager": "2 / 21",
+        "pager": "2 / 26",
         "url": "?page=2",
         "cards": 24
       }
@@ -68,15 +68,15 @@
       "name": "library.external_search",
       "value": {
         "rows": 22,
-        "status": "يُعرض 22 من 22 نتيجة في الكتالوج الخارجي عن «shakespeare»Dickens from Shakespeare, Fuseli "
+        "status": "يُعرض 22 من 22 نتيجة في الفهرس الأوسع عن «shakespeare»Dickens from Shakespeare, Fuseli and"
       }
     },
     {
       "name": "server.404_page",
       "value": {
         "title": "404 — الصفحة غير موجودة | قِرطاس",
-        "hasSearchForm": true,
-        "hasLibraryLink": true
+        "hasSearchForm": false,
+        "hasLibraryLink": false
       }
     },
     {
@@ -92,44 +92,41 @@
     {
       "name": "browse.authors_index",
       "value": {
-        "chips": 324
+        "chips": 407
       }
     },
     {
       "name": "browse.author_page",
       "value": {
-        "href": "/author/agatha-christie/",
-        "cards": 13,
-        "h1": "Agatha Christie 13"
+        "href": "/qirtas/author/mwlf-ghyr-marwf/",
+        "cards": 0,
+        "h1": "404 — الصفحة غير موجودة"
       }
     },
     {
       "name": "browse.era_filter",
       "value": {
-        "selected": "كلاسيكيات عالمية",
-        "cards": 24,
-        "url": "?era=%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%8A%D8%A7%D8%AA+%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9",
-        "status": "يُعرض 24 من 129 كتاباً متاحاً للقراءة هنا"
+        "error": "no era select"
       }
     },
     {
       "name": "reader.picked_id",
-      "value": "annales"
+      "value": "al-qawid-al-jalyah-f-ilm-al-arabyah"
     },
     {
       "name": "reader.render",
       "value": {
-        "paragraphs": 185,
+        "paragraphs": 223,
         "chapterTitle": "الجزء 1",
-        "bookTitle": "Annales",
-        "pages": "1 / 33",
+        "bookTitle": "Al-Qaw'id al-jalyah f 'ilm al-Arabyah",
+        "pages": "1 / 31",
         "fatal": false
       }
     },
     {
       "name": "reader.after_next_page",
       "value": {
-        "pages": "2 / 33"
+        "pages": "2 / 31"
       }
     },
     {
@@ -155,8 +152,8 @@
         "hasSourceBox": true,
         "rows": 5,
         "jsonld": true,
-        "canonical": "https://iteih67-bit.github.io/qirtas/book/annales/",
-        "tocItems": 4
+        "canonical": "https://iteih67-bit.github.io/qirtas/book/al-qawid-al-jalyah-f-ilm-al-arabyah/",
+        "tocItems": 5
       }
     }
   ],

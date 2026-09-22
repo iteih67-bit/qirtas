@@ -1,3 +1,14 @@
+/* deployed base path ('' at the domain root, '/qirtas' on GitHub Pages) */
+var __QBASE = (function () {
+  // derive the deployed base from this script's own URL first (order independent),
+  // then fall back to the injected site URL
+  try {
+    var src = (document.currentScript && document.currentScript.src) || '';
+    if (src) { var m = new URL(src).pathname.match(/^(.*?)\/assets\/js\/[^/]+$/); if (m) return m[1] || ''; }
+  } catch (e) {}
+  try { if (window.QIRTAS && window.QIRTAS.site) return new URL(window.QIRTAS.site).pathname.replace(/\/$/, ''); } catch (e) {}
+  return '';
+})();
 /* Qirtas web reader — paginated engine with RTL/LTR support.
    Adapted from the MVP: column pagination, rAF tween + landing guarantee,
    progress persistence, i18n, themes, TOC, interstitial mock slot. */
@@ -24,7 +35,12 @@ const state = {
   lang: localStorage.getItem('q.lang') || 'ar',
   theme: localStorage.getItem('q.theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'),
   fontScale: parseFloat(localStorage.getItem('q.fs')) || 1,
-  id: decodeURIComponent(location.pathname.split('/').filter(Boolean)[1] || ''),
+  id: (function () {
+    // works whether the site is served from the domain root or a sub-path
+    var parts = decodeURIComponent(location.pathname).split('/').filter(Boolean);
+    var i = parts.indexOf('read');
+    return (i >= 0 && parts[i + 1]) ? parts[i + 1] : (parts[parts.length - 1] || '');
+  })(),
   book: null, text: null, chapter: 0, page: 0, pages: 1,
 };
 const $ = (s) => document.querySelector(s);
@@ -207,8 +223,8 @@ addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout((
   els.content.style.setProperty('--fscale', state.fontScale);
   try {
     const [metaRes, textRes] = await Promise.all([
-      fetch('/catalog.json').then((r) => r.json()),
-      fetch(`/books/${state.id}.json`).then((r) => r.json()),
+      fetch(__QBASE + '/catalog.json').then((r) => r.json()),
+      fetch(__QBASE + `/books/${state.id}.json`).then((r) => r.json()),
     ]);
     state.book = metaRes.find((b) => b.id === state.id) || { title: { ar: state.id, en: state.id }, lang: textRes.chapters?.[0]?.paragraphs?.[0]?.match(/[\u0600-\u06FF]/) ? 'ar' : 'en' };
     state.text = textRes;
@@ -240,7 +256,7 @@ function showFatal(e) {
         : 'تحقق من اتصالك بالإنترنت ثم أعد المحاولة. موضع قراءتك محفوظ تلقائياً.') + '</p>' +
       '<div class="fatal-actions">' +
         '<button class="btn btn-accent" id="readerRetry">إعادة المحاولة</button>' +
-        '<a class="btn btn-ghost" href="/book/' + encodeURIComponent(state.id) + '/">صفحة الكتاب</a>' +
+        '<a class="btn btn-ghost" href="' + __QBASE + '/book/' + encodeURIComponent(state.id) + '/">صفحة الكتاب</a>' +
         '<a class="btn btn-ghost" href="/library/">المكتبة</a>' +
       '</div>' +
     '</div>';
@@ -317,8 +333,8 @@ function showFatal(e) {
     meta.className = 'reader-meta';
     meta.style.cssText = 'font-size:.72rem;color:var(--ink-soft);text-align:center;padding:6px 12px 10px';
     meta.innerHTML = 'النص في الملكية العامة أو برخصة حرة — ' +
-      '<a href="/book/' + encodeURIComponent(state.id) + '/" style="color:inherit;text-decoration:underline">المصدر والترخيص</a> · ' +
-      '<a href="/rights/?t=' + encodeURIComponent(state.id) + '" style="color:inherit;text-decoration:underline">طلب إزالة لصاحب الحق</a>';
+      '<a href="' + __QBASE + '/book/' + encodeURIComponent(state.id) + '/" style="color:inherit;text-decoration:underline">المصدر والترخيص</a> · ' +
+      '<a href="' + __QBASE + '/rights/?t=' + encodeURIComponent(state.id) + '" style="color:inherit;text-decoration:underline">طلب إزالة لصاحب الحق</a>';
     bottom.appendChild(meta);
   }
 

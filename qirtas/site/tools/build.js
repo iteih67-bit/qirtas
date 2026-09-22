@@ -11,6 +11,8 @@ const { arSlug } = require('../../pipeline/lib/arabic');
 const SITE = path.join(ROOT, 'site');
 const DIST = path.join(SITE, 'dist');
 const SITE_URL = (process.env.SITE_URL || 'https://iteih67-bit.github.io/qirtas').replace(/\/$/, '');
+// Path prefix the site is served from ('' at the domain root, '/qirtas' on GitHub Pages).
+const SITE_BASE = (process.env.SITE_BASE !== undefined ? process.env.SITE_BASE : new URL(SITE_URL).pathname).replace(/\/$/, '');
 const BUILD_DATE = new Date().toISOString();
 
 const esc = (s) => String(s ?? '')
@@ -19,6 +21,12 @@ const esc = (s) => String(s ?? '')
 const escJson = (o) => JSON.stringify(o).replace(/</g, '\\u003c').replace(/>/g, '\\u003e');
 
 function write(rel, content) {
+  if (SITE_BASE) {
+    // prefix root-absolute asset/link references so a sub-path deployment works
+    content = String(content)
+      .replace(/(href|src|action|poster)="\/(?!\/)/g, (m, a) => a + '="' + SITE_BASE + '/')
+      .replace(/register\('\/assets\/sw\.js'\)/g, "register('" + SITE_BASE + "/assets/sw.js')");
+  }
   const p = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(p, content);
@@ -47,6 +55,7 @@ function shell({ title, desc, lang = 'ar', dir = 'rtl', body, extraHead = '', pa
 <meta name="description" content="${esc(desc)}">
 ${noIndex ? '<meta name="robots" content="noindex">' : ''}
 <meta name="theme-color" content="#0e9488">
+<script>window.QIRTAS={site:${escJson(SITE_URL)},build:${escJson(BUILD_DATE)}};</script> <!-- bootstrap script must run before any asset script -->
 <link rel="canonical" href="${SITE_URL}${pagePath}">
 <meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="قِرطاس">
@@ -91,7 +100,6 @@ ${body}
   <span><a href="/library/">المكتبة</a> · <a href="/authors/">المؤلفون</a> · <a href="/stats/">الإحصاءات</a> · <a href="/about/">عن المنصة</a> · <a href="/rights/">حقوق النشر</a> · <a href="/contact/">تواصل</a> · <a href="/privacy/">الخصوصية</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">خريطة الموقع</a></span>
 </div></footer>
 </div></footer>
-<script>window.QIRTAS={site:${escJson(SITE_URL)},build:${escJson(BUILD_DATE)}};</script>
 <script>
 (function(){var t=document.getElementById('themeBtn');
 if(!t)return;
@@ -147,7 +155,7 @@ function homePage(catalog, externalCount = 0) {
       <div class="hstat"><strong>${(words / 1e6).toFixed(1)}M</strong><span>كلمة قابلة للقراءة</span></div>
       <div class="hstat"><strong>${externalCount.toLocaleString('en-US')}</strong><span>كتاباً في الكتالوج الخارجي</span></div>
     </div>
-    <p class="hero-links"><a href="/library/">تصفّح المكتبة كاملة ←</a> · <a href="/library/?lang=ar">العربية فقط</a> · <a href="/library/?lang=en">الإنجليزية فقط</a> · <a href="/authors/">حسب المؤلف</a></p>
+    <p class="hero-links"><a href="/library/">تصفّح المكتبة كاملة ←</a> · <a href="/authors/">تصفّح حسب المؤلف</a></p>
     <p class="hero-note">+ ${externalCount.toLocaleString('en-US')} كتاباً إضافياً في كتالوج مرجعي عالمي (بيانات وصفية فقط) بروابط قراءة مباشرة من الجهة الناشرة أو الأرشيف الرقمي.</p>
   </section>
 
@@ -158,15 +166,10 @@ function homePage(catalog, externalCount = 0) {
 
   <h2 class="section-title">أحدث الإضافات</h2>
   ${grid(featured)}
-  <div class="section-more"><a class="btn btn-ghost" href="/library/?sort=new">كل الإضافات ←</a></div>
-
-  <h2 class="section-title">التراث العربي <span class="count-pill">${ar.length}</span></h2>
-  ${grid(ar, 18)}
-  <div class="section-more"><a class="btn btn-ghost" href="/category/arabic/">كل الكتب العربية ←</a></div>
-
-  <h2 class="section-title">الكنوز الإنجليزية <span class="count-pill">${en.length}</span></h2>
-  ${grid(en, 18)}
-  <div class="section-more"><a class="btn btn-ghost" href="/category/english/">كل الكتب الإنجليزية ←</a></div>
+  <div class="section-more">
+    <a class="btn btn-ghost" href="/library/">تصفّح المكتبة كاملة ←</a>
+    <a class="btn btn-ghost" href="/authors/">تصفّح حسب المؤلف ←</a>
+  </div>
 </main>
 <script src="/assets/js/home.js"></script>`;
   return shell({
@@ -178,47 +181,16 @@ function homePage(catalog, externalCount = 0) {
 }
 
 function libraryPage(catalog, externalCount = 0) {
-  const sources = [...new Set(catalog.map((b) => srcName(b)).filter(Boolean))];
-  const cats = [...new Set(catalog.map((b) => b.cat).filter(Boolean))];
-  const eras = [...new Set(catalog.map((b) => b.era).filter(Boolean))];
-  const catLabel = (c) => (c === 'arabic' ? 'أدب عربي' : c === 'english' ? 'أدب إنجليزي' : c);
   const body = `
 <main class="container">
   <h1 class="page-title">المكتبة الكاملة <span class="count-pill" id="libCount">${catalog.length}</span></h1>
-  <p class="page-sub">ابحث في كل الكتب وصفِّها حسب اللغة أو المصدر أو التصنيف. كل النصوص كاملة ومجانية.</p>
+  <p class="page-sub">ابحث بالعنوان أو باسم المؤلف، ثم اختر الكتاب واقرأه كاملاً مجاناً.</p>
 
   <div class="lib-toolbar">
     <div class="lib-search">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.3l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
       <input id="libSearch" type="search" placeholder="ابحث بالعنوان أو المؤلف…" autocomplete="off" aria-label="ابحث">
       <button class="icon-btn small hidden" id="libClear" aria-label="مسح">✕</button>
-    </div>
-    <div class="lib-filters">
-      <label>اللغة
-        <select id="fLang">
-          <option value="">الكل</option>
-          <option value="ar">عربي</option>
-          <option value="en">إنجليزي</option>
-        </select>
-      </label>
-      <label>التصنيف
-        <select id="fCat"><option value="">الكل</option>${cats.map((c) => `<option value="${esc(c)}">${esc(catLabel(c))}</option>`).join('')}</select>
-      </label>
-      <label>الحقبة الزمنية
-        <select id="fEra"><option value="">الكل</option>${eras.map((e) => `<option value="${esc(e)}">${esc(e)}</option>`).join('')}</select>
-      </label>
-      <label>المصدر
-        <select id="fSrc"><option value="">الكل</option>${sources.map((s) => `<option value="${esc(s)}">${esc(s)}</option>`).join('')}</select>
-      </label>
-      <label>الترتيب
-        <select id="fSort">
-          <option value="rel">الأكثر صلة</option>
-          <option value="new">الأحدث إضافة</option>
-          <option value="words">الأطول</option>
-          <option value="az">أبجدي</option>
-        </select>
-      </label>
-      <button class="btn btn-ghost small" id="fReset">إعادة الضبط</button>
     </div>
   </div>
 
@@ -244,7 +216,7 @@ function libraryPage(catalog, externalCount = 0) {
 <script src="/assets/js/library.js"></script>`;
   return shell({
     title: `المكتبة الكاملة — ${catalog.length} كتاباً مجانياً | قِرطاس`,
-    desc: `ابحث وصفِّ ${catalog.length} كتاباً من الملكية العامة بالعربية والإنجليزية: تصفية باللغة والمصدر والتصنيف، وقراءة فورية مجاناً.`,
+    desc: `ابحث في ${catalog.length} كتاباً من الملكية العامة بالعربية والإنجليزية واقرأها كاملة مجاناً.`,
     body,
     path: '/library/',
   });
@@ -252,14 +224,10 @@ function libraryPage(catalog, externalCount = 0) {
 
 function statsPage(catalog, externalCount = 0) {
   const byLang = {};
-  const bySrc = {};
-  const byCat = {};
   let words = 0;
   for (const b of catalog) {
     byLang[langName(b)] = (byLang[langName(b)] || 0) + 1;
-    bySrc[srcName(b) || '—'] = (bySrc[srcName(b) || '—'] || 0) + 1;
-    const c = b.cat === 'arabic' ? 'أدب عربي' : b.cat === 'english' ? 'أدب إنجليزي' : b.cat;
-    byCat[c] = (byCat[c] || 0) + 1;
+
     words += b.words || 0;
   }
   const rows = (obj) => Object.entries(obj).sort((a, b) => b[1] - a[1])
@@ -273,13 +241,11 @@ function statsPage(catalog, externalCount = 0) {
     <div class="hstat"><strong>${catalog.length}</strong><span>كتاباً كاملاً هنا</span></div>
     <div class="hstat"><strong>${externalCount.toLocaleString('en-US')}</strong><span>كتاباً في الكتالوج الخارجي</span></div>
     <div class="hstat"><strong>${words.toLocaleString('en-US')}</strong><span>كلمة</span></div>
-    <div class="hstat"><strong>${Object.keys(bySrc).length}</strong><span>مصدراً</span></div>
+    <div class="hstat"><strong>${catalog.length.toLocaleString('en-US')}</strong><span>ملف EPUB للتنزيل</span></div>
     <div class="hstat"><strong>${(words / 250).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</strong><span>صفحة تقديرية</span></div>
   </div>
   <div class="stats-grid">
     <section><h2>حسب اللغة</h2><table class="stats-table"><thead><tr><th>اللغة</th><th>الكتب</th><th>النسبة</th></tr></thead><tbody>${rows(byLang)}</tbody></table></section>
-    <section><h2>حسب المصدر</h2><table class="stats-table"><thead><tr><th>المصدر</th><th>الكتب</th><th>النسبة</th></tr></thead><tbody>${rows(bySrc)}</tbody></table></section>
-    <section><h2>حسب التصنيف</h2><table class="stats-table"><thead><tr><th>التصنيف</th><th>الكتب</th><th>النسبة</th></tr></thead><tbody>${rows(byCat)}</tbody></table></section>
     <section><h2>أطول الكتب</h2><table class="stats-table"><thead><tr><th>الكتاب</th><th>كلمة</th><th>فصل</th></tr></thead><tbody>
       ${top.map((b) => `<tr><td><a href="/book/${b.id}/">${esc(titleOf(b, 'ar'))}</a></td><td class="num">${(b.words || 0).toLocaleString('en-US')}</td><td class="num">${b.chapters || 0}</td></tr>`).join('')}
     </tbody></table></section>
@@ -287,7 +253,7 @@ function statsPage(catalog, externalCount = 0) {
 </main>`;
   return shell({
     title: `إحصاءات المكتبة — ${catalog.length} كتاباً و${(words / 1e6).toFixed(1)} مليون كلمة | قِرطاس`,
-    desc: `إحصاءات منصة قِرطاس: توزيع الكتب حسب اللغة والمصدر والتصنيف، وإجمالي الكلمات المتاحة للقراءة المجانية.`,
+    desc: `إحصاءات منصة قِرطاس: عدد الكتب وإجمالي الكلمات المتاحة للقراءة المجانية.`,
     body,
     path: '/stats/',
   });
@@ -311,7 +277,7 @@ function bookPage(b, catalog, chapterTitles) {
   };
   const body = `
 <main class="container">
-  <nav class="crumbs"><a href="/">الرئيسية</a> / <a href="/library/">المكتبة</a> / <a href="/category/${b.cat}/">${b.cat === 'arabic' ? 'أدب عربي' : 'أدب إنجليزي'}</a></nav>
+  <nav class="crumbs"><a href="/">الرئيسية</a> / <a href="/library/">المكتبة</a></nav>
   <article class="book-hero">
     <div class="cover ${b.grad || 'cover-g3'}">
       <span class="cov-title">${esc(titleOf(b, 'ar'))}</span>
@@ -320,7 +286,7 @@ function bookPage(b, catalog, chapterTitles) {
     </div>
     <div>
       <h1 dir="${dirOf(b)}">${esc(titleOf(b, 'ar'))}</h1>
-      <p class="by">تأليف: ${authorOf(b, 'ar') ? `<a href="/author/${authorSlug(b)}/"><b>${esc(authorOf(b, 'ar'))}</b></a>` : '<span class="unknown-author">مؤلف غير محدد</span>'}${b.year ? ' · ' + esc(String(b.year)) : ''}${b.deathYear ? ' (ت. ' + b.deathYear + ')' : ''} · <a href="/era/${eraSlug(b.era || 'غير محدد')}/">${esc(b.era || '')}</a></p>
+      <p class="by">تأليف: ${authorOf(b, 'ar') ? `<a href="/author/${authorSlug(b)}/"><b>${esc(authorOf(b, 'ar'))}</b></a>` : '<span class="unknown-author">مؤلف غير محدد</span>'}${b.year ? ' · ' + esc(String(b.year)) : ''}${b.deathYear ? ' (ت. ' + b.deathYear + ')' : ''}</p>
       <p class="desc">${esc((b.description && (b.description.ar || b.description.en)) || '')}</p>
       <div class="book-stats">
         <div><strong>${b.chapters}</strong><span>فصلاً</span></div>
@@ -426,22 +392,6 @@ function readerShell(b) {
   });
 }
 
-function categoryPage(cat, catalog) {
-  const name = cat === 'arabic' ? 'الكلاسيكيات العربية' : 'الكنوز الإنجليزية';
-  const list = catalog.filter((b) => b.cat === cat);
-  const body = `
-<main class="container">
-  <h1 class="page-title">${name} <span class="count-pill">${list.length}</span></h1>
-  <p class="page-sub">كل كتب هذه الفئة متاحة كاملة ومجاناً — انقر أي كتاب لتبدأ فوراً.</p>
-  ${grid(list)}
-</main>`;
-  return shell({
-    title: `${name} — ${list.length} كتاباً مجاناً | قِرطاس`,
-    desc: `مكتبة ${name} من الملكية العامة — ${list.length} كتاباً كاملاً مجاناً على قِرطاس`,
-    body,
-    path: `/category/${cat}/`,
-  });
-}
 
 function aboutPage(catalog, externalCount = 0) {
   const ar = catalog.filter((b) => b.lang === 'ar').length;
@@ -626,16 +576,6 @@ function authorsIndex(authorMap) {
   return shell({ title: `المؤلفون — ${entries.length} مؤلفًا | قِرطاس`, desc: 'تصفّح مكتبة قِرطاس حسب المؤلف.', body, path: '/authors/' });
 }
 
-function eraPage(era, books) {
-  const body = `
-<main class="container">
-  <nav class="crumbs"><a href="/">الرئيسية</a> / <a href="/library/">المكتبة</a></nav>
-  <h1 class="page-title">${esc(era)} <span class="count-pill">${books.length}</span></h1>
-  <p class="page-sub">كتب هذه الحقبة الزمنية المتاحة للقراءة كاملة.</p>
-  ${grid(books)}
-</main>`;
-  return shell({ title: `${era} — ${books.length} كتابًا للقراءة المجانية | قِرطاس`, desc: `مكتبة ${era}: ${books.length} كتابًا كاملًا مجانًا على قِرطاس.`, body, path: `/era/${eraSlug(era)}/` });
-}
 
 function notFoundPage() {
   const body = `
@@ -679,16 +619,16 @@ function manifestJSON() {
   if (fs.existsSync(dir)) {
     for (const f of fs.readdirSync(dir)) {
       const m = f.match(/^icon-(\d+)\.png$/);
-      if (m) icons.push({ src: `/icons/${f}`, sizes: `${m[1]}x${m[1]}`, type: 'image/png', purpose: 'any' });
+      if (m) icons.push({ src: `${SITE_BASE}/icons/${f}`, sizes: `${m[1]}x${m[1]}`, type: 'image/png', purpose: 'any' });
     }
   }
-  if (!icons.length) icons.push({ src: '/icons/favicon-32.png', sizes: '32x32', type: 'image/png' });
+  if (!icons.length) icons.push({ src: SITE_BASE + '/icons/favicon-32.png', sizes: '32x32', type: 'image/png' });
   return JSON.stringify({
     name: 'قِرطاس — مكتبة الملكية العامة',
     short_name: 'قِرطاس',
     description: 'اقرأ آلاف الكتب العربية والإنجليزية من الملكية العامة مجاناً.',
-    start_url: '/library/',
-    scope: '/',
+    start_url: SITE_BASE + '/library/',
+    scope: SITE_BASE + '/',
     display: 'standalone',
     dir: 'rtl',
     lang: 'ar',
@@ -757,7 +697,6 @@ self.addEventListener('fetch', (e) => {
   }
   write('manifest.webmanifest', manifestJSON());
 
-  for (const cat of ['arabic', 'english']) write(`category/${cat}/index.html`, categoryPage(cat, catalog));
 
   // browse by author and by era
   const authorMap = {};
@@ -770,10 +709,9 @@ self.addEventListener('fetch', (e) => {
   for (const b of catalog) { const e = b.era || 'غير محدد'; (eraMap[e] = eraMap[e] || []).push(b); }
   write('authors/index.html', authorsIndex(authorMap));
   for (const [name, list] of Object.entries(authorMap)) write(`author/${authorSlug(list[0])}/index.html`, authorPage(name, list));
-  for (const [era, list] of Object.entries(eraMap)) write(`era/${eraSlug(era)}/index.html`, eraPage(era, list));
 
   let texts = 0, missing = 0;
-  const sitemapPaths = ['', 'library/', 'stats/', 'about/', 'rights/', 'contact/', 'privacy/', 'category/arabic/', 'category/english/'];
+  const sitemapPaths = ['', 'library/', 'stats/', 'about/', 'rights/', 'contact/', 'privacy/'];
   for (const b of catalog) {
     let chapterTitles = [];
     const textPath = path.join(DATA, 'texts', b.id + '.json');
@@ -793,7 +731,6 @@ self.addEventListener('fetch', (e) => {
   }
   sitemapPaths.push('authors/');
   for (const [name, list] of Object.entries(authorMap)) sitemapPaths.push(`author/${authorSlug(list[0])}/`);
-  for (const era of Object.keys(eraMap)) sitemapPaths.push(`era/${eraSlug(era)}/`);
 
   write('sitemap.xml',
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
