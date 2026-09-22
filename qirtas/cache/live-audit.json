@@ -1,6 +1,6 @@
 {
-  "base": "http://localhost:8081/qirtas",
-  "when": "2026-09-22T11:28:39.527Z",
+  "base": "https://iteih67-bit.github.io/qirtas",
+  "when": "2026-09-22T11:52:40.517Z",
   "results": [
     {
       "name": "home",
@@ -71,7 +71,7 @@
       "url": "/stats/",
       "result": {
         "tables": 2,
-        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 11:20:52 UTC 623كتاباً كامل"
+        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 11:30:34 UTC 623كتاباً كامل"
       }
     },
     {
@@ -138,8 +138,9 @@
       "name": "reader-next",
       "url": "/read/al-qawid-al-jalyah-f-ilm-al-arabyah/",
       "result": {
-        "clicked": false,
+        "clicked": true,
         "after": {
+          "indicator": "2 / 31",
           "paragraphs": 223
         }
       }

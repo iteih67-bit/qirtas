@@ -153,3 +153,47 @@ node pipeline/harvest-archive.js --lang=ar --limit=250 --scan=2500
 
 ### تصحيح البيانات
 `npm run books:sanitize` (‏`tools/sanitize-metadata.js`) يزيل أي عنوان/مؤلف على هيئة بقايا قالب ويكي، ويميّز المجلدات، ويكتب كل تعديل في `audit_log`. يُشغَّل دائمًا بعد `db:import` وقبل `db:export`.
+
+
+---
+
+## جولة إصلاح النشر والهواتف (2026-09-22)
+
+### 1) العطل الجذري: مسارات مطلقة من الجذر مع نشر على مسار فرعي
+الموقع يُنشر على `https://iteih67-bit.github.io/qirtas/` أي تحت أساس `/qirtas`. كانت كل الروابط والموارد مكتوبة `/assets/...` و`/books-index.json` و`/book/...` من **جذر النطاق**، فكانت CSS وفهرس المكتبة ونص الكتاب تُرجع 404 داخل المتصفح (المكتبة تبقى «جارٍ التحميل…» بلا كتب).
+
+الإصلاح:
+- `SITE_BASE` يُشتق من `SITE_URL` (`new URL(SITE_URL).pathname`) في `site/tools/build.js`، وكل `href/src/action` تصبح مسبوقة به تلقائيًا في دالة `write()`، وكذلك تسجيل عامل الخدمة و`manifest.webmanifest` (`start_url`/`scope`/`icons`).
+- الخطوط في `site.css` صارت مسارات نسبية `../../fonts/…`.
+- ملفات الجافاسكربت تحسب الأساس من **مسار السكربت نفسه** (‏`document.currentScript.src`) ثم من `window.QIRTAS.site`، فلا يعتمد الأمر على ترتيب التحميل.
+- `window.QIRTAS` نُقل إلى `<head>` قبل أي سكربت آخر.
+- القارئ: استخراج معرّف الكتاب كان يعتمد على موضع ثابت في المسار فيقرأ «read» بدل المعرّف؛ الآن يُستخرج من أي أساس نشر، ويُعرض النص فعليًا.
+- الخادم المحلي يخدم المسارات المسبوقة أيضًا، فيمكن معاينة النسخة نفسها محليًا على `http://localhost:8081/qirtas/`.
+
+**تحقّق:** `node tools/live-audit.js --base=<url>` يقيس الأخطاء والموردات المفقودة ونتائج التفاعل. النتيجة على الموقع الحيّ: 0 خطأ JS، 0 طلب فاشل، القارئ يعرض 223 فقرة ويتقلّب صفحاتها.
+
+### 2) إزالة التصنيفات والفلاتر بالكامل
+حُذفت من الواجهة: قوائم اللغة/التصنيف/الحقبة/المصدر/الترتيب، وزر إعادة الضبط، وجميع صفحات `/category/*` و`/era/*` وروابطها، وجداول «حسب المصدر» و«حسب التصنيف» في صفحة الإحصاءات.
+بقي: بحث بالعنوان/المؤلف، ترقيم صفحات، فهرس مؤلفين (تصفّح بديل)، وفهرس خارجي للعناوين غير المستضافة.
+
+### 3) أدوات جديدة
+| الأداة | الوظيفة |
+|---|---|
+| `tools/live-audit.js` | تدقيق الموقع بمتصفح حقيقي: أخطاء وحدة التحكم، الطلبات الفاشلة، ونتيجة كل تفاعل |
+| `tools/arabic-quality.js` | يقيس نسبة الكلمات العربية الصحيحة في كل كتاب، ويُخفي النصوص المشوّهة (‏`--fix`) مع تسجيل السبب |
+| `tools/enrich-arabic.js` | تصحيح العناوين (أرقام متسلسلة/أعداد مجلات) ومحاولة استخراج المؤلف من صفحة المصدر |
+| `tools/sanitize-metadata.js` | إزالة أي عنوان/مؤلف على هيئة بقايا قالب ويكي |
+
+### 4) أوامر سريعة
+```powershell
+npm run site:build            # بناء الموقع بهوية النشر (SITE_URL الافتراضي هو GitHub Pages)
+node tools/live-audit.js --base=https://iteih67-bit.github.io/qirtas
+node tools/width-check.js     # 8 مقاسات × 8 صفحات (320…1440)
+node tools/arabic-quality.js  # تقرير جودة العربية
+node tools/enrich-arabic.js --titles
+npm run backup:create
+```
+
+### 5) الرجوع عن التغييرات
+- `qirtas/backups/<الطابع الزمني>` تحوي `qirtas.db` و`catalog.json` و`index.json` و`external.json` و`license-audit.json` و`manifest.json`.
+- `npm run backup:list` ثم `npm run backup:restore -- <name>` لإعادة الحالة السابقة، ثم `npm run release` لإعادة البناء، ثم `git revert` أو `git reset --hard <commit>` ثم `git push` ليعيد CI نشر النسخة السابقة.

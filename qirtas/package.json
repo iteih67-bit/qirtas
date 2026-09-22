@@ -1,6 +1,6 @@
 {
   "name": "qirtas-platform",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "منصة قِرطاس — مكتبة رقمية عربية + قاعدة بيانات + لوحة تحكم + نظام حقوق النشر",
   "main": "server.js",
   "directories": {
@@ -44,7 +44,14 @@
     "release": "npm run db:export && npm run books:index && npm run site:build && npm run site:epub && npm run verify:integrity && npm run test:smoke",
     "books:archive": "node --no-warnings pipeline/harvest-archive.js --lang=ar",
     "books:archive-rescan": "node --no-warnings pipeline/harvest-archive.js --lang=ar --rescan",
-    "books:sanitize": "node --no-warnings tools/sanitize-metadata.js"
+    "books:sanitize": "node --no-warnings tools/sanitize-metadata.js",
+    "test:live": "node tools/live-audit.js",
+    "test:clicks": "node tools/click-audit.js",
+    "test:all": "npm run verify:integrity && npm run test:smoke && npm run test:ui && npm run test:widths",
+    "books:quality": "node --no-warnings tools/arabic-quality.js",
+    "books:quality-fix": "node --no-warnings tools/arabic-quality.js --fix",
+    "books:enrich": "node --no-warnings tools/enrich-arabic.js --titles",
+    "site:preview": "node site/tools/build.js && node --no-warnings server.js"
   },
   "keywords": [],
   "type": "commonjs",

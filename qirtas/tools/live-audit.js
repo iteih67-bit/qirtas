@@ -133,15 +133,22 @@ class CDP {
     return cdp.evalExpr(`(() => ({ href: ${JSON.stringify(h)}, title: document.title, readLink: !!document.querySelector('a[href^="/read/"]'), epub: !!document.querySelector('a[href$=".epub"]'), rights: /حقوق/.test(document.body.textContent), tocItems: document.querySelectorAll('ol li a[href*="?ch="]').length }))()`);
   });
 
-  const idx = await cdp.evalExpr(`fetch('/books-index.json').then(r=>r.json()).then(j=>({ id: (j.books.find(b=>b.lang==='ar')||j.books[0]).id }))`);
+  let idx = null;
+  try {
+    const jj = await (await fetch(BASE + '/books-index.json')).json();
+    const books = (jj && jj.books) || [];
+    const arBook = books.find((b) => b.lang === 'ar') || books[0];
+    idx = arBook ? { id: arBook.id } : null;
+  } catch (e) { idx = null; }
+
   if (idx && idx.id) {
     await cdp.goto(`${BASE}/read/${encodeURIComponent(idx.id)}/`, 7000);
     const reader = await cdp.evalExpr(`(() => ({ book: document.title.slice(0,60), paragraphs: document.querySelectorAll('#readerContent p').length, pages: (document.getElementById('pageInfo')||{}).textContent, toolbar: !!document.getElementById('readerBar'), fatal: !!document.getElementById('readerFatal') }))()`);
     cdp.drain(problems);
     results.push({ name: 'reader-render', url: '/read/' + idx.id + '/', result: reader });
-    const clicked = await cdp.evalExpr(`(() => { const b = document.getElementById('pageNext') || document.querySelector('[data-next]'); if (!b) return false; b.click(); return true; })()`);
-    await sleep(1000);
-    const after = await cdp.evalExpr(`(() => ({ pages: (document.getElementById('pageInfo')||{}).textContent, paragraphs: document.querySelectorAll('#readerContent p').length }))()`);
+    const clicked = await cdp.evalExpr(`(() => { const b = document.getElementById('nextPage'); if (!b) return false; b.click(); return true; })()`);
+    await sleep(1500);
+    const after = await cdp.evalExpr(`(() => ({ indicator: (document.getElementById('pageIndicator')||{}).textContent, paragraphs: document.querySelectorAll('#readerContent p').length }))()`);
     results.push({ name: 'reader-next', url: '/read/' + idx.id + '/', result: { clicked, after } });
     cdp.drain(problems);
   }

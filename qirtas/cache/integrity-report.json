@@ -1,11 +1,11 @@
 {
   "db": {
-    "total": 629,
-    "visible": 623,
+    "total": 749,
+    "visible": 702,
     "byLang": [
       {
         "l": "ar",
-        "c": 293
+        "c": 413
       },
       {
         "l": "en",
@@ -13,22 +13,22 @@
       }
     ],
     "noSourceUrl": 0,
-    "noLicense": 0,
+    "noLicense": 120,
     "noEra": 0,
     "noCover": 0,
     "hiddenOrRemoved": [
       {
         "hidden": 0,
         "removed": 0,
-        "c": 623
+        "c": 702
       },
       {
         "hidden": 1,
         "removed": 0,
-        "c": 6
+        "c": 47
       }
     ],
-    "auditLog": 74,
+    "auditLog": 295,
     "takedown": [
       {
         "id": 1,
@@ -45,28 +45,69 @@
     ]
   },
   "catalog": {
-    "catalog": 623,
-    "index": 623,
-    "dbMatch": true,
+    "catalog": 742,
+    "index": 742,
+    "dbMatch": false,
     "indexMatch": true
   },
   "dist": {
-    "dbIds": 623,
-    "bookDirs": 623,
-    "readDirs": 623,
+    "dbIds": 702,
+    "bookDirs": 742,
+    "readDirs": 742,
     "missingDirs": [],
     "missingCount": 0,
-    "hiddenVisibleOnSite": []
+    "hiddenVisibleOnSite": [
+      "ktab-myzan-alhkma",
+      "majm-albldan",
+      "altbqat-alkbra",
+      "alkaml-fy-allgha-waladb",
+      "almntqa-mn-mnhaj-alaatdal",
+      "hyaa-alnfs-fy-hdra-alqds",
+      "qada-alfkr",
+      "ktab-alrd-ala-abn-alnghryla",
+      "ktb-wshkhsyat",
+      "klyla-wdmna-ar",
+      "lsan-almyzan",
+      "nhj-alslama-ala-mbahth-alamama",
+      "aladb-alsghyr",
+      "albhth-alsryh-fy-ayma-hw-aldyn-alshyh",
+      "aljma-byn-alshyhyn-llhmydy",
+      "alsarm-almnky-fy-alrd-ala-alsbky",
+      "alnbdh-fy-aswl-alfqh-alzahry",
+      "mwlf-ar",
+      "shyh-abn-khzyma",
+      "alsna-llkhlal",
+      "ktab-jmaa-alalm",
+      "mghamrat-twm-swyr",
+      "wfyat-alaayan",
+      "aalam-almwqayn-an-rb-alaalmyn",
+      "atfaqya-jnyf-bshan-maamla-asra-alhrb",
+      "aladb-alkbyr",
+      "alhsam-almmdwd-fy-alrd-ala-alyhwd",
+      "alaqyda-alhmwya-alkbra",
+      "alkylanya",
+      "tarykh-alaslam-wwfyat-almshahyr-walaalam-mwlf-aldhhby-lahq-a",
+      "tarykh-alaslah-fy-alazhr-mtbaa-alaatmad-1943",
+      "tarykh-alkwyt-alsyasy-aljz-althany",
+      "tjarb-alamm",
+      "zad-almaad-fy-hdy-khyr-alabad",
+      "shrh-qtr-alnda-t-mhmd-mhyy-aldyn-abd-alhmyd",
+      "shyh-abn-hban",
+      "fyma-yhtaj-alyh-alsana-mn-aamal-alhndsa",
+      "qanwn-rqm-25-lsna-1990-alymn-bshan-alshafa-walmtbwaat",
+      "mblgh-alarb-fy-fkhr-alarb",
+      "mnha-alqryb-almjyb-fy-alrd-ala-abad-alslyb"
+    ]
   },
   "leak": {
-    "htmlScanned": 1662,
+    "htmlScanned": 1944,
     "hits": {
       "wikisource": {
-        "count": 181,
+        "count": 499,
         "samples": [
           "author\\abas-alaqad\\index.html",
-          "author\\abd-alrzaq-alsnaany\\index.html",
-          "author\\abdallh-bn-almbark\\index.html"
+          "author\\abd-alghny-alnablsy\\index.html",
+          "author\\abd-alhq-alaslamy\\index.html"
         ]
       },
       "archive.org": {
@@ -91,7 +132,7 @@
     "apiLinkedFromPublic": []
   },
   "rights": {
-    "pages": 623,
+    "pages": 742,
     "noRights": 0,
     "noRightsSample": [],
     "noRightsPageLink": 0,
@@ -105,7 +146,7 @@
     {
       "page": "index.html",
       "exists": true,
-      "kb": 18.8
+      "kb": 19.7
     },
     {
       "page": "library/index.html",
@@ -130,17 +171,17 @@
     {
       "page": "authors/index.html",
       "exists": true,
-      "kb": 46.1
+      "kb": 50.6
     },
     {
       "page": "sitemap.xml",
       "exists": true,
-      "kb": 199.1
+      "kb": 232.7
     },
     {
       "page": "feed.xml",
       "exists": true,
-      "kb": 31.4
+      "kb": 30.6
     },
     {
       "page": "404.html",
@@ -159,9 +200,9 @@
     }
   ],
   "sitemap": {
-    "urls": 1661,
-    "unique": 1661,
-    "dupes": 0,
+    "urls": 1944,
+    "unique": 1943,
+    "dupes": 1,
     "allHttps": true,
     "sample": [
       "https://iteih67-bit.github.io/qirtas/",
@@ -169,7 +210,7 @@
     ]
   },
   "epub": {
-    "count": 623,
+    "count": 742,
     "minKB": 10.7,
     "maxKB": 8493.8
   },
