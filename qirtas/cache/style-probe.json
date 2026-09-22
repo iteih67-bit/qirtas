@@ -1,0 +1,74 @@
+{
+  "vars": {
+    "accent": "#2b6f68",
+    "bg": "#f7f3ec",
+    "surface": "#fffdfa",
+    "ink": "#2b2621",
+    "line": "rgba(43, 38, 33, 0.10)"
+  },
+  "body": {
+    "font": "16px/29.6px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "radius": "0px",
+    "shadow": "none"
+  },
+  "container": {
+    "font": "16px/29.6px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px 40px",
+    "radius": "0px",
+    "shadow": "none"
+  },
+  "hero": {
+    "font": "16px/29.6px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "104px 0px 52px",
+    "radius": "0px",
+    "shadow": "none"
+  },
+  "h1": {
+    "font": "46.4px/62.64px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "radius": "0px",
+    "shadow": "none"
+  },
+  "sectionTitle": {
+    "font": "20px/30px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "radius": "0px",
+    "shadow": "none"
+  },
+  "grid": "30px",
+  "card": {
+    "font": "16px/29.6px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgb(255, 253, 250)",
+    "pad": "0px",
+    "radius": "10px",
+    "shadow": "none"
+  },
+  "btn": {
+    "font": "14.4px/normal",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(43, 111, 104)",
+    "pad": "10px 18px",
+    "radius": "8px",
+    "shadow": "none"
+  },
+  "footer": {
+    "font": "16px/29.6px",
+    "color": "rgb(43, 38, 33)",
+    "bg": "rgb(255, 253, 250)",
+    "pad": "40px 0px 64px",
+    "radius": "0px",
+    "shadow": "none"
+  }
+}

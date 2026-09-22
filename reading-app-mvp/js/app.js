@@ -145,9 +145,8 @@ function bookCardHTML(b) {
 }
 
 function renderChips() {
-  els.chips.innerHTML = CATEGORIES.map(
-    (c) => `<button class="chip ${state.activeCat === c.id ? 'active' : ''}" data-cat="${c.id}">${c[state.lang]}</button>`
-  ).join('');
+  /* categories removed by design: the app shows search only */
+  if (els.chips) els.chips.innerHTML = '';
 }
 
 function renderLibrary() {
@@ -426,7 +425,7 @@ els.bookGrid.addEventListener('keydown', (e) => {
   }
 });
 
-els.chips.addEventListener('click', (e) => {
+if (els.chips) els.chips.addEventListener('click', (e) => {
   const chip = e.target.closest('[data-cat]');
   if (chip) { state.activeCat = chip.dataset.cat; renderLibrary(); }
 });

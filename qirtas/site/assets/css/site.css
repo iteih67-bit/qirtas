@@ -263,3 +263,86 @@ img { max-width: 100%; }
   .btn.small { padding: 10px 16px; }
   .chip { padding: 9px 18px; }
 }
+
+/* =====================================================
+   Paper-calm pass (preset 18, Kenya Hara) — applied 2026-09-22
+   Design DNA: layers of white, paper tactility, 80%+ breathing room,
+   desaturated ink, subtraction instead of addition.
+   Everything below is additive: no functional rule is overridden, only
+   spacing, tone and type quietness. Contrast stays >= 4.5:1 for text.
+   ===================================================== */
+
+:root {
+  /* calmer ink-teal: white text on it still passes 4.9:1 */
+  --accent: #2b6f68;
+  --accent-deep: #1f5a54;
+  --accent-soft: rgba(43, 111, 104, 0.08);
+  /* paper layers: warm white → off-white → card */
+  --bg: #f7f3ec;
+  --bg2: #f2ece1;
+  --surface: #fffdfa;
+  --surface-2: #faf6ef;
+  --ink: #2b2621;
+  --ink-soft: #6f665c;
+  --line: rgba(43, 38, 33, 0.10);
+  --shadow: 0 12px 34px rgba(43, 38, 33, 0.09);
+  /* quiet scale: 8pt-based rhythm */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+}
+
+/* paper grain: two hairline gradients at very low opacity, no image weight */
+body {
+  background-image:
+    repeating-linear-gradient(0deg, rgba(43, 38, 33, 0.012) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(43, 38, 33, 0.010) 0 1px, transparent 1px 3px),
+    radial-gradient(1200px 520px at 85% -12%, rgba(43, 111, 104, 0.05), transparent 62%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
+  line-height: 1.85;
+}
+
+/* more air around the reading column */
+.container { max-width: 1080px; padding: 0 clamp(18px, 4vw, 40px); }
+.hero { padding: clamp(48px, 9vw, 104px) 0 clamp(28px, 5vw, 52px); }
+.section-title { margin: clamp(40px, 6vw, 68px) 0 var(--space-3); letter-spacing: -0.01em; }
+.book-grid { gap: clamp(18px, 2.4vw, 30px); }
+.section-more { margin: var(--space-3) 0 var(--space-5); }
+.site-footer { padding: var(--space-4) 0 var(--space-5); }
+
+/* quieter headings: smaller step, more leading */
+h1, h2, h3, .page-title { line-height: 1.5; font-weight: 700; }
+.page-title { margin-bottom: var(--space-2); }
+.page-sub { color: var(--ink-soft); max-width: 62ch; }
+
+/* cards: paper sheets rather than tiles */
+.book-card {
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.book-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: rgba(43, 111, 104, 0.28); }
+
+/* buttons: calm, minimal chrome */
+.btn { border-radius: 8px; box-shadow: none; font-weight: 700; }
+.btn-accent { background: var(--accent); }
+.btn-accent:hover { background: var(--accent-deep); }
+.btn-ghost { border-color: var(--line); background: transparent; }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent-deep); }
+
+/* shelves and panels lose their tint */
+.stats-table th { background: transparent; border-bottom: 1px solid var(--line); }
+.hstat, .continue-card { box-shadow: none; border: 1px solid var(--line); background: var(--surface); }
+
+/* dark mode keeps the same calm, warmed slightly */
+[data-theme='dark'] {
+  --accent: #58b3a8;
+  --accent-deep: #3f9c91;
+  --bg: #15171a; --bg2: #101214; --surface: #1d2024; --surface-2: #23272c;
+  --line: rgba(233, 228, 218, 0.10);
+}
+

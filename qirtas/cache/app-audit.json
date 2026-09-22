@@ -1,0 +1,53 @@
+{
+  "base": "http://localhost:8090",
+  "when": "2026-09-22T15:48:02.766Z",
+  "results": [
+    {
+      "name": "home",
+      "result": {
+        "title": "قِرطاس — Qirtas | مكتبة قراءة مجانية",
+        "cards": 60,
+        "chips": 0,
+        "search": true,
+        "langBtn": true,
+        "bodyChars": 12957
+      }
+    },
+    {
+      "name": "open-first-book",
+      "result": {
+        "clicked": true,
+        "reader": true,
+        "title": "قِرطاس — Qirtas | مكتبة قراءة مجانية",
+        "paragraphs": 494
+      }
+    },
+    {
+      "name": "search-arabic",
+      "result": {
+        "cards": 5
+      }
+    },
+    {
+      "name": "lang-toggle",
+      "result": {
+        "toggle": "clicked",
+        "after": {
+          "dir": "ltr",
+          "title": "قِرطاس — Qirtas | مكتبة قراءة مجانية"
+        }
+      }
+    },
+    {
+      "name": "resources",
+      "result": {
+        "manifest": 200
+      }
+    }
+  ],
+  "problems": {
+    "consoleErrors": [],
+    "failedRequests": [],
+    "missingResources": []
+  }
+}

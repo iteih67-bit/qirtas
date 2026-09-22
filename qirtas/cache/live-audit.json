@@ -1,6 +1,6 @@
 {
   "base": "https://iteih67-bit.github.io/qirtas",
-  "when": "2026-09-22T13:38:15.210Z",
+  "when": "2026-09-22T15:49:06.668Z",
   "results": [
     {
       "name": "home",
@@ -63,7 +63,7 @@
       "name": "authors",
       "url": "/authors/",
       "result": {
-        "chips": 452
+        "chips": 444
       }
     },
     {
@@ -71,7 +71,7 @@
       "url": "/stats/",
       "result": {
         "tables": 2,
-        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 13:29:57 UTC 742كتاباً كامل"
+        "text": " قِرطاساقرأ أينما كنت — مجاناً المكتبة الإحصاءات عن المنصة EN 🌙 إحصاءات المكتبة آخر تحديث: 2026-09-22 14:30:05 UTC 742كتاباً كامل"
       }
     },
     {
@@ -116,8 +116,8 @@
       "name": "flow-book",
       "url": "/",
       "result": {
-        "href": "/qirtas/book/mwlf-ar/",
-        "title": "|مؤلف = — |باب = | اقرأ مجاناً على قِرطاس",
+        "href": "/qirtas/book/ahsn-altqasym-fy-marfa-alaqalym/",
+        "title": "أحسن التقاسيم في معرفة الأقاليم — مؤلف تراثي | اقرأ مجاناً على قِرطاس",
         "readLink": false,
         "epub": true,
         "rights": true,
@@ -126,22 +126,22 @@
     },
     {
       "name": "reader-render",
-      "url": "/read/mwlf-ar/",
+      "url": "/read/ahsn-altqasym-fy-marfa-alaqalym/",
       "result": {
-        "book": "|مؤلف = — قِرطاس",
-        "paragraphs": 17,
+        "book": "أحسن التقاسيم في معرفة الأقاليم — قِرطاس",
+        "paragraphs": 33,
         "toolbar": false,
         "fatal": false
       }
     },
     {
       "name": "reader-next",
-      "url": "/read/mwlf-ar/",
+      "url": "/read/ahsn-altqasym-fy-marfa-alaqalym/",
       "result": {
         "clicked": true,
         "after": {
-          "indicator": "2 / 7",
-          "paragraphs": 17
+          "indicator": "2 / 11",
+          "paragraphs": 33
         }
       }
     }

@@ -1,56 +1,56 @@
 {
   "base": "https://iteih67-bit.github.io/qirtas",
-  "when": "2026-09-22T13:40:32.050Z",
+  "when": "2026-09-22T15:51:26.994Z",
   "pagesScanned": 9,
-  "linksFound": 549,
-  "linksChecked": 549,
+  "linksFound": 540,
+  "linksChecked": 540,
   "broken": [],
   "tapIssues": [],
   "weights": [
     {
       "page": "/",
       "kb": 300,
-      "domMs": 648
+      "domMs": 803
     },
     {
       "page": "/library/",
       "kb": 69,
-      "domMs": 457
+      "domMs": 484
     },
     {
       "page": "/library/?page=3",
       "kb": 3,
-      "domMs": 25
+      "domMs": 73
     },
     {
       "page": "/authors/",
       "kb": 13,
-      "domMs": 387
+      "domMs": 240
     },
     {
       "page": "/stats/",
       "kb": 3,
-      "domMs": 212
+      "domMs": 272
     },
     {
       "page": "/about/",
       "kb": 3,
-      "domMs": 224
+      "domMs": 234
     },
     {
       "page": "/rights/",
       "kb": 4,
-      "domMs": 233
+      "domMs": 247
     },
     {
       "page": "/contact/",
       "kb": 2,
-      "domMs": 222
+      "domMs": 250
     },
     {
       "page": "/privacy/",
       "kb": 2,
-      "domMs": 227
+      "domMs": 282
     }
   ]
 }

@@ -1,0 +1,1054 @@
+{
+  "totals": {
+    "books": 742
+  },
+  "issues": {
+    "mismatch": [
+      {
+        "id": "qanwn-rqm-45-lsna-2002m-bshan-hqwq-altfl",
+        "title": "قانون رقم (45) لسنة 2002م بشأن حقوق الطفل",
+        "source": "قانون حقوق الطفل (اليمن)"
+      },
+      {
+        "id": "qanwn-rqm-15-lsna-2012-bshan-hq-almwlf-walhqwq-almjawra",
+        "title": "قانون رقم 15 لسنة 2012 بشأن حق المؤلف والحقوق المجاورة",
+        "source": "قانون رقم 15 لسنة 2012 (اليمن) بشأن حق المؤلف والحقوق المجاورة"
+      },
+      {
+        "id": "al-qawid-al-jalyah-f-ilm-al-arabyah",
+        "title": "Al-Qaw'id al-jalyah f 'ilm al-Arabyah",
+        "source": "alqawidaljalyahf01iddauoft"
+      },
+      {
+        "id": "al-rawdah-al-zakiyah",
+        "title": "Al-Rawdah al-zakiyah",
+        "source": "alrawdahalzakiya00azoouoft"
+      },
+      {
+        "id": "al-tafsir-al-kabir",
+        "title": "Al-Tafsir al-kabir",
+        "source": "altafsiralkabir13rzfauoft"
+      },
+      {
+        "id": "annales",
+        "title": "Annales",
+        "source": "annalesquosscri01unkngoog"
+      },
+      {
+        "id": "cma-18-3",
+        "title": "CMA 18 3",
+        "source": "cma183 201910"
+      },
+      {
+        "id": "cma-18-5",
+        "title": "CMA 18 5",
+        "source": "cma185"
+      },
+      {
+        "id": "chemistry",
+        "title": "Chemistry",
+        "source": "chemistry 202501"
+      },
+      {
+        "id": "faiz-ul-bari-vol-3",
+        "title": "Faiz Ul Bari Vol 3",
+        "source": "amj islamic media faizul bari arbi sharah bukhari 03"
+      },
+      {
+        "id": "historical-kan-issue-20",
+        "title": "Historical Kan Issue 20",
+        "source": "HistoricalKanIssue20"
+      },
+      {
+        "id": "hizbi-dua-i-muhammed",
+        "title": "Hizbi Dua-i Muhammed",
+        "source": "cilt5 v2.3"
+      },
+      {
+        "id": "indonesia-fish-islands",
+        "title": "INDONESIA FISH ISLANDS",
+        "source": "indonesia fish islands 20201102 0750"
+      },
+      {
+        "id": "indinesian-color-food",
+        "title": "Indinesian Color Food",
+        "source": "indinesian color foo 202010"
+      },
+      {
+        "id": "indonesian-foods-health",
+        "title": "Indonesian Foods Health",
+        "source": "indonesian foods health"
+      },
+      {
+        "id": "kitab-ul-idraak-lil-lisan-il-atraak-aseeruddin-abi-hayyan-al",
+        "title": "Kitab ul-Idraak Lil-Lisan il-Atraak - Aseeruddin Abi Hayyan Al-Andalus",
+        "source": "KitabUl IdraakLil LisanIl Atraak AseeruddinAbiHayyanAl AndalusiArabi"
+      },
+      {
+        "id": "kita-b-aja-ib-al-makhlu-qa-t-wa-ghara-ib-al-mawju-da-t",
+        "title": "Kitāb ʿAjāʾib al-makhlūqāt wa-gharāʾib al-mawjūdāt",
+        "source": "kitab ajaib al makhluqat manuscript collection"
+      },
+      {
+        "id": "16-line-rangeen-tajweed-quran-pdf-colored-tajweed-quran-easy",
+        "title": "Line Rangeen Tajweed Quran PDF | Colored Tajweed Quran | Easy Quran Re",
+        "source": "16 line rangeen tajweed quran"
+      },
+      {
+        "id": "maarif-us-sunan-vol-05",
+        "title": "Ma'arif Us Sunan Vol 05",
+        "source": "amj islamic media maarifus sunan arbi sharah tirmizi 05"
+      },
+      {
+        "id": "sadak-ja-rahi-hai-urdu-short-stories-vehshi-syed-kashmir-tre",
+        "title": "Sadak Ja Rahi Hai- urdu short Stories - Vehshi Syed-kashmir treasure",
+        "source": "hoRx sadak ja rahi hai a book of short stories urdu vehshi syed"
+      },
+      {
+        "id": "sunan-ibn-majah-arabic",
+        "title": "Sunan Ibn Majah - Arabic",
+        "source": "sunanibnmajaharabic 201912"
+      },
+      {
+        "id": "tafseer-e-ibn-e-kaseer",
+        "title": "Tafseer E Ibn E Kaseer",
+        "source": "TafseerEIbnEKaseer."
+      },
+      {
+        "id": "tafsir-al-kashshaf-classical-quran-commentary",
+        "title": "Tafsir al-Kashshaf | Classical Quran Commentary",
+        "source": "tafsir al kashaf"
+      },
+      {
+        "id": "al-umm",
+        "title": "al-Umm",
+        "source": "alummshf0102shfiuoft"
+      },
+      {
+        "id": "al-urwah-al-wuthqa",
+        "title": "al-Urwah al-wuthqá",
+        "source": "alurwahalwuthq00muha"
+      },
+      {
+        "id": "al-ustdh",
+        "title": "al-Ustdh",
+        "source": "alustdh0122nadmuoft"
+      },
+      {
+        "id": "hadafabd-gamilcom",
+        "title": "hadafabd@gamil.com",
+        "source": "archive the47288"
+      },
+      {
+        "id": "aswat-srdya",
+        "title": "أصوات سردية",
+        "source": "NarrativeVoices"
+      },
+      {
+        "id": "adwa-ala-alhbsha",
+        "title": "أضواء على الحبشة",
+        "source": "AdwaaAlaAlHabasha"
+      },
+      {
+        "id": "aalam-alfkr-walthqafa-fy-aljzayr-almhrwsa-j1",
+        "title": "أعلام الفكر والثقافة في الجزائر المحروسة (ج1)",
+        "source": "AalmElFikrWaThakafa"
+      },
+      {
+        "id": "7-aktwbr-qraa-fy-alwqaya-allybya",
+        "title": "أكتوبر قراءة في الوقائع الليبية",
+        "source": "7OctoberQiraaFiAlWakaeAlLibyia"
+      },
+      {
+        "id": "amyn-alzawy-whsha-alymama",
+        "title": "أمين الزاوي وحشة اليمامة",
+        "source": "aminzaoui1"
+      },
+      {
+        "id": "ansan-alaywn-fy-syra-alamyn-almamwn",
+        "title": "إنسان العيون في سيرة الأمين المأمون",
+        "source": "السيرة الحلبية"
+      },
+      {
+        "id": "athaf-alrtwt-fy-akhtsar-w-fhrsa-bdaya-altabwt",
+        "title": "اتحاف الرتوت في اختصار و فهرسة بضائع التابوت",
+        "source": "muradco2002200294 gmail 20190326"
+      },
+      {
+        "id": "aladla-aljlya-fa-altmsk-balarwa-alwthqa-almhmdya",
+        "title": "الأدلة الجلية فى التمسك بالعروة الوثقى المحمدية",
+        "source": "Abo Khattab 1"
+      },
+      {
+        "id": "alafsah-fy-fqh-allgha",
+        "title": "الإفصاح في فقه اللغة",
+        "source": "SAI1929AR"
+      },
+      {
+        "id": "albdaya-walnhaya-mtbaa-alsaada-1351h",
+        "title": "البداية والنهاية (مطبعة السعادة، 1351هـ)",
+        "source": "البداية والنهاية (ط. السعادة)"
+      },
+      {
+        "id": "althwra-aljzayrya-wqaya-wabaad",
+        "title": "الثورة الجزائرية وقائع وأبعاد",
+        "source": "AlgerianRevolutionIn10Years"
+      },
+      {
+        "id": "aljz-alawl-alsads-mn-ktab-mfatyh-alghyb-almshthr-baltfsyr-al",
+        "title": "الجزء الأول [- السادس] من كتاب مفاتيح الغيب المشتهر بالتفسير الكبير Al",
+        "source": "BULAC.RES.MON.Fol.33"
+      },
+      {
+        "id": "alhdarat-alhndya-fy-amryka-alantyk-almaya-alanka-lrawyn-trjm",
+        "title": "الحضارات الهندية في أمريكا ( الأنتيك . المايا . الإنكا ) لراوين ترجمة ",
+        "source": "fethibriredj live 20170323"
+      },
+      {
+        "id": "alda-waldwa",
+        "title": "الداء والدواء",
+        "source": "eng 380"
+      },
+      {
+        "id": "aldr-almndwd-arb-shrh-snn-ab-dawd-4",
+        "title": "الدر المنضود عربی شرح سننِ ابی داؤد 4",
+        "source": "amj islamic media ad durrul manzood arbi sharah abi dawood 04"
+      },
+      {
+        "id": "aldwla-alslymanya-walamarat-alalwya-fy-almghrb-alawst-bhlwly",
+        "title": "الدولة السليمانية والإمارات العلوية في المغرب الأوسط بهلولي سليمان",
+        "source": "dsulaymania"
+      },
+      {
+        "id": "alsba-almalqat-qraa-symyayya-antrwbwlwjya-lnswsha-alsba-alma",
+        "title": "السبع المعلقات قراءة سيميائية أنتروبولوجية لنصوصها السبع المعلّقات عبد",
+        "source": "red122 ch live 201904"
+      },
+      {
+        "id": "alshrq-alaqsa-mwjz-tarykhy",
+        "title": "الشرق الأقصى موجز تاريخي",
+        "source": "AlSharqAlAksa"
+      },
+      {
+        "id": "alshykh-mhmd-syd-tntawa-altfsyr-alwsyt-aljz-altasa-walashrwn",
+        "title": "الشيخ محمد سيد طنطاوى التفسير الوسيط الجزء التاسع والعشرون تبارك",
+        "source": "elteb mail 20180826 2324"
+      },
+      {
+        "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-althalth",
+        "title": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الثالث",
+        "source": "bgvg asia 20171126"
+      },
+      {
+        "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-alkhams",
+        "title": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الخامس",
+        "source": "bgvg asia 20171126 1046"
+      },
+      {
+        "id": "altryq-ala-almydan-jmal-aljzyry-mjmwaa-qssya",
+        "title": "الطريق إلى الميدان جمال الجزيري، مجموعة قصصية",
+        "source": "elgezeery gmail"
+      },
+      {
+        "id": "aladd-121-mn-shyfa-almshhd",
+        "title": "العدد 121 من صحيفة المشهد",
+        "source": "almashhadnewspaper121"
+      },
+      {
+        "id": "aladd-150-mn-shyfa-almshhd",
+        "title": "العدد 150 من صحيفة المشهد",
+        "source": "almashhadnewspaper150"
+      },
+      {
+        "id": "aladd-155-mn-shyfa-almshhd",
+        "title": "العدد 155 من صحيفة المشهد",
+        "source": "almashhadnewspaper155"
+      },
+      {
+        "id": "aladd-177-mn-shyfa-almshhd",
+        "title": "العدد 177 من صحيفة المشهد",
+        "source": "almashhadnewspaper177"
+      },
+      {
+        "id": "aladd-186-mn-shyfa-almshhd",
+        "title": "العدد 186 من صحيفة المشهد",
+        "source": "almashhadnewspaper186"
+      },
+      {
+        "id": "aladd-210-mn-shyfa-almshhd",
+        "title": "العدد 210 من صحيفة المشهد",
+        "source": "almashhadnewspaper210"
+      },
+      {
+        "id": "aladd-214-mn-shyfa-almshhd",
+        "title": "العدد 214 من صحيفة المشهد",
+        "source": "almashhadnewspaper214"
+      },
+      {
+        "id": "aladd-238-mn-shyfa-almshhd",
+        "title": "العدد 238 من صحيفة المشهد",
+        "source": "almashhadnewspaper238"
+      },
+      {
+        "id": "aladd-264-mn-shyfa-almshhd",
+        "title": "العدد 264 من صحيفة المشهد",
+        "source": "almashhadnewspaper264"
+      },
+      {
+        "id": "aladd-286-mn-shyfa-almshhd",
+        "title": "العدد 286 من صحيفة المشهد",
+        "source": "almashhadnewspaper286"
+      },
+      {
+        "id": "aladd-346-mn-shyfa-almshhd",
+        "title": "العدد 346 من صحيفة المشهد",
+        "source": "almashhadnewspaper346"
+      },
+      {
+        "id": "aladd-353-mn-shyfa-almshhd",
+        "title": "العدد 353 من صحيفة المشهد",
+        "source": "almashhadnewspaper353"
+      },
+      {
+        "id": "aladd-78-mn-shyfa-almshhd",
+        "title": "العدد 78 من صحيفة المشهد",
+        "source": "almashhadnewspaper78"
+      },
+      {
+        "id": "alarf-alshdh-arb-shrh-trmdh-jld-3",
+        "title": "العرف الشذی عربی شرح ترمذی جلد 3",
+        "source": "amj islamic media al arfush shazi arbi sharah tirmizi 03"
+      },
+      {
+        "id": "alklmat-alhsan",
+        "title": "الكلمات الحسان",
+        "source": "2001 alkalimat alhisan wahbi"
+      },
+      {
+        "id": "allbab-fy-fswl-aladab",
+        "title": "اللباب في فصول الآداب",
+        "source": "allopap"
+      },
+      {
+        "id": "almjla-alzytwnya-2-04",
+        "title": "المجلة الزيتونية 2-04",
+        "source": "AlzaytuniaMagazine 2 04"
+      },
+      {
+        "id": "abn-hzm-almhla",
+        "title": "المحلى — المجلد الثالث",
+        "source": "محلى ابن حزم - المجلد الثالث"
+      },
+      {
+        "id": "abn-hzm-almhla-ar",
+        "title": "المحلى — المجلد السادس",
+        "source": "محلى ابن حزم - المجلد السادس"
+      },
+      {
+        "id": "almsala-alswdanya",
+        "title": "المسألة السودانية",
+        "source": "AlMasalaaAlSudania"
+      },
+      {
+        "id": "almsnf",
+        "title": "المصنف",
+        "source": "مصنف الصنعاني"
+      },
+      {
+        "id": "almfyd-fy-tarykh-almghrb",
+        "title": "المفيد في تاريخ المغرب",
+        "source": "AlMofeedFeyTarikhAlMaghrib"
+      },
+      {
+        "id": "anaam-albar-ardw-shrh-sh-h-albkhar-6",
+        "title": "انعام الباری اردو شرح صحیح البخاری 6",
+        "source": "amj islamic media inamul bari urdu sharah bukhari 06"
+      },
+      {
+        "id": "anaamat-rban-shrh-trmdh-than-aml",
+        "title": "انعاماتِ ربانی شرح ترمذی ثانی کامل",
+        "source": "amj islamic media inamate rabbani tirmizi urdu sharah"
+      },
+      {
+        "id": "bskra-fy-aywn-alrhala-alghrbyyn-labd-alqadr-bwmaza-aljz-alaw",
+        "title": "بسكرة في عيون الرحالة الغربيين لعبد القادر بومعزة الجزء الأول",
+        "source": "fethibriredj live 201604"
+      },
+      {
+        "id": "tarykh-alhrka-alsnwsya-fy-afryqya-d-aly-mhmd-alslaby",
+        "title": "تاريخ الحركة السنوسية في أفريقيا د علي محمد الصلابي",
+        "source": "alshlwy141 yahoo 20151121"
+      },
+      {
+        "id": "thf-alqar-4",
+        "title": "تحفۃ القاری 4",
+        "source": "amj islamic media tuhfatul qari urdu sharah bukhari 04"
+      },
+      {
+        "id": "thf-almnam-1",
+        "title": "تحفۃ المنعم 1",
+        "source": "amj islamic media tuhfatul munim urdu sharah muslim 01"
+      },
+      {
+        "id": "tkhlys-altarykh-mn-alastamar-lmhmd-alshryf-sahly-trjma-mhmd-",
+        "title": "تخليص التاريخ من الإستعمار لمحمد الشريف ساحلي ترجمة محمد هناد",
+        "source": "fethibriredj live 20170205"
+      },
+      {
+        "id": "tfsyr-abn-kthyr-mjld-4",
+        "title": "تفسير ابن كثير مجلد 4",
+        "source": "alezzcollege2016 t"
+      },
+      {
+        "id": "tfsyr-alqran-alazym",
+        "title": "تفسير القرآن العظيم",
+        "source": "تفسير ابن كثير"
+      },
+      {
+        "id": "2-jama-altrmdh",
+        "title": "جامع الترمذی",
+        "source": "amj islamic media jami u ttirmizi 02"
+      },
+      {
+        "id": "jryda-almqttf-22-3",
+        "title": "جريدة المقتطف 22-3",
+        "source": "AlmuktatafMagazine 22 03"
+      },
+      {
+        "id": "jryda-almqttf-22-7",
+        "title": "جريدة المقتطف 22-7",
+        "source": "AlmuktatafMagazine 22 07"
+      },
+      {
+        "id": "khzayn-alsnn-2",
+        "title": "خزائن السنن 2",
+        "source": "amj islamic media khaza inus sunan tirmizi ki urdu sharah 202206"
+      },
+      {
+        "id": "dhm-alklam-wahlh",
+        "title": "ذَمُّ الكَلامِ وَأَهْلِه",
+        "source": "dhmm al kalam wa ahlihi 1"
+      },
+      {
+        "id": "rhla-abn-amar-nhla-allbyb-bakhbar-alrhla-llhbyb",
+        "title": "رحلة ابن عمار نحلة اللبيب بأخبار الرحلة للحبيب",
+        "source": "ess 706"
+      },
+      {
+        "id": "rhla-smw-alamyr-mhmd-aly-basha-shqyq-aljnab-alaaly-alkhdywy-",
+        "title": "رحلة سمو الأمير محمد علي باشا شقيق الجناب العالي الخديوي إلى الجهة الش",
+        "source": "RihlatAlAmirMohamedAliIlaAmerica"
+      },
+      {
+        "id": "rwaya-alftaa-almadhba",
+        "title": "رواية الفتاة المعذبة",
+        "source": "RiwayatAlFataAlMoazaba"
+      },
+      {
+        "id": "rwaya-almmlwka",
+        "title": "رواية المملوكة",
+        "source": "RiwayatAlMamlooka"
+      },
+      {
+        "id": "slam-ma-badh-slam-wlada-alshrq-alawst-1914-1922-dafyd-frwmky",
+        "title": "سلام ما بعده سلام ولادة الشرق الأوسط 1914 1922 دافيد فرومكين",
+        "source": "A Peace to End All Peace"
+      },
+      {
+        "id": "shab-alayman-labd-aljlyl-alqsry-t-alhdyth",
+        "title": "شعب الإيمان لعبد الجليل القصري ط الحديث",
+        "source": "chuaab kasri"
+      },
+      {
+        "id": "shyfa-aba-015",
+        "title": "صحيفة إباء 015",
+        "source": "EbaaNewspaper 015"
+      },
+      {
+        "id": "shyfa-aba-042",
+        "title": "صحيفة إباء 042",
+        "source": "EbaaNewspaper 042"
+      },
+      {
+        "id": "shyfa-alahd-18",
+        "title": "صحيفة العهد 18",
+        "source": "Al3ahdNewspaper 018"
+      },
+      {
+        "id": "shyfa-almsra-34",
+        "title": "صحيفة المسرى 34",
+        "source": "AlmasraNewspaper 034"
+      },
+      {
+        "id": "shyfa-almsra-45",
+        "title": "صحيفة المسرى 45",
+        "source": "AlmasraNewspaper 045"
+      },
+      {
+        "id": "shyfa-almsra-53",
+        "title": "صحيفة المسرى 53",
+        "source": "AlmasraNewspaper 053"
+      },
+      {
+        "id": "shyfa-alwaqa-aljhadya-12",
+        "title": "صحيفة الواقع الجهادية 12",
+        "source": "Alwaqi3Newspaper 012"
+      },
+      {
+        "id": "sh-h-almslm-1",
+        "title": "صحیح المسلم 1",
+        "source": "amj islamic media sahihul muslim 01"
+      },
+      {
+        "id": "abd-alazyz-bn-mrwan",
+        "title": "عبد العزيز بن مروان",
+        "source": "AbdAlAzizIbnMarwan"
+      },
+      {
+        "id": "asr-almghwl-ljwrj-layn-trjma-tghryd-alghdban",
+        "title": "عصر المغول لجورج لاين ترجمة تغريد الغضبان",
+        "source": "fethibriredj live 20170504 1715"
+      },
+      {
+        "id": "aqyda-altwhyd-ktab-llshykh-salh-alfwzan-athabh-allh",
+        "title": "عقيدة التوحيد كتاب للشيخ صالح الفوزان أثابه الله.",
+        "source": "aquidate at tawhid fawzan"
+      },
+      {
+        "id": "ghaya-albyan-nadra-alzman-fy-akhr-alawan",
+        "title": "غاية البيان نادرة الزمان في آخر الأوان",
+        "source": "feyzullah ef 0872"
+      },
+      {
+        "id": "frsan-alaslam-whrwb-almmalyk",
+        "title": "فرسان الاسلام وحروب المماليك .",
+        "source": "Httpsarchive.orgdetails l apos une de pages de l apos histoire 2017090"
+      },
+      {
+        "id": "f-d-albar-ardw-shrh-fth-albar-4-5-6",
+        "title": "فیض الباری اردو شرح فتح الباری4 5, 6",
+        "source": "amj islamic media faizul bari urdu shrah bukhari 4 5 6"
+      },
+      {
+        "id": "qanwn-almslha-almalya-almsrya",
+        "title": "قانون المصلحة المالية المصرية",
+        "source": "QanunAlMaslahaAlMaleyaAlMisreyia"
+      },
+      {
+        "id": "ktab-alzhd-labn-mbark",
+        "title": "كتاب الزهد لإبن مبارك",
+        "source": "كتاب الزهد لابن المبارك"
+      },
+      {
+        "id": "ktab-alqda-almsry-alahly",
+        "title": "كتاب القضاء المصري الأهلي",
+        "source": "KitabAlQadaaAlMisreyAlAhley"
+      },
+      {
+        "id": "ktab-thdhyr-almslmyn-mn-alahadyth-almwdwaa-ala-syd-almrslyn",
+        "title": "كتاب تحذير المسلمين من الأحاديث الموضوعة على سيد المرسلين",
+        "source": "KitabTahzeerAlMoslemeen"
+      },
+      {
+        "id": "ktab-sfr-alsfr-ala-mard-alhdr",
+        "title": "كتاب سفر السفر الى معرض الحضر",
+        "source": "KitabSifrAlSafar"
+      },
+      {
+        "id": "ktab-mnya-alnfs-fy-ashaar-antr-abs",
+        "title": "كتاب منية النفس في أشعار عنتر عبس",
+        "source": "KitabMoneyatAlNafsFeyAshaarAntra"
+      },
+      {
+        "id": "mjla-ansar-alsna-2",
+        "title": "مجلة أنصار السنة 2",
+        "source": "AnsarAlsunnahMagazine 002"
+      },
+      {
+        "id": "mjla-alhjaz-103",
+        "title": "مجلة الحجاز 103",
+        "source": "AlhijazMagazine 103"
+      },
+      {
+        "id": "mjla-alsmwd-101",
+        "title": "مجلة الصمود 101",
+        "source": "AlsomoudMagazine 101"
+      },
+      {
+        "id": "mjla-alsmwd-119",
+        "title": "مجلة الصمود 119",
+        "source": "AlsomoudMagazine 119"
+      },
+      {
+        "id": "mjla-alsmwd-122",
+        "title": "مجلة الصمود 122",
+        "source": "AlsomoudMagazine 122"
+      },
+      {
+        "id": "mjla-alsmwd-146",
+        "title": "مجلة الصمود 146",
+        "source": "AlsomoudMagazine 146"
+      },
+      {
+        "id": "mjla-alsmwd-167",
+        "title": "مجلة الصمود 167",
+        "source": "AlsomoudMagazine 167"
+      },
+      {
+        "id": "mjla-alfysl-alalmya-6",
+        "title": "مجلة الفيصل العلمية 6",
+        "source": "AlfaisalAl3limiyaMagazine 006"
+      },
+      {
+        "id": "12-mjla-alfysl-alalmya",
+        "title": "مجلة الفيصل العلمية — العدد 12",
+        "source": "AlfaisalAl3limiyaMagazine 012"
+      },
+      {
+        "id": "40-mjla-alfysl-alalmya",
+        "title": "مجلة الفيصل العلمية — العدد 40",
+        "source": "AlfaisalAl3limiyaMagazine 040"
+      },
+      {
+        "id": "47-mjla-alfysl-alalmya",
+        "title": "مجلة الفيصل العلمية — العدد 47",
+        "source": "AlfaisalAl3limiyaMagazine 047"
+      },
+      {
+        "id": "mjla-alktayb-63",
+        "title": "مجلة الكتائب 63",
+        "source": "AlKataebMagazine 063"
+      },
+      {
+        "id": "mjla-jnat-49-50",
+        "title": "مجلة جنات 49-50",
+        "source": "JannatMagazine 049 050"
+      },
+      {
+        "id": "mjla-hwlyat-altrath-aladd-19",
+        "title": "مجلة حوليات التراث العدد 19",
+        "source": "annales19af"
+      },
+      {
+        "id": "mjla-hwlyat-altrath-jamaa-mstghanm-aladd-12",
+        "title": "مجلة حوليات التراث، جامعة مستغانم، العدد 12",
+        "source": "ar401mosta12"
+      },
+      {
+        "id": "mjla-hwlyat-altrath-jamaa-mstghanm-aladd-13",
+        "title": "مجلة حوليات التراث، جامعة مستغانم، العدد 13",
+        "source": "ar401mosta13"
+      },
+      {
+        "id": "mjla-hwlyat-altrath-jamaa-mstghanm-aladd-18",
+        "title": "مجلة حوليات التراث، جامعة مستغانم، العدد 18",
+        "source": "ar401mosta18"
+      },
+      {
+        "id": "mjla-hwlyat-altrath-jamaa-mstghanm-aladd-3",
+        "title": "مجلة حوليات التراث، جامعة مستغانم، العدد 3",
+        "source": "ar401mosta03"
+      },
+      {
+        "id": "mjla-rwad-almaaly-05",
+        "title": "مجلة رواد المعالي 05",
+        "source": "RowadAlma3alyMagazine 005"
+      },
+      {
+        "id": "mjla-klma-hq-26",
+        "title": "مجلة كلمة حق 26",
+        "source": "KalimatHaqMagazine 026"
+      },
+      {
+        "id": "mjla-klma-hq-7",
+        "title": "مجلة كلمة حق 7",
+        "source": "KalimatHaqMagazine 007"
+      },
+      {
+        "id": "mjla-knwz-alfrqan-1-5",
+        "title": "مجلة كنوز الفرقان 1_5",
+        "source": "KunuzAlfurqanMagazine 1 05"
+      },
+      {
+        "id": "mjla-knwz-alfrqan-1-7",
+        "title": "مجلة كنوز الفرقان 1_7",
+        "source": "KunuzAlfurqanMagazine 1 07"
+      },
+      {
+        "id": "mjmwa-ftawa-abn-tymya",
+        "title": "مجموع فتاوى ابن تيمية",
+        "source": "مجموع الفتاوى"
+      },
+      {
+        "id": "mhadrat-fy-alnhda-alarbya-alhdytha-ldyf-allh-mhmd-alakhdr",
+        "title": "محاضرات في النهضة العربية الحديثة لضيف الله محمد الأخضر",
+        "source": "fethibriredj live 201701"
+      },
+      {
+        "id": "mkhtar-alshah-ia",
+        "title": "مختار الصحاح",
+        "source": "RZY1918AR"
+      },
+      {
+        "id": "mdars-almghrb-alawst-alzyanya-w-almrynya-drasa-tarykhya-athr",
+        "title": "مدارس المغرب الأوسط الزيانية و المرينية دراسة تاريخية أثرية لبوخضار فا",
+        "source": "fethibriredj live 20170306 1319"
+      },
+      {
+        "id": "msharyq-alanwar-mas-a-riq-al-anwa-r",
+        "title": "مشاريق الأنوار Mašāriq al-anwār",
+        "source": "BULAC.RES.MON.4.186"
+      },
+      {
+        "id": "marfa-anwaa-alwm-alhdyth",
+        "title": "معرفة أنواع علوم الحديث",
+        "source": "مقدمة ابن الصلاح"
+      },
+      {
+        "id": "mghamra-alaql-alawla",
+        "title": "مغامرة العقل الأولى",
+        "source": "fars.swah.the first mind adventure"
+      },
+      {
+        "id": "mn-h-m-awl-a-all",
+        "title": "من حکم اولیاء اللہ",
+        "source": "arapca hak dostlarindan hikmetler 1 202303"
+      },
+      {
+        "id": "mwswaa-alansab-walqbayl-fy-alswdan",
+        "title": "موسوعة الأنساب والقبائل في السودان",
+        "source": "encyclopedia of tribes and genealogies in sudan"
+      },
+      {
+        "id": "nhn-walrqy",
+        "title": "نحن والرقي",
+        "source": "NahnoWaAlrokey"
+      },
+      {
+        "id": "nshra-alaslam-alywm-43",
+        "title": "نشرة الإسلام اليوم 43",
+        "source": "AlislamAlyoumBulletin 43"
+      },
+      {
+        "id": "nzam-altqwym-fy-alaslam",
+        "title": "نظام التقويم في الإسلام",
+        "source": "NizamAlTaqweemFeyAlIslam"
+      },
+      {
+        "id": "nyl-alwtr-fy-aswl-alqraat-alarbaa-ashr",
+        "title": "نيل الوطر في أصول القراءات الأربعة عشر",
+        "source": "eng suhail nailawatar"
+      },
+      {
+        "id": "hn-mjmwah-qssya",
+        "title": "هُن .. مجموعه قصصية",
+        "source": "Httpafkar7ora.blogspot.com.eg201607blog post.html"
+      },
+      {
+        "id": "wthayq-althwra-alaraqya-alkbra-lkaml-slman-aljbwry-khmsa-ajz",
+        "title": "وثائق الثورة العراقية الكبرى لكامل سلمان الجبوري خمسة أجزاء",
+        "source": "fethibriredj live 20170306 1320"
+      },
+      {
+        "id": "ytyma-aldhr-fy-shara-ahl-alasr-aljz-althalth",
+        "title": "يتيمة الدهر في شعراء اهل العصر - الجزء الثالث",
+        "source": "YatimatAlDahrFeyShoaraaAhlAlAsr03"
+      },
+      {
+        "id": "dlayl-alhdaya-fy-ahadyth-alwlaa-walwlaya-d-nadr-wady",
+        "title": "‫‫‫دَلَائِلُ اَلْهِدَايَةِ فِيِ أَحَادِيِثِ اَلْوُلَاةِ وَالْوِلَايَةِ",
+        "source": "dhfaww"
+      }
+    ],
+    "duplicates": [
+      {
+        "id": "aljzayr-almjahda-1960-ar",
+        "title": "الجزائر المجاهدة 1960",
+        "other": "aljzayr-almjahda-1960"
+      }
+    ],
+    "latinInArabic": [
+      {
+        "id": "aljz-alawl-alsads-mn-ktab-mfatyh-alghyb-almshthr-baltfsyr-al",
+        "title": "الجزء الأول [- السادس] من كتاب مفاتيح الغيب المشتهر بالتفسير"
+      },
+      {
+        "id": "msharyq-alanwar-mas-a-riq-al-anwa-r",
+        "title": "مشاريق الأنوار Mašāriq al-anwār"
+      }
+    ],
+    "digitPrefix": [],
+    "punctuation": [
+      {
+        "id": "i-beowulf-an-anglo-saxon-poem-ii-the-fight-at-finnsburh-a-fr",
+        "title": "I. Beowulf: an Anglo-Saxon poem. II. The fight at Finnsburh:"
+      },
+      {
+        "id": "the-memoirs-of-the-conquistador-bernal-diaz-del-castillo-vol",
+        "title": "The Memoirs of the Conquistador Bernal Diaz del Castillo, Vo"
+      },
+      {
+        "id": "the-strand-magazine-vol-27-february-1904-no-159",
+        "title": "The Strand Magazine, Vol. 27, February 1904, No. 159."
+      },
+      {
+        "id": "aqyda-altwhyd-ktab-llshykh-salh-alfwzan-athabh-allh",
+        "title": "عقيدة التوحيد كتاب للشيخ صالح الفوزان أثابه الله."
+      },
+      {
+        "id": "frsan-alaslam-whrwb-almmalyk",
+        "title": "فرسان الاسلام وحروب المماليك ."
+      }
+    ],
+    "emptyAuthor": [
+      {
+        "id": "alf-lyla-wlyla-mwssa-hndawy-2022",
+        "title": "ألف ليلة وليلة (مؤسسة هنداوي، 2022)"
+      },
+      {
+        "id": "atfaqya-jnyf-bshan-maamla-asra-alhrb",
+        "title": "اتفاقية جنيف بشأن معاملة أسرى الحرب"
+      },
+      {
+        "id": "tarykh-alaslam-wwfyat-almshahyr-walaalam-mwlf-aldhhby-lahq-a",
+        "title": "تاريخ الإسلام"
+      },
+      {
+        "id": "mwlf-ar",
+        "title": "شرح ابن عقيل"
+      },
+      {
+        "id": "fth-albary-mwlf-abn-hjr-mlahzat",
+        "title": "فتح الباري"
+      },
+      {
+        "id": "kitab-ul-idraak-lil-lisan-il-atraak-aseeruddin-abi-hayyan-al",
+        "title": "Kitab ul-Idraak Lil-Lisan il-Atraak - Aseeruddin A"
+      },
+      {
+        "id": "sunan-ibn-majah-arabic",
+        "title": "Sunan Ibn Majah - Arabic"
+      },
+      {
+        "id": "athar-alblad-wakhbar-alabad",
+        "title": "آثار البلاد وأخبار العباد"
+      },
+      {
+        "id": "athr-alarb-fy-alhdara-alawrbya-1946",
+        "title": "أثر العرب في الحضارة الأوربية (1946)"
+      },
+      {
+        "id": "asrar-trtyb-alqran",
+        "title": "أسرار ترتيب القرآن"
+      },
+      {
+        "id": "alara-walmatqdat-1926",
+        "title": "الآراء والمعتقدات (1926)"
+      },
+      {
+        "id": "aladla-aljlya-fa-altmsk-balarwa-alwthqa-almhmdya",
+        "title": "الأدلة الجلية فى التمسك بالعروة الوثقى المحمدية"
+      },
+      {
+        "id": "alamthal-alaamya-mshrwha-wmrtba-ala-alhrf-alawl-mn-almthl-al",
+        "title": "الأمثال العامية- مشروحة ومرتبة على الحرف الأول من "
+      },
+      {
+        "id": "alanys-almtrb-brwd-alqrtas-fy-akhbar-mlwk-almghrb-wtarykh-md",
+        "title": "الأنيس المطرب بروض القرطاس في أخبار ملوك المغرب وت"
+      },
+      {
+        "id": "alakhtyarat-alfqhya-lshykh-alaslam-abn-tymya",
+        "title": "الاختيارات الفقهية لشيخ الإسلام ابن تيمية"
+      },
+      {
+        "id": "althdhyb-fy-aswl-altaryb",
+        "title": "التهذيب في أصول التعريب"
+      },
+      {
+        "id": "altyjan-fy-mlwk-hmyr",
+        "title": "التيجان في ملوك حمير"
+      },
+      {
+        "id": "aldwla-alslymanya-walamarat-alalwya-fy-almghrb-alawst-bhlwly",
+        "title": "الدولة السليمانية والإمارات العلوية في المغرب الأو"
+      },
+      {
+        "id": "alrd-ala-almntqyyn",
+        "title": "الرد على المنطقيين"
+      },
+      {
+        "id": "alrwm-fy-syasthm-whdarthm-wdynhm-wthqafthm-wslathm-balarb-19",
+        "title": "الروم في سياستهم وحضارتهم ودينهم وثقافتهم وصلاتهم "
+      },
+      {
+        "id": "alshykh-mhmd-syd-tntawa-altfsyr-alwsyt-aljz-altasa-walashrwn",
+        "title": "الشيخ محمد سيد طنطاوى التفسير الوسيط الجزء التاسع "
+      },
+      {
+        "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-althalth",
+        "title": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الثال"
+      },
+      {
+        "id": "altahr-bn-aashwr-tfsyr-althryr-waltnwyr-aljz-alkhams",
+        "title": "الطاهر بن عاشور تفسير التحرير والتنوير الجزء الخام"
+      },
+      {
+        "id": "alaqd-alfryd-mwlf-abn-abd-rbh-mlahzat",
+        "title": "العقد الفريد"
+      },
+      {
+        "id": "alqran-alkrym-balrsm-alamlayy",
+        "title": "القرآن الكريم (بالرسم الإملائي)"
+      },
+      {
+        "id": "alkafy",
+        "title": "الكافي"
+      },
+      {
+        "id": "allbab-fy-fswl-aladab",
+        "title": "اللباب في فصول الآداب"
+      },
+      {
+        "id": "almzhr",
+        "title": "المزهر"
+      },
+      {
+        "id": "alnzrat",
+        "title": "النظرات"
+      },
+      {
+        "id": "byan-tlbys-aljhmya-fy-tasys-bdahm-alklamya",
+        "title": "بيان تلبيس الجهمية في تأسيس بدعهم الكلامية"
+      },
+      {
+        "id": "taj-alarws",
+        "title": "تاج العروس"
+      },
+      {
+        "id": "tarykh-alkwyt-alsyasy-aljz-alawl",
+        "title": "تاريخ الكويت السياسي - الجزء الأول"
+      },
+      {
+        "id": "tfsyr-abn-kthyr-mjld-4",
+        "title": "تفسير ابن كثير مجلد 4"
+      },
+      {
+        "id": "tfsyr-albhr-almhyt-aby-hyan-alghrnaty",
+        "title": "تفسير البحر المحيط أبي حيان الغرناطي"
+      },
+      {
+        "id": "tfsyr-almraghy",
+        "title": "تفسير المراغي"
+      },
+      {
+        "id": "jmhra-ansab-alarb",
+        "title": "جمهرة أنساب العرب"
+      },
+      {
+        "id": "rjwa-alshykh-ala-sbah",
+        "title": "رجوع الشيخ إلى صباه"
+      },
+      {
+        "id": "rsala-abn-fdlan-t-samy-aldhan",
+        "title": "رسالة ابن فضلان (ت. سامي الدهان)"
+      },
+      {
+        "id": "sr-tqdm-alanklyz-alskswnyyn",
+        "title": "سر تقدم الإنكليز السكسونيين"
+      },
+      {
+        "id": "slam-ma-badh-slam-wlada-alshrq-alawst-1914-1922-dafyd-frwmky",
+        "title": "سلام ما بعده سلام ولادة الشرق الأوسط 1914 1922 داف"
+      },
+      {
+        "id": "snn-aldarmy",
+        "title": "سنن الدارمي"
+      },
+      {
+        "id": "sydna-mhmd-sla-allh-alyh-wslm",
+        "title": "سيدنا محمد صلى الله عليه وسلم"
+      },
+      {
+        "id": "syra-abn-hsham-mwlf-abn-hsham",
+        "title": "سيرة ابن هشام"
+      },
+      {
+        "id": "shyh-albkhary-mwlf-albkhary-sabq-ktb-alhdyth-alnbwy-lahq-kta",
+        "title": "صحيح البخاري"
+      },
+      {
+        "id": "shyh-mslm",
+        "title": "صحيح مسلم"
+      },
+      {
+        "id": "swr-alkwakb-althmanya-walarbayn",
+        "title": "صور الكواكب الثمانية والأربعين"
+      },
+      {
+        "id": "syd-alkhatr",
+        "title": "صيد الخاطر"
+      },
+      {
+        "id": "ajayb-almkhlwqat-wghrayb-almwjwdat",
+        "title": "عجائب المخلوقات وغرائب الموجودات"
+      },
+      {
+        "id": "lab-alarb-altbaa-alawla",
+        "title": "لعب العرب (الطبعة الأولى)"
+      },
+      {
+        "id": "mjla-albyan-llbrqwqy",
+        "title": "مجلة البيان للبرقوقي"
+      },
+      {
+        "id": "mjla-alrsala",
+        "title": "مجلة الرسالة"
+      },
+      {
+        "id": "mjma-alzwayd",
+        "title": "مجمع الزوائد"
+      },
+      {
+        "id": "mhadrat-fy-tarykh-aldwla-alabasya",
+        "title": "محاضرات في تاريخ الدولة العباسية"
+      },
+      {
+        "id": "mkhtar-alshah",
+        "title": "مختار الصحاح"
+      },
+      {
+        "id": "mkhtsr-shyh-mslm",
+        "title": "مختصر صحيح مسلم"
+      },
+      {
+        "id": "mfyd-alalwm-wmbyd-alhmwm",
+        "title": "مفيد العلوم ومبيد الهموم"
+      },
+      {
+        "id": "mn-h-m-awl-a-all",
+        "title": "من حکم اولیاء اللہ"
+      },
+      {
+        "id": "mwta-alamam-malk",
+        "title": "موطأ الإمام مالك"
+      },
+      {
+        "id": "nsa-alkhlfa-dar-almaarf-1950",
+        "title": "نساء الخلفاء (دار المعارف، 1950)"
+      },
+      {
+        "id": "nsws-qanwn-mjls-aldwla-msr",
+        "title": "نصوص قانون مجلس الدولة (مصر)"
+      },
+      {
+        "id": "hdaya-alhyara",
+        "title": "هداية الحيارى"
+      },
+      {
+        "id": "wthyqa-mwtmr-alhwar-alwtny-alshaml",
+        "title": "وثيقة مؤتمر الحوار الوطني الشامل"
+      }
+    ]
+  }
+}
