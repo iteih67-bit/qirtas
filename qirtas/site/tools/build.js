@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT, DATA, readCatalog, log, asciiSlug } = require('../../pipeline/lib/common');
-const { arSlug } = require('../../pipeline/lib/arabic');
+const { arSlug, shortHash } = require('../../pipeline/lib/arabic');
 
 const SITE = path.join(ROOT, 'site');
 const DIST = path.join(SITE, 'dist');
@@ -35,7 +35,21 @@ function write(rel, content) {
 const titleOf = (b, lang) => (lang === 'ar'
   ? (b.title.ar || b.title.en)
   : (b.title.en || b.title.ar));
-const authorSlug = (b) => (b.lang === 'ar' ? arSlug(authorOf(b, 'ar'), 'author') : asciiSlug(authorOf(b, 'en') || authorOf(b, 'ar'), 'author'));
+const baseAuthorSlug = (b) => (b.lang === 'ar' ? arSlug(authorOf(b, 'ar'), 'author') : asciiSlug(authorOf(b, 'en') || authorOf(b, 'ar'), 'author'));
+// author names can slugify to the same string; keep one page per real name
+const AUTHOR_SLUGS = new Map(); // slug -> author name
+const authorSlug = (b) => {
+  const name = authorOf(b, 'ar') || authorOf(b, 'en');
+  let slug = baseAuthorSlug(b);
+  const owner = AUTHOR_SLUGS.get(slug);
+  if (owner && owner !== name) {
+    slug = slug + '-' + shortHash(String(name));
+    AUTHOR_SLUGS.set(slug, name);
+  } else if (!owner) {
+    AUTHOR_SLUGS.set(slug, name);
+  }
+  return slug;
+};
 const eraSlug = (e) => arSlug(e, 'era');
 const authorOf = (b, lang) => (lang === 'ar'
   ? (b.author.ar || b.author.en)
@@ -734,7 +748,7 @@ self.addEventListener('fetch', (e) => {
 
   write('sitemap.xml',
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-    sitemapPaths.map((p) => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${BUILD_DATE.slice(0, 10)}</lastmod></url>`).join('\n') +
+    [...new Set(sitemapPaths)].map((p) => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${BUILD_DATE.slice(0, 10)}</lastmod></url>`).join('\n') +
     '\n</urlset>');
   write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 

@@ -1,7 +1,7 @@
 {
   "db": {
     "total": 749,
-    "visible": 702,
+    "visible": 742,
     "byLang": [
       {
         "l": "ar",
@@ -20,15 +20,15 @@
       {
         "hidden": 0,
         "removed": 0,
-        "c": 702
+        "c": 742
       },
       {
         "hidden": 1,
         "removed": 0,
-        "c": 47
+        "c": 7
       }
     ],
-    "auditLog": 295,
+    "auditLog": 335,
     "takedown": [
       {
         "id": 1,
@@ -47,63 +47,22 @@
   "catalog": {
     "catalog": 742,
     "index": 742,
-    "dbMatch": false,
+    "dbMatch": true,
     "indexMatch": true
   },
   "dist": {
-    "dbIds": 702,
+    "dbIds": 742,
     "bookDirs": 742,
     "readDirs": 742,
     "missingDirs": [],
     "missingCount": 0,
-    "hiddenVisibleOnSite": [
-      "ktab-myzan-alhkma",
-      "majm-albldan",
-      "altbqat-alkbra",
-      "alkaml-fy-allgha-waladb",
-      "almntqa-mn-mnhaj-alaatdal",
-      "hyaa-alnfs-fy-hdra-alqds",
-      "qada-alfkr",
-      "ktab-alrd-ala-abn-alnghryla",
-      "ktb-wshkhsyat",
-      "klyla-wdmna-ar",
-      "lsan-almyzan",
-      "nhj-alslama-ala-mbahth-alamama",
-      "aladb-alsghyr",
-      "albhth-alsryh-fy-ayma-hw-aldyn-alshyh",
-      "aljma-byn-alshyhyn-llhmydy",
-      "alsarm-almnky-fy-alrd-ala-alsbky",
-      "alnbdh-fy-aswl-alfqh-alzahry",
-      "mwlf-ar",
-      "shyh-abn-khzyma",
-      "alsna-llkhlal",
-      "ktab-jmaa-alalm",
-      "mghamrat-twm-swyr",
-      "wfyat-alaayan",
-      "aalam-almwqayn-an-rb-alaalmyn",
-      "atfaqya-jnyf-bshan-maamla-asra-alhrb",
-      "aladb-alkbyr",
-      "alhsam-almmdwd-fy-alrd-ala-alyhwd",
-      "alaqyda-alhmwya-alkbra",
-      "alkylanya",
-      "tarykh-alaslam-wwfyat-almshahyr-walaalam-mwlf-aldhhby-lahq-a",
-      "tarykh-alaslah-fy-alazhr-mtbaa-alaatmad-1943",
-      "tarykh-alkwyt-alsyasy-aljz-althany",
-      "tjarb-alamm",
-      "zad-almaad-fy-hdy-khyr-alabad",
-      "shrh-qtr-alnda-t-mhmd-mhyy-aldyn-abd-alhmyd",
-      "shyh-abn-hban",
-      "fyma-yhtaj-alyh-alsana-mn-aamal-alhndsa",
-      "qanwn-rqm-25-lsna-1990-alymn-bshan-alshafa-walmtbwaat",
-      "mblgh-alarb-fy-fkhr-alarb",
-      "mnha-alqryb-almjyb-fy-alrd-ala-abad-alslyb"
-    ]
+    "hiddenVisibleOnSite": []
   },
   "leak": {
-    "htmlScanned": 1944,
+    "htmlScanned": 1945,
     "hits": {
       "wikisource": {
-        "count": 499,
+        "count": 500,
         "samples": [
           "author\\abas-alaqad\\index.html",
           "author\\abd-alghny-alnablsy\\index.html",
@@ -201,8 +160,9 @@
   ],
   "sitemap": {
     "urls": 1944,
-    "unique": 1943,
-    "dupes": 1,
+    "unique": 1944,
+    "dupes": 0,
+    "duplicates": [],
     "allHttps": true,
     "sample": [
       "https://iteih67-bit.github.io/qirtas/",

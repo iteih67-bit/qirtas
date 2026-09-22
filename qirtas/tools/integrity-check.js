@@ -17,6 +17,10 @@ try {
   try {
     const tmp = path.join(require('os').tmpdir(), 'qirtas-verify-' + process.pid + '-' + Date.now() + '.db');
     fs.copyFileSync(src, tmp);
+    // a WAL-mode database is only complete together with its sidecar files
+    for (const ext of ['-wal', '-shm']) {
+      if (fs.existsSync(src + ext)) { try { fs.copyFileSync(src + ext, tmp + ext); } catch (e) {} }
+    }
     openPath = tmp;
   } catch (e) { /* fall back to opening in place */ }
   db = new DatabaseSync(openPath);
@@ -108,11 +112,13 @@ out.pages = pages.map((p) => {
 });
 const sm = fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
 const locs = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-out.sitemap = { urls: locs.length, unique: new Set(locs).size, dupes: locs.length - new Set(locs).size, allHttps: locs.every((u) => u.startsWith('https://')), sample: locs.slice(0, 2) };
+const dupList = locs.filter((u, i) => locs.indexOf(u) !== i);
+out.sitemap = { urls: locs.length, unique: new Set(locs).size, dupes: dupList.length, duplicates: [...new Set(dupList)].slice(0, 10), allHttps: locs.every((u) => u.startsWith('https://')), sample: locs.slice(0, 2) };
 
 // ---------- 7) epub files ----------
-const epubs = fs.readdirSync(path.join(DIST, 'download')).filter((f) => f.endsWith('.epub'));
-const sizes = epubs.map((f) => fs.statSync(path.join(DIST, 'download', f)).size);
+const dl = path.join(DIST, 'download');
+const epubs = fs.existsSync(dl) ? fs.readdirSync(dl).filter((f) => f.endsWith('.epub')) : [];
+const sizes = epubs.map((f) => fs.statSync(path.join(dl, f)).size);
 out.epub = { count: epubs.length, minKB: sizes.length ? +(Math.min(...sizes) / 1024).toFixed(1) : 0, maxKB: sizes.length ? +(Math.max(...sizes) / 1024).toFixed(1) : 0 };
 
 // ---------- 8) width + cdp reports ----------
